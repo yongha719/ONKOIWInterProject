@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/YONGHA/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/JUNGMIN/Scene/2.unity
+    guid: df7e87962c55a914eb9bcfb38957c4be
+  - enabled: 1
+    path: Assets/JUNGMIN/Scene/GameOver.unity
+    guid: 3e94ac2eae370b34987cd147262f3c0e
   m_configObjects: {}
