@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         }
         if(collision.gameObject.tag == "BossObj")
         {
-            Boss.Instance.bossHp -= damage * 100;
+            Boss.Instance.bossHp -= damage * 10000;
             Instantiate(particle, transform.position += new Vector3(0, 0, -5), transform.rotation);
             Destroy(this.gameObject);
         }

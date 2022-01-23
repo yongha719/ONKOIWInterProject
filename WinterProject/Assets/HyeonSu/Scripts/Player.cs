@@ -87,12 +87,12 @@ public class Player : MonoBehaviour
             }
             Destroy(collision.gameObject);
         }
-        if(collision.gameObject.tag == "ItemStrong")
-        {
-            plusAttack = 2;
-            Invoke("ReturnPlusAttack", 10f);
-            Destroy(collision.gameObject);
-        }
+        //if(collision.gameObject.tag == "ItemStrong")
+        //{
+        //    plusAttack = 2;
+        //    Invoke("ReturnPlusAttack", 10f);
+        //    Destroy(collision.gameObject);
+        //}
         if(collision.gameObject.tag == "ItemDelete")
         {
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Snow");
@@ -102,11 +102,11 @@ public class Player : MonoBehaviour
             }
             Destroy(collision.gameObject);
         }
-        if(collision.gameObject.tag == "ItemSlow")
-        {
-            Boss.Instance.attackSpeed = 2;
-            Invoke("ReturnSlowAttack", 5f);
-            Destroy(collision.gameObject);
-        }
+        //if(collision.gameObject.tag == "ItemSlow")
+        //{
+        //    Boss.Instance.attackSpeed = 2;
+        //    Invoke("ReturnSlowAttack", 5f);
+        //    Destroy(collision.gameObject);
+        //}
     }
 }

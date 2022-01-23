@@ -48,7 +48,7 @@ public class Boss : MonoBehaviour
         if (collision.gameObject.tag == "Attack")
         {
             Hit();
-            int a = Random.Range(1, 110);
+            int a = Random.Range(1, 11);
             if(a == 1)
             {
                 float X = Random.Range(-8.5f, 8.5f);
@@ -59,10 +59,10 @@ public class Boss : MonoBehaviour
     }
     public void BossSkill1()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 3; i++)
         {
-            asd[i] = Instantiate(SkillSnow, gameObject.transform.position, gameObject.transform.rotation);
-            asd[i].gameObject.transform.DOMove(Skill1Pos[i].transform.position, 15f).SetEase(Ease.Linear);
+            asd[i] = Instantiate(SkillSnow, /*new Vector3(0,4.5f,0)*/gameObject.transform.position, gameObject.transform.rotation);
+            asd[i].gameObject.transform.DOMove(Skill1Pos[i].transform.position, 7f).SetEase(Ease.Linear);
         }
     }
     void BossShot()
