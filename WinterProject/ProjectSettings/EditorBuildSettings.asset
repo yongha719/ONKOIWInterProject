@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/YONGHA/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/HyeonSu/Scene/Shooting.unity
+    guid: 118a13ec5ab3c054e8cbbb57202e3c72
+  - enabled: 1
+    path: Assets/HyeonSu/Scene/Dead.unity
+    guid: 9eca69aad970d5341bc514e1b92be2a7
   m_configObjects: {}
