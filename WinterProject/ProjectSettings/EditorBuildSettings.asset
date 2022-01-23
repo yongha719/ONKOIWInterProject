@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/YONGHA/Scenes/SampleScene.unity
+    path: Assets/YONGHA/Scenes/AvoidBullet.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/YONGHA/Scenes/Test.unity
+    guid: b88c65d231274d04eba4286eb8427150
   m_configObjects: {}
