@@ -4,14 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Snow
-  - Attack
-  - ItemHp
-  - ItemStrong
-  - ItemDelete
-  - ItemSlow
-  - DeleteBullet
-  - BossObj
+  - Mp
+  - Hide
   layers:
   - Default
   - TransparentFX
