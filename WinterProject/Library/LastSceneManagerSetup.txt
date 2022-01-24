@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/YONGHA/Scenes/AvoidBullet.unity
+- path: Assets/JUNGMIN/Scene/2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
