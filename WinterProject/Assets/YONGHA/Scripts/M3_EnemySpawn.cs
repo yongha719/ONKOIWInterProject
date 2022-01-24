@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawn : MonoBehaviour
+public class M3_EnemySpawn : MonoBehaviour
 {
     public float SpawnDelay;
     int Enemydir;

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AB_Player : MonoBehaviour
+public class M3_Player : MonoBehaviour
 {
     public float Hp;
     public float DMG;
-    public float Speed;
 
-    
+    [SerializeField] float Speed;
+
     void Start()
     {
 
@@ -26,5 +26,15 @@ public class AB_Player : MonoBehaviour
         float y = Input.GetAxis("Vertical");
 
         transform.Translate(new Vector2(x, y) * Speed * Time.deltaTime);
+    }
+
+    public void Damaged(int damage)
+    {
+        if (Hp < damage)
+        {
+            print("Game Over");
+        }
+        else
+            Hp -= damage;
     }
 }

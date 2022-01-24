@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AB_bullet : MonoBehaviour
+public class M3_bullet : MonoBehaviour
 {
     public float speed;
     void Start()

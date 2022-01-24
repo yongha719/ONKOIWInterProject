@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestEnemy : MonoBehaviour
+public class M3_TestEnemy : MonoBehaviour
 {
     public float Hp;
     public float DMG;

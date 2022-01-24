@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class M3_PlayerAttack : MonoBehaviour
 {
     public float AttackDelay;
     float Attackcur;
@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Start()
     {
-
+        AttackDelay = M3_GameManager.Instance.PlayerAttackDelay;
     }
 
     void Update()
