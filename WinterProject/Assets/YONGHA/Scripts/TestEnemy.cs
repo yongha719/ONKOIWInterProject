@@ -11,8 +11,12 @@ public class TestEnemy : MonoBehaviour
     public float PosDelay;
     float Poscur;
 
-    public GameObject bullet;
+    public GameObject bullet;//±×·¡¶ó
+    public float AttackDelay;
+    float Attackcur;
 
+    public Transform gun;
+    Vector2 playerpos;
     Vector2 targetpos;
 
     void Start()
@@ -22,10 +26,12 @@ public class TestEnemy : MonoBehaviour
 
     void Update()
     {
+        playerpos = GameObject.Find("Player").transform.position;
         AIMoving();
+        TestAttack();
     }
 
-    
+
     void AIMoving()
     {
         if (Poscur >= PosDelay)
@@ -36,5 +42,16 @@ public class TestEnemy : MonoBehaviour
         else
             Poscur += Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
+    }
+    void TestAttack()
+    {
+        float z = Mathf.Atan2(playerpos.y, playerpos.x) * Mathf.Rad2Deg;
+        gun.rotation = Quaternion.Euler(0, 0, z);
+        if (Attackcur <= 0)
+        {
+            Instantiate(bullet, gun.position, gun.rotation);
+            Attackcur = AttackDelay;
+        }
+        Attackcur -= Time.deltaTime;
     }
 }

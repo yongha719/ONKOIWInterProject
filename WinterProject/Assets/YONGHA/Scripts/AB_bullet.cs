@@ -7,7 +7,7 @@ public class AB_bullet : MonoBehaviour
     public float speed;
     void Start()
     {
-        
+        Destroy(gameObject, 3f);
     }
 
     void Update()
