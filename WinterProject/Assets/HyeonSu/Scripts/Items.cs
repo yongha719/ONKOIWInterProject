@@ -8,7 +8,7 @@ public class Items : MonoBehaviour
 
     private void Start()
     {
-        randomTag = Random.Range(1, 4);
+        randomTag = Random.Range(1, 2);
         GiveTag();
     }
     private void Update()
@@ -23,17 +23,17 @@ public class Items : MonoBehaviour
         {
             gameObject.tag = "ItemHp";
         }
+        //if (randomTag == 2)
+        //{
+        //    gameObject.tag = "ItemStrong";
+        //}
         if (randomTag == 2)
-        {
-            gameObject.tag = "ItemStrong";
-        }
-        if (randomTag == 3)
         {
             gameObject.tag = "ItemDelete";
         }
-        if (randomTag == 4)
-        {
-            gameObject.tag = "ItemSlow";
-        }
+        //if (randomTag == 4)
+        //{
+        //    gameObject.tag = "ItemSlow";
+        //}
     }
 }

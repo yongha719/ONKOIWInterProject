@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 public class Boss : MonoBehaviour
 {
@@ -83,6 +84,7 @@ public class Boss : MonoBehaviour
         if(bossHp <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("Dead");
         }
     }
     void ReturnSprite()

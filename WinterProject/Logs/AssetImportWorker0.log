@@ -1,10 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
-<<<<<<< Updated upstream
 OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 32605 MB
-=======
-OS: 'Windows 10 Home; OS build 19043.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 16348 MB
->>>>>>> Stashed changes
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,16 +11,15 @@ C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-<<<<<<< Updated upstream
 C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55761
+53079
 Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
 C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 44.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -36,265 +31,96 @@ Direct3D:
     Vendor:   
     VRAM:     3962 MB
     Driver:   27.21.14.5763
-=======
-C:/Users/ypc/Documents/GitHub/ONKOIWInterProject/WinterProject
--logFile
-Logs/AssetImportWorker0.log
--srvPort
-59871
-Successfully changed project path to: C:/Users/ypc/Documents/GitHub/ONKOIWInterProject/WinterProject
-C:/Users/ypc/Documents/GitHub/ONKOIWInterProject/WinterProject
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 70.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.21f1 (a38c86f6690f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ypc/Documents/GitHub/ONKOIWInterProject/WinterProject/Assets
-GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 570 Series (ID=0x67df)
-    Vendor:   
-    VRAM:     4075 MB
-    Driver:   30.0.13023.1012
->>>>>>> Stashed changes
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-<<<<<<< Updated upstream
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001718 seconds.
+Registered in 0.001770 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 42.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.264 seconds
+- Completed reload, in  2.365 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2264ms)
-		BeginReloadAssembly (55ms)
-=======
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002926 seconds.
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.482 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2482ms)
-		BeginReloadAssembly (75ms)
->>>>>>> Stashed changes
+	ReloadAssembly (2366ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-<<<<<<< Updated upstream
-		EndReloadAssembly (428ms)
-			LoadAssemblies (54ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (440ms)
+			LoadAssemblies (49ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (140ms)
+			SetupTypeCache (152ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (169ms)
+			SetupLoadedEditorAssemblies (167ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (42ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (77ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-=======
-		EndReloadAssembly (548ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (199ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (53ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (89ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
->>>>>>> Stashed changes
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-<<<<<<< Updated upstream
-Registered in 0.004347 seconds.
-=======
-Registered in 0.010289 seconds.
->>>>>>> Stashed changes
+Registered in 0.004342 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001DD796D0010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79D455D0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD798B4C30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741EBB30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7916D020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD796F8220 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD796F8220 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD744FBA00 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78E98010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD790A5C20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD797E6010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD790A5C20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7970EC30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD797BB820 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7981F030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD790B8E30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A4A6040 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7981F030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741F5BC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79904620 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78F1E020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD795C0020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD798B4C30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79904620 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD793A2020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78CCDE20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A1FD680 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79960020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78F51430 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79F765A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD4BFE37A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7981F030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD798B4C30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78F51430 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-<<<<<<< Updated upstream
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 42.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.133 seconds
+- Completed reload, in  1.076 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1134ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1077ms)
+		BeginReloadAssembly (128ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (926ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (893ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
+			SetupTypeCache (295ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (363ms)
-=======
-Refreshing native plugins compatible for Editor in 50.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.424 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1425ms)
-		BeginReloadAssembly (195ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1155ms)
-			LoadAssemblies (136ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (443ms)
->>>>>>> Stashed changes
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (340ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-<<<<<<< Updated upstream
-				RefreshPlugins (42ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (6ms)
-=======
-				RefreshPlugins (51ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (9ms)
->>>>>>> Stashed changes
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.9 MB.
 System memory in use after: 99.0 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2650.
-Total: 3.000400 ms (FindLiveObjects: 0.218200 ms CreateObjectMapping: 0.108600 ms MarkObjects: 2.602100 ms  DeleteObjects: 0.070200 ms)
-=======
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.3 MB.
-System memory in use after: 96.4 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2650.
-Total: 3.464700 ms (FindLiveObjects: 0.307300 ms CreateObjectMapping: 0.136700 ms MarkObjects: 2.947800 ms  DeleteObjects: 0.071800 ms)
->>>>>>> Stashed changes
+Total: 3.140400 ms (FindLiveObjects: 0.184800 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.773200 ms  DeleteObjects: 0.097000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -308,158 +134,211 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/GameClear.png
-  artifactKey: Guid(d972fc6b4f3a70c4db4b273c1c51c96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-<<<<<<< Updated upstream
-Start importing Assets/GameClear.png using Guid(d972fc6b4f3a70c4db4b273c1c51c96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a09e6151c5d6fad4215f25592a726a') in 0.107784 seconds 
-  Import took 0.111349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.017470 seconds.
-  path: Assets/JUNGMIN
-  artifactKey: Guid(57ac1afe5eafda44b9ccde3b8d14c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN using Guid(57ac1afe5eafda44b9ccde3b8d14c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca38ca8e2bca96a3e72e66040d21cce') in 0.006969 seconds 
-  Import took 0.010134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.718329 seconds.
-  path: Assets/JUNGMIN/Scene
-  artifactKey: Guid(5ffbfc1ae09cbcf43afb9fa6d826b4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Scene using Guid(5ffbfc1ae09cbcf43afb9fa6d826b4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0333a857833d1a738b9bef03917d8b4') in 0.007924 seconds 
-  Import took 0.011964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.396658 seconds.
-  path: Assets/JUNGMIN/Scene/GameOver.unity
-  artifactKey: Guid(3e94ac2eae370b34987cd147262f3c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Scene/GameOver.unity using Guid(3e94ac2eae370b34987cd147262f3c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81d6a4fdb1489587b9403a395d4997f') in 0.006663 seconds 
-  Import took 0.010292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.066708 seconds.
-  path: Assets/JUNGMIN/Scene/2.unity
-  artifactKey: Guid(df7e87962c55a914eb9bcfb38957c4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Scene/2.unity using Guid(df7e87962c55a914eb9bcfb38957c4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09002a1379e87d02c9c72d0235a1c680') in 0.006997 seconds 
-  Import took 0.010360 seconds .
+  path: Assets/HyeonSu/Scene/Shooting.unity
+  artifactKey: Guid(118a13ec5ab3c054e8cbbb57202e3c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Scene/Shooting.unity using Guid(118a13ec5ab3c054e8cbbb57202e3c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0382c84babb6f112bcd2937503fb0d4c') in 0.019659 seconds 
+  Import took 0.023955 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004060 seconds.
+Registered in 0.004511 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001DD9E4821A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E3E45F0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741E9B20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E4CDDC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7CB1F020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7AC64020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E366F10 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD73E8B4E0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7451B570 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78D5F020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D90BFA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7410EA80 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D3D6030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79D45B60 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E4821A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5B30B0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD74711340 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D90BFA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78E76020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E635040 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D723EC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A835030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78D89030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D91EFC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7CF84D60 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A49A020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741E9B20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7451B570 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.083 seconds
+- Completed reload, in  1.041 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1083ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (1041ms)
+		BeginReloadAssembly (115ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (901ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (863ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
+			SetupTypeCache (288ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (357ms)
+			SetupLoadedEditorAssemblies (343ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (226ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2652.
+Total: 3.356800 ms (FindLiveObjects: 0.206300 ms CreateObjectMapping: 0.097600 ms MarkObjects: 3.034000 ms  DeleteObjects: 0.017500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004769 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.242 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1243ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (971ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (363ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2654.
+Total: 4.361000 ms (FindLiveObjects: 0.251200 ms CreateObjectMapping: 0.110100 ms MarkObjects: 3.955900 ms  DeleteObjects: 0.042200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 107.244745 seconds.
+  path: Assets/HyeonSu/Prefabs/눈 터지는 파티클.prefab
+  artifactKey: Guid(56bfa7ef192336a4eb1b75cbcdb28aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/눈 터지는 파티클.prefab using Guid(56bfa7ef192336a4eb1b75cbcdb28aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e46780a76dad27a8bfcfa373f5f294') in 0.115885 seconds 
+  Import took 0.121149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/HyeonSu/Prefabs/아이템.prefab
+  artifactKey: Guid(7ee7d272854cb0b4b8d89429a8a78da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/아이템.prefab using Guid(7ee7d272854cb0b4b8d89429a8a78da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e286b6b3c684d76087c64ceb4d63a589') in 0.015036 seconds 
+  Import took 0.018538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/HyeonSu/Prefabs/눈.prefab
+  artifactKey: Guid(909424db66918324a94b4c11563b618d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/눈.prefab using Guid(909424db66918324a94b4c11563b618d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84dbbfd1110fdb52ba2dd2a54d8bb2d') in 0.018120 seconds 
+  Import took 0.023477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/HyeonSu/Prefabs/보스 공격.prefab
+  artifactKey: Guid(cec7e08062ca7704287690df7405d368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/보스 공격.prefab using Guid(cec7e08062ca7704287690df7405d368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1956e0f63c97b929b6dd63d1b24b77d') in 0.013635 seconds 
+  Import took 0.017871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/HyeonSu/Prefabs/보스 스킬.prefab
+  artifactKey: Guid(097f4166bd6c475478cf4e04114d7a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/보스 스킬.prefab using Guid(097f4166bd6c475478cf4e04114d7a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197e0b302b617cf2f3134200ebc70317') in 0.014800 seconds 
+  Import took 0.018789 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.149 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1150ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (961ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (257ms)
 				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.2 MB.
-System memory in use after: 101.4 MB.
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2658.
-Total: 2.777700 ms (FindLiveObjects: 0.191100 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.473000 ms  DeleteObjects: 0.019500 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2664.
+Total: 3.098100 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.104600 ms MarkObjects: 2.717500 ms  DeleteObjects: 0.056400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -472,119 +351,75 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 11.306329 seconds.
+  path: Assets/HyeonSu/Prefabs/아이템.prefab
+  artifactKey: Guid(7ee7d272854cb0b4b8d89429a8a78da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Prefabs/아이템.prefab using Guid(7ee7d272854cb0b4b8d89429a8a78da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153c486685bbc8fe453104a87d1cca4f') in 0.053108 seconds 
+  Import took 0.057236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.215128 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bea065889d8de5930d48fc5d0a53ddc') in 0.008668 seconds 
+  Import took 0.012392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.716181 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e62fbe81c02fbc0ea179cf4e00b3ca') in 0.003066 seconds 
+  Import took 0.006986 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003766 seconds.
+Registered in 0.004309 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001DD9E7A8060 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9EA97760 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D313130 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E4CDDC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C153020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD740FAEF0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD791A61A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD73E8B4E0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C153020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7BBA0080 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D313130 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7410EA80 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E366F10 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7AC64020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD79710CC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741DC020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD791C1020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C5C3010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E438E80 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD74711340 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD798B3C30 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C5C3010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD741B2180 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD78CCDE20 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D71F150 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A831020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C8B7030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7CAFDD00 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7CF849C0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A49A020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D313130 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C153020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.072 seconds
+- Completed reload, in  1.076 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1073ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (1076ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (901ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (904ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
+			SetupTypeCache (316ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (358ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (307ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (225ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.3 MB.
-System memory in use after: 101.4 MB.
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2660.
-Total: 3.474800 ms (FindLiveObjects: 0.201200 ms CreateObjectMapping: 0.095900 ms MarkObjects: 3.159000 ms  DeleteObjects: 0.017600 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2667.
+Total: 2.736300 ms (FindLiveObjects: 0.179800 ms CreateObjectMapping: 0.084100 ms MarkObjects: 2.416500 ms  DeleteObjects: 0.055000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -599,117 +434,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004280 seconds.
+Registered in 0.004483 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001DD797E6010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9EE76080 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5D7010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E4CEED0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5ED010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C135F10 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD791A61A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C8B7030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5ED010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD797E6010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7413BDA0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5D7010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7410EA80 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C135F10 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D2701A0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7BC2E030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD797E6010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7BC2E030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A5C0010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D0A8010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D3DE040 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7BC2E030 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E438E80 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD73E934F0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D723EC0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7A831020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C416020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7C1A3020 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7CF83970 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD7D916FB0 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD74514830 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001DD9E5ED010 doesn't match image C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.942 seconds
+- Completed reload, in  1.028 seconds
 Domain Reload Profiling:
-	ReloadAssembly (942ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (1029ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (783ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (854ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
+			SetupTypeCache (305ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (292ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (320ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (188ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (206ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.3 MB.
-System memory in use after: 101.4 MB.
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2662.
-Total: 2.783100 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.085200 ms MarkObjects: 2.492700 ms  DeleteObjects: 0.016700 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2669.
+Total: 2.976600 ms (FindLiveObjects: 0.200100 ms CreateObjectMapping: 0.092300 ms MarkObjects: 2.665100 ms  DeleteObjects: 0.018000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -721,97 +488,354 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-=======
-Start importing Assets/GameClear.png using Guid(d972fc6b4f3a70c4db4b273c1c51c96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a09e6151c5d6fad4215f25592a726a') in 0.177893 seconds 
-  Import took 0.181721 seconds .
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005331 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Domain Reload Profiling:
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
 
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2671.
+Total: 2.894400 ms (FindLiveObjects: 0.230200 ms CreateObjectMapping: 0.113800 ms MarkObjects: 2.533700 ms  DeleteObjects: 0.015800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006136 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.192 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1192ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1010ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (396ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (357ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2673.
+Total: 3.844500 ms (FindLiveObjects: 0.268900 ms CreateObjectMapping: 0.173100 ms MarkObjects: 3.381100 ms  DeleteObjects: 0.020300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005377 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.117 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1118ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (939ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (306ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2675.
+Total: 2.970100 ms (FindLiveObjects: 0.182300 ms CreateObjectMapping: 0.084800 ms MarkObjects: 2.687600 ms  DeleteObjects: 0.014900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.000 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1000ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (829ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2677.
+Total: 2.922700 ms (FindLiveObjects: 0.189400 ms CreateObjectMapping: 0.088200 ms MarkObjects: 2.627500 ms  DeleteObjects: 0.016300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.842310 seconds.
-  path: Assets/JUNGMIN/Prefab/GameClear.prefab
-  artifactKey: Guid(3077077ac2e3b9741bbf9f0c08a1d252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/GameClear.prefab using Guid(3077077ac2e3b9741bbf9f0c08a1d252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb5f28c4b60070af770f29364ddb5ba') in 0.043305 seconds 
-  Import took 0.047953 seconds .
+  Time since last request: 368.161602 seconds.
+  path: Assets/HyeonSu/Scene/Dead.unity
+  artifactKey: Guid(9eca69aad970d5341bc514e1b92be2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyeonSu/Scene/Dead.unity using Guid(9eca69aad970d5341bc514e1b92be2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d4e6ae1d4d989f19e116641ce41536') in 0.028079 seconds 
+  Import took 0.032699 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/JUNGMIN/Prefab/show1.prefab
-  artifactKey: Guid(4128ccb1c6438a341aaa828814d462d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/show1.prefab using Guid(4128ccb1c6438a341aaa828814d462d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056e59917f702cfb445cfa30e53ee5bb') in 0.024835 seconds 
-  Import took 0.028909 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009975 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.297 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1297ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1072ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
 
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2679.
+Total: 3.169200 ms (FindLiveObjects: 0.252200 ms CreateObjectMapping: 0.091100 ms MarkObjects: 2.807200 ms  DeleteObjects: 0.017900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/JUNGMIN/Prefab/show3.prefab
-  artifactKey: Guid(0a83f5c04e2146a42adad2a2af1a0e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/show3.prefab using Guid(0a83f5c04e2146a42adad2a2af1a0e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff07b2ccf22def989a00ee240fc565b') in 0.024188 seconds 
-  Import took 0.028804 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003885 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1052ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (880ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/JUNGMIN/Prefab/show2.prefab
-  artifactKey: Guid(3e226f38d3a3c4b438851be0dc875a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/show2.prefab using Guid(3e226f38d3a3c4b438851be0dc875a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8352a8fe9033933c3c82a298107540a7') in 0.018170 seconds 
-  Import took 0.022586 seconds .
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2681.
+Total: 2.811100 ms (FindLiveObjects: 0.232800 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.464300 ms  DeleteObjects: 0.014800 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/JUNGMIN/Prefab/hide4.prefab
-  artifactKey: Guid(dad880e2013fe1e4185e6ee03efc6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/hide4.prefab using Guid(dad880e2013fe1e4185e6ee03efc6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a704a8329e3589ac97930d3d550214e6') in 0.014044 seconds 
-  Import took 0.018299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/JUNGMIN/Prefab/show4.prefab
-  artifactKey: Guid(e90e09b1d3dcf6645a98950d2bdc4042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/show4.prefab using Guid(e90e09b1d3dcf6645a98950d2bdc4042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5410365a7212cf68b3d61e0b43cbbf') in 0.018027 seconds 
-  Import took 0.021997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/JUNGMIN/Prefab/hide3.prefab
-  artifactKey: Guid(d6c8b5a454d6fa741ad6457f1cae896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/hide3.prefab using Guid(d6c8b5a454d6fa741ad6457f1cae896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48126aeed09ecf469751c2842f20f629') in 0.020939 seconds 
-  Import took 0.026312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/JUNGMIN/Prefab/hide1.prefab
-  artifactKey: Guid(a0ed3a685ea2a314cb777bad8cabfd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/hide1.prefab using Guid(a0ed3a685ea2a314cb777bad8cabfd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e42a6df48011c23824f764b93f6e3f') in 0.019166 seconds 
-  Import took 0.023526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/JUNGMIN/Prefab/hide2.prefab
-  artifactKey: Guid(38977ef5186d5904c8468b14674bf261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Prefab/hide2.prefab using Guid(38977ef5186d5904c8468b14674bf261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e52bc15a7d96c39f76663a324f3133b') in 0.019203 seconds 
-  Import took 0.023077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.267709 seconds.
-  path: Assets/JUNGMIN/Scene
-  artifactKey: Guid(5ffbfc1ae09cbcf43afb9fa6d826b4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Scene using Guid(5ffbfc1ae09cbcf43afb9fa6d826b4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0333a857833d1a738b9bef03917d8b4') in 0.006469 seconds 
-  Import took 0.010800 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.103178 seconds.
-  path: Assets/JUNGMIN/Scene/2.unity
-  artifactKey: Guid(df7e87962c55a914eb9bcfb38957c4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JUNGMIN/Scene/2.unity using Guid(df7e87962c55a914eb9bcfb38957c4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09002a1379e87d02c9c72d0235a1c680') in 0.010127 seconds 
-  Import took 0.015355 seconds .
-
->>>>>>> Stashed changes
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Mp
   - Hide
+  - BossObj
+  - DeleteBullet
+  - Snow
+  - ItemSlow
+  - Attack
+  - ItemHp
+  - ItemDelete
+  - ItemStrong
   layers:
   - Default
   - TransparentFX
