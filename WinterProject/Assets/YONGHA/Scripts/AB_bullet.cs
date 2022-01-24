@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AB_bullet : MonoBehaviour
 {
+    public float speed;
     void Start()
     {
         
@@ -11,6 +12,6 @@ public class AB_bullet : MonoBehaviour
 
     void Update()
     {
-        
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 }
