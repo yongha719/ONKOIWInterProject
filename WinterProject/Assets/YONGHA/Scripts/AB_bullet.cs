@@ -14,4 +14,16 @@ public class AB_bullet : MonoBehaviour
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            
+        }
+        if (other.CompareTag("Enemy"))
+        {
+
+        }
+        Destroy(gameObject);
+    }
 }
