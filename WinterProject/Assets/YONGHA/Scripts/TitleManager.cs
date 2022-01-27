@@ -13,22 +13,24 @@ public class TitleManager : MonoBehaviour
 
     void Awake()
     {
-       Instance = this;
+        Instance = this;
     }
     void Start()
     {
-        
+        Namefield.SetActive(false);
     }
 
     void Update()
     {
-        IngameScene();
+        GetIngameScene();
     }
+
     public void StartButton()
     {
         Namefield.SetActive(true);
     }
-    void IngameScene()
+
+    void GetIngameScene()
     {
         if (SceneManager.GetActiveScene().name == "Title")
         {

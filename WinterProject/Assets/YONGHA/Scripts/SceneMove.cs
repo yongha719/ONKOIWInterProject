@@ -13,5 +13,5 @@ public class SceneMove : MonoBehaviour
     {
         
     }
-    
+    //Scene이동 함수는 여기에서 써주세요
 }

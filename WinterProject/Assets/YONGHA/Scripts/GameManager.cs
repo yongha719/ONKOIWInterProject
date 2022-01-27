@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
-    
-   public string PlayerName;
+
+    string PlayerName;
     void Start()
     {
 
@@ -15,6 +15,6 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        PlayerName = TitleManager.Instance.PlayerName.text;     
-    }    
+        PlayerName = TitleManager.Instance.PlayerName.text;
+    }
 }
