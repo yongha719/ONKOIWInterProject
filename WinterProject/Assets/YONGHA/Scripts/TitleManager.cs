@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class TitleManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class TitleManager : MonoBehaviour
 
     public GameObject Namefield;
     public Text PlayerName;
-
+    
     void Awake()
     {
         Instance = this;
@@ -19,17 +20,14 @@ public class TitleManager : MonoBehaviour
     {
         Namefield.SetActive(false);
     }
-
     void Update()
     {
         GetIngameScene();
     }
-
     public void StartButton()
     {
         Namefield.SetActive(true);
     }
-
     void GetIngameScene()
     {
         if (SceneManager.GetActiveScene().name == "Title")

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
@@ -14,4 +15,8 @@ public class SceneMove : MonoBehaviour
         
     }
     //Scene이동 함수는 여기에서 써주세요
+    public void Title()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
