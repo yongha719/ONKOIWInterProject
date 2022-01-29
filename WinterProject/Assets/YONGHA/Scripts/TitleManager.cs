@@ -11,6 +11,8 @@ public class TitleManager : MonoBehaviour
 
     public GameObject Namefield;
     public GameObject Soundfield;
+    public GameObject Albumfield;
+    public GameObject Continuefield;
     public Text PlayerName;
     
     void Awake()
@@ -21,6 +23,8 @@ public class TitleManager : MonoBehaviour
     {
         Namefield.SetActive(false);
         Soundfield.SetActive(false);
+        Albumfield.SetActive(false);
+        Continuefield.SetActive(false);
     }
     void Update()
     {
@@ -33,6 +37,14 @@ public class TitleManager : MonoBehaviour
     public void SettingButton()
     {
         Soundfield.SetActive(true);
+    }
+    public void AlbumButton()
+    {
+        Albumfield.SetActive(true);
+    }
+    public void ContinueButton()
+    {
+        Continuefield.SetActive(true);
     }
     void GetIngameScene()
     {
