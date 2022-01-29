@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     bool OnMenu = false;
 
     public GameObject Save;
+    [SerializeField] private GameObject SettingObj;
     public void IngameMenuButton()
     {
         if (!OnMenu)
@@ -32,10 +33,15 @@ public class UIManager : MonoBehaviour
     {
         Save.SetActive(true);
     }
+    public void SettingBtn()
+    {
+        SettingObj.SetActive(true);
+    }
     void Start()
     {
         IngameMenu.anchoredPosition = new Vector2(910, 410);
         Save.SetActive(false);
+        SettingObj.SetActive(false);
     }
 
     void Update()
