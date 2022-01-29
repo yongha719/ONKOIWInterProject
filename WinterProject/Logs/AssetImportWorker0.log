@@ -1,191 +1,126 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.434; Version 2009; 64bit' Language: 'ko' Physical Memory: 7865 MB
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 32605 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\unity\2020.3.21f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/07194/Documents/GitHub/ONKOIWInterProject/WinterProject
+C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50061
-Successfully changed project path to: C:/Users/07194/Documents/GitHub/ONKOIWInterProject/WinterProject
-C:/Users/07194/Documents/GitHub/ONKOIWInterProject/WinterProject
+54072
+Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
+C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 41.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
-[Subsystems] Discovering subsystems at path C:/unity/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/07194/Documents/GitHub/ONKOIWInterProject/WinterProject/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX450 (ID=0x1f97)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   
-    VRAM:     1928 MB
-    Driver:   27.21.14.5256
+    VRAM:     3962 MB
+    Driver:   27.21.14.5763
 Initialize mono
-Mono path[0] = 'C:/unity/2020.3.21f1/Editor/Data/Managed'
-Mono path[1] = 'C:/unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56228
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/unity/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001382 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003184 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 52.20 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 45.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
+- Completed reload, in  2.521 seconds
 Domain Reload Profiling:
-	ReloadAssembly (970ms)
+	ReloadAssembly (2521ms)
 		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (43ms)
+		EndReloadAssembly (481ms)
+			LoadAssemblies (44ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (173ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (167ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (176ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004681 seconds.
+Registered in 0.003993 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001FE0AC07090 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FB0E040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A64BB70 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10348430 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A95EC30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A358030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A472010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A5F1820 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A358030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A67AEA0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE105F5020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A488A20 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A64BB70 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A631F40 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A358030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A358030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FE1E170 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A358030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0EFEA020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AC416A0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1002DA30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A971410 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD38040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE106F6040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1002DA30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE106F6040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A605B00 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F5C5010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F31D430 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10348430 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD3FD50 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F31D430 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD38040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F218030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.94 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 42.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
+- Completed reload, in  1.174 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1010ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (835ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (955ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (266ms)
+			SetupTypeCache (324ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (328ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (361ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (186ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (206ms)
 				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2230 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 101.4 MB.
 System memory in use after: 101.5 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2669.
-Total: 2.828400 ms (FindLiveObjects: 0.279400 ms CreateObjectMapping: 0.075700 ms MarkObjects: 2.399000 ms  DeleteObjects: 0.072900 ms)
+Total: 3.245600 ms (FindLiveObjects: 0.196400 ms CreateObjectMapping: 0.098500 ms MarkObjects: 2.829000 ms  DeleteObjects: 0.120800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -194,255 +129,254 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/DOTweenSettings.asset
-  artifactKey: Guid(f0b698bd8a13a1f4ab431564503b107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/DOTweenSettings.asset using Guid(f0b698bd8a13a1f4ab431564503b107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12415fba4f84c41249240407f27053e2') in 0.039272 seconds 
-  Import took 0.042805 seconds .
+  path: Assets/UI
+  artifactKey: Guid(2f525f2b19d77dc43ae1ad71534f6415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI using Guid(2f525f2b19d77dc43ae1ad71534f6415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0bb39d9388b74696b756b66f1567c9') in 0.010940 seconds 
+  Import took 0.014587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.216748 seconds.
+  path: Assets/UI/Name
+  artifactKey: Guid(c55e937bf6f5e114e91065735c9917d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Name using Guid(c55e937bf6f5e114e91065735c9917d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3471ccfc071f7ecbf4ead64b3dca24') in 0.007374 seconds 
+  Import took 0.010555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.457115 seconds.
+  path: Assets/UI/Name/이름.png
+  artifactKey: Guid(42ceb89b91cd6424e9bbe23d39c51683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Name/이름.png using Guid(42ceb89b91cd6424e9bbe23d39c51683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f5e09552c9e2447ef0f0ed070a05ec') in 0.084802 seconds 
+  Import took 0.088120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/UI/Name/이름３.png
+  artifactKey: Guid(ce7b87b50be40dc4bbafc02ec4f91b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Name/이름３.png using Guid(ce7b87b50be40dc4bbafc02ec4f91b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217d5d6c3fcac9f88706fa0c7308ba14') in 0.012049 seconds 
+  Import took 0.014886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/UI/Name/이름２.png
+  artifactKey: Guid(03cab8d356c25de47a13ce64645f8540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Name/이름２.png using Guid(03cab8d356c25de47a13ce64645f8540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611d56e3a01735d860eece7bd8fc5e98') in 0.011405 seconds 
+  Import took 0.014246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/UI/Name/이름１.png
+  artifactKey: Guid(8c9753b0ec696d94bb7f71d39574caf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Name/이름１.png using Guid(8c9753b0ec696d94bb7f71d39574caf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18dbc5b8a651eb79f6794802f5999dd8') in 0.013970 seconds 
+  Import took 0.017268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.642518 seconds.
+  path: Assets/UI/Music
+  artifactKey: Guid(9588f5efa3580f9418993a2e32832d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music using Guid(9588f5efa3580f9418993a2e32832d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf52c5abdc766b278e8cee9e2f7a861e') in 0.005803 seconds 
+  Import took 0.009155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.862888 seconds.
+  path: Assets/UI/Music/소리.png
+  artifactKey: Guid(477f1dd8b505a0845a2dfe3f3047588f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리.png using Guid(477f1dd8b505a0845a2dfe3f3047588f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adfb36c531895e64740dbcb1aee5184') in 0.022721 seconds 
+  Import took 0.026127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/UI/Music/소리２.png
+  artifactKey: Guid(27f3aa0c93f45da4db910ded0560f292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리２.png using Guid(27f3aa0c93f45da4db910ded0560f292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f673215e6017e8bd2ba751b07fafdd') in 0.015737 seconds 
+  Import took 0.018657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/UI/Music/Ｘ.png
+  artifactKey: Guid(e26bc3b9d9c6854479afdfb53bd088c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/Ｘ.png using Guid(e26bc3b9d9c6854479afdfb53bd088c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd471b2055becba809b18604c93cfdb22') in 0.014101 seconds 
+  Import took 0.016953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/UI/Music/소리１.png
+  artifactKey: Guid(fbd2b81575202a34ca2217db42f95325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리１.png using Guid(fbd2b81575202a34ca2217db42f95325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c992d261c34bd9c690bf31ead7dc3885') in 0.014964 seconds 
+  Import took 0.017759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/UI/Music/소리３.png
+  artifactKey: Guid(2a1f4a195793246449f8c3aa431d2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리３.png using Guid(2a1f4a195793246449f8c3aa431d2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcdb8de590a069bf82c4b4b3c318c88') in 0.017970 seconds 
+  Import took 0.022090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/UI/Music/소리４.png
+  artifactKey: Guid(abda4925891f5a7438c3e95820e26990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리４.png using Guid(abda4925891f5a7438c3e95820e26990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c030779d67347b6ae43c142793c36d') in 0.017669 seconds 
+  Import took 0.021574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/UI/Music/소리５.png
+  artifactKey: Guid(a0fa75a27adb3e2498363c4f2ce393dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Music/소리５.png using Guid(a0fa75a27adb3e2498363c4f2ce393dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3767f7f968cabcaec3843d8996cf0b56') in 0.016852 seconds 
+  Import took 0.020954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.583488 seconds.
+  path: Assets/UI/New Folder
+  artifactKey: Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/New Folder using Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8820233187c7c8bbb418c645b6c800ae') in 0.009054 seconds 
+  Import took 0.013440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.344054 seconds.
+  path: Assets/UI/Download
+  artifactKey: Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Download using Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a47789973ae50251bf7da03d5e51e3') in 0.005524 seconds 
+  Import took 0.008661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.145627 seconds.
+  path: Assets/UI/Save
+  artifactKey: Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save using Guid(5a9150bb021f5dc43a59c32bafd85b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5307119bdc3caff57f50ece26bc6f47') in 0.005697 seconds 
+  Import took 0.008782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.963352 seconds.
+  path: Assets/UI/Save/세이브.png
+  artifactKey: Guid(ffce2e0cd6d570a40b07a84978b964a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브.png using Guid(ffce2e0cd6d570a40b07a84978b964a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a355c362f88e12569a4f42fe99898e82') in 0.016960 seconds 
+  Import took 0.020436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/UI/Save/세이브2.png
+  artifactKey: Guid(29314f97086db22439fadbe851067d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브2.png using Guid(29314f97086db22439fadbe851067d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd8caf1c1d3aad8248ee55de4f293e8') in 0.011940 seconds 
+  Import took 0.014911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/UI/Save/세이브３.png
+  artifactKey: Guid(e591ce0cf79f1ec498d84dc3b001c25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브３.png using Guid(e591ce0cf79f1ec498d84dc3b001c25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5fef194d3183f7956fa30e147dbefe3') in 0.011742 seconds 
+  Import took 0.014793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/UI/Save/세이브5.png
+  artifactKey: Guid(ae0613c6656e284498dcf626cb51f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브5.png using Guid(ae0613c6656e284498dcf626cb51f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db55464913841b480110bc967b124a82') in 0.012930 seconds 
+  Import took 0.015992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/UI/Save/세이브１.png
+  artifactKey: Guid(943c2f429e37d4c4a99064bb782d32e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브１.png using Guid(943c2f429e37d4c4a99064bb782d32e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60604404de6ca9848a60116b09757815') in 0.012299 seconds 
+  Import took 0.016527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/UI/Save/세이브４.png
+  artifactKey: Guid(9a2089bbc8f5b86449c3749343369bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브４.png using Guid(9a2089bbc8f5b86449c3749343369bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548ba5dd7adb876fc192753f5da00b9d') in 0.013914 seconds 
+  Import took 0.017397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/UI/Save/세이브6.png
+  artifactKey: Guid(ed0d0bb1fd343bf46bf22a83d3e00858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Save/세이브6.png using Guid(ed0d0bb1fd343bf46bf22a83d3e00858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8411d0ad4b9ed16e4aad31691ffb6a7') in 0.015352 seconds 
+  Import took 0.019488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.093234 seconds.
+  path: Assets/UI/NewBehaviourScript.cs
+  artifactKey: Guid(aa10bb2d4845c6246b5f29460e9a812b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/NewBehaviourScript.cs using Guid(aa10bb2d4845c6246b5f29460e9a812b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a6e1a0dfb982e270a126544de6567a') in 0.009008 seconds 
+  Import took 0.012616 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008210 seconds.
+Registered in 0.003873 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001FE0F7F9010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A612AE0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10076680 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34623850 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12F3B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE13996E30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A5E4010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD44F00 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0ACEC010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12F3B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F19A020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1389D0A0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10076680 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE100EE010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD44F00 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE13996E30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE121E2050 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A7A2010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AC07090 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F7E0010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A733010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1211C010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE134B7C50 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F7E0010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10D8F010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1046D020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE101176C0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10ABF010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F242020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A68B6A0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F1DB950 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD44F00 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34698800 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12F3B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.108 seconds
+- Completed reload, in  0.963 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1111ms)
-		BeginReloadAssembly (234ms)
+	ReloadAssembly (963ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (27ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (117ms)
-		EndReloadAssembly (818ms)
-			LoadAssemblies (98ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (784ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (303ms)
+			SetupLoadedEditorAssemblies (292ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2206 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.5 MB.
-System memory in use after: 99.6 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2671.
-Total: 2.753100 ms (FindLiveObjects: 0.152600 ms CreateObjectMapping: 0.049200 ms MarkObjects: 2.523300 ms  DeleteObjects: 0.026500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004443 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001FE0F09EA60 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE35138280 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A4A4BC0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34639EA0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F89B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE13996E30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F8BF020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE131AE020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0ACEC010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A4AC600 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F03E020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE139F3720 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A4A4BC0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AA36540 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F67D040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE13996E30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10A161E0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10D75050 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AC07090 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12A5A010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A614F30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34793010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A4A4BC0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12A5A010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A614F30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10071030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1011A300 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34869030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10D5D030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A425EF0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F1DB210 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F67D040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10129ED0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A4BE950 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1051ms)
-		BeginReloadAssembly (115ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (871ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (363ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (233ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2206 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.5 MB.
-System memory in use after: 99.6 MB.
+Unloading 2207 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.5 MB.
+System memory in use after: 102.7 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2673.
-Total: 2.692800 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.052500 ms MarkObjects: 2.429000 ms  DeleteObjects: 0.022300 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2692.
+Total: 2.855900 ms (FindLiveObjects: 0.193400 ms CreateObjectMapping: 0.081000 ms MarkObjects: 2.565300 ms  DeleteObjects: 0.015400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -451,123 +385,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004463 seconds.
+Registered in 0.004245 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001FE0F09EA60 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE36A076B0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FC9CED0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34621630 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12BB3020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1033D020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE139F3720 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AE72020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F829040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12BB3020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F2EA020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1389D0A0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FC9CED0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0A5E4010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0AE72020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1033D020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10A161E0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE121AA030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F09EA60 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12A3B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE13B470B0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE1326E030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FC9CED0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12A3B040 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12C25030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10071030 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10113F70 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE34B94010 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12C57020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0FD3F790 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE0F1DAE70 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE124A9E30 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE10129ED0 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001FE12BB3020 doesn't match image C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
+- Completed reload, in  0.960 seconds
 Domain Reload Profiling:
-	ReloadAssembly (930ms)
+	ReloadAssembly (960ms)
 		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (779ms)
-			LoadAssemblies (79ms)
+		EndReloadAssembly (804ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
+			SetupTypeCache (277ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (316ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (303ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2206 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.5 MB.
-System memory in use after: 99.6 MB.
+System memory in use before: 102.6 MB.
+System memory in use after: 102.7 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2675.
-Total: 2.624000 ms (FindLiveObjects: 0.139300 ms CreateObjectMapping: 0.040000 ms MarkObjects: 2.423800 ms  DeleteObjects: 0.019300 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2693.
+Total: 4.475800 ms (FindLiveObjects: 0.337400 ms CreateObjectMapping: 0.170400 ms MarkObjects: 3.913800 ms  DeleteObjects: 0.052900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -576,8 +442,167 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21.314908 seconds.
+  path: Assets/UI/Main
+  artifactKey: Guid(203fb65b4a1e7c542b52b229492a0a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main using Guid(203fb65b4a1e7c542b52b229492a0a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569b2b37d53dd1f9a08fab9b224a9609') in 0.009091 seconds 
+  Import took 0.013264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.112884 seconds.
+  path: Assets/UI/Main/계속하기.png
+  artifactKey: Guid(39b693ad1aceacf458532d459d6121ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main/계속하기.png using Guid(39b693ad1aceacf458532d459d6121ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3202813ed2b3323083aea61ec8c15319') in 0.045275 seconds 
+  Import took 0.048299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/UI/Main/앨범.png
+  artifactKey: Guid(fc30beec9c35c5e4bb1d90284c3814c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main/앨범.png using Guid(fc30beec9c35c5e4bb1d90284c3814c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4734194d3dc4b2118ce835ad92d86e') in 0.010197 seconds 
+  Import took 0.012992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/UI/Main/기본.png
+  artifactKey: Guid(3c9101569ba6c8346a1a236177ab7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main/기본.png using Guid(3c9101569ba6c8346a1a236177ab7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1042c12d32a3328e693391eb0b58d2df') in 0.010009 seconds 
+  Import took 0.012796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/UI/Main/설정.png
+  artifactKey: Guid(62f723b29f1346f4d9b5280ef138bdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main/설정.png using Guid(62f723b29f1346f4d9b5280ef138bdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2aea5ac4f7d14105546f4c90f6bc57') in 0.011793 seconds 
+  Import took 0.014560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/UI/Main/처음부터.png
+  artifactKey: Guid(ba10c798ba770f5458c3830685655e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Main/처음부터.png using Guid(ba10c798ba770f5458c3830685655e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342fda80ef03d573ae2cf8d15528081c') in 0.010181 seconds 
+  Import took 0.012906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.987783 seconds.
+  path: Assets/UI/Ingame
+  artifactKey: Guid(db4c94abb26ec6a478d9c18773a71151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame using Guid(db4c94abb26ec6a478d9c18773a71151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ff727ae1c4a886dc2425dc3311eddc') in 0.012363 seconds 
+  Import took 0.015960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.135419 seconds.
+  path: Assets/UI/Ingame/대화.png
+  artifactKey: Guid(a6eb8fd771dcb6e48acd84b5a03cd436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화.png using Guid(a6eb8fd771dcb6e48acd84b5a03cd436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058c6921fc58d5d25ccb3b2cb7beee20') in 0.020082 seconds 
+  Import took 0.023671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/UI/Ingame/대화＿강채아.png
+  artifactKey: Guid(26e909c2c91451942a5b285ca7d1ef30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화＿강채아.png using Guid(26e909c2c91451942a5b285ca7d1ef30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee090498bb5693da62c9a6751c556438') in 0.012850 seconds 
+  Import took 0.016372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/UI/Ingame/대화_무명.png
+  artifactKey: Guid(115db7976c68752479baea0818db7575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화_무명.png using Guid(115db7976c68752479baea0818db7575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f848a5b4819ab915d1c6156c0bbf1cf') in 0.012092 seconds 
+  Import took 0.014930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/UI/Ingame/메뉴_설정.png
+  artifactKey: Guid(13ad156b175d84f4aa50f36cc64bcdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴_설정.png using Guid(13ad156b175d84f4aa50f36cc64bcdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770d18d8fde06c0e109c9eb3654c1d07') in 0.013255 seconds 
+  Import took 0.016128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/UI/Ingame/메뉴_저장.png
+  artifactKey: Guid(4402d3e772bf1b242863bee8eb368f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴_저장.png using Guid(4402d3e772bf1b242863bee8eb368f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485235670ab620a27b7669126557278f') in 0.012608 seconds 
+  Import took 0.016323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/UI/Ingame/메뉴_앨범.png
+  artifactKey: Guid(f01468432a0dbc34592c6fee5f348e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴_앨범.png using Guid(f01468432a0dbc34592c6fee5f348e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085932674cc3fe205c1e79f7d9728c92') in 0.012893 seconds 
+  Import took 0.015770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/UI/Ingame/대화＿백가윤.png
+  artifactKey: Guid(af2364a3492635d47977ad9ae00305c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화＿백가윤.png using Guid(af2364a3492635d47977ad9ae00305c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925a5e93010924dfe43166ce8f468c2e') in 0.013056 seconds 
+  Import took 0.016092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/UI/Ingame/메뉴_메인.png
+  artifactKey: Guid(51777e36161e20141b0c4d4b2a798c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴_메인.png using Guid(51777e36161e20141b0c4d4b2a798c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f4e1c1f752e0cb995830a1f29965d0') in 0.014711 seconds 
+  Import took 0.018315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/UI/Ingame/메뉴1.png
+  artifactKey: Guid(f99378226c278e74fa4d8573961273ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴1.png using Guid(f99378226c278e74fa4d8573961273ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23667224e85caffe8422a6e23623abf1') in 0.017417 seconds 
+  Import took 0.021144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/UI/Ingame/메뉴2.png
+  artifactKey: Guid(6c20c3fbcbfeba34d875968ac1a1151a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴2.png using Guid(6c20c3fbcbfeba34d875968ac1a1151a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d3b635c721d3af6d2674635817479c') in 0.015755 seconds 
+  Import took 0.019750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/UI/Ingame/대화1.png
+  artifactKey: Guid(f5c65f08cf22c744f873c9b865b5540e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화1.png using Guid(f5c65f08cf22c744f873c9b865b5540e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee65dd36e67c0cd88d2330ba54d908c') in 0.014318 seconds 
+  Import took 0.018239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/UI/Ingame/대화＿양세화.png
+  artifactKey: Guid(8679ea108f2b9424a98f534bc12e72ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/대화＿양세화.png using Guid(8679ea108f2b9424a98f534bc12e72ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f075e7ba1668082fab2e7af6056e301f') in 0.013045 seconds 
+  Import took 0.016904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/UI/Ingame/메뉴.png
+  artifactKey: Guid(499d43926ed43a84eb9d64b7aca552ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ingame/메뉴.png using Guid(499d43926ed43a84eb9d64b7aca552ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68c29b04e8024dca0456d9b46a3eaf0') in 0.015030 seconds 
+  Import took 0.019150 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
