@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager>
 {
 
     string PlayerName;
+
     void Start()
     {
 

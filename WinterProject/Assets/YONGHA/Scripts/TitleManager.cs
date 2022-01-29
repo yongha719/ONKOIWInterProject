@@ -10,6 +10,7 @@ public class TitleManager : MonoBehaviour
     public static TitleManager Instance { get; set; }
 
     public GameObject Namefield;
+    public GameObject Soundfield;
     public Text PlayerName;
     
     void Awake()
@@ -19,6 +20,7 @@ public class TitleManager : MonoBehaviour
     void Start()
     {
         Namefield.SetActive(false);
+        Soundfield.SetActive(false);
     }
     void Update()
     {
@@ -27,6 +29,10 @@ public class TitleManager : MonoBehaviour
     public void StartButton()
     {
         Namefield.SetActive(true);
+    }
+    public void SettingButton()
+    {
+        Soundfield.SetActive(true);
     }
     void GetIngameScene()
     {
