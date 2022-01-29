@@ -1,0 +1,174 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'ko' Physical Memory: 32605 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59105
+Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
+C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 39.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.21f1 (a38c86f6690f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ASUS/Documents/GitHub/ONKOIWInterProject/WinterProject/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.5763
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001661 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 39.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.166 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2166ms)
+		BeginReloadAssembly (45ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (401ms)
+			LoadAssemblies (43ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (128ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (159ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004032 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 39.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1028ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (851ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (340ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2230 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.4 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2669.
+Total: 3.083300 ms (FindLiveObjects: 0.199800 ms CreateObjectMapping: 0.074700 ms MarkObjects: 2.737600 ms  DeleteObjects: 0.069600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/YONGHA/Prefabs/InGameMenu.prefab
+  artifactKey: Guid(af7ed59298f44b84a8e335e4ce813684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YONGHA/Prefabs/InGameMenu.prefab using Guid(af7ed59298f44b84a8e335e4ce813684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064166db88612f1c9603930f0a36e1d6') in 0.062620 seconds 
+  Import took 0.065917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 221.883161 seconds.
+  path: Assets/UI/캐릭터
+  artifactKey: Guid(92c750f367f714043a76f66e69d1f964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/캐릭터 using Guid(92c750f367f714043a76f66e69d1f964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907916f52de43d915c2f216c697d3ecd') in 0.007286 seconds 
+  Import took 0.011532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.247088 seconds.
+  path: Assets/UI/캐릭터/강채아 (1).png
+  artifactKey: Guid(9b391a83283243c48bdbbbfbbae6f5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/캐릭터/강채아 (1).png using Guid(9b391a83283243c48bdbbbfbbae6f5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f681eda0fcba2ed10e551d0ecd23b9') in 0.151768 seconds 
+  Import took 0.158040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.084087 seconds.
+  path: Assets/UI/캐릭터/백가윤 (1).png
+  artifactKey: Guid(9d4cc1dcc867fbf4da6ee9888a337a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/캐릭터/백가윤 (1).png using Guid(9d4cc1dcc867fbf4da6ee9888a337a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37bef8cbebfd04cae473998add955fc') in 0.023345 seconds 
+  Import took 0.028762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.658735 seconds.
+  path: Assets/UI/캐릭터/양세화 (1).png
+  artifactKey: Guid(90eca35f24abd154e850573e33dda456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/캐릭터/양세화 (1).png using Guid(90eca35f24abd154e850573e33dda456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47d7560efe5a106d6e479793825e126') in 0.018780 seconds 
+  Import took 0.022655 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
