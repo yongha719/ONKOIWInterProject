@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 330479041}
   - component: {fileID: 330479040}
   m_Layer: 5
-  m_Name: CH1 (2)
+  m_Name: Yang se hwa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 1167383768}
   - component: {fileID: 1167383767}
   m_Layer: 5
-  m_Name: CH1 (1)
+  m_Name: Baek ga yoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2784,7 +2784,7 @@ GameObject:
   - component: {fileID: 1224738681}
   - component: {fileID: 1224738680}
   m_Layer: 5
-  m_Name: CH1
+  m_Name: Kang chae a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4055,6 +4055,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1441607984}
+    - target: {fileID: 8407289826759141600, guid: af7ed59298f44b84a8e335e4ce813684, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8407289826759141614, guid: af7ed59298f44b84a8e335e4ce813684, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

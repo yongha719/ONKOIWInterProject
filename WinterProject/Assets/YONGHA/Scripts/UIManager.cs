@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public RectTransform IngameMenu;
     bool OnMenu = false;
 
+    public GameObject Characters;
     public GameObject Save;
     [SerializeField] private GameObject SettingObj;
     public void IngameMenuButton()
@@ -42,6 +43,16 @@ public class UIManager : MonoBehaviour
         IngameMenu.anchoredPosition = new Vector2(910, 410);
         Save.SetActive(false);
         SettingObj.SetActive(false);
+    }
+
+    public void Conversation()
+    {
+        if(Characters.activeSelf == false)
+        {
+            Characters.SetActive(true);
+            return;
+        }
+        Characters.SetActive(false);
     }
 
     void Update()
