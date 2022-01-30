@@ -9,7 +9,7 @@ public class Character : MonoBehaviour
     public GameObject Kang;
     public GameObject Yang;
     public GameObject Baek;
-
+    [SerializeField] private GameObject Gift;
     public void Conversation1()
     {
         Kang.SetActive(true);
@@ -30,5 +30,10 @@ public class Character : MonoBehaviour
         Kang.SetActive(false);
         Yang.SetActive(false);
         Baek.SetActive(false);    
+    }
+    public void LoveBtn()
+    {
+        Kang.SetActive(false);
+        Gift.SetActive(true);
     }
 }

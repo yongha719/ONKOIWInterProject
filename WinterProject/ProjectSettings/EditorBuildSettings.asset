@@ -26,9 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/HyeonSu/Scene/Shooting.unity
     guid: 118a13ec5ab3c054e8cbbb57202e3c72
-  - enabled: 1
-    path: Assets/YONGHA/Scenes/InGame3.unity
-    guid: 6d9f8968b8d911a4c9bab7871caf3df0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/YONGHA/Scenes/InGame2.unity
     guid: b577a078643e2654785fbd063c9cba31
