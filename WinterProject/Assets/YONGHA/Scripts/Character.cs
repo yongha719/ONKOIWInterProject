@@ -9,7 +9,11 @@ public class Character : MonoBehaviour
     public GameObject Kang;
     public GameObject Yang;
     public GameObject Baek;
+
+    int i = 0;
     [SerializeField] private GameObject Gift;
+
+    public List<GameObject> BtnNum = new List<GameObject>();
     public void Conversation1()
     {
         Kang.SetActive(true);
@@ -33,7 +37,11 @@ public class Character : MonoBehaviour
     }
     public void LoveBtn()
     {
-        Kang.SetActive(false);
         Gift.SetActive(true);
+
+        foreach(var list in BtnNum)
+        {
+            list.SetActive(false);
+        }
     }
 }
