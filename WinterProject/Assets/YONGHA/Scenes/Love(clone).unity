@@ -175,51 +175,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 4
+  check: 4
 --- !u!114 &14073433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,51 +2018,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 6
+  check: 6
 --- !u!114 &193195567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,6 +2304,7 @@ GameObject:
   - component: {fileID: 225959766}
   - component: {fileID: 225959765}
   - component: {fileID: 225959763}
+  - component: {fileID: 225959764}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2395,51 +2324,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 1543993982}
-  - {fileID: 447069890}
-  - {fileID: 564170589}
-  - {fileID: 1873239500}
-  - {fileID: 1178071350}
-  - {fileID: 2066807963}
-  - {fileID: 1411480469}
-  - {fileID: 838075480}
-  - {fileID: 503763800}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 1341028345}
-  - {fileID: 1563415379}
-  - {fileID: 375081573}
-  - {fileID: 780596802}
-  - {fileID: 1470795653}
-  - {fileID: 1290652232}
-  - {fileID: 1715357688}
-  - {fileID: 1803277554}
-  - {fileID: 2031750753}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 2084479086}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 371293247}
   LoadImage: {fileID: 0}
-  Check: 0
+  check: 0
+--- !u!114 &225959764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225959762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ec1f052f19ae8458ee3a399cfc27f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LikeSlider: {fileID: 0}
+  Like: 0
 --- !u!114 &225959765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2806,51 +2713,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 9
+  check: 9
 --- !u!114 &262820366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3272,51 +3143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 8
+  check: 8
 --- !u!114 &334334058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6896,7 +6731,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 958623685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959764}
+        m_TargetAssemblyTypeName: CloneLike, Assembly-CSharp
+        m_MethodName: ClickGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &958623685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7579,51 +7426,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 2
+  check: 2
 --- !u!114 &1108176817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7849,51 +7660,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 7
+  check: 7
 --- !u!114 &1110755815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11698,51 +11473,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 5
+  check: 5
 --- !u!114 &1867982030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12657,51 +12396,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 1
+  check: 1
 --- !u!114 &2078203717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13247,51 +12950,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Name:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNum:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explain:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  Items: []
+  Names: []
+  ImageNums: []
+  Explans: []
   LoadItem: {fileID: 0}
-  text: {fileID: 0}
+  ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   LoadImage: {fileID: 0}
-  Check: 3
+  check: 3
 --- !u!114 &2092023942
 MonoBehaviour:
   m_ObjectHideFlags: 0

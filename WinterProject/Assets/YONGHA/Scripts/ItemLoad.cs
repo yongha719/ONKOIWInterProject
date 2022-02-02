@@ -6,64 +6,58 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class ItemLoad : MonoBehaviour
 {
-    public GameObject[] Item;
-    public string[] Name;
-    public GameObject[] ImageNum;
-    public string[] Explain;
+    [SerializeField] GameObject[] Items;
+    [SerializeField] string[] Names;
+    [SerializeField] GameObject[] ImageNums;
+    [SerializeField] string[] Explans;
 
-    public GameObject LoadItem;
-    public Text text;
-    public Text ExplainText;
-    public GameObject LoadImage;
+    [SerializeField] GameObject LoadItem;
+    [SerializeField] Text ItemNameText;
+    [SerializeField] Text ExplainText;
+    [SerializeField] GameObject LoadImage;
 
-    public int Check;
+    public int check;
     // Start is called before the first frame update
     void Start()
     {
-        Name[0] = "빨강";
-        Name[1] = "주황";
-        Name[2] = "노랑";
-        Name[3] = "연두";
-        Name[4] = "초록";
-        Name[5] = "민트";
-        Name[6] = "파랑";
-        Name[7] = "분홍";
-        Name[8] = "보라";
+        Names[0] = "빨강";
+        Names[1] = "주황";
+        Names[2] = "노랑";
+        Names[3] = "연두";
+        Names[4] = "초록";
+        Names[5] = "민트";
+        Names[6] = "파랑";
+        Names[7] = "분홍";
+        Names[8] = "보라";
 
-        Explain[0] = "빨간색 입니다!";
-        Explain[1] = "주황색 입니다!";
-        Explain[2] = "노란색 입니다!";
-        Explain[3] = "연두색 입니다!";
-        Explain[4] = "초록색 입니다!";
-        Explain[5] = "민트색 입니다!";
-        Explain[6] = "파란색 입니다!";
-        Explain[7] = "분홍색 입니다!";
-        Explain[8] = "보라색 입니다!";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Explans[0] = "빨간색 입니다!";
+        Explans[1] = "주황색 입니다!";
+        Explans[2] = "노란색 입니다!";
+        Explans[3] = "연두색 입니다!";
+        Explans[4] = "초록색 입니다!";
+        Explans[5] = "민트색 입니다!";
+        Explans[6] = "파란색 입니다!";
+        Explans[7] = "분홍색 입니다!";
+        Explans[8] = "보라색 입니다!";
     }
 
     public void Click()
     {
-        GameObject okok = EventSystem.current.currentSelectedGameObject;
+        GameObject ClickBtnItem = EventSystem.current.currentSelectedGameObject;
         if (LoadItem != null && LoadImage != null)
         {
             LoadItem.SetActive(false);
             LoadImage.SetActive(false);
-            text.text = "";
+            ItemNameText.text = "";
             ExplainText.text = "";
         }
-        LoadItem = Item[okok.GetComponent<ItemLoad>().Check - 1];
-        LoadImage = ImageNum[okok.GetComponent<ItemLoad>().Check - 1];
+        LoadItem = Items[ClickBtnItem.GetComponent<ItemLoad>().check - 1];
+        LoadImage = ImageNums[ClickBtnItem.GetComponent<ItemLoad>().check - 1];
 
-        Item[okok.GetComponent<ItemLoad>().Check - 1].SetActive(true);
-        ImageNum[okok.GetComponent<ItemLoad>().Check - 1].SetActive(true);
-        ExplainText.text = Explain[okok.GetComponent<ItemLoad>().Check - 1].ToString();
-        text.text = Name[okok.GetComponent<ItemLoad>().Check - 1].ToString();
+        Items[ClickBtnItem.GetComponent<ItemLoad>().check - 1].SetActive(true);
+        ImageNums[ClickBtnItem.GetComponent<ItemLoad>().check - 1].SetActive(true);
+        ExplainText.text = Explans[ClickBtnItem.GetComponent<ItemLoad>().check - 1].ToString();
+        ItemNameText.text = Names[ClickBtnItem.GetComponent<ItemLoad>().check - 1].ToString();
         
         //Destroy(EventSystem.current.currentSelectedGameObject);
     }
