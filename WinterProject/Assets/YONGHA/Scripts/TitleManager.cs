@@ -30,22 +30,7 @@ public class TitleManager : MonoBehaviour
     {
         GetIngameScene();
     }
-    public void StartButton()
-    {
-        Namefield.SetActive(true);
-    }
-    public void SettingButton()
-    {
-        Soundfield.SetActive(true);
-    }
-    public void AlbumButton()
-    {
-        Albumfield.SetActive(true);
-    }
-    public void ContinueButton()
-    {
-        Continuefield.SetActive(true);
-    }
+   
     void GetIngameScene()
     {
         if (SceneManager.GetActiveScene().name == "Title")

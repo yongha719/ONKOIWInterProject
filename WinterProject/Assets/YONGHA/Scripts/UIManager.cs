@@ -30,30 +30,13 @@ public class UIManager : MonoBehaviour
     {
         text.text = DateTime.Now.ToString(("yyyy-MM-dd HH:mm:ss tt"));
     }
-    public void SaveWindow()
-    {
-        Save.SetActive(true);
-    }
-    public void SettingBtn()
-    {
-        SettingObj.SetActive(true);
-    }
+   
     void Start()
     {
         IngameMenu.anchoredPosition = new Vector2(910, 410);
         Save.SetActive(false);
         SettingObj.SetActive(false);
-    }
-
-    public void Conversation()
-    {
-        if(Characters.activeSelf == false)
-        {
-            Characters.SetActive(true);
-            return;
-        }
-        Characters.SetActive(false);
-    }
+    }   
 
     void Update()
     {
