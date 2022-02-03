@@ -8,8 +8,6 @@ public class CloneLike : MonoBehaviour
 
     public int Like;
 
-    
-
     public void ClickGift()
     {
         Like += 5;

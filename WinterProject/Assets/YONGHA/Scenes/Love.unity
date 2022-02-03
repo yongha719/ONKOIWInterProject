@@ -581,7 +581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 8
 --- !u!114 &99076799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 7
 --- !u!114 &162925056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,7 +1407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 3
 --- !u!114 &204958606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1983,7 +1980,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &275888786
 GameObject:
@@ -2546,8 +2543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1273, y: 253}
-  m_SizeDelta: {x: 397.635, y: 113.1721}
+  m_AnchoredPosition: {x: 1300, y: 270}
+  m_SizeDelta: {x: 400, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367812277
 MonoBehaviour:
@@ -3751,7 +3748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 4
 --- !u!114 &596236430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3898,7 +3894,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 1
 --- !u!114 &598144689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,17 +4954,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1981702652}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: Conversation3
-        m_Mode: 1
+      - m_Target: {fileID: 320007615}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &738476206
 MonoBehaviour:
@@ -5203,8 +5198,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1273, y: 524}
-  m_SizeDelta: {x: 397.635, y: 113.1721}
+  m_AnchoredPosition: {x: 1300, y: 530}
+  m_SizeDelta: {x: 400, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758036897
 MonoBehaviour:
@@ -6261,7 +6256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 2
 --- !u!114 &934160333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7138,7 +7132,6 @@ GameObject:
   - component: {fileID: 1116909905}
   - component: {fileID: 1116909904}
   - component: {fileID: 1116909903}
-  - component: {fileID: 1116909902}
   m_Layer: 5
   m_Name: item1 (1)
   m_TagString: Untagged
@@ -7166,19 +7159,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1116909902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116909900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cheak: 1
 --- !u!114 &1116909903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7751,8 +7731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1273, y: 390}
-  m_SizeDelta: {x: 397.635, y: 113.1721}
+  m_AnchoredPosition: {x: 1300, y: 400}
+  m_SizeDelta: {x: 400, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257023480
 MonoBehaviour:
@@ -7900,7 +7880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 9
 --- !u!114 &1264259915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8047,7 +8026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 9
 --- !u!114 &1265678803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8182,7 +8160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 4
 --- !u!114 &1275535239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8360,17 +8337,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1981702652}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: Conversation1
-        m_Mode: 1
+      - m_Target: {fileID: 943868491}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1283883081
 MonoBehaviour:
@@ -8551,7 +8528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 6
 --- !u!114 &1338150338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8698,7 +8674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 6
 --- !u!114 &1340559834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9045,7 +9020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 5
 --- !u!114 &1356499544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9301,7 +9275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 5
 --- !u!114 &1395135122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9641,7 +9614,6 @@ GameObject:
   - component: {fileID: 1436322518}
   - component: {fileID: 1436322517}
   - component: {fileID: 1436322516}
-  - component: {fileID: 1436322515}
   m_Layer: 5
   m_Name: item2
   m_TagString: Untagged
@@ -9669,19 +9641,6 @@ RectTransform:
   m_AnchoredPosition: {x: 489, y: 265}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1436322515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436322513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cheak: 2
 --- !u!114 &1436322516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10059,7 +10018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 3
 --- !u!114 &1521089780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10853,7 +10811,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1462441277}
   m_HandleRect: {fileID: 0}
@@ -11856,7 +11814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 7
 --- !u!114 &1765947303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12056,6 +12013,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793531618}
   m_CullTransparentMesh: 1
+--- !u!1 &1813731723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813731725}
+  - component: {fileID: 1813731724}
+  m_Layer: 0
+  m_Name: TalkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1813731724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813731723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c232af7af5f424188869846957cc8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choiceDatas: []
+  txtName: {fileID: 0}
+  txtTalk: {fileID: 0}
+  rtrnChoiceParent: {fileID: 0}
+  originChoiceText: {fileID: 0}
+  talkId: 0
+  choiceId: 0
+--- !u!4 &1813731725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813731723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1827790237
 GameObject:
   m_ObjectHideFlags: 0
@@ -12475,7 +12482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheak: 8
 --- !u!114 &1862268996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12732,17 +12738,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1981702652}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: Conversation2
-        m_Mode: 1
+      - m_Target: {fileID: 508412371}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1910453851
 MonoBehaviour:
@@ -14321,7 +14327,6 @@ GameObject:
   - component: {fileID: 2106578636}
   - component: {fileID: 2106578635}
   - component: {fileID: 2106578634}
-  - component: {fileID: 2106578640}
   - component: {fileID: 2106578641}
   m_Layer: 5
   m_Name: Canvas
@@ -14449,19 +14454,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2106578640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106578633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109540a5da7b28b4584a1de2561398ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cheak: 0
 --- !u!114 &2106578641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14474,17 +14466,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41918f8648a4b41b246ef890ce05bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item:
-  - {fileID: 978709629}
-  - {fileID: 39521124}
-  - {fileID: 448389292}
-  - {fileID: 1985225467}
-  - {fileID: 230343239}
-  - {fileID: 579616389}
-  - {fileID: 2114489088}
-  - {fileID: 1447457801}
-  - {fileID: 328341141}
+  Items:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  ImageNums:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Explans:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   LoadItem: {fileID: 0}
+  ItemNameText: {fileID: 0}
+  ExplainText: {fileID: 0}
+  LoadImage: {fileID: 0}
+  check: 0
 --- !u!1 &2114489088
 GameObject:
   m_ObjectHideFlags: 0

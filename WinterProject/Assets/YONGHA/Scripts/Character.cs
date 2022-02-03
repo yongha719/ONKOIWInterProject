@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
     [SerializeField] private GameObject Gift;
 
     public List<GameObject> BtnNum = new List<GameObject>();
+
     public void Conversation1()
     {
         Kang.SetActive(true);

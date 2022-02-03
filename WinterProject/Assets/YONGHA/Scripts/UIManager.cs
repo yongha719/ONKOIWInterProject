@@ -34,6 +34,7 @@ public class UIManager : MonoBehaviour
     {
         Save.SetActive(true);
     }
+
     public void SettingBtn()
     {
         SettingObj.SetActive(true);
@@ -47,7 +48,7 @@ public class UIManager : MonoBehaviour
 
     public void Conversation()
     {
-        if(Characters.activeSelf == false)
+        if(!Characters.activeSelf)
         {
             Characters.SetActive(true);
             return;
