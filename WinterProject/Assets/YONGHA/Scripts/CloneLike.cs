@@ -5,14 +5,10 @@ using UnityEngine.UI;
 public class CloneLike : MonoBehaviour
 {
     [SerializeField] private Slider LikeSlider;
-
-    public int Like;
-
-    
-
-    public void ClickGift()
+    [SerializeField]GameObject a;
+    private void Update()
     {
-        Like += 5;
-        LikeSlider.value = Like / 100;
+        LikeSlider.value = a.GetComponent<ItemLoad>().like / 100;
     }
+
 }

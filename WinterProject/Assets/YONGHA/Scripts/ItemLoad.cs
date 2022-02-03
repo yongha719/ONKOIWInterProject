@@ -6,6 +6,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class ItemLoad : MonoBehaviour
 {
+    public float like;
+
+
+    public GameObject ClickBtnItem;
+
     [SerializeField] GameObject[] Items;
     [SerializeField] string[] Names;
     [SerializeField] GameObject[] ImageNums;
@@ -41,9 +46,17 @@ public class ItemLoad : MonoBehaviour
         Explans[8] = "보라색 입니다!";
     }
 
+     public void ClickBtnGift()
+    {
+        if (ClickBtnItem.GetComponent<ItemLoad>().check == 1)
+        {
+            like += 5;
+            ClickBtnItem.SetActive(false);
+        }
+    }
     public void Click()
     {
-        GameObject ClickBtnItem = EventSystem.current.currentSelectedGameObject;
+        ClickBtnItem = EventSystem.current.currentSelectedGameObject;
         if (LoadItem != null && LoadImage != null)
         {
             LoadItem.SetActive(false);
