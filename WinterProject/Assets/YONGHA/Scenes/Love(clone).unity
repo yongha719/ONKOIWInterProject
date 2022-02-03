@@ -1323,7 +1323,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 142797966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &142797966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,7 +1589,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 145054610}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &145054610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,7 +2049,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 187782839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &187782839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,7 +3117,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 278955601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &278955601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3943,7 +3991,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438523455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &438523455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9865,7 +9925,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1512626691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1512626691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13623,7 +13695,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2100062252}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2100062252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13744,7 +13828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2111280134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225959763}
+        m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
+        m_MethodName: ClickBtnGift
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2111280134
 MonoBehaviour:
   m_ObjectHideFlags: 0
