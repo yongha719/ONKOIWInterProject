@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 //                                      |
@@ -19,6 +20,9 @@ public class TalkManager : MonoBehaviour
 
     public List<ChoiceDatas> choiceDatas;
 
+    [SerializeField] List<Image> BackgroundImages = new List<Image>();
+    [SerializeField] Image Background;
+
     [SerializeField] private Text txtName;
     [SerializeField] private Text txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
@@ -34,19 +38,47 @@ public class TalkManager : MonoBehaviour
     private void Start()
     {
         loader = new JsonLoader();
-
-        StartCoroutine(ETalkEvent());
+        if (SceneManager.GetActiveScene().name != "Story")
+            StartCoroutine(ETalkEvent());
+        StartCoroutine(StoryEvent());
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            StartCoroutine(ETalkEvent());
-            print("Space");
+            Background = BackgroundImages[0];
         }
     }
+    void BackGroundChange(string bg)
+    {
+        switch (bg)
+        {
+            case "road":
+                Background = BackgroundImages[0];
+                break;
+        }
+    }
+    public IEnumerator StoryEvent()
+    {
+        var talks = loader.LoadTalk();
 
+        TalkDatas talk = default;
+
+        talk = talks[talkId++];
+        for (int i = 0; i < talk.talkDatas.Count; i++)
+        {
+
+            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
+            txtTalk.text = talk.talkDatas[i].talk;
+
+            yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
+
+            if (i + 1 == talk.talkDatas.Count) continue;
+            yield return StartCoroutine(EWaitInput());
+        }
+        yield return null;
+    }
     public IEnumerator ETalkEvent()
     {
         var talks = loader.LoadTalk();
@@ -56,12 +88,10 @@ public class TalkManager : MonoBehaviour
         ChoiceDatas choice = default;
 
         talk = talks[talkId++];
-        print("es");
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
-            print("dd");
             choice = choices[choiceId++];
-            txtName.text = talk.talkDatas[i].name;
+            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
             txtTalk.text = talk.talkDatas[i].talk;
             yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
 
@@ -72,20 +102,19 @@ public class TalkManager : MonoBehaviour
             }
 
             if (i + 1 == talk.talkDatas.Count) continue;
-            yield return StartCoroutine(EWaitClick());
+            yield return StartCoroutine(EWaitInput());
         }
 
         yield return null;
     }
 
-    IEnumerator EWaitClick()
+    IEnumerator EWaitInput()
     {
         var wait = new WaitForSeconds(0.001f);
         while (true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                print("Click");
                 yield return new WaitForSeconds(0.1f);
                 yield break;
             }
@@ -100,6 +129,11 @@ public class TalkManager : MonoBehaviour
         for (int i = 0; i <= newString.Length; i++)
         {
             text.text = newString.Substring(0, i);
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                wait = new WaitForSeconds(0);
+                print("waiting");
+            }
             yield return wait;
         }
 

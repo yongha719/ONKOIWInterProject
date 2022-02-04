@@ -22,7 +22,7 @@ public class ItemLoad : MonoBehaviour
     [SerializeField] GameObject LoadImage;
 
     public int check;
-    // Start is called before the first frame update
+
     void Start()
     {
         Names[0] = "»¡°­";
