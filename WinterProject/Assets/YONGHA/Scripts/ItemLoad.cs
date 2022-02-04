@@ -11,6 +11,7 @@ public class ItemLoad : MonoBehaviour
 
     public GameObject ClickBtnItem;
 
+    [SerializeField] private GameObject[] BackGrounds;
     [SerializeField] GameObject[] Items;
     [SerializeField] string[] Names;
     [SerializeField] GameObject[] ImageNums;
@@ -22,7 +23,7 @@ public class ItemLoad : MonoBehaviour
     [SerializeField] GameObject LoadImage;
 
     public int check;
-
+    public int background_check;
     void Start()
     {
         Names[0] = "곰인형";
@@ -45,8 +46,11 @@ public class ItemLoad : MonoBehaviour
         Explans[7] = "학생의 필수품 지우개와 연필 세트. 아기자기하고 귀여운 색상들 뿐이다";
         Explans[8] = "얼그레이의 향이 진하게 퍼지는 홍차. 하지만 호불호가 갈릴지도?";
     }
-
-     public void ClickBtnGift()
+    private void Update()
+    {
+        BackGround_Change();
+    }
+    public void ClickBtnGift()
     {
         if (ClickBtnItem.GetComponent<ItemLoad>().check == 1)
         {
@@ -122,5 +126,53 @@ public class ItemLoad : MonoBehaviour
         ItemNameText.text = Names[ClickBtnItem.GetComponent<ItemLoad>().check - 1].ToString();
         
         //Destroy(EventSystem.current.currentSelectedGameObject);
+    }
+
+    public void BackGround_Change()
+    {
+        if(background_check == 0)
+        {
+            BackGrounds[0].SetActive(true);
+            BackGrounds[1].SetActive(false);
+            BackGrounds[2].SetActive(false);
+            BackGrounds[3].SetActive(false);
+        }
+        else if(background_check == 1)
+        {
+            BackGrounds[0].SetActive(false);
+            BackGrounds[1].SetActive(true);
+            BackGrounds[2].SetActive(false);
+            BackGrounds[3].SetActive(false);
+        }
+        else if (background_check == 2)
+        {
+            BackGrounds[0].SetActive(false);
+            BackGrounds[1].SetActive(false);
+            BackGrounds[2].SetActive(true);
+            BackGrounds[3].SetActive(false);
+        }
+        else if (background_check == 3)
+        {
+            BackGrounds[0].SetActive(false);
+            BackGrounds[1].SetActive(false);
+            BackGrounds[2].SetActive(false);
+            BackGrounds[3].SetActive(true);
+        }
+    }
+    public void Back1()
+    {
+        background_check = 1;
+    }
+    public void Back2()
+    {
+        background_check = 2;
+    }
+    public void Back3()
+    {
+        background_check = 3;
+    }
+    public void Back0()
+    {
+        background_check = 0;
     }
 }
