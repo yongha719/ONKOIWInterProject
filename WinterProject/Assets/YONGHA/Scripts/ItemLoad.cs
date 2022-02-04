@@ -53,42 +53,42 @@ public class ItemLoad : MonoBehaviour
             like += 5;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 2)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 2)
         {
             like += 4;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 3)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 3)
         {
             like -= 10;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 4)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 4)
         {
             like -= 6;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 5)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 5)
         {
             like += 15;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 6)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 6)
         {
             like += 8;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 7)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 7)
         {
             like -= 3;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 8)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 8)
         {
             like += 20;
             ClickBtnItem.SetActive(false);
         }
-        if (ClickBtnItem.GetComponent<ItemLoad>().check == 9)
+        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 9)
         {
             like -= 15;
             ClickBtnItem.SetActive(false);
