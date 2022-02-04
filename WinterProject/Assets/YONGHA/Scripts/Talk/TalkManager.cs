@@ -20,6 +20,9 @@ public class TalkManager : MonoBehaviour
 
     public List<ChoiceDatas> choiceDatas;
 
+    [SerializeField] List<Image> BackgroundImages = new List<Image>();
+    [SerializeField] Image Background;
+
     [SerializeField] private Text txtName;
     [SerializeField] private Text txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
@@ -42,7 +45,19 @@ public class TalkManager : MonoBehaviour
 
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Background = BackgroundImages[0];
+        }
+    }
+    void BackGroundChange(string bg)
+    {
+        switch (bg)
+        {
+            case "road":
+                Background = BackgroundImages[0];
+                break;
+        }
     }
     public IEnumerator StoryEvent()
     {
@@ -53,6 +68,7 @@ public class TalkManager : MonoBehaviour
         talk = talks[talkId++];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
+
             txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
             txtTalk.text = talk.talkDatas[i].talk;
 
