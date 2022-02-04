@@ -5,20 +5,31 @@ using UnityEngine.UI;
 
 public class BackgroundManager : MonoBehaviour
 {
-    public List<Image> Backgrounds = new List<Image>();
+    public static BackgroundManager Instance { get; private set; } = null;
+    [SerializeField] Image backgroundImage;
+    [SerializeField] List<Image> Kangs = new List<Image>();
+    [SerializeField] List<Image> Yangs = new List<Image>();
+    [SerializeField] List<Image> Baeks = new List<Image>();
+    [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
 
     ITalkLoad load;
-    void Start()
+    void Awake()
     {
-        
+        Instance = this;
     }
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.A))
+            backgroundImage.sprite = Backgrounds[0];
     }
-    void BackGroundChange()
+    public void BackGroundChange(string Bgimage)
     {
-        load = new JsonLoader();
+        switch (Bgimage)
+        {
+            case "road":
+                backgroundImage.sprite = Backgrounds[0];
+                break;
+        }
     }
 }

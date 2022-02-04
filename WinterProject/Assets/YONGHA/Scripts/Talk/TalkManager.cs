@@ -20,9 +20,6 @@ public class TalkManager : MonoBehaviour
 
     public List<ChoiceDatas> choiceDatas;
 
-    [SerializeField] List<Image> BackgroundImages = new List<Image>();
-    [SerializeField] Image Background;
-
     [SerializeField] private Text txtName;
     [SerializeField] private Text txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
@@ -45,20 +42,9 @@ public class TalkManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Background = BackgroundImages[0];
-        }
+
     }
-    void BackGroundChange(string bg)
-    {
-        switch (bg)
-        {
-            case "road":
-                Background = BackgroundImages[0];
-                break;
-        }
-    }
+
     public IEnumerator StoryEvent()
     {
         var talks = loader.LoadTalk();
@@ -91,6 +77,8 @@ public class TalkManager : MonoBehaviour
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
             choice = choices[choiceId++];
+            print(talk.talkDatas[i].background);
+            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
             txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
             txtTalk.text = talk.talkDatas[i].talk;
             yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
@@ -129,11 +117,8 @@ public class TalkManager : MonoBehaviour
         for (int i = 0; i <= newString.Length; i++)
         {
             text.text = newString.Substring(0, i);
-            if (Input.GetKeyDown(KeyCode.X))
-            {
+            if (Input.GetKey(KeyCode.X))
                 wait = new WaitForSeconds(0);
-                print("waiting");
-            }
             yield return wait;
         }
 
