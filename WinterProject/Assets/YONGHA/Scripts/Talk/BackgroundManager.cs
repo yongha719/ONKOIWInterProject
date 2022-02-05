@@ -7,21 +7,60 @@ public class BackgroundManager : MonoBehaviour
 {
     public static BackgroundManager Instance { get; private set; } = null;
     [SerializeField] Image backgroundImage;
-    [SerializeField] List<Image> Kangs = new List<Image>();
-    [SerializeField] List<Image> Yangs = new List<Image>();
-    [SerializeField] List<Image> Baeks = new List<Image>();
     [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
+    [SerializeField] GameObject Kangs;
+    [SerializeField] GameObject Yangs;
+    [SerializeField] GameObject Baeks;
+    Image Kangimg;
+    Image Yangimg;
+    Image Baekimg;
 
     ITalkLoad load;
     void Awake()
     {
         Instance = this;
     }
+    private void Start()
+    {
+        Kangimg = Kangs.GetComponent<Image>();
+        Yangimg = Yangs.GetComponent<Image>();
+        Baekimg = Baeks.GetComponent<Image>();
 
+    }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
             backgroundImage.sprite = Backgrounds[0];
+    }
+    public void CharChange(string Kang, string Yang, string Baek)
+    {
+        switch (Kang)
+        {
+            case "null":
+                Kangs.SetActive(false);
+                break;
+            case "default":
+                Kangs.SetActive(true);
+                break;
+        }
+        switch (Yang)
+        {
+            case "null":
+                Yangs.SetActive(false);
+                break;
+            case "default":
+                Yangs.SetActive(true);
+                break;
+        }
+        switch (Baek)
+        {
+            case "null":
+                Baeks.SetActive(false);
+                break;
+            case "default":
+                Baeks.SetActive(true);
+                break;
+        }
     }
     public void BackGroundChange(string Bgimage)
     {
@@ -29,6 +68,14 @@ public class BackgroundManager : MonoBehaviour
         {
             case "road":
                 backgroundImage.sprite = Backgrounds[0];
+                break;
+            case "school":
+                backgroundImage.sprite = Backgrounds[1];
+                break;
+            case "library":
+                backgroundImage.sprite = Backgrounds[2];
+                break;
+            default:
                 break;
         }
     }

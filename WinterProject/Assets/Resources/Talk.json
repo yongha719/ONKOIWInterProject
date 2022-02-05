@@ -1,0 +1,1244 @@
+﻿{
+  "target": [
+    {
+      "talkDatas": [
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(X월 X일 금요일...)"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(언제나 처럼 소꿉친구인 채아와 함께 등교하기 위해 기다리는 중...)"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "...인데 강채아 얘는 왜 안오는 거야?"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "한겨울에 추운데 사람을 이렇게 까지 기다리게 해도 되는 거냐고!"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "평소에 나보다 빨리오면 빨리왔지 늦는 일은 없었는데..."
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "혹시 무슨 일 이라도 생겼나?..."
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "...아니 일은 무슨\n또 길고양이 같은 데에 한눈 팔고 있어서 늦는 거겠지"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(그때 저 멀리서 뚜벅 뚜벅 걸어오는 익숙한 분홍색 머리카락이 보였다)"
+        },
+        {
+          "Kang": "null",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "어! 강채아! 왜 이제오냐-.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "...."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "야, 야! 강채아 너 왜 그래!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "PlayerName 너..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "내가 보여?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "....................."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "아얏"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "갑자기 왜 때리고 그래!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(어처구니 없는 말에 저도 모르게 채아의 머리에 딱밤을 날려주었다)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "이 추운날 사람을 기다리게 해 놓고 하는 말이 그거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "늦었으면 미안하다 하면 되지"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "방금 했던 질문 진지한 질문 이거든?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "주변을 한번 봐봐 이렇게 크게 떠드는데\n지나가는 애들이 너만 이상하게 보고 나한테 눈길 한 번 주나!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "그게 무슨 말도 안되는..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(채아의 말에 문득 주변을 살펴보니 지나가는 학생들의 눈길이 모두 나에게 향하고 있었고 채아에게는 그 누구의 눈길도 향하지 않았다.)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(마치 길거리에서 혼자 떠들고 있는 이상한 사람을 본 듯한 눈빛으로 나를 바라보곤 가던 길을 마저 갈 뿐 이였다...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "...그러니까 지금 다른 사람 눈에는 네가 안보인다~...\n그렇게 말하고 싶은거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "그 뿐만 아니라 모두 나에 대한 기억도 못 하는 거 같아\n 내 존재가 이 세상에서 사라져 버린 거 처럼..!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "아직도 의심가면 한 번 지나가는 같은 학교 친구한테 물어봐\n2학년 중에 강채아 라는 애 알고 있냐고"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "분명 모른다고 대답 할 걸..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(이런 어처구니 없는 상황이 현실 이라고?\n혹시 나 꿈이라도 꾸고 있나...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(말도 안되지만.. 채아의 보기드문 진지한 얼굴과\n주변의 시선들이 꿈이 아니라고 말해주는 거 같아...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "네 말이 사실이라고 치면 앞으로 어떡해야 하는데?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "그걸 나도 모르겠어..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "어제 까지만 해도 평소와 다를 거 하나 없었는데 갑자기\n아침에 일어나 보니 이런 꼴이였는 걸..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "하긴 이런 상황에서 너라고 해결책을 알리는 없지..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "하지만 마찬가지로 나라고 알고 있는게... 헉!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "왜? 무슨일 이야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(무심코 손목에 차고 있던 시계를 보자 시곗바늘은 8시 20분을 가리키고 있었다.)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "조회 까지 10분 남았잖아!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "일단 빨리 뛰어 강채아!! 빠르게 뛰면 5분 안에 도착 할 수 있어!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "뭐-? 지금 소꿉친구의 곤란한 일 보다 지각 안 하는게 먼저라는 거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "어쩔 수 없잖아 네 일은 학교에서 천천히 생각 해 봐도 되고..\n일단 내 출석은 챙기고 봐야지!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "%PlayerName%",
+          "talk": "(말이 끝나자 마자 나는 채아의 손목을 붙잡고 전속력으로\n학교를 향해 뛰기 시작했다)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "road",
+          "name": "강채아",
+          "talk": "야,.. 야!! '주인공'!! 너 진짜 정 없게 그러기야--!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "(어찌어찌 지각을 면하고 학교를 도착한 뒤\n시간이 흘러 점심시간이 되었다...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "그래서 이제 어떻게 할 생각이야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "다시 처음부터 생각 해 봐야지..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "너 말고도 내가 보이는 사람이 더 있으면 좋을텐데..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "그러게.. 생각할 머리가 하나라도 더 있는게 좋은데..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "지금 우리 둘 머리로는 1.5인분 밖에 못 하니까"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "잠깐 그거 무슨 뜻이야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "아무것도~ 그냥 해본 말 이야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "너 정말.... 지금 장난 칠 때가  아니잖아!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "에이~ 딱딱한 분위기 좀 풀어 보려고 그런거지\n지금 딱히 생각 나는 해결책도 없고..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "으음..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "아..!! 맞다 혹시 세화 라면 뭔가 비슷한 거라도 알지 몰라!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "세화...?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "(처음 들어보는 이름이다... 우리 학교에 그런애가 있었나?)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "너 혹시 세화 몰라..?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "응 처음 들어보는데 누구야 그게?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "도서실에 한번 이라도 가 봤으면 모를리가 없는데...\n너 설마 2학년 될 때까지 도서실에 가본 적이 없는거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "(윽.. 정곡을 찌르네..)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "나 책 같은거 별로 안 좋아하는 거 잘 알잖아\n그래서 세화가 누군데?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "도서부 부장이야 도서실에 거의 살고 있어서\n아마 지금도 도서실에 있을거야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "도서부 부장이 지금 우리 일에 어떤\n도움을 줄 수 있는건데?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "가서 이런 일이 일어났는데 비슷한 내용의\n책은 없나요~ 하고 물어보기라도 하려고?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "응 물어볼건데?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": ".........."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "진심이야? 정상적인 애라면 이런 말을 믿을까?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "으음~.. 지푸라기 라도 잡아 보자는 거지"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "아무튼 우리 학교에 세화 만큼 여러가지 이야기와 잡지식이\n많은 애는 아마 없을 거야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "강채아",
+          "talk": "어서 가 보자!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "school",
+          "name": "%PlayerName%",
+          "talk": "알았어 간다 가..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "저기 있다! 저기 양갈래로 땋은 연갈색 머리 보이지?\n쟤가 세화야! 양세화!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "오 이런...."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "왜? 무슨 곤란한 일 이라도 있어?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(양세화 옆에 가장 마주치고 싶지 않은 사람이 서 있잖아...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(긴 검은색 머리와 예쁜 파란눈.. 거기에 큰 키가 눈에띄는 저 학생은 백가윤...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(우리학교 학생 회장으로 성격도 좋고 공부도 잘하면서\n얼굴까지 예뻐 인기 만점 회장님 이지만...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(얼마전 자신감 넘치게 고백했다가 대차게 차인 내 입장에서는\n절대 마주치고 싶지 않은 사람 1위 이다...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "아... 맞다 너 얼마 전에 가윤이한테 고백하고 차였지 참..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "안그래도 슬픈데 그렇게 옆에서 확인 사살 하지 말아줄래?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "당연히 성공 할 줄 알았다고 나 정도면..!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "하여간 내가 말릴 때 잘 들었어야지...\n그런 근거 없는 자신감은 어디서 나오는거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "학교 학생의 절반이 가윤이 좋다고 난리인데\n가윤이랑 말 한번 제대로 안 해본 네가 성공 할 리가..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "........ 나 그냥 간다"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "아.. 미안 미안!! 농담이야 농담!!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "null",
+          "background": "library",
+          "name": "강채아",
+          "talk": "어차피 볼일 있는 건 세화니까.. 딱히 가윤이 한테 까지\n말 걸 필요도 없잖아!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "그건 그런데...."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "거기 너희 들"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "헉...! 어.. 어어 왜..?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "지금 우리 보면서 떠들고 있는거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "아..아니 그게 아니라..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(도서관이라 주변이 조용해서 다 들린걸까...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "잠깐.. '너희 들' 이라고?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "가윤이 너... 나까지 같이 부른거야?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "그래 맞아"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "반응을 보니 채아 너도 우리랑 비슷한 상황 같네,"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "'우리'라면 혹시..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "다른 사람들의 눈에 나와 세화가 보이지 않아\n마치 우리의 존재가 세상에서 사라진 것 처럼..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "채아 너도 같은 상황인거지?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "맞아 나도 너희랑 같은 상황이야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "null",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "아무도 나에 대해 기억하지 못 하고 나를 보지도 못 해.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그... 옆에 계신 분도 같은 상황 인건가요..?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "나...나? 아니아니 나는 아니야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "그냥.. 왜인지는 모르겠지만\n존재가 사라지지 않은 사람중에 너희가 보이는 건\n나 뿐인 거 같아"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "이런 경우는 또 처음보네.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "뭐 상관 없지 힘이 될 사람은 많을 수록 좋으니까"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(가윤이는 아무렇지 않은가 봐......\n괜히 불편해 했다가 얼굴도 못 보는 거 아니야?)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "아 그러고 보니까 PlayerName 너는 세화랑 초면 이지?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "어? 으응.. 그렇지"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(채아는 내가 불편해 하는 기색을 눈치 채기라도 했는지\n세화에 대한 이야기로 주제를 넘겼다)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "이쪽은 양세화! 아까 말 했듯이 도서부 부장 이야"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "아.. 그... 소개가 늦었네요..!\n도서부 부장 양세화 라고 해요... 같은 2학년이고요"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "채아한테 많이 들었어요"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "채아한테 들었으면 알겠지만 난 PlayerName(이)야 잘 부탁할게\n어찌 됐든 한동안은 자주 만날 거 같으니까.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "아무튼... 너희도 아마 세화가 뭔가 아는 게\n없을까 해서 찾아 온 거지?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "응 맞아 세화는 여러가지 지식이 많으니까"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(우와... 진짜 말도 안되는 짓이라고 생각하고 왔는데\n가윤이도 저런 생각을 하는 구나)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(저 정도 신뢰라면 믿어도 괜찮겠지...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "음... 뭔가 예전에 비슷한 걸 읽어본 적 있어요\n하지만..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "하지만?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그.. 정확한 정보도 아니고.. 해결방법도 제대로 나와있지 않아서\n아마 별 도움은 안 될 거 같아요..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "그래도 한번 말 해봐 뭔가 힌트라도 될 수 있잖아"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그러니까... 제가 본 건 오컬트 책 이였어요..\n거기에는 하루아침에 존재가 사라져 버린사람들의 이야기가 있었죠"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그런 사람들의 공통점은 바로 특정 기억을 하나씩\n잊어 버리고 있었다는 거예요.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "이 얘기가 맞다면 저희 셋도 분명\n생각나지 않는 무언가가 하나 있을 거예요"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "생각나지 않는 무언가?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "예를 들면...?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "하나의 추억을 잊어 버리고 있는 거예요.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그게 무슨 추억인지 본인이 떠올려 내야만 하죠"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "그리고 떠올린 추억을 자신이 보이는 유일한 사람과\n함께 재연 해 보면 된다고 써 있었어요..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "기억의 퍼즐 조각하나가 사라져서 퍼즐이 완성되지 못 하자\n그 사람 자체가 사라져 버렸다 같은 느낌 이죠"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "무..물론 다시 말씀 드리지만 예전에 읽었던 책이라\n기억도 흐릿하고 불확실 한 정보일 수 도 있어요.."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "이대로 가만히 있는 것 보단 뭐라도 해 보는게 낫겠지..!"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "자신이 보이는 유일한 사람 이라면 '주인공'(이)가 있잖아!\n우리의 상황이랑 딱 맞아 떨어지니까 해볼 가치는 있어"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "나도 찬성이야 이런 상황에 할 수 있는 건 다 해봐야지"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "PlayerName 너한테는 미안 하지만\n조금 도와줬으면 하는데"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "세화 말 대로 라면 우리가 다시 돌아가려면\n네 도움이 필요 하니까 말이야,"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(어쩔 수 없는 상황인 건 알지만 아직 가윤이가\n엄청 불편한데...)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "백가윤",
+          "talk": "혹시나 예전 일로 불편하게 생각하고 있다면\n난 별로 신경쓰지 않으니까 편하게 대해"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "예전 일...?"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "딱히 불편하게 생각 안 하니까 걱정 마셔"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(확인 사살 당했잖아... 네가 신경안쓰는 거랑\n내가 신경 안쓰는 거랑은 다른다고.....)"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "양세화",
+          "talk": "일단은 저희 추억이 뭔지 떠 올려야 하니까..\n대화 라도 하면서 모두 잊은 기억이 없나 생각 해 봐요..."
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "응 그러자"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "강채아",
+          "talk": "PlayerName 너도 이번 기회에 다른 애들이랑 대화 하면서 친해져 봐"
+        },
+        {
+          "Kang": "default",
+          "Yang": "default",
+          "Baek": "default",
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "(한명은 쌩판 초면에 한명은 제일 불편한 사람인데 퍽이나 친해 지겠다...)"
+        }
+      ]
+    },
+    {
+      "talkDatas": [
+        {
+          "name": "???",
+          "talk": "점심 뭐 먹을래?"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "무엇을 먹을까? ( 잘 선택하자 )"
+        },
+        {
+          "name": "uyuyuyuyuy",
+          "talk": "uyuyuyuyuyuy"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "나",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "강채아",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "나",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "나",
+          "talk": "fdfdfdfdfdfd"
+        },
+        {
+          "name": "%PlayerName%",
+          "talk": "fdfdfdfdfdfd"
+        }
+      ]
+    }
+  ]
+}

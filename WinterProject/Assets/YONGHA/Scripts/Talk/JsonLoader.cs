@@ -15,15 +15,14 @@ public class JsonLoader : ITalkLoad
 {
     public List<ChoiceDatas> LoadChoice()
     {
-        var json = File.ReadAllText(Path.Combine(Application.persistentDataPath, $"Choice.json"));
-
+        var json = File.ReadAllText(Path.Combine(Application.persistentDataPath, "Choice.json"));
         return JsonUtility.FromJson<Serialization<ChoiceDatas>>(json).target;
     }
 
     public List<TalkDatas> LoadTalk()
     {
-        var json = File.ReadAllText(Path.Combine(Application.persistentDataPath, "Talk.json"));
+        TextAsset txt = Resources.Load<TextAsset>("Talk");
 
-        return JsonUtility.FromJson<Serialization<TalkDatas>>(json).target;
+        return JsonUtility.FromJson<Serialization<TalkDatas>>(txt.text).target;
     }
 }

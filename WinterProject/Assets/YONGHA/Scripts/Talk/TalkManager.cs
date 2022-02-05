@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 //                                      |
 // 쓰는쪽 ( TalkManager ) ---> ITalkLoad | <--- JsonLoader 서비스 주는 애
@@ -20,7 +21,7 @@ public class TalkManager : MonoBehaviour
 
     public List<ChoiceDatas> choiceDatas;
 
-    [SerializeField] private Text txtName;
+    [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private Text txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
     [SerializeField] private Text originChoiceText;
@@ -35,7 +36,7 @@ public class TalkManager : MonoBehaviour
     private void Start()
     {
         loader = new JsonLoader();
-        if (SceneManager.GetActiveScene().name != "Story")
+        if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
         StartCoroutine(StoryEvent());
     }
@@ -54,15 +55,18 @@ public class TalkManager : MonoBehaviour
         talk = talks[talkId++];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
+            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
+            BackgroundManager.Instance.CharChange(talk.talkDatas[i].Kang, talk.talkDatas[i].Yang, talk.talkDatas[i].Baek);
+            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
+            string talk1 = talk.talkDatas[i].talk.Replace("PlayerName", GameManager.Instance.PlayerName);
+            txtTalk.text = talk1;
 
-            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
-            txtTalk.text = talk.talkDatas[i].talk;
-
-            yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
+            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
             if (i + 1 == talk.talkDatas.Count) continue;
             yield return StartCoroutine(EWaitInput());
         }
+        SceneManager.LoadScene("Love");
         yield return null;
     }
     public IEnumerator ETalkEvent()

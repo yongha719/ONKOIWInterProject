@@ -15,6 +15,7 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        //PlayerName = TitleManager.Instance.PlayerName.text;
+        if (SceneManager.GetActiveScene().name == "Title")
+            PlayerName = TitleManager.Instance.PlayerName.text;
     }
 }

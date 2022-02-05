@@ -23,6 +23,7 @@
 -s="C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Assets\HyeonSu\Asset\Dotween\Plugins\Demigiant\DOTween"
 -s="C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime"
 -s="C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom"
+-s="C:\Users\07194\Documents\GitHub\ONKOIWInterProject\WinterProject\Assets\Cubism 4 Viewer (for Unity)_Data\Managed"
 -s="C:\unity\2020.3.21f1\Editor\Data\Managed\UnityEngine"
 -s="C:\unity\2020.3.21f1\Editor\Data\NetStandard\ref\2.0.0"
 -s="C:\unity\2020.3.21f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard"

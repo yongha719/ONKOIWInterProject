@@ -17,12 +17,12 @@ public class UIManager : MonoBehaviour
     {
         if (!OnMenu)
         {
-            IngameMenu.DOAnchorPosX(710, 1);
+            IngameMenu.DOAnchorPosX(700, 1);
             OnMenu = true;
         }
         else
         {
-            IngameMenu.DOAnchorPosX(910, 1);
+            IngameMenu.DOAnchorPosX(902.5f, 1);
             OnMenu = false;
         }
     }
@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
    
     void Start()
     {
-        IngameMenu.anchoredPosition = new Vector2(910, 410);
+        IngameMenu.anchoredPosition = new Vector2(902.5f, 410);
         Save.SetActive(false);
         SettingObj.SetActive(false);
     }   
