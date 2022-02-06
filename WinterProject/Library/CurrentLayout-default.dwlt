@@ -15,81 +15,16 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    y: 43
-    width: 1920
-    height: 997
-  m_ShowMode: 4
-  m_Title: Game
-  m_RootView: {fileID: 2}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
     y: 43.2
     width: 1536
     height: 780.8
   m_ShowMode: 4
   m_Title: Game
-  m_RootView: {fileID: 6}
-=======
-    y: 43
-    width: 1920
-    height: 997
-  m_ShowMode: 4
-  m_Title: Game
-  m_RootView: {fileID: 2}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+  m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 611.2
-    y: 0
-    width: 529.60004
-    height: 441.6
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,16 +41,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 215.2
-    height: 441.6
+    width: 214
+    height: 447
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &4
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,20 +63,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 11}
   - {fileID: 2}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1140.8
-    height: 441.6
-  m_MinSize: {x: 604, y: 221}
-  m_MaxSize: {x: 12004, y: 4021}
+    width: 1138
+    height: 447
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 8031
---- !u!114 &5
+  controlID: 95
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,24 +85,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 441.6
-    width: 1140.8
-    height: 289.19998
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+    y: 447
+    width: 1138
+    height: 284
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &6
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,60 +110,27 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_EditorHideFlags: 1
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 6}
+  - {fileID: 8}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    width: 1920
-    height: 997
-  m_MinSize: {x: 875, y: 542}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
     width: 1536
-    height: 780.8
+    height: 781
   m_MinSize: {x: 875, y: 300}
-=======
-    width: 1920
-    height: 997
-  m_MinSize: {x: 875, y: 542}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,37 +147,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 19}
-  m_MainToolbar: {fileID: 19}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+  - {fileID: 18}
+  m_MainToolbar: {fileID: 18}
   m_LastLoadedLayoutName: 
---- !u!114 &4
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-  m_LastLoadedLayoutName: HyeonSoo
---- !u!114 &8
-=======
-  m_LastLoadedLayoutName: 
---- !u!114 &4
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,232 +171,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    y: 977
-    width: 1920
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    y: 760.8
+    y: 761
     width: 1536
-=======
-    y: 977
-    width: 1920
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: 6}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-  - {fileID: 10}
-=======
-  - {fileID: 6}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    width: 1920
-    height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
-  vertical: 0
-  controlID: 3035
---- !u!114 &6
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    width: 1536
-    height: 730.8
-  m_MinSize: {x: 880, y: 342}
-  m_MaxSize: {x: 16005, y: 8042}
-  vertical: 0
-=======
-<<<<<<< HEAD
-    width: 1536
-    height: 730.8
-  m_MinSize: {x: 880, y: 342}
-  m_MaxSize: {x: 16005, y: 8042}
-  vertical: 0
->>>>>>> Stashed changes
-  controlID: 8029
---- !u!114 &10
-=======
-    width: 1920
-    height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
-  vertical: 0
-  controlID: 3035
---- !u!114 &6
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: 7}
-  - {fileID: 11}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-  - {fileID: 4}
-  - {fileID: 5}
-=======
-  - {fileID: 7}
-  - {fileID: 11}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    width: 1575
-    height: 947
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 12005, y: 14042}
-  vertical: 1
-  controlID: 3036
---- !u!114 &7
-=======
-<<<<<<< HEAD
-    width: 1140.8
-    height: 730.8
-  m_MinSize: {x: 604, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
-  vertical: 1
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    width: 1140.8
-    height: 730.8
-  m_MinSize: {x: 604, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
-  vertical: 1
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  controlID: 8030
---- !u!114 &11
-=======
-    width: 1575
-    height: 947
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 12005, y: 14042}
-  vertical: 1
-  controlID: 3036
---- !u!114 &7
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-<<<<<<< HEAD
-=======
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 8}
-  - {fileID: 9}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1575
-    height: 579
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
-  vertical: 0
-  controlID: 3037
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -526,24 +184,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 654
-    height: 579
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 0
+    y: 30
+    width: 1536
+    height: 731
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 0
+  controlID: 93
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -553,63 +210,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    x: 654
+    x: 0
     y: 0
-=======
-<<<<<<< HEAD
-    x: 215.2
-    y: 0
-    width: 396
-    height: 441.6
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    x: 654
-    y: 0
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-    x: 215.2
-    y: 0
-    width: 396
-    height: 441.6
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    x: 654
-    y: 0
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-    x: 215.2
-    y: 0
-    width: 396
-    height: 441.6
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    x: 654
-    y: 0
->>>>>>> Stashed changes
-    width: 668
-    height: 579
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
+    width: 1138
+    height: 731
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 94
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -618,91 +234,26 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1322
+    x: 214
     y: 0
-    width: 253
-    height: 579
+    width: 924
+    height: 447
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 579
-    width: 1575
-    height: 368
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 14}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
---- !u!114 &12
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -717,50 +268,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    x: 1575
+    x: 1138
     y: 0
-    width: 345
-    height: 947
-=======
-<<<<<<< HEAD
-    x: 1140.8
-    y: 0
-=======
-<<<<<<< HEAD
-    x: 1140.8
-    y: 0
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-    x: 1140.8
-    y: 0
->>>>>>> Stashed changes
-    width: 395.19995
-    height: 730.8
-=======
-    x: 1575
-    y: 0
-    width: 345
-    height: 947
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+    width: 398
+    height: 731
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,47 +295,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    x: 611.2
+    x: 214.40001
     y: 73.6
-    width: 527.60004
-    height: 420.6
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    x: 0
-    y: 73
-    width: 653
-    height: 558
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+    width: 922
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -828,7 +314,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -839,19 +325,19 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -960
-    m_HBaseRangeMax: 960
-    m_VBaseRangeMin: -540
-    m_VBaseRangeMax: 540
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -860,114 +346,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-      width: 527.60004
-      height: 399.6
-    m_Scale: {x: 0.36440817, y: 0.36440817}
-    m_Translation: {x: 248.35281, y: 199.8}
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      width: 653
-      height: 537
-    m_Scale: {x: 0.34010416, y: 0.34010416}
-    m_Translation: {x: 326.5, y: 268.5}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+      width: 922
+      height: 405
+    m_Scale: {x: 0.46875, y: 0.46875}
+    m_Translation: {x: 461, y: 202.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-      x: -681.52374
-      y: -548.2863
-      width: 1447.8271
-      height: 1096.5726
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+      x: -983.4667
+      y: -432
+      width: 1966.9333
+      height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.34348962
-  m_LastWindowPixelSize: {x: 659.50006, y: 525.75}
-=======
->>>>>>> Stashed changes
-      x: -960
-      y: -789.46405
-      width: 1920
-      height: 1578.9281
-    m_MinimalGUI: 1
-  m_defaultScale: 0.34010416
-  m_LastWindowPixelSize: {x: 653, y: 558}
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-    m_MinimalGUI: 1
-  m_defaultScale: 0.34348962
-  m_LastWindowPixelSize: {x: 659.50006, y: 525.75}
-=======
-      x: -960
-      y: -789.46405
-      width: 1920
-      height: 1578.9281
-    m_MinimalGUI: 1
-  m_defaultScale: 0.34010416
-  m_LastWindowPixelSize: {x: 653, y: 558}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+  m_defaultScale: 0.46875
+  m_LastWindowPixelSize: {x: 1152.5, y: 532.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &14
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -989,31 +390,31 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 214.2
-    height: 420.6
+    width: 213
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d2aeffff
-      m_LastClickedID: -20782
-      m_ExpandedIDs: 4ca8ffffd6afffffc6b0ffff1ebfffffa0bfffffb2bfffffc4bfffffd6bfffff60c3ffff6ac3ffffe4c5ffffecc5ffffeec5ffff86c8ffff8ec8ffff90c8ffffe0caffffe8caffffeacaffff94cbffff56ccffff6cceffff38cfffff34d1ffffced1ffffa8d2ffff58d5ffffded5ffffb8d6ffff40d8ffffe4d9fffff6d9ffff72daffffeedaffff6cdbffff7edbfffffcdbffff0edcffff20dcffff36dcffffb2dcffff2eddffffacddffff28deffff00e0ffff12e0ffff8ee0ffff0ae1ffff20e1ffff9ee1ffff1ae2ffff98e2ffffeee4ffff70e5ffffeae5fffffce5ffff7ae6ffff90e6ffffa6e6ffff14f1ffffa4f9fffff4ffffffca470000906d0000d68900000abe00001ec400001cc5000024c60000cad00000cad10000a4e20000a4e30000b2e9000052f00000e2fd0000e2fe00008e150100a6150100aa1501001c1601002e1601004616010076160100141701000218010070180100be180100ce180100d2180100fe1801001e1901006a19010092190100e6190100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d8f7ffff40fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: ExitBtn
-        m_OriginalName: ExitBtn
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 71022
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 3}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1021,16 +422,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1046,95 +438,29 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    x: 215.2
+    x: 214.40001
     y: 73.6
-    width: 394
-    height: 420.6
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    x: 654
-    y: 73
-    width: 666
-    height: 558
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+    width: 922
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    m_Target: {x: 960, y: 540, z: 0}
+    m_Target: {x: 841.91364, y: 871.2905, z: -1084.9349}
     speed: 2
-    m_Value: {x: 960, y: 540, z: 0}
-=======
-<<<<<<< HEAD
-    m_Target: {x: 1218.1881, y: 470.91202, z: -2424.223}
-    speed: 2
-    m_Value: {x: 1218.1881, y: 470.91202, z: -2424.223}
-=======
-    m_Target: {x: 960, y: 540, z: 0}
-    speed: 2
-    m_Value: {x: 960, y: 540, z: 0}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-    m_Target: {x: 1218.1881, y: 470.91202, z: -2424.223}
-    speed: 2
-=======
-<<<<<<< HEAD
-    m_Target: {x: 1218.1881, y: 470.91202, z: -2424.223}
-    speed: 2
->>>>>>> Stashed changes
-    m_Value: {x: 1218.1881, y: 470.91202, z: -2424.223}
-=======
-    m_Target: {x: 960, y: 540, z: 0}
-    speed: 2
-    m_Value: {x: 960, y: 540, z: 0}
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    m_Value: {x: 875.578, y: 840.9606, z: -1081.1221}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1185,39 +511,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    m_Target: 1101.4536
+    m_Target: 885.4427
     speed: 2
-    m_Value: 1101.4536
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    m_Target: 574.9164
-    speed: 2
-    m_Value: 574.9164
-=======
-    m_Target: 1101.4536
-    speed: 2
-    m_Value: 1101.4536
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-    m_Target: 574.9164
-    speed: 2
-    m_Value: 574.9164
-=======
-    m_Target: 1101.4536
-    speed: 2
-    m_Value: 1101.4536
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    m_Value: 847.3136
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1242,88 +538,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 --- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1322
-    y: 73
-    width: 251
-    height: 558
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 364c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 40dbffff58deffff60deffff62deffff78eeffff7cefffffaaf3ffffbaf4ffff7af6ffff44faffff3e67000056670000b46a0000d66a00004e930000
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 4c969a2b90040154d917609493e03593
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
---- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1339,38 +554,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    y: 652
-    width: 1574
-    height: 347
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    y: 515.2
-    width: 1139.8
-    height: 268.19998
-=======
-    y: 652
-    width: 1574
-    height: 347
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    y: 520
+    width: 1137
+    height: 263
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1385,75 +576,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/YONGHA/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/YONGHA/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
   m_LastProjectPath: C:\Users\ASUS\Documents\GitHub\ONKOIWInterProject\WinterProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 267.80002}
-    m_SelectedIDs: 78480000
-    m_LastClickedID: 18552
-    m_ExpandedIDs: 0000000066480000684800006a4800006c4800006e48000070480000724800007448000076480000784800008a4800008c48000000ca9a3b
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  m_LastProjectPath: C:\Users\ypc\Documents\GitHub\ONKOIWInterProject\WinterProject
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2470000
-    m_LastClickedID: 18354
-    m_ExpandedIDs: 000000008447000086470000884700008a4700008c4700008e470000904700009247000094470000a647000000ca9a3b
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+    scrollPos: {x: 0, y: 48.600006}
+    m_SelectedIDs: 74430000
+    m_LastClickedID: 17268
+    m_ExpandedIDs: 000000007443000076430000784300007a4300007c4300007e4300008043000082430000844300008643000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Resourse
-      m_OriginalName: Resourse
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 18578
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1465,27 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    m_ExpandedIDs: 000000008447000086470000884700008a4700008c4700008e470000904700009247000094470000a647000000ca9a3b
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    m_ExpandedIDs: 0000000066480000684800006a4800006c4800006e4800007048000072480000744800007648000078480000
-=======
-    m_ExpandedIDs: 000000008447000086470000884700008a4700008c4700008e470000904700009247000094470000a647000000ca9a3b
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    m_ExpandedIDs: 000000007443000076430000784300007a4300007c4300007e43000080430000824300008443000086430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1510,26 +644,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: d2aeffff
-    m_LastClickedInstanceID: -20782
-    m_HadKeyboardFocusLastEvent: 1
-=======
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000219000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1558,7 +675,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1574,40 +691,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    y: 652
-    width: 1574
-    height: 347
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    y: 515.2
-    width: 1139.8
-    height: 268.19998
-=======
-    y: 652
-    width: 1574
-    height: 347
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    y: 520
+    width: 1259
+    height: 263.4
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1623,62 +716,28 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-    x: 1140.8
+    x: 1138.4
     y: 73.6
-    width: 394.19995
-    height: 709.8
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    x: 1575
-    y: 73
-    width: 344
-    height: 926
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
-=======
->>>>>>> 25d6663fda01fccd08cfdbb4ac7e5753a67caf6e
->>>>>>> Stashed changes
+    width: 397
+    height: 710
   m_ViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: f8170100
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 794.4001
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
