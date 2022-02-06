@@ -20,10 +20,17 @@ public class ItemLoad : MonoBehaviour
     [SerializeField] GameObject LoadItem;
     [SerializeField] Text ItemNameText;
     [SerializeField] Text ExplainText;
+    [SerializeField] Text[] ItemLimitTexts;
     [SerializeField] GameObject LoadImage;
 
     public int check;
     public int background_check;
+    private bool chaeAhBool;
+    private bool seHwaBool;
+    private bool gaYoonBool;
+    public int chaeAhItemCheck = 3;
+    public int seHwaItemCheck = 3;
+    public int gaYoonItemCheck = 3;
     void Start()
     {
         Names[0] = "곰인형";
@@ -47,6 +54,28 @@ public class ItemLoad : MonoBehaviour
         Explans[8] = "얼그레이의 향이 진하게 퍼지는 홍차. 하지만 호불호가 갈릴지도?";
     }
     
+    public void ChaeAhLimit()
+    {
+        if(chaeAhBool == true && chaeAhItemCheck != 0)
+        {
+            chaeAhItemCheck--;
+            ItemLimitTexts[0].text = "남은 선물 가능 횟수 : " + chaeAhItemCheck;
+            ClickBtnGift();
+        }
+        if (seHwaBool == true && seHwaItemCheck != 0)
+        {
+            chaeAhItemCheck--;
+            ItemLimitTexts[1].text = "남은 선물 가능 횟수 : " + seHwaItemCheck;
+            ClickBtnGift();
+        }
+        if (gaYoonBool == true && gaYoonItemCheck != 0)
+        {
+            chaeAhItemCheck--;
+            ItemLimitTexts[2].text = "남은 선물 가능 횟수 : " + gaYoonItemCheck;
+            ClickBtnGift();
+        }
+    }
+
     public void ClickBtnGift()
     {
         if (ClickBtnItem.GetComponent<ItemLoad>().check == 1)
@@ -159,17 +188,23 @@ public class ItemLoad : MonoBehaviour
     public void Back1()
     {
         background_check = 1;
+        chaeAhBool = true;
     }
     public void Back2()
     {
         background_check = 2;
+        seHwaBool = true;
     }
     public void Back3()
     {
         background_check = 3;
+        gaYoonBool = true;
     }
     public void Back0()
     {
         background_check = 0;
+        chaeAhBool = false;
+        gaYoonBool = false;
+        seHwaBool  = false;
     }
 }
