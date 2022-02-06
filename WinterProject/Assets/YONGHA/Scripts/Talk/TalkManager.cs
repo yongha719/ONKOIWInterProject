@@ -66,7 +66,9 @@ public class TalkManager : MonoBehaviour
             if (i + 1 == talk.talkDatas.Count) continue;
             yield return StartCoroutine(EWaitInput());
         }
-        SceneManager.LoadScene("Love");
+
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Love(clone)");
         yield return null;
     }
     public IEnumerator ETalkEvent()
@@ -116,7 +118,7 @@ public class TalkManager : MonoBehaviour
 
     IEnumerator ETextTyping(Text text, string newString)
     {
-        var wait = new WaitForSeconds(0.1f);
+        var wait = new WaitForSeconds(0.05f);
 
         for (int i = 0; i <= newString.Length; i++)
         {

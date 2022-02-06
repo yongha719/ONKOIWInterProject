@@ -19,4 +19,9 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
     }
+
+    public void Skip()
+    {
+        SceneManager.LoadScene("Love(clone)");
+    }
 }
