@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CloneLike : MonoBehaviour
 {
-    [SerializeField] private Slider LikeSlider;
-    [SerializeField]GameObject a;
+    public Slider ChaeAhLikeSlider;
+    public Slider SeHwaLikeSlider;
+    public Slider GaYoonLikeSlider;
+    [SerializeField] GameObject canVas;
+    
     private void Update()
     {
-        LikeSlider.value = a.GetComponent<ItemLoad>().like / 100;
+        ItemLoad itemLoad = canVas.GetComponent<ItemLoad>();
+        ChaeAhLikeSlider.value = itemLoad.chaeAhlike;
+        SeHwaLikeSlider.value = itemLoad.seHwalike;
+        GaYoonLikeSlider.value = itemLoad.gaYoonlike;
     }
-
 }

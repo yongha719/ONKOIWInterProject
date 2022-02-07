@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class ItemLoad : MonoBehaviour
 {
-    public float like;
+    public float chaeAhlike, seHwalike, gaYoonlike;
 
 
     public GameObject ClickBtnItem;
@@ -20,10 +20,17 @@ public class ItemLoad : MonoBehaviour
     [SerializeField] GameObject LoadItem;
     [SerializeField] Text ItemNameText;
     [SerializeField] Text ExplainText;
+    [SerializeField] Text[] ItemLimitTexts;
     [SerializeField] GameObject LoadImage;
 
     public int check;
     public int background_check;
+    private bool chaeAhBool;
+    private bool seHwaBool;
+    private bool gaYoonBool;
+    public int chaeAhItemCheck = 3;
+    public int seHwaItemCheck = 3;
+    public int gaYoonItemCheck = 3;
     void Start()
     {
         Names[0] = "곰인형";
@@ -46,60 +53,180 @@ public class ItemLoad : MonoBehaviour
         Explans[7] = "학생의 필수품 지우개와 연필 세트. 아기자기하고 귀여운 색상들 뿐이다";
         Explans[8] = "얼그레이의 향이 진하게 퍼지는 홍차. 하지만 호불호가 갈릴지도?";
     }
-    
+
+    public void ItemLimit()
+    {
+        if (chaeAhBool == true && chaeAhItemCheck != 0)
+        {
+            chaeAhItemCheck--;
+            ItemLimitTexts[0].text = "남은 선물 가능 횟수 : " + chaeAhItemCheck;
+            ClickBtnGift();
+        }
+        if (seHwaBool == true && seHwaItemCheck != 0)
+        {
+            seHwaItemCheck--;
+            ItemLimitTexts[1].text = "남은 선물 가능 횟수 : " + seHwaItemCheck;
+            ClickBtnGift();
+        }
+        if (gaYoonBool == true && gaYoonItemCheck != 0)
+        {
+            gaYoonItemCheck--;
+            ItemLimitTexts[2].text = "남은 선물 가능 횟수 : " + gaYoonItemCheck;
+            ClickBtnGift();
+        }
+    }
     public void ClickBtnGift()
     {
         if (ClickBtnItem.GetComponent<ItemLoad>().check == 1)
         {
-            like += 5;
+            if(chaeAhBool == true)
+            {
+                chaeAhlike += 20;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if (ClickBtnItem.GetComponent<ItemLoad>().check == 2)
         {
-            like += 4;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 3)
         {
-            like -= 10;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 4)
         {
-            like -= 6;
+            if (chaeAhBool == true)
+            {
+                //호감도 변동 X
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 5)
         {
-            like += 15;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 6)
         {
-            like += 8;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 7)
         {
-            like -= 3;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 8)
         {
-            like += 20;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike += 10;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
         else if(ClickBtnItem.GetComponent<ItemLoad>().check == 9)
         {
-            like -= 15;
+            if (chaeAhBool == true)
+            {
+                chaeAhlike -= 20;
+            }
+            if (seHwaBool == true)
+            {
+                seHwalike++;
+            }
+            if (gaYoonBool == true)
+            {
+                gaYoonlike++;
+            }
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
@@ -159,17 +286,23 @@ public class ItemLoad : MonoBehaviour
     public void Back1()
     {
         background_check = 1;
+        chaeAhBool = true;
     }
     public void Back2()
     {
         background_check = 2;
+        seHwaBool = true;
     }
     public void Back3()
     {
         background_check = 3;
+        gaYoonBool = true;
     }
     public void Back0()
     {
         background_check = 0;
+        chaeAhBool = false;
+        gaYoonBool = false;
+        seHwaBool = false;
     }
 }
