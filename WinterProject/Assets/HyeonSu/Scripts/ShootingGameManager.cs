@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class ShootingGameManager : MonoBehaviour
 {
     public static ShootingGameManager Instance { get; private set; }
-    [SerializeField] private Image[] HpImage;
+    [SerializeField] private GameObject[] HpImage;
+    [SerializeField] private GameObject[] DeadHpImage;
     private void Awake()
     {
         Instance = this;
@@ -14,11 +15,13 @@ public class ShootingGameManager : MonoBehaviour
     {
         for(int index = 0; index < 3; index++)
         {
-            HpImage[index].color = new Color(1, 1, 1, 0);
+            HpImage[index].SetActive(false);
+            DeadHpImage[index].SetActive(true);
         }
         for(int index = 0;index < playerHp; index++)
         {
-            HpImage[index].color = new Color(1, 1, 1, 1);
+            HpImage[index].SetActive(true);
+            DeadHpImage[index].SetActive(false);
         }
     }
 }

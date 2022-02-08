@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
     [SerializeField]private float playerMoveSpeed;
-    [SerializeField] private Sprite[] Snowsprites; //눈덩이 강화 상태변화  
+    //[SerializeField] private Sprite[] Snowsprites; //눈덩이 강화 상태변화  
     public int playerHp;
     public float attack;
     public float plusAttack = 1;

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/YONGHA/Scenes/Love(clone).unity
+- path: Assets/HyeonSu/Scene/Shooting.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

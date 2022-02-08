@@ -8,20 +8,14 @@ public class Boss : MonoBehaviour
     public static Boss Instance { get; private set; }
     public float bossHp;
 
-    [SerializeField] private GameObject HpBar;
-    [SerializeField] private GameObject ShotSnow;
-    [SerializeField] private GameObject Items;
-    [SerializeField] private GameObject SkillSnow;
+    [SerializeField] private GameObject HpBar, ShotSnow, Items, SkillSnow;
     [SerializeField] private Transform[] Skill1Pos;
-    [SerializeField] private GameObject[] asd;
+    [SerializeField] private GameObject[] BossSkillobjs;
     [SerializeField] private Sprite[] HitSprite; //상태변화  
-    [SerializeField] private float MaxShotDelay;
-    [SerializeField] private float MaxMoveDelay = 20f;
-    [SerializeField] private Transform LeftPos;
-    [SerializeField] private Transform RightPos;
+    [SerializeField] private float MaxShotDelay, MaxMoveDelay = 20f, MinMoveDelay = 15f;
+    [SerializeField] private Transform LeftPos, RightPos;
     public int attackSpeed = 15;
     private float MinShotDelay;
-    [SerializeField] private float MinMoveDelay = 15f;
     SpriteRenderer spriteRenderer;
     private void Awake()
     {
@@ -37,7 +31,7 @@ public class Boss : MonoBehaviour
         MinShotDelay += Time.deltaTime;
         MinMoveDelay += Time.deltaTime;
         BossShot();
-        HpBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0,0.5f, 0));
+        HpBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0,1.5f, 0));
         if (MaxMoveDelay <= MinMoveDelay)
         {
             LeftMove();
@@ -62,8 +56,8 @@ public class Boss : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            asd[i] = Instantiate(SkillSnow, /*new Vector3(0,4.5f,0)*/gameObject.transform.position, gameObject.transform.rotation);
-            asd[i].gameObject.transform.DOMove(Skill1Pos[i].transform.position, 7f).SetEase(Ease.Linear);
+            BossSkillobjs[i] = Instantiate(SkillSnow, /*new Vector3(0,4.5f,0)*/gameObject.transform.position, gameObject.transform.rotation);
+            BossSkillobjs[i].gameObject.transform.DOMove(Skill1Pos[i].transform.position, 7f).SetEase(Ease.Linear);
         }
     }
     void BossShot()
