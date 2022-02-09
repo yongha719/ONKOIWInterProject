@@ -11,20 +11,13 @@ public class BackgroundManager : MonoBehaviour
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
-    Image Kangimg;
-    Image Yangimg;
-    Image Baekimg;
 
-    ITalkLoad load;
     void Awake()
     {
         Instance = this;
     }
-    private void Start()
+    void Start()
     {
-        Kangimg = Kangs.GetComponent<Image>();
-        Yangimg = Yangs.GetComponent<Image>();
-        Baekimg = Baeks.GetComponent<Image>();
 
     }
     void Update()

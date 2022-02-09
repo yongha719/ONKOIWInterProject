@@ -13,6 +13,10 @@ using TMPro;
 //
 // ¾²´ÂÂÊ ( TalkManager ) ---> JsonLoader
 //
+public enum Talk
+{
+    Story, Kang, Yang, Baek
+}
 
 public class TalkManager : MonoBehaviour
 {
@@ -28,6 +32,8 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
 
+    Talk Etalk;
+
     private void Awake()
     {
         Instance = this;
@@ -35,6 +41,7 @@ public class TalkManager : MonoBehaviour
 
     private void Start()
     {
+        
         loader = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
@@ -52,7 +59,7 @@ public class TalkManager : MonoBehaviour
 
         TalkDatas talk = default;
 
-        talk = talks[talkId++];
+        talk = talks[(int)Talk.Story];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
             BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
