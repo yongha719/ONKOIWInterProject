@@ -13,9 +13,9 @@ using TMPro;
 //
 // ¾²´ÂÂÊ ( TalkManager ) ---> JsonLoader
 //
-public enum Talk
+public enum TalkChoice
 {
-    Story, Kang, Yang, Baek
+    Kang, Yang, Baek
 }
 
 public class TalkManager : MonoBehaviour
@@ -32,7 +32,9 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
 
-    Talk Etalk;
+    int KtalkNum;
+
+    public TalkChoice Etalk;
 
     private void Awake()
     {
@@ -41,7 +43,7 @@ public class TalkManager : MonoBehaviour
 
     private void Start()
     {
-        
+
         loader = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
@@ -59,7 +61,7 @@ public class TalkManager : MonoBehaviour
 
         TalkDatas talk = default;
 
-        talk = talks[(int)Talk.Story];
+        talk = talks[talkId++];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
             BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
@@ -80,31 +82,44 @@ public class TalkManager : MonoBehaviour
     }
     public IEnumerator ETalkEvent()
     {
-        var talks = loader.LoadTalk();
-        var choices = loader.LoadChoice();
+        var kangtalks = loader.LoadKang();
+        var yangtalks = loader.LoadYang();
+        var baektalks = loader.LoadBaek();
 
-        TalkDatas talk = default;
-        ChoiceDatas choice = default;
+        KangTalk kangTalk = default;
+        YangTalk yangTalk = default;
+        BaekTalk baekTalk = default;
 
-        talk = talks[talkId++];
-        for (int i = 0; i < talk.talkDatas.Count; i++)
+
+        for (KtalkNum = 0; KtalkNum < kangtalks.Count; KtalkNum++)
         {
-            choice = choices[choiceId++];
-            print(talk.talkDatas[i].background);
-            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
-            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName).Replace("g", "g");
-            txtTalk.text = talk.talkDatas[i].talk;
-            yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
 
-            for (int j = 0; j < choice.choiceDatas.Count; j++)
-            {
-                var obj = Instantiate(originChoiceText, rtrnChoiceParent);
-                obj.text = $"{choice.choiceDatas[j].choice} ({choice.choiceDatas[j].like})";
-            }
-
-            if (i + 1 == talk.talkDatas.Count) continue;
-            yield return StartCoroutine(EWaitInput());
         }
+
+        //var talks = loader.LoadTalk();
+        //var choices = loader.LoadChoice();
+
+        //TalkDatas talk = default;
+        //ChoiceDatas choice = default;
+
+        //talk = talks[talkId++];
+        //for (int i = 0; i < talk.talkDatas.Count; i++)
+        //{
+        //    choice = choices[choiceId++];
+        //    BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
+        //    txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.layerName);
+        //    txtTalk.text = talk.talkDatas[i].talk;
+        //    yield return StartCoroutine(ETextTyping(txtTalk, talk.talkDatas[i].talk));
+
+        //    for (int j = 0; j < choice.choiceDatas.Count; j++)
+        //    {
+        //        var obj = Instantiate(originChoiceText, rtrnChoiceParent);
+        //        obj.text = $"{choice.choiceDatas[j].choice} ({choice.choiceDatas[j].like})";
+        //    }
+
+        //    if (i + 1 == talk.talkDatas.Count) continue;
+        //    yield return StartCoroutine(EWaitInput());
+        //}
 
         yield return null;
     }

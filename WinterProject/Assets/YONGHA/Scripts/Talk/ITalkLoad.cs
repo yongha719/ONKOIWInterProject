@@ -28,6 +28,30 @@ public struct ChoiceData
 }
 
 [Serializable]
+public struct KangTalk
+{
+    public bool istalk;
+    public int expression;
+    public string name;
+    public string talk;
+}
+[Serializable]
+public struct YangTalk
+{
+    public bool istalk;
+    public int expression;
+    public string name;
+    public string talk;
+}
+[Serializable]
+public struct BaekTalk
+{
+    public bool istalk;
+    public int expression;
+    public string name;
+    public string talk;
+}
+[Serializable]
 public struct ChoiceDatas
 {
     public List<ChoiceData> choiceDatas;
@@ -37,4 +61,7 @@ public interface ITalkLoad
 {
     public List<TalkDatas> LoadTalk();
     public List<ChoiceDatas> LoadChoice();
+    public List<KangTalk> LoadKang();
+    public List<YangTalk> LoadYang();
+    public List<BaekTalk> LoadBaek();
 }
