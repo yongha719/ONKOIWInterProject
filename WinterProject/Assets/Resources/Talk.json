@@ -1187,58 +1187,6 @@
           "talk": "(한명은 쌩판 초면에 한명은 제일 불편한 사람인데 퍽이나 친해 지겠다...)"
         }
       ]
-    },
-    {
-      "talkDatas": [
-        {
-          "name": "???",
-          "talk": "점심 뭐 먹을래?"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "무엇을 먹을까? ( 잘 선택하자 )"
-        },
-        {
-          "name": "uyuyuyuyuy",
-          "talk": "uyuyuyuyuyuy"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "나",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "강채아",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "나",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "나",
-          "talk": "fdfdfdfdfdfd"
-        },
-        {
-          "name": "%PlayerName%",
-          "talk": "fdfdfdfdfdfd"
-        }
-      ]
     }
   ]
 }
