@@ -86,7 +86,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
@@ -104,7 +105,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike -= 20;
+                TalkText.text = "저.. 꽃가루 알르레기가 심해서…";
             }
             if (gaYoonBool == true)
             {
@@ -122,7 +124,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
@@ -140,7 +143,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                //호감도 변동 X
+                TalkText.text = "가윤이 한테 보낸…? 이걸 왜 저한테…";
             }
             if (gaYoonBool == true)
             {
@@ -158,7 +162,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 20;
+                TalkText.text = "읽어본적 없는 책 이네요.. 절 위해서..? 고마워요 잘 읽을게요";
             }
             if (gaYoonBool == true)
             {
@@ -176,7 +181,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
@@ -194,7 +200,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
@@ -212,7 +219,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
@@ -230,7 +238,8 @@ public class ItemLoad : MonoBehaviour
             }
             if (seHwaBool == true)
             {
-                seHwalike++;
+                seHwalike += 10;
+                TalkText.text = "저에게 주시는 건가요..? 감사해요";
             }
             if (gaYoonBool == true)
             {
