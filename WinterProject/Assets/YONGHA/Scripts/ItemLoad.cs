@@ -19,7 +19,7 @@ public class ItemLoad : MonoBehaviour
 
     [SerializeField] GameObject LoadItem;
     [SerializeField] Text ItemNameText;
-    [SerializeField] Text ExplainText;
+    [SerializeField] Text ExplainText, TalkText;
     [SerializeField] Text[] ItemLimitTexts;
     [SerializeField] GameObject LoadImage;
 
@@ -79,9 +79,10 @@ public class ItemLoad : MonoBehaviour
     {
         if (ClickBtnItem.GetComponent<ItemLoad>().check == 1)
         {
-            if(chaeAhBool == true)
+            if (chaeAhBool == true)
             {
                 chaeAhlike += 20;
+                TalkText.text = "귀여운 곰돌이다! 나한테 주는거야? 고마워~";
             }
             if (seHwaBool == true)
             {
@@ -99,6 +100,7 @@ public class ItemLoad : MonoBehaviour
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -111,11 +113,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 3)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 3)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -128,11 +131,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 4)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 4)
         {
             if (chaeAhBool == true)
             {
                 //호감도 변동 X
+                TalkText.text = "너 이런 내용이 진심으로 가윤이한테 통할 거라고 생각했어…?";
             }
             if (seHwaBool == true)
             {
@@ -145,11 +149,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 5)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 5)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -162,11 +167,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 6)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 6)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -179,11 +185,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 7)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 7)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -196,11 +203,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 8)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 8)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike += 10;
+                TalkText.text = "선물? 고마워-! 잘 받을게!";
             }
             if (seHwaBool == true)
             {
@@ -213,11 +221,12 @@ public class ItemLoad : MonoBehaviour
             ClickBtnItem.SetActive(false);
             EventSystem.current.currentSelectedGameObject.SetActive(false);
         }
-        else if(ClickBtnItem.GetComponent<ItemLoad>().check == 9)
+        else if (ClickBtnItem.GetComponent<ItemLoad>().check == 9)
         {
             if (chaeAhBool == true)
             {
                 chaeAhlike -= 20;
+                TalkText.text = "내가 너한테 홍차 싫어한다고 말 안했던가?";
             }
             if (seHwaBool == true)
             {
@@ -248,20 +257,20 @@ public class ItemLoad : MonoBehaviour
         ImageNums[ClickBtnItem.GetComponent<ItemLoad>().check - 1].SetActive(true);
         ExplainText.text = Explans[ClickBtnItem.GetComponent<ItemLoad>().check - 1].ToString();
         ItemNameText.text = Names[ClickBtnItem.GetComponent<ItemLoad>().check - 1].ToString();
-        
+
         //Destroy(EventSystem.current.currentSelectedGameObject);
     }
 
     public void BackGround_Change()
     {
-        if(background_check == 0)
+        if (background_check == 0)
         {
             BackGrounds[0].SetActive(true);
             BackGrounds[1].SetActive(false);
             BackGrounds[2].SetActive(false);
             BackGrounds[3].SetActive(false);
         }
-        else if(background_check == 1)
+        else if (background_check == 1)
         {
             BackGrounds[0].SetActive(false);
             BackGrounds[1].SetActive(true);
@@ -300,6 +309,7 @@ public class ItemLoad : MonoBehaviour
     }
     public void Back0()
     {
+        TalkText.text = "";
         background_check = 0;
         chaeAhBool = false;
         gaYoonBool = false;

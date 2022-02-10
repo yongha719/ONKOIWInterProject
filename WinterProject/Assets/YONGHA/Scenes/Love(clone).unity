@@ -259,6 +259,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 4
@@ -1161,6 +1162,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164612227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,6 +1444,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 6
@@ -1620,6 +1634,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 2084479086}
   ExplainText: {fileID: 371293247}
+  TalkText: {fileID: 600213916}
   ItemLimitTexts:
   - {fileID: 1669964745}
   - {fileID: 252919340}
@@ -1759,6 +1774,7 @@ RectTransform:
   - {fileID: 422993733}
   - {fileID: 1526860223}
   - {fileID: 245021731}
+  - {fileID: 600213918}
   - {fileID: 690052624}
   - {fileID: 1529744357}
   m_Father: {fileID: 0}
@@ -2219,6 +2235,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 9
@@ -2665,6 +2682,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 8
@@ -4833,6 +4851,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589832721}
   m_CullTransparentMesh: 1
+--- !u!1 &600213915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600213918}
+  - component: {fileID: 600213917}
+  - component: {fileID: 600213916}
+  m_Layer: 5
+  m_Name: ItemTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &600213916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600213915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 60
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &600213917
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600213915}
+  m_CullTransparentMesh: 1
+--- !u!224 &600213918
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600213915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 225959770}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 321, y: -410.98}
+  m_SizeDelta: {x: 839.5469, y: 357.4385}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &621570658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5113,7 +5210,7 @@ RectTransform:
   - {fileID: 838075481}
   - {fileID: 503763803}
   m_Father: {fileID: 225959770}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5585,6 +5682,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
         m_MethodName: BackGround_Change
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8191,6 +8300,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 2
@@ -8471,6 +8581,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 7
@@ -10214,6 +10325,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1358156621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11338,7 +11461,7 @@ RectTransform:
   - {fileID: 371293249}
   - {fileID: 1506913177}
   m_Father: {fileID: 225959770}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11544,6 +11667,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
         m_MethodName: BackGround_Change
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12503,6 +12638,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
         m_MethodName: BackGround_Change
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13540,6 +13687,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 5
@@ -14760,6 +14908,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 1
@@ -15119,6 +15268,7 @@ MonoBehaviour:
   LoadItem: {fileID: 0}
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
+  TalkText: {fileID: 0}
   ItemLimitTexts: []
   LoadImage: {fileID: 0}
   check: 3
@@ -15607,6 +15757,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ItemLoad, Assembly-CSharp
         m_MethodName: BackGround_Change
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 600213915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -5114,8 +5114,8 @@ GameObject:
   - component: {fileID: 460567685099313583}
   - component: {fileID: 8762111926518238078}
   - component: {fileID: 4182597043794686998}
-  - component: {fileID: 4051644317157133727}
   - component: {fileID: 7666035625112998465}
+  - component: {fileID: 4051644317157133727}
   m_Layer: 0
   m_Name: "\uAC15\uCC44\uC544"
   m_TagString: Untagged
@@ -5190,7 +5190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Opacity: 1
-  _lastOpacity: 1
+  _lastOpacity: 0
   _sortingLayerId: 0
   _sortingMode: 0
   _sortingOrder: 0
@@ -5210,7 +5210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967223d908bf07b4f90945995bdca68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maskTexture: {fileID: 11400000, guid: 16bf142754640ab4487bb625c30931fd, type: 2}
+  _maskTexture: {fileID: 0}
 --- !u!114 &863682297824993707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5262,19 +5262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExpressionsList: {fileID: 0}
   CurrentExpressionIndex: -1
---- !u!114 &4051644317157133727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5257507979014753873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd9e6647bfff7542acb0200ab74bdd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CubismFadeMotionList: {fileID: 0}
 --- !u!95 &7666035625112998465
 Animator:
   serializedVersion: 3
@@ -5294,6 +5281,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4051644317157133727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257507979014753873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e6647bfff7542acb0200ab74bdd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CubismFadeMotionList: {fileID: 0}
 --- !u!1 &5415373088629853598
 GameObject:
   m_ObjectHideFlags: 0
