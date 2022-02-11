@@ -15,7 +15,7 @@ using TMPro;
 //
 public enum TalkChoice
 {
-    Kang, Yang, Baek
+    Story, Kang, Yang, Baek
 }
 
 public class TalkManager : MonoBehaviour
@@ -28,11 +28,14 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private Text txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
-    [SerializeField] private Text originChoiceText;
+    [SerializeField] private Button Choicebtn;
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
 
-    int KtalkNum;
+    List<Button> Choicetexts = new List<Button>();
+
+    int KtalkNum = 0;
+    int prog;
 
     public TalkChoice Etalk;
 
@@ -52,16 +55,33 @@ public class TalkManager : MonoBehaviour
 
     private void Update()
     {
+    }
+    void SetChar(int temp)
+    {
+        switch (Etalk)
+        {
+            case TalkChoice.Kang:
+
+                break;
+            case TalkChoice.Yang:
+
+                break;
+            case TalkChoice.Baek:
+
+                break;
+            default:
+
+                break;
+        }
 
     }
-
     public IEnumerator StoryEvent()
     {
         var talks = loader.LoadTalk();
 
         TalkDatas talk = default;
 
-        talk = talks[talkId++];
+        talk = talks[(int)TalkChoice.Story];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
             BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
@@ -82,21 +102,33 @@ public class TalkManager : MonoBehaviour
     }
     public IEnumerator ETalkEvent()
     {
-        var kangtalks = loader.LoadKang();
-        var yangtalks = loader.LoadYang();
-        var baektalks = loader.LoadBaek();
 
-        KangTalk kangTalk = default;
-        YangTalk yangTalk = default;
-        BaekTalk baekTalk = default;
+        var talks = loader.LoadTalk();
+        var choices = loader.LoadChoice();
 
+        TalkDatas talk = talks[(int)Etalk];
+        ChoiceDatas choice = default;
 
-        for (KtalkNum = 0; KtalkNum < kangtalks.Count; KtalkNum++)
+        for (prog = KtalkNum; prog < talk.talkDatas.Count; prog++)
         {
+            choice = choices[(int)Etalk];
 
+            txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
+            string talk1 = talk.talkDatas[prog].talk;
+            txtTalk.text = talk1;
+
+            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
+
+            for (int j = 0; j < choice.choiceDatas.Count; j++)
+            {
+                Choicetexts.Add(Choicebtn);
+                Text choicetext = Choicebtn.transform.Find("Text").gameObject.GetComponent<Text>();
+                choicetext.text = choice.choiceDatas[j].choice;
+                var obj = Instantiate(Choicetexts[Random.Range(0, Choicetexts.Count)], rtrnChoiceParent);
+           
+            }
         }
-
-        //var talks = loader.LoadTalk();
+        //var talks = loader.LoadTalk();d
         //var choices = loader.LoadChoice();
 
         //TalkDatas talk = default;
