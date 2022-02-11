@@ -777,7 +777,7 @@ MonoBehaviour:
   m_StartAxis: 1
   m_CellSize: {x: 400, y: 100}
   m_Spacing: {x: 0, y: 30}
-  m_Constraint: 1
+  m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1681623508
 GameObject:
@@ -826,24 +826,33 @@ MonoBehaviour:
   - choiceDatas:
     - choice: 11
       like: 1
+      reply: 
     - choice: 12
       like: 2
+      reply: 
     - choice: 13
       like: 3
+      reply: 
   - choiceDatas:
     - choice: 14
       like: 4
+      reply: 
     - choice: 15
       like: 5
+      reply: 
     - choice: 16
       like: 6
+      reply: 
   - choiceDatas:
     - choice: 17
       like: 7
+      reply: 
     - choice: 18
       like: 8
+      reply: 
     - choice: 19
       like: 9
+      reply: 
   txtName: {fileID: 67934226}
   txtTalk: {fileID: 441908496}
   rtrnChoiceParent: {fileID: 1491496989}

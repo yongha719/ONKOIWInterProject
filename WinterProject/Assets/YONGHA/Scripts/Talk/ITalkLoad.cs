@@ -23,8 +23,12 @@ public struct TalkDatas
 [Serializable]
 public struct ChoiceData
 {
+    public int Kang;
+    public int Yang;
+    public int Baek;
     public string choice;
     public int like;
+    public string reply;
 }
 
 [Serializable]
