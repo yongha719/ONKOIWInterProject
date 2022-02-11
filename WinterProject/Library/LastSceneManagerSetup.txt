@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/YONGHA/Scenes/InGame.unity
+- path: Assets/Json/Temp.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -53,7 +53,7 @@ public class ItemLoad : MonoBehaviour
         Explans[7] = "학생의 필수품 지우개와 연필 세트. 아기자기하고 귀여운 색상들 뿐이다";
         Explans[8] = "얼그레이의 향이 진하게 퍼지는 홍차. 하지만 호불호가 갈릴지도?";
     }
-
+    
     public void ItemLimit()
     {
         if (chaeAhBool == true && chaeAhItemCheck != 0)
