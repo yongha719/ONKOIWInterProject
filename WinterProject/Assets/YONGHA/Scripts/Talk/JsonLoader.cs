@@ -24,7 +24,7 @@ public class JsonLoader : ITalkLoad
 
     public List<TalkDatas> LoadTalk()
     {
-        TextAsset txt = Resources.Load<TextAsset>("Talk");
+        TextAsset txt = Resources.Load<TextAsset>("Story");
 
         return JsonUtility.FromJson<Serialization<TalkDatas>>(txt.text).target;
     }

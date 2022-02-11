@@ -33,11 +33,10 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
 
-    List<Button> Choicetexts = new List<Button>();
-    List<string> Textnum = new List<string>();
-    List<int> Likenum = new List<int>();
-    List<string> Replynum = new List<string>();
+    bool istalk = true;
+    bool Isque;
 
+    
     int KtalkNum = 0;
     int prog;
 
@@ -58,26 +57,9 @@ public class TalkManager : MonoBehaviour
 
     private void Update()
     {
-        SetChar();
+        //choiceId = (int)Etalk * 10 - 10;
     }
-    void SetChar()
-    {
-        switch (Etalk)
-        {
-            case TalkChoice.Kang:
-                choiceId = 0;
-                break;
-            case TalkChoice.Yang:
-                choiceId = 9;
-                break;
-            case TalkChoice.Baek:
-                choiceId = 19;
-                break;
-            default:
-                break;
-        }
 
-    }
     public IEnumerator StoryEvent()
     {
         var talks = loader.LoadTalk();
@@ -105,6 +87,10 @@ public class TalkManager : MonoBehaviour
     }
     public IEnumerator ETalkEvent()
     {
+        List<Button> Choicetexts = new List<Button>();
+
+        List<ChoiceData> TalkChoices = new List<ChoiceData>();
+        List<int> Likenum = new List<int>();
 
         var talks = loader.LoadTalk();
         var choices = loader.LoadChoice();
@@ -112,55 +98,70 @@ public class TalkManager : MonoBehaviour
         TalkDatas talk = talks[(int)Etalk];
         ChoiceDatas choice = default;
 
+        bool talkstart = false;
+
         for (prog = KtalkNum; prog < talk.talkDatas.Count; prog++)
         {
+            if (!talkstart)
+            {
+                string newstring = txtTalk.text;
+                txtTalk.text = null;
+                yield return StartCoroutine(ETextTyping(txtTalk, newstring));
 
+                yield return StartCoroutine(EWaitInput());
+                talkstart = true;
+            }
+            //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
             txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
             string talk1 = talk.talkDatas[prog].talk;
             txtTalk.text = talk1;
 
-            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
-            choice = choices[choiceId++];
-
-            for (int j = 0; j < choice.choiceDatas.Count; j++)
+            if (istalk)
             {
-                Choicetexts.Add(Choicebtn);
-
-                Textnum.Add(choice.choiceDatas[j].choice);
-                Likenum.Add(choice.choiceDatas[j].like);
-                Replynum.Add(choice.choiceDatas[j].reply);
-            }
-            for (int j = 0; j < choice.choiceDatas.Count; j++)
-            {
-                int rand = Random.Range(0, Choicetexts.Count);
-                var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
-                print("»ý¼º");
-                Choicetexts.RemoveAt(rand);
-
-                int randtext = Random.Range(0, Textnum.Count);
-                obj.GetComponent<BtnMgr>().BtnChoiceText = Replynum[randtext];
-                Replynum.RemoveAt(randtext);
-
-                Text choicetext = obj.transform.Find("Text").gameObject.GetComponent<Text>();
-                choicetext.text = Textnum[randtext];
-                Textnum.RemoveAt(randtext);
-
-                obj.onClick.AddListener(() =>
+                choice = choices[choiceId++];
+                for (int j = 0; j < choice.choiceDatas.Count; j++)
                 {
-                    ItemLoad.Instance.SetLikeValue(Likenum[randtext], (int)Etalk);
-                    Likenum.RemoveAt(randtext);
-                });
+                    Choicetexts.Add(Choicebtn);
+                    TalkChoices.Add(choice.choiceDatas[j]);
+                    Likenum.Add(choice.choiceDatas[j].like);
+                }
+                Isque = true;
+                for (int j = 0; j < choice.choiceDatas.Count; j++)
+                {
+                    int rand = Random.Range(0, Choicetexts.Count);
+                    var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
+                    Choicetexts.RemoveAt(rand);
+
+                    int randtext = Random.Range(0, TalkChoices.Count);
+                    obj.GetComponent<BtnMgr>().BtnChoiceText = TalkChoices[randtext].reply;
+
+                    TextMeshProUGUI choicetext = obj.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
+                    choicetext.text = TalkChoices[randtext].choice;
+                    TalkChoices.RemoveAt(randtext);
+
+                    obj.onClick.AddListener(() =>
+                    {
+                        // ItemLoad.Instance.SetLikeValue(TalkChoices[randtext].like, (int)Etalk);
+                        Likenum.RemoveAt(randtext);
+
+                        talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
+                        StartCoroutine(ETextTyping(txtTalk, talk1));
+
+                        DeleteChilds();
+
+                        Isque = false;
+                    });
+                }
+                if (choiceId == (int)Etalk * 10)
+                    istalk = false;
             }
 
-            yield return StartCoroutine(EwaitClick());
+            //yield return StartCoroutine(EwaitClick());
+            //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
+            //var Btn = EventSystem.current.currentSelectedGameObject;
 
-            var Btn = EventSystem.current.currentSelectedGameObject;
-            talk1 = Btn.GetComponent<BtnMgr>().BtnChoiceText;
-
-            DeleteChilds();
-            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
-
+            if (prog + 1 == talk.talkDatas.Count) continue;
             yield return StartCoroutine(EWaitInput());
         }
         //var talks = loader.LoadTalk();d
@@ -187,11 +188,11 @@ public class TalkManager : MonoBehaviour
         //    if (i + 1 == talk.talkDatas.Count) continue;
         //    yield return StartCoroutine(EWaitInput());
         //}
-
         yield return null;
+
     }
     public void DeleteChilds()
-    {     
+    {
         var child = rtrnChoiceParent.GetComponentsInChildren<RectTransform>();
 
         foreach (var iter in child)
@@ -202,20 +203,7 @@ public class TalkManager : MonoBehaviour
             }
         }
     }
-    IEnumerator EwaitClick()
-    {
-        var wait = new WaitForSeconds(0.001f);
-        while (true)
-        {
-            if (Input.GetMouseButtonDown(0) && EventSystem.current.currentSelectedGameObject.name == "btn(Clone)")
-            {
-                print("Click");
-                yield return new WaitForSeconds(0.1f);
-                yield break;
-            }
-            yield return wait;
-        }
-    }
+
     IEnumerator EWaitInput()
     {
         var wait = new WaitForSeconds(0.001f);

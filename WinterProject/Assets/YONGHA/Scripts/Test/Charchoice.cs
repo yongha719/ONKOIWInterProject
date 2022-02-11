@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Charchoice : MonoBehaviour
 {
-    public static Charchoice Instance { get; set; } = null;
+    public static Charchoice Instance { get; private set; } = null;
     public Button[] Char;
     public GameObject[] Chars;
 
@@ -16,11 +16,13 @@ public class Charchoice : MonoBehaviour
     public Text text;
     private void Awake()
     {
+        Instance = this;
+
+
         foreach (var ch in Chars)
         {
             ch.SetActive(false);
         }
-        Instance = this;
         AniNext.onClick.AddListener(() =>
         {
             foreach (var item in Chars)

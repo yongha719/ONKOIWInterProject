@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.09411765, g: 0.0627451, b: 0.2901961, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -509,10 +509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -824,33 +824,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choiceDatas:
   - choiceDatas:
-    - choice: 11
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 11
       like: 1
       reply: 
-    - choice: 12
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 12
       like: 2
       reply: 
-    - choice: 13
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 13
       like: 3
       reply: 
   - choiceDatas:
-    - choice: 14
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 14
       like: 4
       reply: 
-    - choice: 15
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 15
       like: 5
       reply: 
-    - choice: 16
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 16
       like: 6
       reply: 
   - choiceDatas:
-    - choice: 17
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 17
       like: 7
       reply: 
-    - choice: 18
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 18
       like: 8
       reply: 
-    - choice: 19
+    - Kang: 0
+      Yang: 0
+      Baek: 0
+      choice: 19
       like: 9
       reply: 
   txtName: {fileID: 67934226}
