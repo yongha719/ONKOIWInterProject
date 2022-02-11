@@ -2,21 +2,42 @@
   "target": [
     {
       "choiceDatas": [
+        {
+          "Kang": 1,
+          "Yang": 2,
+          "Baek": 3,
+          "choice": "글쎄 아무래도 우리가 같이 놀았던 일들 중 하나가 아닐까?",
+          "like": 10,
+          "reply": "w1 check"
+        },
+        {
+          "choice": "w2",
+          "like": 2,
+          "reply": "w2 check"
+        },
+        {
+          "choice": "w3",
+          "like": 3,
+          "reply": "w3 check"
+        }
       ]
     },
     {
       "choiceDatas": [
         {
-          "choice": "떡볶이",
-          "like": 1
+          "choice": "",
+          "like": 10,
+          "reply": ""
         },
         {
-          "choice": "돈까스",
-          "like": 2
+          "choice": "",
+          "like": 0,
+          "reply": ""
         },
         {
-          "choice": "짜장면",
-          "like": 3
+          "choice": "",
+          "like": -15,
+          "reply": ""
         }
       ]
     },

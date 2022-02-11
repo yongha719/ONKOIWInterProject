@@ -36,6 +36,7 @@ public class TalkManager : MonoBehaviour
     List<Button> Choicetexts = new List<Button>();
     List<string> Textnum = new List<string>();
     List<int> Likenum = new List<int>();
+    List<string> Replynum = new List<string>();
 
     int KtalkNum = 0;
     int prog;
@@ -49,31 +50,30 @@ public class TalkManager : MonoBehaviour
 
     private void Start()
     {
-
         loader = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
-        // StartCoroutine(StoryEvent());
+        //StartCoroutine(StoryEvent());
     }
 
     private void Update()
     {
+        SetChar();
     }
-    void SetChar(int temp)
+    void SetChar()
     {
         switch (Etalk)
         {
             case TalkChoice.Kang:
-
+                choiceId = 0;
                 break;
             case TalkChoice.Yang:
-
+                choiceId = 9;
                 break;
             case TalkChoice.Baek:
-
+                choiceId = 19;
                 break;
             default:
-
                 break;
         }
 
@@ -126,28 +126,40 @@ public class TalkManager : MonoBehaviour
             for (int j = 0; j < choice.choiceDatas.Count; j++)
             {
                 Choicetexts.Add(Choicebtn);
+
                 Textnum.Add(choice.choiceDatas[j].choice);
                 Likenum.Add(choice.choiceDatas[j].like);
+                Replynum.Add(choice.choiceDatas[j].reply);
             }
             for (int j = 0; j < choice.choiceDatas.Count; j++)
             {
                 int rand = Random.Range(0, Choicetexts.Count);
                 var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
+                print("»ý¼º");
                 Choicetexts.RemoveAt(rand);
 
                 int randtext = Random.Range(0, Textnum.Count);
+                obj.GetComponent<BtnMgr>().BtnChoiceText = Replynum[randtext];
+                Replynum.RemoveAt(randtext);
+
                 Text choicetext = obj.transform.Find("Text").gameObject.GetComponent<Text>();
                 choicetext.text = Textnum[randtext];
+                Textnum.RemoveAt(randtext);
+
                 obj.onClick.AddListener(() =>
                 {
-                    // ItemLoad.Instance.SetLikeValue(Likenum[randtext] ,(int)Etalk);
-                    print(Likenum[randtext]);
+                    ItemLoad.Instance.SetLikeValue(Likenum[randtext], (int)Etalk);
                     Likenum.RemoveAt(randtext);
                 });
-                Textnum.RemoveAt(randtext);
             }
 
-            // yield return StartCoroutine(EwaitClick());
+            yield return StartCoroutine(EwaitClick());
+
+            var Btn = EventSystem.current.currentSelectedGameObject;
+            talk1 = Btn.GetComponent<BtnMgr>().BtnChoiceText;
+
+            DeleteChilds();
+            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
             yield return StartCoroutine(EWaitInput());
         }
@@ -178,9 +190,17 @@ public class TalkManager : MonoBehaviour
 
         yield return null;
     }
-    private void OnMouseDown()
-    {
+    public void DeleteChilds()
+    {     
+        var child = rtrnChoiceParent.GetComponentsInChildren<RectTransform>();
 
+        foreach (var iter in child)
+        {
+            if (iter != rtrnChoiceParent.transform)
+            {
+                Destroy(iter.gameObject);
+            }
+        }
     }
     IEnumerator EwaitClick()
     {
