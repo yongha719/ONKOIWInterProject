@@ -1,0 +1,56 @@
+﻿{
+  "target": [
+    {
+      "choiceDatas": [
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "choice": "떡볶이",
+          "like": 1
+        },
+        {
+          "choice": "돈까스",
+          "like": 2
+        },
+        {
+          "choice": "짜장면",
+          "like": 3
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "choice": "14",
+          "like": 4
+        },
+        {
+          "choice": "15",
+          "like": 5
+        },
+        {
+          "choice": "16",
+          "like": 6
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "choice": "17",
+          "like": 7
+        },
+        {
+          "choice": "18",
+          "like": 8
+        },
+        {
+          "choice": "19",
+          "like": 9
+        }
+      ]
+    }
+  ]
+}

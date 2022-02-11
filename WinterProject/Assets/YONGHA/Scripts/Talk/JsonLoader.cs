@@ -15,8 +15,11 @@ public class JsonLoader : ITalkLoad
 {
     public List<ChoiceDatas> LoadChoice()
     {
-        var json = File.ReadAllText(Path.Combine(Application.persistentDataPath, "Choice.json"));
-        return JsonUtility.FromJson<Serialization<ChoiceDatas>>(json).target;
+        TextAsset txt = Resources.Load<TextAsset>("Choice");
+
+        return JsonUtility.FromJson<Serialization<ChoiceDatas>>(txt.text).target;
+        //var json = File.ReadAllText(Path.Combine(Application.persistentDataPath, "Choice.json"));
+        //return JsonUtility.FromJson<Serialization<ChoiceDatas>>(json).target;
     }
 
     public List<TalkDatas> LoadTalk()
@@ -25,22 +28,5 @@ public class JsonLoader : ITalkLoad
 
         return JsonUtility.FromJson<Serialization<TalkDatas>>(txt.text).target;
     }
-    public List<KangTalk> LoadKang()
-    {
-        TextAsset txt = Resources.Load<TextAsset>("Kang");
-
-        return JsonUtility.FromJson<Serialization<KangTalk>>(txt.text).target;
-    }
-    public List<YangTalk> LoadYang()
-    {
-        TextAsset txt = Resources.Load<TextAsset>("Yang");
-
-        return JsonUtility.FromJson<Serialization<YangTalk>>(txt.text).target;
-    }
-    public List<BaekTalk> LoadBaek()
-    {
-        TextAsset txt = Resources.Load<TextAsset>("Baek");
-
-        return JsonUtility.FromJson<Serialization<BaekTalk>>(txt.text).target;
-    }
+    
 }

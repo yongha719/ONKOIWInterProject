@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
@@ -33,6 +34,8 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private int choiceId;
 
     List<Button> Choicetexts = new List<Button>();
+    List<string> Textnum = new List<string>();
+    List<int> Likenum = new List<int>();
 
     int KtalkNum = 0;
     int prog;
@@ -50,7 +53,7 @@ public class TalkManager : MonoBehaviour
         loader = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
-        StartCoroutine(StoryEvent());
+        // StartCoroutine(StoryEvent());
     }
 
     private void Update()
@@ -111,7 +114,6 @@ public class TalkManager : MonoBehaviour
 
         for (prog = KtalkNum; prog < talk.talkDatas.Count; prog++)
         {
-            choice = choices[(int)Etalk];
 
             txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
             string talk1 = talk.talkDatas[prog].talk;
@@ -119,14 +121,35 @@ public class TalkManager : MonoBehaviour
 
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
+            choice = choices[choiceId++];
+
             for (int j = 0; j < choice.choiceDatas.Count; j++)
             {
                 Choicetexts.Add(Choicebtn);
-                Text choicetext = Choicebtn.transform.Find("Text").gameObject.GetComponent<Text>();
-                choicetext.text = choice.choiceDatas[j].choice;
-                var obj = Instantiate(Choicetexts[Random.Range(0, Choicetexts.Count)], rtrnChoiceParent);
-           
+                Textnum.Add(choice.choiceDatas[j].choice);
+                Likenum.Add(choice.choiceDatas[j].like);
             }
+            for (int j = 0; j < choice.choiceDatas.Count; j++)
+            {
+                int rand = Random.Range(0, Choicetexts.Count);
+                var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
+                Choicetexts.RemoveAt(rand);
+
+                int randtext = Random.Range(0, Textnum.Count);
+                Text choicetext = obj.transform.Find("Text").gameObject.GetComponent<Text>();
+                choicetext.text = Textnum[randtext];
+                obj.onClick.AddListener(() =>
+                {
+                    // ItemLoad.Instance.SetLikeValue(Likenum[randtext] ,(int)Etalk);
+                    print(Likenum[randtext]);
+                    Likenum.RemoveAt(randtext);
+                });
+                Textnum.RemoveAt(randtext);
+            }
+
+            // yield return StartCoroutine(EwaitClick());
+
+            yield return StartCoroutine(EWaitInput());
         }
         //var talks = loader.LoadTalk();d
         //var choices = loader.LoadChoice();
@@ -155,7 +178,24 @@ public class TalkManager : MonoBehaviour
 
         yield return null;
     }
+    private void OnMouseDown()
+    {
 
+    }
+    IEnumerator EwaitClick()
+    {
+        var wait = new WaitForSeconds(0.001f);
+        while (true)
+        {
+            if (Input.GetMouseButtonDown(0) && EventSystem.current.currentSelectedGameObject.name == "btn(Clone)")
+            {
+                print("Click");
+                yield return new WaitForSeconds(0.1f);
+                yield break;
+            }
+            yield return wait;
+        }
+    }
     IEnumerator EWaitInput()
     {
         var wait = new WaitForSeconds(0.001f);
