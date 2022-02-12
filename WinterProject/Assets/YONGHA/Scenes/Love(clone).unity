@@ -1562,6 +1562,7 @@ GameObject:
   - component: {fileID: 225959765}
   - component: {fileID: 225959763}
   - component: {fileID: 225959764}
+  - component: {fileID: 225959771}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1689,7 +1690,10 @@ MonoBehaviour:
   Characters: {fileID: 1373234400}
   Save: {fileID: 335107746}
   SettingObj: {fileID: 1782961041}
-  Charchoice: []
+  Charchoice:
+  - {fileID: 2134619756}
+  - {fileID: 1553484828}
+  - {fileID: 1358156620}
 --- !u!114 &225959767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,6 +1790,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &225959771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225959762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0778968aec3e7b849940e0fc761d0a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 0}
+  Backgrounds: []
+  Kangs: {fileID: 0}
+  Yangs: {fileID: 0}
+  Baeks: {fileID: 0}
 --- !u!1 &233843829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,6 +3355,7 @@ GameObject:
   - component: {fileID: 422993733}
   - component: {fileID: 422993735}
   - component: {fileID: 422993734}
+  - component: {fileID: 422993736}
   m_Layer: 5
   m_Name: Kang chae a(Talk)
   m_TagString: Untagged
@@ -3402,6 +3424,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422993732}
   m_CullTransparentMesh: 1
+--- !u!95 &422993736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422993732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &438523452
 GameObject:
   m_ObjectHideFlags: 0

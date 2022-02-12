@@ -24,10 +24,8 @@ public class TalkManager : MonoBehaviour
     public static TalkManager Instance { get; private set; } = null;
     public ITalkLoad loader;
 
-    public List<ChoiceDatas> choiceDatas;
-
     [SerializeField] private TextMeshProUGUI txtName;
-    [SerializeField] private Text txtTalk;
+    [SerializeField] private TextMeshProUGUI txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
     [SerializeField] private Button Choicebtn;
     [SerializeField] private int talkId;
@@ -36,8 +34,9 @@ public class TalkManager : MonoBehaviour
     bool istalk = true;
     bool Isque;
 
-    
-    int KtalkNum = 0;
+    string Talkstart;
+
+    int talkNum = 0;
     int prog;
 
     public TalkChoice Etalk;
@@ -58,6 +57,26 @@ public class TalkManager : MonoBehaviour
     private void Update()
     {
         //choiceId = (int)Etalk * 10 - 10;
+
+    }
+    void TalkSet()
+    {
+        switch (Etalk)
+        {
+            case TalkChoice.Kang:
+                Talkstart = " PlayerName (이) 왔구나! 무슨 일 이야?";
+                break;
+            case TalkChoice.Yang:
+                Talkstart = "오셨군요! 기다리고 있었어요.";
+                break;
+            case TalkChoice.Baek:
+                //Talkstart = "";
+                break;
+            default:
+                break;
+
+
+        }
     }
 
     public IEnumerator StoryEvent()
@@ -100,23 +119,24 @@ public class TalkManager : MonoBehaviour
 
         bool talkstart = false;
 
-        for (prog = KtalkNum; prog < talk.talkDatas.Count; prog++)
+        for (prog = talkNum; prog < talk.talkDatas.Count; prog++)
         {
             if (!talkstart)
             {
-                string newstring = txtTalk.text;
                 txtTalk.text = null;
-                yield return StartCoroutine(ETextTyping(txtTalk, newstring));
+                TalkSet();
+                yield return StartCoroutine(ETextTyping(txtTalk, Talkstart));
 
                 yield return StartCoroutine(EWaitInput());
                 talkstart = true;
             }
             //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
-            txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
+            //txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
             string talk1 = talk.talkDatas[prog].talk;
             txtTalk.text = talk1;
 
-
+            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
+            //choice
             if (istalk)
             {
                 choice = choices[choiceId++];
@@ -157,9 +177,7 @@ public class TalkManager : MonoBehaviour
                     istalk = false;
             }
 
-            //yield return StartCoroutine(EwaitClick());
             //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
-            //var Btn = EventSystem.current.currentSelectedGameObject;
 
             if (prog + 1 == talk.talkDatas.Count) continue;
             yield return StartCoroutine(EWaitInput());
@@ -218,10 +236,10 @@ public class TalkManager : MonoBehaviour
         }
     }
 
-    IEnumerator ETextTyping(Text text, string newString)
+    IEnumerator ETextTyping(TextMeshProUGUI text, string newString)
     {
         var wait = new WaitForSeconds(0.05f);
-
+        newString = newString.Replace("PlayerName", GameManager.Instance.PlayerName);
         for (int i = 0; i <= newString.Length; i++)
         {
             text.text = newString.Substring(0, i);

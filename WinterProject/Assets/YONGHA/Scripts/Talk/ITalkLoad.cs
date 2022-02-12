@@ -37,8 +37,15 @@ public struct ChoiceDatas
     public List<ChoiceData> choiceDatas;
 }
 
+[Serializable]
+public struct TalkProgress
+{
+    public List<int> Talkprog;
+}
+
 public interface ITalkLoad
 {
     public List<TalkDatas> LoadTalk();
     public List<ChoiceDatas> LoadChoice();
+    public TalkProgress LoadData();
 }
