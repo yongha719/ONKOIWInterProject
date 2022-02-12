@@ -68,6 +68,9 @@ public class BackgroundManager : MonoBehaviour
             case "library":
                 backgroundImage.sprite = Backgrounds[2];
                 break;
+            case "backyard":
+                backgroundImage.sprite = Backgrounds[3];
+                break;
             default:
                 break;
         }

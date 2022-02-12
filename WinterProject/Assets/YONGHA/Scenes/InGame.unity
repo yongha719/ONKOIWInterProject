@@ -3749,6 +3749,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 34548a29ed004834e9221bb0f15edceb, type: 3}
   - {fileID: 21300000, guid: 011d0c6d3178ce046a1b84526afc5ef0, type: 3}
   - {fileID: 21300000, guid: 103968cda8f5dcd45897fb3532d0aa6a, type: 3}
+  - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
   Kangs: {fileID: 1224738678}
   Yangs: {fileID: 330479038}
   Baeks: {fileID: 1167383765}
@@ -4599,7 +4600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c232af7af5f424188869846957cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choiceDatas: []
   txtName: {fileID: 1063891439}
   txtTalk: {fileID: 825045}
   rtrnChoiceParent: {fileID: 0}
