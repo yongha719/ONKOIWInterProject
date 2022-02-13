@@ -52,7 +52,7 @@ public class TalkManager : MonoBehaviour
         saver = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
-        //StartCoroutine(StoryEvent());
+        StartCoroutine(StoryEvent());
     }
 
     private void Update()
@@ -102,7 +102,7 @@ public class TalkManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Love(clone)");
+        SceneManager.LoadScene("Love");
         yield return null;
     }
     public IEnumerator ETalkEvent()
@@ -172,12 +172,11 @@ public class TalkManager : MonoBehaviour
 
                     obj.onClick.AddListener(() =>
                     {
-                        // ItemLoad.Instance.SetLikeValue(TalkChoices[randtext].like, (int)Etalk);
+                        ItemLoad.Instance.SetLikeValue(TalkChoices[randtext].like, (int)Etalk);
                         Likenum.RemoveAt(randtext);
 
                         talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
                         StartCoroutine(ETextTyping(txtTalk, talk1));
-
                         DeleteChilds();
 
                         Isque = false;

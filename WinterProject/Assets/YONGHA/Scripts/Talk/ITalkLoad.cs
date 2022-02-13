@@ -6,9 +6,9 @@ using System;
 [Serializable]
 public struct TalkData
 {
-    public string Kang;
-    public string Yang;
-    public string Baek;
+    public int Kang;
+    public int Yang;
+    public int Baek;
     public string background;
     public string name;
     public string talk;
