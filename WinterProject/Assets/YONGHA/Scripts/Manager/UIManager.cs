@@ -12,7 +12,9 @@ public class UIManager : MonoBehaviour
 
     public GameObject Characters;
     public GameObject Save;
+
     [SerializeField] private GameObject SettingObj;
+
 
     public Button[] Charchoice;
     public void IngameMenuButton()
@@ -39,6 +41,7 @@ public class UIManager : MonoBehaviour
         IngameMenu.anchoredPosition = new Vector2(902.5f, 410);
         Save.SetActive(false);
         SettingObj.SetActive(false);
+
     }
 
     void Update()
@@ -61,4 +64,5 @@ public class UIManager : MonoBehaviour
             TalkManager.Instance.Etalk = TalkChoice.Baek;
         });
     }
+    
 }

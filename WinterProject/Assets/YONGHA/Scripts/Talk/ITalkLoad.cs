@@ -49,3 +49,7 @@ public interface ITalkLoad
     public List<ChoiceDatas> LoadChoice();
     public TalkProgress LoadData();
 }
+public interface ITalkSave
+{
+    public void SaveTalk(TalkProgress talkProgress);
+}

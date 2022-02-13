@@ -3715,58 +3715,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177466216}
   m_CullTransparentMesh: 1
---- !u!1 &1178527433
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1178527435}
-  - component: {fileID: 1178527434}
-  m_Layer: 0
-  m_Name: BackGroundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1178527434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178527433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0778968aec3e7b849940e0fc761d0a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundImage: {fileID: 774998115}
-  Backgrounds:
-  - {fileID: 21300000, guid: 34548a29ed004834e9221bb0f15edceb, type: 3}
-  - {fileID: 21300000, guid: 011d0c6d3178ce046a1b84526afc5ef0, type: 3}
-  - {fileID: 21300000, guid: 103968cda8f5dcd45897fb3532d0aa6a, type: 3}
-  - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
-  Kangs: {fileID: 1224738678}
-  Yangs: {fileID: 330479038}
-  Baeks: {fileID: 1167383765}
---- !u!4 &1178527435
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178527433}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 877.9903, y: 399.15448, z: -851.5107}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1185907340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,6 +4181,7 @@ GameObject:
   - component: {fileID: 1441607979}
   - component: {fileID: 1441607983}
   - component: {fileID: 1441607984}
+  - component: {fileID: 1441607985}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4359,6 +4308,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feccf83138eac93419e556534ffaea86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1441607985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441607978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0778968aec3e7b849940e0fc761d0a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 774998115}
+  Backgrounds:
+  - {fileID: 21300000, guid: 34548a29ed004834e9221bb0f15edceb, type: 3}
+  - {fileID: 21300000, guid: 011d0c6d3178ce046a1b84526afc5ef0, type: 3}
+  - {fileID: 21300000, guid: 103968cda8f5dcd45897fb3532d0aa6a, type: 3}
+  - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
+  Kangs: {fileID: 1224738678}
+  Yangs: {fileID: 330479038}
+  Baeks: {fileID: 1167383765}
 --- !u!1 &1490542993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,7 +4571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtName: {fileID: 1063891439}
-  txtTalk: {fileID: 825045}
+  txtTalk: {fileID: 0}
   rtrnChoiceParent: {fileID: 0}
   Choicebtn: {fileID: 0}
   talkId: 0
@@ -4619,7 +4589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567232924
 GameObject:

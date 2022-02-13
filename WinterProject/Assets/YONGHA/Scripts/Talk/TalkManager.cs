@@ -23,7 +23,7 @@ public class TalkManager : MonoBehaviour
 {
     public static TalkManager Instance { get; private set; } = null;
     public ITalkLoad loader;
-
+    public ITalkSave saver;
     [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private TextMeshProUGUI txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
@@ -49,6 +49,7 @@ public class TalkManager : MonoBehaviour
     private void Start()
     {
         loader = new JsonLoader();
+        saver = new JsonLoader();
         if (SceneManager.GetActiveScene().name != "InGame")
             StartCoroutine(ETalkEvent());
         //StartCoroutine(StoryEvent());
@@ -106,16 +107,25 @@ public class TalkManager : MonoBehaviour
     }
     public IEnumerator ETalkEvent()
     {
-        List<Button> Choicetexts = new List<Button>();
-
         List<ChoiceData> TalkChoices = new List<ChoiceData>();
         List<int> Likenum = new List<int>();
+
+        List<Button> Choicetexts = new List<Button>();
+
 
         var talks = loader.LoadTalk();
         var choices = loader.LoadChoice();
 
         TalkDatas talk = talks[(int)Etalk];
         ChoiceDatas choice = default;
+
+        //Talk Progress
+        var talkprogs = loader.LoadData();
+
+        TalkProgress talkprog = talkprogs;
+
+        talkNum = talkprog.Talkprog[(int)Etalk - 1];//È÷È÷ ¶Ë¹ß½Î
+
 
         bool talkstart = false;
 
@@ -175,6 +185,8 @@ public class TalkManager : MonoBehaviour
                 }
                 if (choiceId == (int)Etalk * 10)
                     istalk = false;
+                talkprog.Talkprog[(int)Etalk] = prog;
+                saver.SaveTalk(talkprog);
             }
 
             //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);

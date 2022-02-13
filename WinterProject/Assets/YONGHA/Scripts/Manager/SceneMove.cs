@@ -24,4 +24,5 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("Love(clone)");
     }
+    
 }

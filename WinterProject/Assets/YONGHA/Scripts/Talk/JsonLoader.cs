@@ -11,7 +11,7 @@ public class Serialization<T>
     public List<T> target;
 }
 
-public class JsonLoader : ITalkLoad
+public class JsonLoader : ITalkLoad, ITalkSave
 {
     public List<ChoiceDatas> LoadChoice()
     {
@@ -25,14 +25,20 @@ public class JsonLoader : ITalkLoad
     public List<TalkDatas> LoadTalk()
     {
         TextAsset txt = Resources.Load<TextAsset>("Story");
-            
+
         return JsonUtility.FromJson<Serialization<TalkDatas>>(txt.text).target;
     }
     public TalkProgress LoadData()
     {
-        TextAsset txt = Resources.Load<TextAsset>("Test");
+        TextAsset txt = Resources.Load<TextAsset>("Talk");
 
         return JsonUtility.FromJson<TalkProgress>(txt.text);
     }
-    
+    public void SaveTalk(TalkProgress talkProgress)
+    {
+        string json = JsonUtility.ToJson(talkProgress);
+        
+        File.WriteAllText(Application.dataPath + "/Resources/Talk.json", json);
+    }
+
 }
