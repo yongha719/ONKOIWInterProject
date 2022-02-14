@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
     [SerializeField]private float playerMoveSpeed;
+    private Animator WalkAni;
+    private bool isThrow = true;
     //[SerializeField] private Sprite[] Snowsprites; //눈덩이 강화 상태변화  
     public int playerHp;
     public float attack;
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        WalkAni = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -43,19 +46,24 @@ public class Player : MonoBehaviour
             attack += Time.deltaTime * plusAttack;
             Debug.Log("누르고있어~");
             playerMoveSpeed = 2;
+            isThrow = true;
+            WalkAni.SetBool("bbb", isThrow);
         }
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                Debug.Log("뗐어~");
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            Debug.Log("뗐어~");
             if (plusAttack == 1) Debug.Log("1배속 공격이다 !");
             if (plusAttack == 2) Debug.Log("2배속 공격이다 !");
             Bullet.GetComponent<Bullet>().damage = attack;
             GameObject ShotSnow = Instantiate(Bullet, transform.position, transform.rotation);
-                Rigidbody2D rigid = ShotSnow.GetComponent<Rigidbody2D>();
-                rigid.AddForce(Vector2.up * playerAttackSpeed, ForceMode2D.Impulse);
+            Rigidbody2D rigid = ShotSnow.GetComponent<Rigidbody2D>();
+            rigid.AddForce(Vector2.up * playerAttackSpeed, ForceMode2D.Impulse);
             attack = 0;
             playerMoveSpeed = 10;
-            }
+            isThrow = false;
+            WalkAni.SetBool("bbb", isThrow);
+        }
+        
     }
     void ReturnPlusAttack()
     {

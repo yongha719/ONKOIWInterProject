@@ -8,6 +8,9 @@ public class Boss : MonoBehaviour
     public static Boss Instance { get; private set; }
     public float bossHp;
 
+    private Animator Ani;
+    private bool anibool = false;
+
     [SerializeField] private GameObject HpBar, ShotSnow, Items, SkillSnow;
     [SerializeField] private Transform[] Skill1Pos;
     [SerializeField] private GameObject[] BossSkillobjs;
@@ -21,6 +24,7 @@ public class Boss : MonoBehaviour
     {
         Instance = this;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Ani = GetComponent<Animator>();
         gameObject.transform.DOMove(RightPos.transform.position, 5f).SetEase(Ease.Linear);
     }
     private void Start()
@@ -34,9 +38,13 @@ public class Boss : MonoBehaviour
         HpBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0,1.5f, 0));
         if (MaxMoveDelay <= MinMoveDelay)
         {
+            anibool = true;
+            Ani.SetBool("ccc", anibool);
             LeftMove();
             MinMoveDelay = 0;
+            Invoke("ReturnAni", 0.6f);
         }
+        
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -64,10 +72,13 @@ public class Boss : MonoBehaviour
     {
         if (MaxShotDelay <= MinShotDelay)
         {
-        GameObject Snow = Instantiate(ShotSnow, gameObject.transform.position, gameObject.transform.rotation);
+            anibool = true;
+            Ani.SetBool("ccc", anibool);
+            GameObject Snow = Instantiate(ShotSnow, gameObject.transform.position += new Vector3(0,1,0), gameObject.transform.rotation);
         Rigidbody2D rigid = Snow.GetComponent<Rigidbody2D>();
         rigid.AddForce(Vector2.down * attackSpeed, ForceMode2D.Impulse);
             MinShotDelay = 0;
+            Invoke("ReturnAni", 0.6f);
 
         }
     }
@@ -78,22 +89,33 @@ public class Boss : MonoBehaviour
         if(bossHp <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Dead");
+            //SceneManager.LoadScene("Dead"); 이거 클리어 씬으로 바꿔야함
         }
     }
     void ReturnSprite()
     {
         spriteRenderer.sprite = HitSprite[0];
     }
+    void ReturnAni()
+    {
+        anibool = false;
+        Ani.SetBool("ccc", anibool);
+    }
     private void LeftMove()
     {
         Debug.Log("함수실행함 ㅇㅇ");
+        anibool = true;
+        Ani.SetBool("ccc", anibool);
+        Invoke("ReturnAni", 0.6f);
         BossSkill1();
         gameObject.transform.DOMove(LeftPos.transform.position, 10f).SetEase(Ease.Linear);
         Invoke("RightMove", 10f);
     }
     void RightMove()
     {
+        anibool = true;
+        Ani.SetBool("ccc", anibool);
+        Invoke("ReturnAni", 0.6f);
         BossSkill1();
         gameObject.transform.DOMove(RightPos.transform.position, 10f).SetEase(Ease.Linear);
     }
