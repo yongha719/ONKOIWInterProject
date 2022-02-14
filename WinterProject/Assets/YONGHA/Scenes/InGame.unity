@@ -344,7 +344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\uB300\uC0AC \uB300\uC0AC \uB300\uC0AC "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a5481898312c884bb61f80f34b86348, type: 2}
   m_sharedMaterial: {fileID: -5841885005585987361, guid: 0a5481898312c884bb61f80f34b86348, type: 2}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283043864
   m_fontColor: {r: 0.09411765, g: 0.0627451, b: 0.2901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4663,7 +4663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8407289827418183569, guid: af7ed59298f44b84a8e335e4ce813684, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8407289827418183569, guid: af7ed59298f44b84a8e335e4ce813684, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7016,7 +7016,7 @@ RectTransform:
   m_Children:
   - {fileID: 825044}
   m_Father: {fileID: 1441607982}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15281,7 +15281,7 @@ RectTransform:
   m_Children:
   - {fileID: 1063891438}
   m_Father: {fileID: 1441607982}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20260,8 +20260,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 460181553}
   - {fileID: 1107160251}
+  - {fileID: 460181553}
   - {fileID: 745596577}
   - {fileID: 2080594162}
   - {fileID: 744196213}
@@ -21722,7 +21722,10 @@ MonoBehaviour:
   Choicebtn: {fileID: 0}
   talkId: 0
   choiceId: 0
+  StartTalkBtn: []
   Etalk: 0
+  talkprog:
+    Talkprog: 
 --- !u!4 &1544456172
 Transform:
   m_ObjectHideFlags: 0

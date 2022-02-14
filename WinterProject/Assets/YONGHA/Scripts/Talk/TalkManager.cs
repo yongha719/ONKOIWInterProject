@@ -30,6 +30,7 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private Button Choicebtn;
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
+    [SerializeField] Button[] StartTalkBtn;
 
     bool istalk = true;
     bool Isque;
@@ -40,7 +41,7 @@ public class TalkManager : MonoBehaviour
     int prog;
 
     public TalkChoice Etalk;
-
+    public TalkProgress talkprog;
     private void Awake()
     {
         Instance = this;
@@ -50,8 +51,13 @@ public class TalkManager : MonoBehaviour
     {
         loader = new JsonLoader();
         saver = new JsonLoader();
-        if (SceneManager.GetActiveScene().name != "InGame")
-            StartCoroutine(ETalkEvent());
+        foreach (var item in StartTalkBtn)
+        {
+            item.onClick.AddListener(() =>
+            {
+                StartCoroutine(ETalkEvent());
+            });
+        }
         StartCoroutine(StoryEvent());
     }
 
@@ -120,12 +126,11 @@ public class TalkManager : MonoBehaviour
         ChoiceDatas choice = default;
 
         //Talk Progress
-        var talkprogs = loader.LoadData();
-
-        TalkProgress talkprog = talkprogs;
+        var talkprogs = loader.LoadTalkData();
+        
+        talkprog = talkprogs;
 
         talkNum = talkprog.Talkprog[(int)Etalk - 1];//È÷È÷ ¶Ë¹ß½Î
-
 
         bool talkstart = false;
 

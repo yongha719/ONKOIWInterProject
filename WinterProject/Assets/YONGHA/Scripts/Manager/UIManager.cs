@@ -15,8 +15,10 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject SettingObj;
 
+    
 
     public Button[] Charchoice;
+
     public void IngameMenuButton()
     {
         if (!OnMenu)
@@ -30,18 +32,13 @@ public class UIManager : MonoBehaviour
             OnMenu = false;
         }
     }
-    public void SaveDate(Text text)
-    {
-        text.text = DateTime.Now.ToString(("yyyy-MM-dd HH:mm:ss tt"));
-    }
 
     void Start()
     {
         TalkSet();
         IngameMenu.anchoredPosition = new Vector2(902.5f, 410);
         Save.SetActive(false);
-        SettingObj.SetActive(false);
-
+        SettingObj.SetActive(false);      
     }
 
     void Update()
@@ -58,11 +55,11 @@ public class UIManager : MonoBehaviour
         Charchoice[1].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Yang;
-        }); 
+        });
         Charchoice[2].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Baek;
         });
     }
-    
+
 }

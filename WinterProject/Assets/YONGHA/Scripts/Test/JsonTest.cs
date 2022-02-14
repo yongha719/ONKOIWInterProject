@@ -10,6 +10,7 @@ public class Test
 
 public class JsonTest : MonoBehaviour
 {
+
     public Animator Animator;
     public int a;
     // Start is called before the first frame update
@@ -21,7 +22,8 @@ public class JsonTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Animator.SetInteger("num", a);
+        //if(Input.GetKeyDown(KeyCode.A))
+            
     }
     //IEnumerator EJsonTest()
     //{
