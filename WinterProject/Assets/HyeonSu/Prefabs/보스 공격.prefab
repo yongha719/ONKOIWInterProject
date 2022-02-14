@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7372813190263904317}
   - component: {fileID: 1607570190001833789}
   - component: {fileID: 7194954888360676975}
+  - component: {fileID: -2405728596102495831}
   m_Layer: 0
   m_Name: "\uBCF4\uC2A4 \uACF5\uACA9"
   m_TagString: Snow
@@ -121,3 +122,16 @@ CircleCollider2D:
   m_Offset: {x: 0.009416087, y: 0}
   serializedVersion: 2
   m_Radius: 0.5045133
+--- !u!114 &-2405728596102495831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3720963859666068476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da66abb803b7f64c86f5aa64b35d3aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 6060261504274240000, guid: b63b944f5979f82449aa1dd750641fde, type: 3}
