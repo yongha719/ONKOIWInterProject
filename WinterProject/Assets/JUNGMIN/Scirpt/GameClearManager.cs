@@ -7,9 +7,11 @@ public class GameClearManager : MonoBehaviour
     public static GameClearManager Inst { get; private set; }
     void Awake() => Inst = this;
 
-    public GameObject Clear;
+    [SerializeField] GameObject Clear;
     bool isOne = true;
     public int FindHide = 0;
+
+    BackGround backGround;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class GameClearManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FindHide == 4)
+        if (FindHide == 3)
         {
             if(isOne == true)
             {
@@ -27,10 +29,12 @@ public class GameClearManager : MonoBehaviour
                 Invoke("GameClear", 1.8f);
             }
         }
+
     }
 
     void GameClear()
     {
-        Instantiate(Clear, new Vector3(0.53f, 0.02f, 0f), Quaternion.identity);
+        Clear.SetActive(true);
+       
     }
 }

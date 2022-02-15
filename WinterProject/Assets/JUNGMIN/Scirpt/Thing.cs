@@ -19,7 +19,7 @@ public class Thing : MonoBehaviour
         if(Hide.hide[Idx].activeSelf == false)
         {
             Color color = image.color;
-            color.a = 0.2f;
+            color.a = 0.4f;
             image.color = color;
         }   
     }

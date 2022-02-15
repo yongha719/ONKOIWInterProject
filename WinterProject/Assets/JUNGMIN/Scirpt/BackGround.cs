@@ -7,6 +7,7 @@ public class BackGround : MonoBehaviour
 {
     bool isOn = false;
     bool isGameClear = false;
+    public bool isGameOver = false;
     bool isClickCoolTime = true;
     private int heartCount = 2;
     public Transform heartTransform;
@@ -26,10 +27,11 @@ public class BackGround : MonoBehaviour
 
         if (heartCount < 0)
         {
+            isGameOver = true;
             SceneManager.LoadScene("GameOver");
         }
 
-        if(GameClearManager.Inst.FindHide == 4)
+        if(GameClearManager.Inst.FindHide == 3)
         {
             isGameClear = true;
         }

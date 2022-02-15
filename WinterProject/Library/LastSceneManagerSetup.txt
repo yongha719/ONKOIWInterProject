@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/HyeonSu/Scene/Shooting.unity
+- path: Assets/JUNGMIN/Scene/MiniGame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

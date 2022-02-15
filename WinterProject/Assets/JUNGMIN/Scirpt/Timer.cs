@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
-        if(GameClearManager.Inst.FindHide == 4)
+        if(GameClearManager.Inst.FindHide == 3)
         {
             StopCoroutine(Gocorutine);
         }
