@@ -18,6 +18,9 @@ public class UIManager : MonoBehaviour
 
     public Button[] Charchoice;
 
+    public Text ItemLimit;
+    
+
     public void IngameMenuButton()
     {
         if (!OnMenu)
@@ -39,26 +42,15 @@ public class UIManager : MonoBehaviour
         TalkSet();
         Save.SetActive(false);
         SettingObj.SetActive(false);
+        
     }
     public void SliderValue()
     {
-        switch ((int)TalkManager.Instance.Etalk)
-        {
-            case 1:
-                LikeSlider.value = ItemLoad.Instance.chaeAhlike;
-                break;
-            case 2:
-                LikeSlider.value = ItemLoad.Instance.seHwalike;
-                break;
-            case 3:
-                LikeSlider.value = ItemLoad.Instance.gaYoonlike;
-                break;
-        }
-
+        LikeSlider.value = ItemLoad.Instance.Likes[(int)TalkManager.Instance.Etalk - 1];
     }
     void Update()
     {
-
+        SliderValue();
     }
 
     void TalkSet()

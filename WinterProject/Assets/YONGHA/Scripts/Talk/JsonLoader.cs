@@ -35,10 +35,15 @@ public class JsonLoader : ITalkLoad, ITalkSave
 
         return JsonUtility.FromJson<TalkProgress>(txt.text);
     }
-
-    public SaveDatas LoadSaveData()
+    public SaveData LoadSaveData()
     {
         TextAsset txt = Resources.Load<TextAsset>("SaveData");
+
+        return JsonUtility.FromJson<SaveData>(txt.text);
+    }
+    public SaveDatas LoadSaveDatas()
+    {
+        TextAsset txt = Resources.Load<TextAsset>("SaveDatas");
 
         return JsonUtility.FromJson<SaveDatas>(txt.text);
     }
@@ -48,12 +53,17 @@ public class JsonLoader : ITalkLoad, ITalkSave
 
         File.WriteAllText(Application.dataPath + "/Resources/Talk.json", json);
     }
+    public void SaveData(SaveData savedata)
+    {
+        string json = JsonUtility.ToJson(savedata);
 
-    public void SaveData(SaveDatas saveDatas)
+        File.WriteAllText(Application.dataPath + "/Resources/SaveData.json", json);
+    }
+    public void SaveDatas(SaveDatas saveDatas)
     {
         string json = JsonUtility.ToJson(saveDatas);
 
-        File.WriteAllText(Application.dataPath + "/Resources/SaveData.json", json);
+        File.WriteAllText(Application.dataPath + "/Resources/SaveDatas.json", json);
     }
 
 }

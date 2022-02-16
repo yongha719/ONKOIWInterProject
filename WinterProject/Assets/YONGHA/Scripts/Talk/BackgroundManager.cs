@@ -34,8 +34,6 @@ public class BackgroundManager : MonoBehaviour
         KangAni.SetInteger("num", Kangnum);
         YangAni.SetInteger("num", Yangnum);
         BaekAni.SetInteger("num", Baeknum);
-
-
     }
     public void CharChange(int Kang, int Yang, int Baek)
     {

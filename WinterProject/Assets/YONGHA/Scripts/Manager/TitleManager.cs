@@ -6,18 +6,15 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class TitleManager : MonoBehaviour
-{
-    public static TitleManager Instance { get; set; }
-
+{ 
     public GameObject Namefield;
     public GameObject Soundfield;
     public GameObject Albumfield;
     public GameObject Continuefield;
     public Text PlayerName;
-    
     void Awake()
     {
-        Instance = this;
+
     }
     void Start()
     {
@@ -29,6 +26,7 @@ public class TitleManager : MonoBehaviour
     void Update()
     {
         GetIngameScene();
+        GameManager.Instance.PlayerName = PlayerName.text;
     }
    
     void GetIngameScene()

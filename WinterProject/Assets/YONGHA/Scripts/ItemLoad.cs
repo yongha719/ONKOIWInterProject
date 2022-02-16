@@ -24,17 +24,23 @@ public class ItemLoad : MonoBehaviour
     string[] Explans;
 
     [SerializeField] Text ItemNameText;
-    [SerializeField] Text ExplainText, TalkText;
-    [SerializeField] Text[] ItemLimitTexts;
+    [SerializeField] Text ExplainText;
+    [SerializeField] Text GiftLimit;
+    [SerializeField] Button Gift;
 
     public int check;
     public int chaeAhItemCheck = 3;
     public int seHwaItemCheck = 3;
     public int gaYoonItemCheck = 3;
 
+    ITalkLoad loader;
+    public SaveData giftlist;
+    List<bool> gift;
     void Start()
     {
-        Likes = new List<float>() { chaeAhlike, seHwalike, gaYoonlike };
+        gift = default;
+        loader = new JsonLoader();
+        giftlist = loader.LoadSaveData();
         Names = new string[9];
         Names[0] = "곰인형";
         Names[1] = "꽃 한 송이";
@@ -65,217 +71,91 @@ public class ItemLoad : MonoBehaviour
                 int check = ClickBtnItem.GetComponent<Itembtn>().check;
 
                 ExplanItem.SetActive(true);
-                print("CLick");
+                print(ClickBtnItem.name);
                 EItemimg.sprite = Itemimgs[check];
-
                 ExplainText.text = Explans[check];
                 ItemNameText.text = Names[check];
             });
         }
+        Gift.onClick.AddListener(() =>
+        {
+            int temp = 0;
+            foreach (var item in ItemBtn)
+            {
+
+                switch ((int)TalkManager.Instance.Etalk)
+                {
+                    case 1:
+                        gift = giftlist.kangGift;
+                        break;
+                    case 2:
+                        gift = giftlist.yangGift;
+                        break;
+                    case 3:
+                        gift = giftlist.baekGift;
+                        break;
+                }
+                item.gameObject.SetActive(gift[temp++]);
+                
+            }
+            GiftLimit.text = "남은 선물 가능 횟수 : " + ((TalkChoice == TalkChoice.Kang) ? chaeAhItemCheck : (TalkChoice == TalkChoice.Yang) ? seHwaItemCheck : gaYoonItemCheck);
+        });
+    }
+    private void Update()
+    {
         TalkChoice = TalkManager.Instance.Etalk;
+        Likes = new List<float>() { chaeAhlike, seHwalike, gaYoonlike };
     }
 
     public void ItemLimit()
     {
         if (TalkChoice == TalkChoice.Kang && chaeAhItemCheck != 0)
         {
+            print("Tlqkf");
             chaeAhItemCheck--;
-            ItemLimitTexts[0].text = "남은 선물 가능 횟수 : " + chaeAhItemCheck;
+            ClickBtnGift();
         }
         else if (TalkChoice == TalkChoice.Yang && seHwaItemCheck != 0)
         {
+            print("Tlqkf");
             seHwaItemCheck--;
-            ItemLimitTexts[1].text = "남은 선물 가능 횟수 : " + seHwaItemCheck;
+            ClickBtnGift();
         }
         else if (TalkChoice == TalkChoice.Baek && gaYoonItemCheck != 0)
         {
+            print("Tlqkf");
             gaYoonItemCheck--;
-            ItemLimitTexts[2].text = "남은 선물 가능 횟수 : " + gaYoonItemCheck;
+            ClickBtnGift();
         }
-        ClickBtnGift();
     }
     public void ClickBtnGift()
     {
-        switch (ClickBtnItem.GetComponent<Itembtn>().check)
-        {
-            case 1:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 20;
-                    TalkText.text = "귀여운 곰돌이다! 나한테 주는거야? 고마워~";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 2:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike -= 20;
-                    TalkText.text = "저.. 꽃가루 알르레기가 심해서…";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 3:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 4:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    //호감도 변동 X
-                    TalkText.text = "너 이런 내용이 진심으로 가윤이한테 통할 거라고 생각했어…?";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    //호감도 변동 X
-                    TalkText.text = "가윤이 한테 보낸…? 이걸 왜 저한테…";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 5:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 20;
-                    TalkText.text = "읽어본적 없는 책 이네요.. 절 위해서..? 고마워요 잘 읽을게요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 6:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 7:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 8:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike += 10;
-                    TalkText.text = "선물? 고마워-! 잘 받을게!";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            case 9:
-                if (TalkChoice == TalkChoice.Kang)
-                {
-                    chaeAhlike -= 20;
-                    TalkText.text = "내가 너한테 홍차 싫어한다고 말 안했던가?";
-                }
-                if (TalkChoice == TalkChoice.Yang)
-                {
-                    seHwalike += 10;
-                    TalkText.text = "저에게 주시는 건가요..? 감사해요";
-                }
-                if (TalkChoice == TalkChoice.Baek)
-                {
-                    gaYoonlike++;
-                }
-                break;
-            default:
-                break;
-        }
+        TalkManager.Instance.EGiftEvent(ClickBtnItem.GetComponent<Itembtn>().check);
+        print(ClickBtnItem.GetComponent<Itembtn>().check);
+        print(ClickBtnItem.name);
         ClickBtnItem.SetActive(false);
+        int temp = 0;
+        foreach (var item in ItemBtn)
+        {
+            switch (TalkManager.Instance.Etalk)
+            {
+                case TalkChoice.Kang:
+                    giftlist.kangGift[temp++] = item.gameObject.activeSelf;
+                    break;
+                case TalkChoice.Yang:
+                    giftlist.yangGift[temp++] = item.gameObject.activeSelf;
+                    break;
+                case TalkChoice.Baek:
+                    giftlist.baekGift[temp++] = item.gameObject.activeSelf;
+                    break;
+                default:
+                    break;
+            }
+        }
         //EventSystem.current.currentSelectedGameObject.SetActive(false);
     }
-    public void Click()
-    {
 
-        //if (LoadItem != null && LoadImage != null)
-        //{
-        //    //LoadItem.SetActive(false);
-        //    LoadImage.SetActive(false);
-        //    ItemNameText.text = "";
-        //    ExplainText.text = "";
-        //    print("뭐야이새끼는");
-        //}
-        //LoadItem = Items[check];
-        //LoadImage = ImageNums[check];
-        //print(LoadItem.activeSelf);
-        //Items[check].SetActive(true);
-
-        //Destroy(EventSystem.current.currentSelectedGameObject);
-    }
-    public void Gift()
-    {
-        ItemNameText.text = "";
-        ExplainText.text = "";
-    }
-    public void Back0()
-    {
-        TalkText.text = "";
-    }
-    public void SetLikeValue(int temp, int Char)
+    public void SetLikeValue(float temp, int Char)
     {
         switch (Char)
         {
@@ -289,5 +169,11 @@ public class ItemLoad : MonoBehaviour
                 gaYoonlike += temp;
                 break;
         }
+    }
+    public void SetLikeValue(float kang, float yang, float baek)
+    {
+        chaeAhlike = kang;
+        seHwalike = yang;
+        gaYoonlike = baek;
     }
 }

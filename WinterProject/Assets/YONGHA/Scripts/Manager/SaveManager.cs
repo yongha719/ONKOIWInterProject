@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,10 +9,16 @@ public class SaveManager : MonoBehaviour
 {
 
     [SerializeField] List<Button> SaveBtn = new List<Button>();
+    [SerializeField] GameObject Savepopup;
     [SerializeField] GameObject Savecheck;
     [SerializeField] Button Savequit;
     [SerializeField] Button Saveok;
+    public Button ExitBtn;
+    public List<GameObject> Items;
+
+    List<bool> IsItem;
     Save Cursave;
+    SaveData GiftSaveData;
     SaveDatas saveData;
 
     ITalkLoad loader;
@@ -22,8 +28,8 @@ public class SaveManager : MonoBehaviour
         loader = new JsonLoader();
         saver = new JsonLoader();
 
-        saveData = loader.LoadSaveData();
-
+        saveData = loader.LoadSaveDatas();
+        GiftSaveData = ItemLoad.Instance.giftlist;
         Save save;
         int temp = 0;
         foreach (var savebtn in SaveBtn)
@@ -39,6 +45,9 @@ public class SaveManager : MonoBehaviour
                     savebtn.GetComponent<Save>().savedata.IsSave = true;
                     savebtn.GetComponent<Save>().savedata.Savedata = TalkManager.Instance.talkprog.Talkprog;
                     savebtn.GetComponent<Save>().savedata.SaveLike = ItemLoad.Instance.Likes;
+                    savebtn.GetComponent<Save>().savedata.kangGift = GiftSaveData.kangGift;
+                    savebtn.GetComponent<Save>().savedata.yangGift = GiftSaveData.yangGift;
+                    savebtn.GetComponent<Save>().savedata.baekGift = GiftSaveData.baekGift;
                 }
                 else
                 {
@@ -55,7 +64,12 @@ public class SaveManager : MonoBehaviour
         {
             TalkProgress talkProgress = loader.LoadTalkData();
             talkProgress.Talkprog = Cursave.savedata.Savedata;
+            saver.SaveData(Cursave.savedata);
             saver.SaveTalk(talkProgress);
+        });
+        ExitBtn.onClick.AddListener(() =>
+        {
+
         });
     }
     void Update()
@@ -69,18 +83,7 @@ public class SaveManager : MonoBehaviour
         {
             saveData.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
         }
-        saver.SaveData(saveData);
-        gameObject.SetActive(false);
-
+        saver.SaveDatas(saveData);
+        Savepopup.SetActive(false);
     }
-    private void OnApplicationQuit()
-    {
-        int temp = 0;
-        foreach (var savebtn in SaveBtn)
-        {
-            saveData.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
-        }
-        saver.SaveData(saveData);
-    }
-
 }

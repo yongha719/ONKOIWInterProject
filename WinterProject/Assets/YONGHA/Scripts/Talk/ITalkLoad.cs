@@ -50,6 +50,9 @@ public struct SaveData
     public List<int> Savedata;
     public List<float> SaveLike;
     public string Date;
+    public List<bool> kangGift;
+    public List<bool> yangGift;
+    public List<bool> baekGift;
 }
 [Serializable]
 public struct SaveDatas
@@ -62,12 +65,15 @@ public interface ITalkLoad
     public List<TalkDatas> LoadTalk();
     public List<ChoiceDatas> LoadChoice();
     public TalkProgress LoadTalkData();
-    public SaveDatas LoadSaveData();
+    public SaveData LoadSaveData();
+    public SaveDatas LoadSaveDatas();
 }
 public interface ITalkSave
 {
     public void SaveTalk(TalkProgress talkProgress);
 
-    public void SaveData(SaveDatas saveDatas);
+    public void SaveData(SaveData saveData);
+
+    public void SaveDatas(SaveDatas saveDatas);
 }
 
