@@ -10,12 +10,11 @@ public class UIManager : MonoBehaviour
     public RectTransform IngameMenu;
     bool OnMenu = false;
 
-    public GameObject Characters;
     public GameObject Save;
 
     [SerializeField] private GameObject SettingObj;
 
-    
+    public Slider LikeSlider;
 
     public Button[] Charchoice;
 
@@ -35,12 +34,28 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
+        print("UI");
+        IngameMenu.anchoredPosition = new Vector2(902.5f, 340);
         TalkSet();
-        IngameMenu.anchoredPosition = new Vector2(902.5f, 410);
         Save.SetActive(false);
-        SettingObj.SetActive(false);      
+        SettingObj.SetActive(false);
     }
+    public void SliderValue()
+    {
+        switch ((int)TalkManager.Instance.Etalk)
+        {
+            case 1:
+                LikeSlider.value = ItemLoad.Instance.chaeAhlike;
+                break;
+            case 2:
+                LikeSlider.value = ItemLoad.Instance.seHwalike;
+                break;
+            case 3:
+                LikeSlider.value = ItemLoad.Instance.gaYoonlike;
+                break;
+        }
 
+    }
     void Update()
     {
 

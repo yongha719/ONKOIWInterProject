@@ -6,20 +6,16 @@ using UnityEngine.UI;
 public class Save : MonoBehaviour
 {
     public SaveData savedata;
-    Text date;
+    public Text date;
 
     void Start()
     {
-        savedata = new SaveData();
-        savedata.Savedata = null;
-        savedata.IsSave = false;
-        date = transform.Find("Date").GetComponent<Text>();
-        print("Save ÃÊ±âÈ­");
+        date.text = savedata.Date;
     }
-
 
     void Update()
-    {  
+    {
         savedata.Date = date.text;
     }
+    
 }

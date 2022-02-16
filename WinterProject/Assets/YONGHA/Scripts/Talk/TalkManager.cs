@@ -30,11 +30,13 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private Button Choicebtn;
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
-    [SerializeField] Button[] StartTalkBtn;
+    [SerializeField] Button StartTalkBtn;
+    [SerializeField] GameObject Keepchoice;
+    [SerializeField] Button KeepTalkBtn;
 
     bool istalk = true;
     bool Isque;
-
+    bool keeptalk = false;
     string Talkstart;
 
     int talkNum = 0;
@@ -51,14 +53,17 @@ public class TalkManager : MonoBehaviour
     {
         loader = new JsonLoader();
         saver = new JsonLoader();
-        foreach (var item in StartTalkBtn)
+
+        if (SceneManager.GetActiveScene().name == "InGame")
+            StartCoroutine(StoryEvent());
+        StartTalkBtn.onClick.AddListener(() =>
         {
-            item.onClick.AddListener(() =>
-            {
-                StartCoroutine(ETalkEvent());
-            });
-        }
-        StartCoroutine(StoryEvent());
+            StartCoroutine(ETalkEvent());
+        });
+        KeepTalkBtn.onClick.AddListener(() =>
+        {
+            keeptalk = true;
+        });
     }
 
     private void Update()
@@ -81,8 +86,6 @@ public class TalkManager : MonoBehaviour
                 break;
             default:
                 break;
-
-
         }
     }
 
@@ -127,10 +130,10 @@ public class TalkManager : MonoBehaviour
 
         //Talk Progress
         var talkprogs = loader.LoadTalkData();
-        
+
         talkprog = talkprogs;
 
-        talkNum = talkprog.Talkprog[(int)Etalk - 1];//È÷È÷ ¶Ë¹ß½Î
+        talkNum = talkprog.Talkprog[(int)Etalk - 1];
 
         bool talkstart = false;
 
@@ -196,7 +199,8 @@ public class TalkManager : MonoBehaviour
             //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
 
             if (prog + 1 == talk.talkDatas.Count) continue;
-            yield return StartCoroutine(EWaitInput());
+            Keepchoice.SetActive(true);
+            yield return StartCoroutine(EWaitClick());
         }
         //var talks = loader.LoadTalk();d
         //var choices = loader.LoadChoice();
@@ -246,6 +250,20 @@ public class TalkManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 yield return new WaitForSeconds(0.1f);
+                yield break;
+            }
+            yield return wait;
+        }
+    }
+    IEnumerator EWaitClick()
+    {
+        var wait = new WaitForSeconds(0.001f);
+        while (true)
+        {
+            if (keeptalk)
+            {
+                yield return new WaitForSeconds(0.1f);
+                keeptalk = false;
                 yield break;
             }
             yield return wait;

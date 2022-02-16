@@ -8,6 +8,7 @@ using System;
 public class Serialization<T>
 {
     public Serialization(List<T> list) => target = list;
+
     public List<T> target;
 }
 
@@ -35,11 +36,11 @@ public class JsonLoader : ITalkLoad, ITalkSave
         return JsonUtility.FromJson<TalkProgress>(txt.text);
     }
 
-    public List<SaveDatas> LoadSaveData()
+    public SaveDatas LoadSaveData()
     {
         TextAsset txt = Resources.Load<TextAsset>("SaveData");
 
-        return JsonUtility.FromJson<Serialization<SaveDatas>>(txt.text).target;
+        return JsonUtility.FromJson<SaveDatas>(txt.text);
     }
     public void SaveTalk(TalkProgress talkProgress)
     {

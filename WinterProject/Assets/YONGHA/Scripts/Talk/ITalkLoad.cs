@@ -43,14 +43,15 @@ public struct TalkProgress
     public List<int> Talkprog;
 }
 
-[SerializeField]
+[Serializable]
 public struct SaveData
 {
     public bool IsSave;
     public List<int> Savedata;
+    public List<float> SaveLike;
     public string Date;
 }
-[SerializeField]
+[Serializable]
 public struct SaveDatas
 {
     public List<SaveData> savedatas;
@@ -61,7 +62,7 @@ public interface ITalkLoad
     public List<TalkDatas> LoadTalk();
     public List<ChoiceDatas> LoadChoice();
     public TalkProgress LoadTalkData();
-    public List<SaveDatas> LoadSaveData();
+    public SaveDatas LoadSaveData();
 }
 public interface ITalkSave
 {
@@ -69,3 +70,4 @@ public interface ITalkSave
 
     public void SaveData(SaveDatas saveDatas);
 }
+

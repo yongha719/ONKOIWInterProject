@@ -2,46 +2,85 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SaveManager : MonoBehaviour
 {
+
     [SerializeField] List<Button> SaveBtn = new List<Button>();
     [SerializeField] GameObject Savecheck;
     [SerializeField] Button Savequit;
-    SaveDatas saveDatas;
+    [SerializeField] Button Saveok;
+    Save Cursave;
+    SaveDatas saveData;
+
+    ITalkLoad loader;
     ITalkSave saver;
     void Start()
     {
-        saveDatas = new SaveDatas();
+        loader = new JsonLoader();
         saver = new JsonLoader();
+
+        saveData = loader.LoadSaveData();
+
+        Save save;
+        int temp = 0;
         foreach (var savebtn in SaveBtn)
         {
+            save = savebtn.GetComponent<Save>();
+            save.savedata = saveData.savedatas[temp++];
+            save.date.text = save.savedata.Date;
             savebtn.onClick.AddListener(() =>
             {
                 if (!savebtn.GetComponent<Save>().savedata.IsSave)
                 {
-                    Text text = savebtn.transform.Find("Date").GetComponent<Text>();
-
-                    text.text = DateTime.Now.ToString(("yyyy-MM-dd HH:mm:ss tt"));
-
-                    foreach (var prog in TalkManager.Instance.talkprog.Talkprog)
-                        savebtn.GetComponent<Save>().savedata.Savedata.Add(prog);
+                    savebtn.GetComponent<Save>().date.text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss tt");
+                    savebtn.GetComponent<Save>().savedata.IsSave = true;
+                    savebtn.GetComponent<Save>().savedata.Savedata = TalkManager.Instance.talkprog.Talkprog;
+                    savebtn.GetComponent<Save>().savedata.SaveLike = ItemLoad.Instance.Likes;
                 }
                 else
+                {
+                    Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
                     Savecheck.SetActive(true);
+                }
             });
         }
         Savequit.onClick.AddListener(() =>
         {
-            foreach (var savebtn in SaveBtn)
-                saveDatas.savedatas.Add(savebtn.GetComponent<Save>().savedata);
-            saver.SaveData(saveDatas);
+            Save();
+        });
+        Saveok.onClick.AddListener(() =>
+        {
+            TalkProgress talkProgress = loader.LoadTalkData();
+            talkProgress.Talkprog = Cursave.savedata.Savedata;
+            saver.SaveTalk(talkProgress);
         });
     }
-
     void Update()
     {
 
     }
+    void Save()
+    {
+        int temp = 0;
+        foreach (var savebtn in SaveBtn)
+        {
+            saveData.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
+        }
+        saver.SaveData(saveData);
+        gameObject.SetActive(false);
+
+    }
+    private void OnApplicationQuit()
+    {
+        int temp = 0;
+        foreach (var savebtn in SaveBtn)
+        {
+            saveData.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
+        }
+        saver.SaveData(saveData);
+    }
+
 }

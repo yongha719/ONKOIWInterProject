@@ -10,8 +10,8 @@ public class ItemLoad : MonoBehaviour
     void Awake() => Instance = this;
 
     public float chaeAhlike, seHwalike, gaYoonlike;
-
-    readonly TalkChoice TalkChoice;
+    public List<float> Likes;
+    TalkChoice TalkChoice;
 
     public GameObject ClickBtnItem;
 
@@ -34,7 +34,8 @@ public class ItemLoad : MonoBehaviour
 
     void Start()
     {
-        Names = new string[9]; 
+        Likes = new List<float>() { chaeAhlike, seHwalike, gaYoonlike };
+        Names = new string[9];
         Names[0] = "곰인형";
         Names[1] = "꽃 한 송이";
         Names[2] = "롤리팝";
@@ -71,6 +72,7 @@ public class ItemLoad : MonoBehaviour
                 ItemNameText.text = Names[check];
             });
         }
+        TalkChoice = TalkManager.Instance.Etalk;
     }
 
     public void ItemLimit()
@@ -80,12 +82,12 @@ public class ItemLoad : MonoBehaviour
             chaeAhItemCheck--;
             ItemLimitTexts[0].text = "남은 선물 가능 횟수 : " + chaeAhItemCheck;
         }
-        if (TalkChoice == TalkChoice.Yang && seHwaItemCheck != 0)
+        else if (TalkChoice == TalkChoice.Yang && seHwaItemCheck != 0)
         {
             seHwaItemCheck--;
             ItemLimitTexts[1].text = "남은 선물 가능 횟수 : " + seHwaItemCheck;
         }
-        if (TalkChoice == TalkChoice.Baek && gaYoonItemCheck != 0)
+        else if (TalkChoice == TalkChoice.Baek && gaYoonItemCheck != 0)
         {
             gaYoonItemCheck--;
             ItemLimitTexts[2].text = "남은 선물 가능 횟수 : " + gaYoonItemCheck;

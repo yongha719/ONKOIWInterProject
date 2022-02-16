@@ -11,9 +11,9 @@ public class BackgroundManager : MonoBehaviour
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
-    [SerializeField] Animator KangAni;
-    [SerializeField] Animator YangAni;
-    [SerializeField] Animator BaekAni;
+    Animator KangAni;
+    Animator YangAni;
+    Animator BaekAni;
     int Kangnum;
     int Yangnum;
     int Baeknum;
@@ -68,7 +68,7 @@ public class BackgroundManager : MonoBehaviour
         }
         Kangnum = Kang;
         Yangnum = Yang;
-        Baeknum = Baek; 
+        Baeknum = Baek;
 
     }
     public void BackGroundChange(string Bgimage)
@@ -86,6 +86,9 @@ public class BackgroundManager : MonoBehaviour
                 break;
             case "backyard":
                 backgroundImage.sprite = Backgrounds[3];
+                break;
+            case "classroom":
+                backgroundImage.sprite = Backgrounds[4];
                 break;
             default:
                 break;
