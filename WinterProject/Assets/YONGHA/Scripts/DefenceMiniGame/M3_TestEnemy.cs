@@ -11,7 +11,7 @@ public class M3_TestEnemy : MonoBehaviour
     public float PosDelay;
     float Poscur;
 
-    public GameObject bullet;//±×·¡¶ó
+    public GameObject bullet;
     public float AttackDelay;
     float Attackcur;
 

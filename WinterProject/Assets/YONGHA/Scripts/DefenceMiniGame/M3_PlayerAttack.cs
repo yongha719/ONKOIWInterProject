@@ -27,8 +27,10 @@ public class M3_PlayerAttack : MonoBehaviour
         if (Attackcur <= 0)
         {
             if (Input.GetMouseButton(0))
+            {
                 Instantiate(bullet, gun.position, transform.rotation);
-            Attackcur = AttackDelay;
+                Attackcur = AttackDelay;
+            }
         }
         Attackcur -= Time.deltaTime;
     }

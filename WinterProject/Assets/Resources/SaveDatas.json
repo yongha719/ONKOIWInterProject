@@ -1,0 +1,94 @@
+{
+    "savedatas": [
+        {
+            "IsSave": true,
+            "Savedata": [],
+            "SaveLike": [
+                20.0,
+                0.0,
+                0.0
+            ],
+            "Date": "2022-02-17 01:11:37 AM",
+            "kangGift": [],
+            "yangGift": [],
+            "baekGift": []
+        },
+        {
+            "IsSave": true,
+            "Savedata": [],
+            "SaveLike": [
+                10.0,
+                0.0,
+                0.0
+            ],
+            "Date": "2022-02-17 04:53:52 AM",
+            "kangGift": [
+                true,
+                true,
+                true,
+                false,
+                false,
+                true,
+                true,
+                true,
+                true
+            ],
+            "yangGift": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "baekGift": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "IsSave": false,
+            "Savedata": [
+                0,
+                0,
+                0
+            ],
+            "SaveLike": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Date": "",
+            "kangGift": [],
+            "yangGift": [],
+            "baekGift": []
+        },
+        {
+            "IsSave": false,
+            "Savedata": [
+                0,
+                0,
+                0
+            ],
+            "SaveLike": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Date": "",
+            "kangGift": [],
+            "yangGift": [],
+            "baekGift": []
+        }
+    ]
+}

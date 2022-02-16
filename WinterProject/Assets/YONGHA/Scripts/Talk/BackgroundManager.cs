@@ -6,11 +6,17 @@ using UnityEngine.UI;
 public class BackgroundManager : MonoBehaviour
 {
     public static BackgroundManager Instance { get; private set; } = null;
-    [SerializeField] Image backgroundImage;
+    [SerializeField] SpriteRenderer backgroundImage;
     [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
+    Animator KangAni;
+    Animator YangAni;
+    Animator BaekAni;
+    int Kangnum;
+    int Yangnum;
+    int Baeknum;
 
     void Awake()
     {
@@ -18,42 +24,50 @@ public class BackgroundManager : MonoBehaviour
     }
     void Start()
     {
+        KangAni = Kangs.GetComponent<Animator>();
+        YangAni = Yangs.GetComponent<Animator>();
+        BaekAni = Baeks.GetComponent<Animator>();
 
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-            backgroundImage.sprite = Backgrounds[0];
+        KangAni.SetInteger("num", Kangnum);
+        YangAni.SetInteger("num", Yangnum);
+        BaekAni.SetInteger("num", Baeknum);
     }
-    public void CharChange(string Kang, string Yang, string Baek)
+    public void CharChange(int Kang, int Yang, int Baek)
     {
         switch (Kang)
         {
-            case "null":
+            case 0:
                 Kangs.SetActive(false);
                 break;
-            case "default":
+            default:
                 Kangs.SetActive(true);
                 break;
         }
         switch (Yang)
         {
-            case "null":
+            case 0:
                 Yangs.SetActive(false);
                 break;
-            case "default":
+            default:
                 Yangs.SetActive(true);
                 break;
         }
         switch (Baek)
         {
-            case "null":
+            case 0:
                 Baeks.SetActive(false);
                 break;
-            case "default":
+            default:
                 Baeks.SetActive(true);
                 break;
         }
+        Kangnum = Kang;
+        Yangnum = Yang;
+        Baeknum = Baek;
+
     }
     public void BackGroundChange(string Bgimage)
     {
@@ -70,6 +84,9 @@ public class BackgroundManager : MonoBehaviour
                 break;
             case "backyard":
                 backgroundImage.sprite = Backgrounds[3];
+                break;
+            case "classroom":
+                backgroundImage.sprite = Backgrounds[4];
                 break;
             default:
                 break;

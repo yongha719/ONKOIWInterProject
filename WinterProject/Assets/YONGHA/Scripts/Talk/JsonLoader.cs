@@ -8,10 +8,11 @@ using System;
 public class Serialization<T>
 {
     public Serialization(List<T> list) => target = list;
+
     public List<T> target;
 }
 
-public class JsonLoader : ITalkLoad
+public class JsonLoader : ITalkLoad, ITalkSave
 {
     public List<ChoiceDatas> LoadChoice()
     {
@@ -25,14 +26,44 @@ public class JsonLoader : ITalkLoad
     public List<TalkDatas> LoadTalk()
     {
         TextAsset txt = Resources.Load<TextAsset>("Story");
-            
+
         return JsonUtility.FromJson<Serialization<TalkDatas>>(txt.text).target;
     }
-    public TalkProgress LoadData()
+    public TalkProgress LoadTalkData()
     {
-        TextAsset txt = Resources.Load<TextAsset>("Test");
+        TextAsset txt = Resources.Load<TextAsset>("Talk");
 
         return JsonUtility.FromJson<TalkProgress>(txt.text);
     }
-    
+    public SaveData LoadSaveData()
+    {
+        TextAsset txt = Resources.Load<TextAsset>("SaveData");
+
+        return JsonUtility.FromJson<SaveData>(txt.text);
+    }
+    public SaveDatas LoadSaveDatas()
+    {
+        TextAsset txt = Resources.Load<TextAsset>("SaveDatas");
+
+        return JsonUtility.FromJson<SaveDatas>(txt.text);
+    }
+    public void SaveTalk(TalkProgress talkProgress)
+    {
+        string json = JsonUtility.ToJson(talkProgress);
+
+        File.WriteAllText(Application.dataPath + "/Resources/Talk.json", json);
+    }
+    public void SaveData(SaveData savedata)
+    {
+        string json = JsonUtility.ToJson(savedata);
+
+        File.WriteAllText(Application.dataPath + "/Resources/SaveData.json", json);
+    }
+    public void SaveDatas(SaveDatas saveDatas)
+    {
+        string json = JsonUtility.ToJson(saveDatas);
+
+        File.WriteAllText(Application.dataPath + "/Resources/SaveDatas.json", json);
+    }
+
 }

@@ -10,8 +10,9 @@ public class Test
 
 public class JsonTest : MonoBehaviour
 {
-    public Button[] ConTalk;
-    public Test test = new Test();
+
+    public Animator Animator;
+    public int a;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,16 +24,46 @@ public class JsonTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            string json = JsonUtility.ToJson(test);
-
-            print(Application.dataPath);
-
-            File.WriteAllText(Application.dataPath + "/Resources/Test.json", json);
+            TextAsset txt = Resources.Load<TextAsset>("SaveData");
+            print(txt.text);
         }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-           
-        }
+            
     }
+    //IEnumerator EJsonTest()
+    //{
+    //    var wait = new WaitForSeconds(0.001f);
+    //    while (true)
+    //    {
+    //        if (Input.GetKeyDown(KeyCode.S))
+    //        {
+    //            var talkprogs = loader.LoadData();
+    //            TalkProgress talkprog = talkprogs;
+    //            talkNum = talkprog.Talkprog[0];
+    //            yield return StartCoroutine(EWaitInput());
+
+    //            talkprog.Talkprog[0] = prog;
+    //            saver.SaveTalk(talkprog);
+    //            foreach (var item in talkprog.Talkprog)
+    //                print(item);
+    //            print("save");
+    //        }
+    //        yield return wait;
+    //    }
+
+    //    yield return null;
+    //}
+    //IEnumerator EWaitInput()
+    //{
+    //    var wait = new WaitForSeconds(0.001f);
+    //    while (true)
+    //    {
+    //        if (Input.GetKeyDown(KeyCode.Space))
+    //        {
+    //            yield return new WaitForSeconds(0.1f);
+    //            yield break;
+    //        }
+    //        yield return wait;
+    //    }
+    //}
 
 }

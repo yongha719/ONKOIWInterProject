@@ -10,11 +10,17 @@ public class UIManager : MonoBehaviour
     public RectTransform IngameMenu;
     bool OnMenu = false;
 
-    public GameObject Characters;
     public GameObject Save;
+
     [SerializeField] private GameObject SettingObj;
 
+    public Slider LikeSlider;
+
     public Button[] Charchoice;
+
+    public Text ItemLimit;
+    
+
     public void IngameMenuButton()
     {
         if (!OnMenu)
@@ -28,22 +34,23 @@ public class UIManager : MonoBehaviour
             OnMenu = false;
         }
     }
-    public void SaveDate(Text text)
-    {
-        text.text = DateTime.Now.ToString(("yyyy-MM-dd HH:mm:ss tt"));
-    }
 
     void Start()
     {
+        print("UI");
+        IngameMenu.anchoredPosition = new Vector2(902.5f, 340);
         TalkSet();
-        IngameMenu.anchoredPosition = new Vector2(902.5f, 410);
         Save.SetActive(false);
         SettingObj.SetActive(false);
+        
     }
-
+    public void SliderValue()
+    {
+        LikeSlider.value = ItemLoad.Instance.Likes[(int)TalkManager.Instance.Etalk - 1];
+    }
     void Update()
     {
-
+        SliderValue();
     }
 
     void TalkSet()
@@ -55,10 +62,11 @@ public class UIManager : MonoBehaviour
         Charchoice[1].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Yang;
-        }); 
+        });
         Charchoice[2].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Baek;
         });
     }
+
 }

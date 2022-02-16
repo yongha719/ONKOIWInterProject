@@ -215,55 +215,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 4
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -1698,55 +1658,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 6
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -1883,53 +1803,10 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds:
-  - {fileID: 1298612622}
-  - {fileID: 1650529078}
-  - {fileID: 697703539}
-  - {fileID: 874728161}
-  - {fileID: 874728161}
-  Items:
-  - {fileID: 1543993982}
-  - {fileID: 447069890}
-  - {fileID: 564170589}
-  - {fileID: 1873239500}
-  - {fileID: 1178071350}
-  - {fileID: 2066807963}
-  - {fileID: 1411480469}
-  - {fileID: 838075480}
-  - {fileID: 503763800}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 1341028345}
-  - {fileID: 1563415379}
-  - {fileID: 375081573}
-  - {fileID: 780596802}
-  - {fileID: 1470795653}
-  - {fileID: 1290652232}
-  - {fileID: 1715357688}
-  - {fileID: 1803277554}
-  - {fileID: 2031750753}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 2084479086}
   ExplainText: {fileID: 371293247}
   TalkText: {fileID: 600213916}
@@ -1937,9 +1814,7 @@ MonoBehaviour:
   - {fileID: 1669964745}
   - {fileID: 252919340}
   - {fileID: 2089469005}
-  LoadImage: {fileID: 0}
   check: 0
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -2336,55 +2211,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 9
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -2783,55 +2618,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 8
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -8421,55 +8216,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 2
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -8702,55 +8457,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 7
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -10352,7 +10067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1373234402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13577,55 +13292,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 5
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -14846,55 +14521,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 1
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
@@ -15206,55 +14841,15 @@ MonoBehaviour:
   seHwalike: 0
   gaYoonlike: 0
   ClickBtnItem: {fileID: 0}
-  BackGrounds: []
-  Items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Names:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  ImageNums:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Explans:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  LoadItem: {fileID: 0}
+  ExplanItem: {fileID: 0}
+  EItemimg: {fileID: 0}
+  Itemimgs: []
+  ItemBtn: []
   ItemNameText: {fileID: 0}
   ExplainText: {fileID: 0}
   TalkText: {fileID: 0}
   ItemLimitTexts: []
-  LoadImage: {fileID: 0}
   check: 3
-  background_check: 0
   chaeAhItemCheck: 3
   seHwaItemCheck: 3
   gaYoonItemCheck: 3
