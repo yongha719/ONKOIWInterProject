@@ -20135,6 +20135,8 @@ MonoBehaviour:
   StartTalkBtn: {fileID: 0}
   Keepchoice: {fileID: 0}
   KeepTalkBtn: {fileID: 0}
+  MiniGame: {fileID: 0}
+  GoMiniGameBtn: {fileID: 0}
   Etalk: 0
   talkprog:
     Talkprog: 

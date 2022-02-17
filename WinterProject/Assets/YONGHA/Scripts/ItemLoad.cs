@@ -4,12 +4,52 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 public class ItemLoad : MonoBehaviour
 {
     public static ItemLoad Instance { get; private set; }
     void Awake() => Instance = this;
 
-    public float chaeAhlike, seHwalike, gaYoonlike;
+    public float chaeAhlike = 0, seHwalike = 0, gaYoonlike = 0;
+    public float ChaeAhlike
+    {
+        get
+        {
+            return chaeAhlike;
+        }
+        set
+        {
+            chaeAhlike = value;
+            if (chaeAhlike  < 0)
+                chaeAhlike = 0;
+        }
+    }
+    public float SeHwalike
+    {
+        get
+        {
+            return seHwalike;
+        }
+        set
+        {
+            seHwalike = value;
+            if (seHwalike < 0)
+                seHwalike = 0;
+        }
+    }
+    public float GaYoonlike
+    {
+        get
+        {
+            return gaYoonlike;
+        }
+        set
+        {
+            gaYoonlike = value;
+            if (gaYoonlike < 0)
+                gaYoonlike = 0;
+        }
+    }
     public List<float> Likes;
     TalkChoice TalkChoice;
 
@@ -25,7 +65,7 @@ public class ItemLoad : MonoBehaviour
 
     [SerializeField] Text ItemNameText;
     [SerializeField] Text ExplainText;
-    [SerializeField] Text GiftLimit;
+    [SerializeField] TextMeshProUGUI GiftLimit;
     [SerializeField] Button Gift;
 
     public int check;
@@ -96,15 +136,16 @@ public class ItemLoad : MonoBehaviour
                         break;
                 }
                 item.gameObject.SetActive(gift[temp++]);
-                
+
             }
-            GiftLimit.text = "남은 선물 가능 횟수 : " + ((TalkChoice == TalkChoice.Kang) ? chaeAhItemCheck : (TalkChoice == TalkChoice.Yang) ? seHwaItemCheck : gaYoonItemCheck);
+
         });
     }
     private void Update()
     {
         TalkChoice = TalkManager.Instance.Etalk;
-        Likes = new List<float>() { chaeAhlike, seHwalike, gaYoonlike };
+        Likes = new List<float>() { ChaeAhlike, SeHwalike, GaYoonlike };
+        GiftLimit.text = "남은 선물 가능 횟수 : " + ((TalkChoice == TalkChoice.Kang) ? chaeAhItemCheck : (TalkChoice == TalkChoice.Yang) ? seHwaItemCheck : gaYoonItemCheck);
     }
 
     public void ItemLimit()
@@ -131,8 +172,6 @@ public class ItemLoad : MonoBehaviour
     public void ClickBtnGift()
     {
         TalkManager.Instance.EGiftEvent(ClickBtnItem.GetComponent<Itembtn>().check);
-        print(ClickBtnItem.GetComponent<Itembtn>().check);
-        print(ClickBtnItem.name);
         ClickBtnItem.SetActive(false);
         int temp = 0;
         foreach (var item in ItemBtn)
@@ -160,20 +199,21 @@ public class ItemLoad : MonoBehaviour
         switch (Char)
         {
             case 1:
-                chaeAhlike += temp;
+                ChaeAhlike += temp;
+                print(ChaeAhlike);
                 break;
             case 2:
-                seHwalike += temp;
+                SeHwalike += temp;
                 break;
             case 3:
-                gaYoonlike += temp;
+                GaYoonlike += temp;
                 break;
         }
     }
     public void SetLikeValue(float kang, float yang, float baek)
     {
-        chaeAhlike = kang;
-        seHwalike = yang;
-        gaYoonlike = baek;
+        ChaeAhlike = kang;
+        SeHwalike = yang;
+        GaYoonlike = baek;
     }
 }

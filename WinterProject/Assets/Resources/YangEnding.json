@@ -1,0 +1,316 @@
+{
+    "target": [
+        {
+            "yangendings": [
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(도서실은 오랜만… 아니 처음인가?)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(예전에 한번 왔던 거 같기도 하고… 하니 하지만 갈 이유가 없는데 말이지…)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(평소 였으면 그냥 지나쳤을 텐데 이상하게\n뭔가에 홀리기라도 한 것처럼와버렸단 말이지…)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(그것보다 책이 엄청 깔끔하게 관리 돼 있네.. 정리도 잘 돼 있고..\n분명 도서부 부장이 하는 거라고 들었는데…)"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "(우리 학교에 도서부가 있었던가?)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(아니.. 없었지 참… 폐부 됐나? 그냥 내가 관심이 없어서 모르는 걸 수도 있고…)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(근데 분명 도서부 부장은 늘 도서실에 있다고 들었던 기억이…)"
+                },
+                {
+                    "background": "library",
+                    "name": "%PlayerName%",
+                    "talk": "(그냥 평범한 학교 괴담이였을 지도 모르고..\n학교 옥상에서 나온다는 광대나 밤이 되면 눈물을 흘린다는 학교앞 동상 처럼 말이야…)"
+                }
+            ]
+        },
+        {
+            "yangendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "(여러가지 일이 있었지만 언제 그랬냐는 듯\n모든게 정상으로 돌아왔다…)"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "(채아도..가윤이도 그리고 세화도..\n여느때와 다름없는 평범한 일상을 되 찾았다)"
+                },
+                {
+                    "background": "normal",
+                    "name": "양세화",
+                    "talk": "PlayerName..! 오셨군요 기다리고 있었어요!"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "약속은 약속이니까… 와야지 어쩔수 있나."
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "오늘부터 적어도 30분씩은 독서 해볼게..\n좀더 열심히 사는 느낌도 나고…"
+                },
+                {
+                    "background": "normal",
+                    "name": "양세화",
+                    "talk": "좋은 다짐이에요!\n옆에서 응원해 줄테니 꾸준히 해봐요"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "너나 채아한테 혼나지 않으려면 어쩔 수 없이\n해야하니까.. 그리고 선생님 한테도…"
+                },
+                {
+                    "background": "normal",
+                    "name": "양세화",
+                    "talk": "재미만 붙인다면 생각보다\n즐거운 활동이 될거예요"
+                },
+                {
+                    "background": "normal",
+                    "name": "양세화",
+                    "talk": "읽기 쉬운 책들부터 추천해 드릴테니까\n걱정하지 마세요"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "그렇게 까지 말해준다면야…\n한번 해 볼게"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "(그일 이후로 세화와는 친한 친구사이가 되어\n내가 미루고 미뤄왔던 독서 활동을 도와주게 되었다)"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "(지루한 일이 될지도 모르겠지만… 세화같은 친구와 함께라면\n생각보다 재밌을지도 모르겠네)"
+                }
+            ]
+        },
+        {
+            "yangendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "으아..춥다.. 아직 따뜻해 지려면 멀었나…?\n그것보다 세화는 어디지?"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "분명 서점 앞에서 기다리겠다고…"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "아! 저기있다!"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "양세화-! 미안 기다렸어?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "양세화",
+                    "talk": "오셨군요..! 저도 방금 막 왔던 참 이에요..!"
+                },
+                {
+                    "background": "happy1",
+                    "name": "양세화",
+                    "talk": "아.. 그리고 이거.. 핫초코 예요..\n방금 사온거라 아직 따듯 해요.."
+                },
+                {
+                    "background": "happy1",
+                    "name": "양세화",
+                    "talk": "제꺼 사면서 같이 샀어요 .."
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "고마워 잘 마실게!"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "근데 이거 들고는 서점에 못 들어가니까\n다 마시고 들어가야겠네"
+                },
+                {
+                    "background": "happy1",
+                    "name": "양세화",
+                    "talk": "그.. 그렇네요…\n그럼 잠깐 대화라도 할까요..?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "그래"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "… 무슨 할 말 이라도 있어?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "양세화",
+                    "talk": "솔직히 거절 당할 줄 알았거든요…"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "서점에 가는 거 쯤이야..\n다른 사람도 아니고 네 부탁인데 거절 할 순 없지"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "밖에서 둘이 만나는거 한 두번도 아니고…"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "그.. 그렇죠.."
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "솔직히 말하면 오늘은…\n서점에 가고 싶어서 부른 건 아니에요…"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "하고 싶은 말이 있다고나 할까…"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "하고 싶은 말…?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(사실 어느정도 눈치 채고 있다…)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(그 사건 이후 나와 세화의 사이는 빠른 속도로 가까워 졌다)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(방과후에는 단둘이 도서실에 남아 날이 어두워 질 때 까지 책을 읽고\n같이 하교하는 일이 많아 졌고)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(주말에 약속을 잡아 따로 만나거나 놀러가는 경우도 많았다)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(어쩌면 나와 세화는 이미 친구 이상의 사이 일지도 모른다…)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(그리고 분명 세화도 나와 같은 마음이겠지)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "하고 싶은 말이 뭔데 빨리 해봐"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "그러니까… 저 말이죠…\nPlayerName(이)랑 함께 하는 시간이 정말 즐거워요"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "그리고 언제나 절 도와주고 함께 해주는 것에\n정말 감사하고 있어요"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "PlayerName와(과) 좋은 친구로 인걸로 괜찮다 생각했는데…\n최근 들어서…"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "친구 이상의 관계가 되고 싶다는…\n생각을 하게 되었어요.."
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "그..그래서요.. 그..!\n괜찮으시다면… 저랑.."
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "난 좋아"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "네..?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "사귀어 달라는 거.. 아니야?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "양세화",
+                    "talk": "…고백 받아 주시는 건가요..?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "물론이지.. 나도 너와 같은 생각이였어"
+                },
+                {
+                    "background": "happy3",
+                    "name": "양세화",
+                    "talk": "..그렇게 말해주니 기뻐요..\n정말.."
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName%",
+                    "talk": "자 그럼.."
+                },
+                {
+                    "background": "happy3",
+                    "name": "양세화",
+                    "talk": "이제 같이 책 사러 갈까?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "양세화",
+                    "talk": "네..!"
+                }
+            ]
+        }
+    ]
+}

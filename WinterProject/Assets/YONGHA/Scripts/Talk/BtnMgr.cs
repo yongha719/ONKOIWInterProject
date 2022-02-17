@@ -10,6 +10,7 @@ public class BtnMgr : MonoBehaviour
     public int Kang;
     public int Yang;
     public int Baek;
+    public float like;
 
     private void Awake()
     {
