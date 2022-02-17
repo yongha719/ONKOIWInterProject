@@ -16,6 +16,7 @@ public class GameManager : Singleton<GameManager>
     private void LoadedsceneEvent(Scene scene, LoadSceneMode mode)
     {
         Sound();
+        
     }
     void Update()
     {
