@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/YONGHA/Scenes/Love.unity
+- path: Assets/YONGHA/Scripts/Test/Temp.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

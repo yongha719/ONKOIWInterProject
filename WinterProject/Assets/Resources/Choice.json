@@ -284,27 +284,279 @@
       "choiceDatas": [
         {
           "Kang": 0,
-          "Yang": 0,
+          "Yang": 2,
           "Baek": 0,
-          "choice": "",
+          "choice": "너라면 도서관에서 보낸 추억이 아닐까?",
           "like": 10,
-          "reply": ""
+          "reply": "확실히 도서관에서 지낸게 절반이긴 하죠..\n도서관을 중심으로 생각 해 봐야 겠어요…"
         },
         {
-          "Kang": 1,
-          "Yang": 0,
+          "Kang": 0,
+          "Yang": 3,
           "Baek": 0,
-          "choice": "",
+          "choice": "추억 중 하나라고 하면 역시 범위가 넓지…",
           "like": 0,
           "reply": ""
         },
         {
-          "Kang": 12,
-          "Yang": 0,
+          "Kang": 0,
+          "Yang": 5,
           "Baek": 0,
-          "choice": "",
+          "choice": "딱히 잘 모르겠는데",
           "like": -15,
-          "reply": ""
+          "reply": "조금만 더 진지하게 생각 해 주세요.."
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "choice": "너도 좋은 애 같은 걸 친하게 지낼 수 있을 거 같아",
+          "like": 10,
+          "reply": "감사해요 친하게 지내면 좋겠어요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "채아가 내 욕이라도 한 거야?",
+          "like": 0,
+          "reply": "아…아뇨 아뇨! 채아는 별 말 안했어요!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 4,
+          "Baek": 0,
+          "choice": "난 네 얘기 못 들어봤는데",
+          "like": -15,
+          "reply": "…… 그러시군요…"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "choice": "음.. 글쎄? 좋은 책 있으면 추천 해 줄 수 있어?",
+          "like": 10,
+          "reply": "물론이죠! 책 추천이 필요하면 언제든 저에게 오세요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "choice": "만화책…같은 건 많이 읽는 편인데",
+          "like": 0,
+          "reply": "그렇군요 만화책도 하나의 좋은 책이죠"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "책은 별로….",
+          "like": -15,
+          "reply": "취향은 존중 해 드릴게요…"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 6,
+          "Baek": 0,
+          "choice": "네가 좋은 사람처럼 보여서 안 도망간게 아닐까?",
+          "like": 10,
+          "reply": "그..그렇게 좋은 사람은 아닌걸요…그래도.. 고마워요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "choice": "나도 고양이 보고 싶다",
+          "like": 0,
+          "reply": "이 주변에 사는 길고양이니까 아마 운이 좋으면 볼 수 있을 거예요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 5,
+          "Baek": 0,
+          "choice": "지금 상황에 고양이가 중요한게 아니잖아",
+          "like": -15,
+          "reply": "그..그렇죠.. 죄송해요 도와주시고 계신데.. 제가 쓸데 없는 소리를"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 8,
+          "Baek": 0,
+          "choice": "책 읽는 것도 좋지만 눈 건강도 신경써",
+          "like": 10,
+          "reply": "걱정 해 주시는 건가요…?  건강도 신경쓰도록 할게요 "
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "choice": "눈이 나빠질 정도로 책을 많이 읽는구나",
+          "like": 0,
+          "reply": "저 한테 책 만큼 즐거운 건 없으니까요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 11,
+          "Baek": 0,
+          "choice": "안경 도수 높아지면 눈 작아 보이는데",
+          "like": -15,
+          "reply": "책 읽을 때 불편한게 더 싫은 걸요"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 8,
+          "Baek": 0,
+          "choice": "나도 산책 좋아해",
+          "like": 10,
+          "reply": "저랑 같은 취미라니 신기하네요! 다음에 같이 하실래요..?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "choice": "역시 게임 이려나?",
+          "like": 0,
+          "reply": "그 나이대 다운 좋은 취미네요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "히키코모리 처럼 살기…",
+          "like": -15,
+          "reply": "아…. 네…"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 8,
+          "Baek": 0,
+          "choice": "그래도 열심히 하면 잘 할 수 있을거야",
+          "like": 10,
+          "reply": "역시 그렇겠죠..? 그렇게 말해주니 할 의욕이 생기네요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "나도 이과 과목은 별로야….",
+          "like": 0,
+          "reply": "그쵸.. 계산 문제 같은 건 이해 하기 힘들어요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 11,
+          "Baek": 0,
+          "choice": "엄청 범생이 처럼 보여서 잘 할거라 생각했는데",
+          "like": -15,
+          "reply": "수학 좀 못 하는게 어때서요."
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "choice": "역시 도서실에서의 추억인가 봐",
+          "like": 10,
+          "reply": "조금은 해답에 가까워진 느끼이네요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "무슨일이 있었는지는 기억 안나?",
+          "like": 0,
+          "reply": "아무래도… 무슨일이 있었는지를 지금부터 찾아야 하니까요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 5,
+          "Baek": 0,
+          "choice": "그냥 착각 아니야?",
+          "like": -15,
+          "reply": "역시 그럴지도 모르고요…"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 8,
+          "Baek": 0,
+          "choice": "알레르기 있으면 힘들지… 그래도 꽃은 예쁘잖아",
+          "like": 10,
+          "reply": "그건 그렇죠… 보는 건 예쁘니까요.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "choice": "그래도 봄은 따뜻 하잖아",
+          "like": 0,
+          "reply": "추운거 보단 따뜻한게 좋긴 하죠"
+        },
+        {
+          "Kang": 0,
+          "Yang": 4,
+          "Baek": 0,
+          "choice": "그래도 꽃 구경 같은거 가면 재밌을 텐데",
+          "like": -15,
+          "reply": "전 알레르기가 심해서 가면 큰일 나요…"
+        }
+      ]
+    },
+    {
+      "choiceDatas": [
+        {
+          "Kang": 0,
+          "Yang": 8,
+          "Baek": 0,
+          "choice": "나중에 코코아라도 같이 마시자",
+          "like": 10,
+          "reply": "정말요..? 저야 물론 좋죠…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "choice": "그러게 겨울이라 그런지 따듯한거 생각난다",
+          "like": 0,
+          "reply": "그렇죠… 나중에 뭐라도 마셔야 겠어요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "choice": "추울 때야 말로 차가운걸 마셔야지",
+          "like": -15,
+          "reply": "얼어 죽을지도 몰라요…"
         }
       ]
     },
@@ -313,26 +565,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 2,
+          "choice": "아무튼 네 학교생활 중 하나 아닐까?",
           "like": 10,
-          "reply": ""
+          "reply": "흠.. 하긴 학교에서 보내는 시간이 가장 많으니까"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "너한테 고백한 애를 차버린 추억?",
           "like": 0,
-          "reply": ""
+          "reply": "그럴리가 없잖아? 일단 널 차버렸다는 건 잘 기억나"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 4,
+          "choice": "내가 알빠 아니잖아",
           "like": -15,
-          "reply": ""
+          "reply": "우리 지금 노는거 아니거든? 진지하게 좀 해줄래?"
         }
       ]
     },
@@ -341,26 +593,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 1,
+          "choice": "이미 잊은지 오래야",
           "like": 10,
-          "reply": ""
+          "reply": "그렇다면 잘 됐네 괜한 일로 시간 끌기는 싫으니까"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "나 그렇게 구질구질한 스타일이야…?",
           "like": 0,
-          "reply": ""
+          "reply": "........조금은?"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 11,
+          "choice": "웃기시네! 그.. 그럴리 없잖아!",
           "like": -15,
-          "reply": ""
+          "reply": "도둑이 제 발 저리다 라는 속담 알아?"
         }
       ]
     },
@@ -369,26 +621,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 1,
+          "choice": "빨리 돌아갈 방법을 생각해 보자",
           "like": 10,
-          "reply": ""
+          "reply": "그래.. 가만히 있어봤자 되는건 없을테니까"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "학생회장은 바쁘구나..",
           "like": 0,
-          "reply": ""
+          "reply": "아무래도 그렇지… 학생회장일 말고도 할 건 많지만…"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 4,
+          "choice": "난 한가한데 부럽지",
           "like": -15,
-          "reply": ""
+          "reply": "나랑 지금 장난하자는 거야?"
         }
       ]
     },
@@ -397,26 +649,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "너도 놀고싶어 하는구나",
           "like": 10,
-          "reply": ""
+          "reply": "당연하지 나도 내 여가시간이 필요한 걸"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "안어울리는 말을 하네",
           "like": 0,
-          "reply": ""
+          "reply": "너무 범생이로만 보지 말아줄래? 나도 피곤하다고"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 11,
+          "choice": "이왕 이렇게 된거 지금 놀면 되지 않을까",
           "like": -15,
-          "reply": ""
+          "reply": "될리 없잖아"
         }
       ]
     },
@@ -425,26 +677,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 1,
+          "choice": "부회장을 위해서라도 빨리 돌아가야 겠네…",
           "like": 10,
-          "reply": ""
+          "reply": "그래.. 이렇게 노닥 거릴 시간도 없겠어"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "학생회 일은 바쁘구나…",
           "like": 0,
-          "reply": ""
+          "reply": "그래 하필이면 가장 바쁜 때 거든.."
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 11,
+          "choice": "개꿀 아니야?",
           "like": -15,
-          "reply": ""
+          "reply": "불쌍한 부회장을 좀 생각해 줄래?"
         }
       ]
     },
@@ -453,26 +705,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 5,
+          "choice": "나도 집에가서 오늘 발매하는 게임 해야하는데",
           "like": 10,
-          "reply": ""
+          "reply": "뭐? 너……. 아니 아무것도 아니야"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "학원이라도 다녀?",
           "like": 0,
-          "reply": ""
+          "reply": "……그렇지 뭐.. 학원 맞아"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "나도 집에 가서 쉬고 싶어…",
           "like": -15,
-          "reply": ""
+          "reply": "다 그렇겠지 쉬는걸 싫어하는 사람이 어딨겠어"
         }
       ]
     },
@@ -481,26 +733,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "다는 아니지 일단 난 기억하잖아",
           "like": 10,
-          "reply": ""
+          "reply": "그거 위로라고 하는거야? 뭐 나쁘지 않네"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "나라면 좀 무서워서 울거 같은데",
           "like": 0,
-          "reply": ""
+          "reply": "이런 상황이 안 무서우면 그건 그거대로 이상한 일이지"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 11,
+          "choice": "혹시 겁먹어서 울기라도 했어?",
           "like": -15,
-          "reply": ""
+          "reply": "울리 없잖아 이런 상황에서 우는 건 아무 도움도 안되니까"
         }
       ]
     },
@@ -509,26 +761,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "그래도 너희를 도울 수 있어서 다행이야",
           "like": 10,
-          "reply": ""
+          "reply": "그렇게 생각한다면 다행이고 생각보다 착하구나 너…"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 1,
+          "choice": "이미 휘말린 건 어쩔 수 없지",
           "like": 0,
-          "reply": ""
+          "reply": "그건 맞는 말이지 어서 해결책을 찾자"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 11,
+          "choice": "그러게 왜 하필 나 일까…",
           "like": -15,
-          "reply": ""
+          "reply": "유감이긴 하지만 존재 자체가 사라진 사람앞에서\n너무 절망스러워 하는거 아니야?"
         }
       ]
     },
@@ -537,26 +789,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 6,
+          "choice": "역시 성격좋기로 소문난 회장님 이니까 성격이지",
           "like": 10,
-          "reply": ""
+          "reply": "딱히 그렇게 성격 좋은 사람은 아니거든.. 헛소문이야"
         },
         {
-          "Kang": 1,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 8,
+          "choice": "똑똑한 여자친구가 있었으면 좋겠다 생각했거든",
           "like": 0,
-          "reply": ""
+          "reply": "그냥 똑똑한 사람이 필요한 거면 친구 정도로도 괜찮잖아?"
         },
         {
-          "Kang": 12,
+          "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 4,
+          "choice": "얼굴…역시 얼굴이지…",
           "like": -15,
-          "reply": ""
+          "reply": "얼굴로 사람보는 놈들이 제일 나쁜 거 알아?"
         }
       ]
     },
@@ -565,278 +817,26 @@
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 6,
+          "choice": "어렸을 때 부터 너랑 아는 사이였으면 좋았을 거 같아",
           "like": 10,
-          "reply": ""
+          "reply": "뭐라는거야 그런말 듣고 싶어서 물어본거 아니거든?\n아무튼… 뭐 나도 나쁘지는 않았을 거 같긴 해"
         },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 7,
+          "choice": "난 딱히 어렸을때 삶에 후회 없는데",
           "like": 0,
-          "reply": ""
+          "reply": "정말?  그건 좀 부럽네"
         },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
         {
           "Kang": 0,
           "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
+          "Baek": 3,
+          "choice": "비트코인을 해야지",
           "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
-        }
-      ]
-    },
-    {
-      "choiceDatas": [
-        {
-          "Kang": 0,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 10,
-          "reply": ""
-        },
-        {
-          "Kang": 1,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": 0,
-          "reply": ""
-        },
-        {
-          "Kang": 12,
-          "Yang": 0,
-          "Baek": 0,
-          "choice": "",
-          "like": -15,
-          "reply": ""
+          "reply": "…돈은 착실하게 일 해서 벌어"
         }
       ]
     }

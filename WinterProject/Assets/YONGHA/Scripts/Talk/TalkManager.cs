@@ -34,9 +34,12 @@ public class TalkManager : MonoBehaviour
     [SerializeField] GameObject Keepchoice;
     [SerializeField] Button KeepTalkBtn;
 
-    bool istalk = true;
-    bool Isque;
+    [SerializeField] GameObject MiniGame;
+    [SerializeField] Button GoMiniGameBtn;
+
+    bool IsGame =false;
     bool keeptalk = false;
+    bool Minigame = false;
     string Talkstart;
 
     int talkNum = 0;
@@ -65,11 +68,27 @@ public class TalkManager : MonoBehaviour
             keeptalk = true;
             Keepchoice.SetActive(false);
         });
+        GoMiniGameBtn.onClick.AddListener(() =>
+        {
+            Minigame = true;
+            switch (Etalk)
+            {
+                case TalkChoice.Kang:
+                    SceneManager.LoadScene("Shooting");
+                    break;
+                case TalkChoice.Yang:
+                    break;
+                case TalkChoice.Baek:
+                    break;
+                default:
+                    break;
+            }
+        });
     }
 
     private void Update()
     {
-        //choiceId = (int)Etalk * 10 - 10;
+        
     }
     void TalkSet()
     {
@@ -82,13 +101,12 @@ public class TalkManager : MonoBehaviour
                 Talkstart = "오셨군요! 기다리고 있었어요.";
                 break;
             case TalkChoice.Baek:
-                //Talkstart = "";
+                Talkstart = "왔어? 어서 돌아갈 방법을 생각해 보자";
                 break;
             default:
                 break;
         }
     }
-
     public IEnumerator StoryEvent()
     {
         var talks = loader.LoadTalk();
@@ -282,98 +300,112 @@ public class TalkManager : MonoBehaviour
 
         List<Button> Choicetexts = new List<Button>();
 
-
         var talks = loader.LoadTalk();
         var choices = loader.LoadChoice();
 
         TalkDatas talk = talks[(int)Etalk];
         ChoiceDatas choice = default;
 
-        //Talk Progress
         var talkprogs = loader.LoadTalkData();
 
         talkprog = talkprogs;
 
         talkNum = talkprog.Talkprog[(int)Etalk - 1];
 
-        bool talkstart = false;
-
         for (prog = talkNum; prog < talk.talkDatas.Count; prog++)
         {
-            if (!talkstart)
+            if (prog == 0)
             {
                 txtTalk.text = null;
                 TalkSet();
                 yield return StartCoroutine(ETextTyping(txtTalk, Talkstart));
 
                 yield return StartCoroutine(EWaitInput());
-                talkstart = true;
+                //talkstart = true;
             }
-            //txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
-            string talk1 = talk.talkDatas[prog].talk;
-            txtTalk.text = talk1;
-
+            SetGoMini(prog);
             BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
             print("Change");
+            string talk1 = talk.talkDatas[prog].talk;
+            txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
-            //choice
-            choiceId = prog;
-            if (choiceId != (int)Etalk * 10)
+
+            choiceId = prog + ((int)Etalk - 1) * 10;
+            if (choiceId < (int)Etalk * 10)
+            {
                 choice = choices[choiceId++];
-            for (int j = 0; j < choice.choiceDatas.Count; j++)
-            {
-                Choicetexts.Add(Choicebtn);
-                TalkChoices.Add(choice.choiceDatas[j]);
-                background.Add(choice.choiceDatas[j]);
-                Likenum.Add(choice.choiceDatas[j].like);
-            }
-            Isque = true;
-            for (int j = 0; j < choice.choiceDatas.Count; j++)
-            {
-                int rand = Random.Range(0, Choicetexts.Count);
-                var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
-                Choicetexts.RemoveAt(rand);
-                BtnMgr btnmgr = obj.GetComponent<BtnMgr>();
-                int randtext = Random.Range(0, TalkChoices.Count);
-                int randtext1 = Random.Range(0, background.Count);
-                btnmgr.BtnChoiceText = TalkChoices[randtext].reply;
-                btnmgr.Kang = TalkChoices[randtext].Kang;
-                btnmgr.Yang = TalkChoices[randtext].Yang;
-                btnmgr.Baek = TalkChoices[randtext].Baek;
 
-                TextMeshProUGUI choicetext = obj.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
-                choicetext.text = TalkChoices[randtext].choice;
-                TalkChoices.RemoveAt(randtext);
-
-                obj.onClick.AddListener(() =>
+                for (int j = 0; j < choice.choiceDatas.Count; j++)
                 {
-                    ItemLoad.Instance.SetLikeValue(Likenum[randtext], (int)Etalk);
-                    Likenum.RemoveAt(randtext);
+                    Choicetexts.Add(Choicebtn);
+                    TalkChoices.Add(choice.choiceDatas[j]);
+                    background.Add(choice.choiceDatas[j]);
+                    Likenum.Add(choice.choiceDatas[j].like);
+                }
+                for (int j = 0; j < choice.choiceDatas.Count; j++)
+                {
+                    int rand = Random.Range(0, Choicetexts.Count);
+                    var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
+                    Choicetexts.RemoveAt(rand);
 
-                    talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
-                    BtnMgr cg = obj.GetComponent<BtnMgr>();
-                    BackgroundManager.Instance.CharChange(cg.Kang, background[randtext1].Yang, background[randtext1].Baek);
-                    background.RemoveAt(randtext);
-                    StartCoroutine(ETextTyping(txtTalk, talk1));
-                    DeleteChilds();
+                    BtnMgr btnmgr = obj.GetComponent<BtnMgr>();
+                    int randtext = Random.Range(0, TalkChoices.Count);
+                    int randtext1 = Random.Range(0, background.Count);
+                    btnmgr.BtnChoiceText = TalkChoices[randtext].reply;
+                    btnmgr.Kang = TalkChoices[randtext].Kang;
+                    btnmgr.Yang = TalkChoices[randtext].Yang;
+                    btnmgr.Baek = TalkChoices[randtext].Baek;
+                    btnmgr.like = TalkChoices[randtext].like;
+                    TextMeshProUGUI choicetext = obj.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
+                    choicetext.text = TalkChoices[randtext].choice;
+                    TalkChoices.RemoveAt(randtext);
 
-                    Isque = false;
-                    Keepchoice.SetActive(true);
-                });
+                    obj.onClick.AddListener(() =>
+                    {
+                        BtnMgr cg = obj.GetComponent<BtnMgr>();
+                        ItemLoad.Instance.SetLikeValue(cg.like, (int)Etalk);
+                        Likenum.RemoveAt(randtext);
+
+                        talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
+                        BackgroundManager.Instance.CharChange(cg.Kang, background[randtext1].Yang, background[randtext1].Baek);
+                        background.RemoveAt(randtext);
+                        StartCoroutine(ETextTyping(txtTalk, talk1));
+                        DeleteChilds();
+
+                        Keepchoice.SetActive(true);
+                    });
+                }
+                yield return StartCoroutine(EWaitClick());
             }
-            //istalk = false;
+            
             talkprog.Talkprog[(int)Etalk - 1] = prog;
             saver.SaveTalk(talkprog);
 
-            //BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
-
+            if (choiceId == (int)Etalk * 10) MiniGame.SetActive(true);
+            if (IsGame)
+                break;
+                //StopCoroutine(ETalkEvent());
             if (prog + 1 == talk.talkDatas.Count) continue;
-            print("Click before");
-            yield return StartCoroutine(EWaitClick());
-            print("Click After");
+            if (choiceId >= (int)Etalk * 10)  yield return StartCoroutine(EWaitInput());
         }
         yield return null;
 
+    }
+    public IEnumerator EndingEvent()
+    {
+
+        switch (Etalk)
+        {
+            case TalkChoice.Kang:
+                break;
+            case TalkChoice.Yang:
+                break;
+            case TalkChoice.Baek:
+                break;
+            default:
+                break;
+        }
+        yield return null;
     }
     public void DeleteChilds()
     {
@@ -413,6 +445,13 @@ public class TalkManager : MonoBehaviour
 
                 yield break;
             }
+            else if (Minigame)
+            {
+                yield return new WaitForSeconds(0.1f);
+                keeptalk = false;
+
+                yield break;
+            }
             yield return wait;
         }
     }
@@ -431,7 +470,35 @@ public class TalkManager : MonoBehaviour
 
         yield return null;
     }
-
+    void SetGoMini(int prog)
+    {
+        switch (Etalk)
+        {
+            case TalkChoice.Kang:
+                if (prog == 22)
+                {
+                    MiniGame.SetActive(true);
+                    IsGame = true;
+                }
+                break;
+            case TalkChoice.Yang:
+                if (prog == 26)
+                {
+                    MiniGame.SetActive(true);
+                    IsGame = true;
+                }
+                break;
+            case TalkChoice.Baek:
+                if (prog == 35)
+                {
+                    MiniGame.SetActive(true);
+                    IsGame = true;
+                }
+                break;
+            default:
+                break;
+        }
+    }
     private void OnDestroy()
     {
         Instance = null;

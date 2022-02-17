@@ -30,7 +30,6 @@ public struct ChoiceData
     public int like;
     public string reply;
 }
-
 [Serializable]
 public struct ChoiceDatas
 {
@@ -59,6 +58,43 @@ public struct SaveDatas
 {
     public List<SaveData> savedatas;
 }
+[Serializable]
+public struct KangEnding
+{
+    public string background;
+    public string name;
+    public string talk;
+}
+[Serializable]
+public struct KangEndings
+{
+    public List<KangEnding> kangendings;
+}
+[Serializable]
+public struct YangEnding
+{
+    public string background;
+    public string name;
+    public string talk;
+}
+[Serializable]
+public struct YangEndings
+{
+    public List<YangEnding> yangendings;
+}
+[Serializable]
+public struct BaekEnding
+{
+    public string background;
+    public string name;
+    public string talk;
+}
+[Serializable]
+public struct BaekEndings
+{
+    public List<BaekEnding> baekendings;
+}
+
 
 public interface ITalkLoad
 {
@@ -67,6 +103,9 @@ public interface ITalkLoad
     public TalkProgress LoadTalkData();
     public SaveData LoadSaveData();
     public SaveDatas LoadSaveDatas();
+    public List<KangEndings> LoadKangEnding();
+    public List<YangEndings> LoadYangEnding();
+    public List<BaekEndings> LoadBaekEnding();
 }
 public interface ITalkSave
 {

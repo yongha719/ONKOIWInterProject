@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
 
@@ -19,7 +20,7 @@ public class UIManager : MonoBehaviour
     public Button[] Charchoice;
 
     public Text ItemLimit;
-    
+
 
     public void IngameMenuButton()
     {
@@ -42,15 +43,16 @@ public class UIManager : MonoBehaviour
         TalkSet();
         Save.SetActive(false);
         SettingObj.SetActive(false);
-        
+
     }
     public void SliderValue()
     {
-        LikeSlider.value = ItemLoad.Instance.Likes[(int)TalkManager.Instance.Etalk - 1];
+        if (LikeSlider != null)
+            LikeSlider.value = ItemLoad.Instance.Likes[(int)TalkManager.Instance.Etalk - 1];
     }
     void Update()
     {
-        SliderValue();
+            SliderValue();
     }
 
     void TalkSet()

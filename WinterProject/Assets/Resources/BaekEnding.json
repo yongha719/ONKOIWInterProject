@@ -1,0 +1,341 @@
+{
+    "target": [
+        {
+            "baekendings": [
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "오늘 학생회 애들 엄청 바빠 보이던데..\n한참 바쁜 시즌인가?"
+                },
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "사람이 부족해 보이기도 하고…"
+                },
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "..내가 신경쓸 일이 아니긴 하지..\n어차피 학생회 일은 학생회장이 할테고.."
+                },
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "우리학교 학생회 분명\n일 엄청 잘하기로 소문나지 않았던가?"
+                },
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "응 분명.. 학생회장이 엄청나게 똑똑하고\n성실한 애라서…"
+                },
+                {
+                    "background": "classroom",
+                    "name": "%PlayerName%",
+                    "talk": "어라?"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "우리 학교 학생회장이 누구였지?"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "분명…. 아는 사람이였던 거 같은데.."
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "아니 그건 작년 회장을 잘못 기억하고 있던 건가?"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "하긴.. 딱히 누구든 나랑 상관 없으니까"
+                }
+            ]
+        },
+        {
+            "baekendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "(여러가지 일이 있었지만 언제 그랬냐는 듯\n모든게 정상으로 돌아왔다…)"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "(채아도..세화도 그리고 가윤이도..\n여느때와 다름없는 평범한 일상을 되 찾았다)"
+                },
+                {
+                    "background": "normal",
+                    "name": "백가윤",
+                    "talk": "야 PlayerName 너\n넥타이는 어디 두고 등교하는 거야?"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "뭐? 넥타이라면 잘 하고 있…"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "지 않구나..!!! "
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "이거.. 역시 벌점 이려나..?"
+                },
+                {
+                    "background": "normal",
+                    "name": "백가윤",
+                    "talk": "너도 참.. 엄청 덜렁대는 구나?"
+                },
+                {
+                    "background": "normal",
+                    "name": "백가윤",
+                    "talk": "나한테 여분 넥타이 있으니까\n오늘은 이거 하고 있어"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "어 정말?\n당연히 선도부 애들한테 말할거라 생각했는데…"
+                },
+                {
+                    "background": "normal",
+                    "name": "백가윤",
+                    "talk": "너니까 한번 봐주는거야\n다음 부터는 넥타이 똑바로 하고 와"
+                },
+                {
+                    "background": "normal",
+                    "name": "백가윤",
+                    "talk": "그냥 저번에 도와준 거 은혜 갚은 거라 생각해"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "알았어 알았어\n다음부턴 조심할게"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "(그일 이후로 가윤이와는 그럭저럭 친한친구 사이가 되었다)"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "(아직 예전에 고백 사건이 가끔 떠오르면 쪽팔리긴 하지만…)"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName%",
+                    "talk": "(그래도 이런 친구라면 나쁘지 않지)"
+                }
+            ]
+        },
+        {
+            "baekendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "{문 효과음}똑똑똑"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName%",
+                    "talk": "야- 백가윤!\n나 왔어 문 좀 열어줘~"
+                },
+                {
+                    "background": "",
+                    "name": "백가윤",
+                    "talk": "아 PlayerName(이) 왔구나\n어서 들어와 준비 다 해놨어"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "옆에 앉아\n그리고 이건 네 게임패드"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "이 게임 처음이라고 했지?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "응 애초에 맨날 컴퓨터로만 했지\n게임패드로 해보는 건 처음이야"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "그럼 쉬운 난이도 부터 시작해야 겠네"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "아무래도 그래야 겠지"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "그건 그렇고 놀라운걸~\n가윤이 네가 집에 다 초대 해 주고"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "같은 학생회 애들도 너희 집에는 와 본적 없다고 하던데"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "그야 걔들은 내가 게임 매니아 인걸 모르거든"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "괜히 소문나는건 사절이야"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "그리고 딱히.. 다른 사람 집에 초대하는 거\n좋아하진 않거든"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "특별히 너만 초대한 거니까.."
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "그거 참 영광이네"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "난 좀 특별하다~ 뭐 그런 뜻 인가?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "뭐 그럴지도 모르고"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "그건 그렇고 너.. 전에 그거 아직 가지고 있어?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "그거 라니 어떤 거?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "나한테 줬던 러브레터 말이야"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "네 성격상 그때 가지고 있던거 보면\n아직도 버리기 귀찮다고 가지고 있을 거 같아서"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "윽.. 너무 맞는 말 이라 뭐라고 못 하겠네"
+                },
+                {
+                    "background": "happy1",
+                    "name": "백가윤",
+                    "talk": "있으면 줘 봐\n다시 읽어보게"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName%",
+                    "talk": "놀리기라도 하겠다는 거야?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "백가윤",
+                    "talk": "그런건 아닌데"
+                },
+                {
+                    "background": "happy2",
+                    "name": "백가윤",
+                    "talk": "너… 아직 나 좋아하잖아\n설마 그렇게 티나게 행동하면서 내가 모를 줄 알았어?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "백가윤",
+                    "talk": "다시 읽어보고 대답 해줄게"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "뭐.."
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "(눈치 빠른 백가윤이 모를리 없다고 생각하긴 했지만\n이렇게 직접 들으니 쪽팔려 죽을 거 같다…)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName%",
+                    "talk": "어쩔 수 없지… 자 여기"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "너 이거 러브레터 처음 써보는 거지?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName%",
+                    "talk": "너 이거 러브레터 처음 써보는 거지?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "응 엄청 티나"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "뭐 상관은 없지…\n조금 늦었지만 고백 받아줄게"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName%",
+                    "talk": "뭐.. 정말?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "정말이지 그럼 내가 그런 장난 치는 사람처럼 보여?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName%",
+                    "talk": "물론 그건 아닌데…"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName%",
+                    "talk": "{게임 브금}….! 야..야! 먼저 시작하면 어떡 해!"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "빨리 게임패드 잡기나 하셔"
+                },
+                {
+                    "background": "happy3",
+                    "name": "백가윤",
+                    "talk": "우리 첫 데이트라고 생각해"
+                }
+            ]
+        }
+    ]
+}

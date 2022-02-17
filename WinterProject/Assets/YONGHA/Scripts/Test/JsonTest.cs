@@ -11,11 +11,12 @@ public class Test
 public class JsonTest : MonoBehaviour
 {
 
-    public Animator Animator;
-    public int a;
+    ITalkLoad loader;
     // Start is called before the first frame update
     void Start()
     {
+        loader = new JsonLoader();
+
 
     }
 
@@ -24,8 +25,9 @@ public class JsonTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            TextAsset txt = Resources.Load<TextAsset>("SaveData");
-            print(txt.text);
+            var txt = loader.LoadBaekEnding();
+            BaekEndings baekEndings = txt[1];
+            print(baekEndings.baekendings[0].name);
         }
             
     }

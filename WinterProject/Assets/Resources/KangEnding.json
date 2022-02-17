@@ -1,0 +1,226 @@
+{
+    "target": [
+        {
+            "kangendings": [
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(여느때와 다름 없는 평범한 하루다…)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(조금 다른 점이 있다면 무언가 까먹은 거 같은 기분이 든다고 할까?\n그냥 기분 탓 일수도 있고…)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(어렸을 때 부터 친한 친구하나 제대로 못 사귀고 있어서 그런 걸 수도 있고)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "{검은화면}(...)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(어라 나 분명 친한 친구가 한 명 있었던 거 같은데?)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(아니.. 아니었나? 그냥 꿈이 였던 거 같기도 하고… 분명 꿈일거야)"
+                },
+                {
+                    "background": "backyard",
+                    "name": "%PlayerName&",
+                    "talk": "(그저 친한 친구가 있었던 거 같은 기나긴 꿈…)"
+                }                
+            ]
+        },
+        {
+            "kangendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName&",
+                    "talk": "(여러가지 일이 있었지만 언제 그랬냐는 듯\n모든게 정상으로 돌아왔다…)"
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName&",
+                    "talk": "(세화도..가윤이도 그리고 채아도..\n여느때와 다름없는 평범한 일상을 되 찾았다)"
+                },
+                {
+                    "background": "normal",
+                    "name": "강채아",
+                    "talk": "PlyerName! 빨리와! 이러다 수업 늦는다?"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName&",
+                    "talk": "알았어 지금 짐챙기고 있잖아-!\n그렇게 늦을까봐 걱정이면 먼저 가도 되잖아"
+                },
+                {
+                    "background": "normal",
+                    "name": "강채아",
+                    "talk": "난 누구처럼 지각한다고 소꿉친구 버리고 가는 짓은 안 하거든!"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName&",
+                    "talk": "너 그때 일 아직도 마음에 담아두고 있는거야?\n그땐 미안 하다니까 그러네?"
+                },
+                {
+                    "background": "normal",
+                    "name": "강채아",
+                    "talk": "미안하면 앞으로 더 잘 하던가-!"
+                },
+                {
+                    "background": "normal",
+                    "name": "강채아",
+                    "talk": "아무튼 짐 다 챙겼지?\n빨리 일어나 느림보야!"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName&",
+                    "talk": "네~ 네~ 갑니다 가요"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName&",
+                    "talk": "(채아와의 관계도 예전과 달라진 거 없이 잘 지내고 있다\n투닥투닥 거리면서도 서로 챙겨주고 함께 노는)"
+                },
+                {
+                    "background": "normal",
+                    "name": "%PlayerName&",
+                    "talk": "(시간이 지나도 언제까지나 좋은 친구로 남게 되겠지)"
+                }
+            ]
+        },
+        {
+            "kangendings": [
+                {
+                    "background": "",
+                    "name": "%PlayerName&",
+                    "talk": "이 가게도 오랜만에 와 보네.."
+                },
+                {
+                    "background": "",
+                    "name": "%PlayerName&",
+                    "talk": "채아가 먼저 와서 기다리겠다고 했는데 어디지?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "강채아",
+                    "talk": "PlayerName! 여기야 여기! 이쪽!"
+                },
+                {
+                    "background": "happy1",
+                    "name": "강채아",
+                    "talk": "미리 시켜두고 기다리고 있었지!\n그거 네가 늘 먹던거 맞지?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName&",
+                    "talk": "응 맞아 제대로 주문 해놨네"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName&",
+                    "talk": "채아 넌 또 딸기 파르페로 시킨거야?\n그거 엄청 좋아하는구나…"
+                },
+                {
+                    "background": "happy1",
+                    "name": "강채아",
+                    "talk": "제일 맛 있잖아! 보기에도 예쁘고\n한입 먹어볼래?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName&",
+                    "talk": "(채아가 먹던 딸기 파르페를 한스푼 떠서 내 입 가까이에 들이 밀었다 )"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName&",
+                    "talk": "먹여 주려고? 됐어 애도 아니고…\n보통 이런거 연인 들이나 해 주는거 아냐?"
+                },
+                {
+                    "background": "happy1",
+                    "name": "%PlayerName&",
+                    "talk": "(나도 참 소꿉친구 끼리 너무 의식 했나?)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "강채아",
+                    "talk": "친구로 생각했으면 이런것도 안 했지\n눈치가 없다니까 정말"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName&",
+                    "talk": "뭐…"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName&",
+                    "talk": "(지금 채아가 한말은…)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "ㅎㅇ",
+                    "talk": "(채아는 평소와는 다르게 뺨을 붉게 물들이고는\n흔들리는 눈동자로 내쪽을 지긋이 바라보고 있었다)"
+                },
+                {
+                    "background": "happy2",
+                    "name": "강채아",
+                    "talk": "팔 떨어지겠네 그래서 먹을거야 말거야?"
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName&",
+                    "talk": "…."
+                },
+                {
+                    "background": "happy2",
+                    "name": "%PlayerName&",
+                    "talk": "(아무말 없이 채아가 내민 파르페를 받아 먹었다)"
+                },
+                {
+                    "background": "happy3",
+                    "name": "강채아",
+                    "talk": "어때 맛 있지?"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName&",
+                    "talk": "엄청 달달 하네…"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName&",
+                    "talk": "(전에 먹었던 파르페 보다 훨씬 달게 느껴져)"
+                },
+                {
+                    "background": "happy3",
+                    "name": "%PlayerName&",
+                    "talk": "그것보다 방금 했던 말…"
+                },
+                {
+                    "background": "happy3",
+                    "name": "강채아",
+                    "talk": "고백 맞으니까 그런 멍한 표정 그만 지어"
+                },
+                {
+                    "background": "happy3",
+                    "name": "강채아",
+                    "talk": "그래서 받아 줄거야?"
+                },
+                {
+                    "background": "",
+                    "name": "강채아",
+                    "talk": "…안 받아줄 이유도 없지"
+                }
+            ]
+        }
+    ]
+}

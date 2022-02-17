@@ -1269,6 +1269,885 @@
           "background": "backyard",
           "name": "강채아",
           "talk": "어라? 내 핸드폰 어디 갔지?"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "이것봐! 여기 눈이 엄청 쌓여 있어!\n어제 내린 눈을 아직 치우지 않았나봐"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "그러게 우리 전에 여기서 눈 싸움 할 때도\n이정도 쌓였었는데…"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "눈 싸움…?"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "우리 눈 싸움 같은 걸 했었나?\n기억이 안나는데"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "뭐? 얼마전에 눈 내렸을 때 네가 하자고 때써서 했었잖아\n어린애도 아니고 눈좀 쌓였다고 들떠서는…"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "진짜 기억이 하나도 안나는데…"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "아! 혹시 내가 잊어버린 추억이 이게 아닐까?"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "눈싸움 같은 일이면 내가 잊어 버렸을리도 없고…\n얼마전이라면 최근 일이니까 기억 못하는 건 이상해!"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "그냥 단순히 네 건망증이 심한 건 아니고?"
+        },
+        {
+          "Kang": 12,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "그정도로 기억력이 나쁘지는 않거든?\n너보다 기억력 좋다고!"
+        },
+        {
+          "Kang": 1,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "아무튼 분명 추억을 재연 하라고 했으니까\n그때처럼 눈싸움을 해 보면 되지 않을까?"
+        },
+        {
+          "Kang": 1,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "확실히 맞을 수 도 있겠네"
+        },
+        {
+          "Kang": 1,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "저번처럼 지고 울지나 마셔!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "이겼다! 저번 처럼 우는 거 아니지 강채아?"
+        },
+        {
+          "Kang": 12,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "이런걸로 울 만큼 유치하진 않거든?"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "그것보다 돌아온게 맞나 확인을 해야지\n딱히 바뀐 건 없어 보이는데.."
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "%PlayerName%",
+          "talk": "{문자 효과음}어라? 엄마한테 문자가 왔어!"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "‘아침에 늦잠자서 못 챙겨줬는데 학교 잘 끝났니?’라고…"
+        },
+        {
+          "Kang": 8,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "아무래도 세화 말이 맞았나봐!\n다시 돌아왔어! 다른 애들도 돌아 올 수 있겠다!"
+        },
+        {
+          "Kang": 8,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "어서 다른 애들에게 말해주러 가자!\n빨리와 PlayerName!"
+        }
+      ]
+    },
+    {
+      "talkDatas": [
+        {
+          "Kang": 0,
+          "Yang": 2,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "잊어버린 추억이라… 짐작 가는게 전혀 없네요.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "PlayerName는(은) 채아가 말한 그대로 네요… 아 나쁜 뜻은 아니고 좋은 뜻으로요!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "혹시 PlayerName는(은) 좋아하는 책같은 거 있으세요?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "그러고 보니 저번에 학교 뒷 마당에서 치즈고양이를 봤어요\n사람을 보고도 도망치지 않고 무지 귀여웠어서 기억이 나네요"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "슬슬 안경을 다시 맞춰야 겠어요… 그새 눈이 또 나빠졌나 봐요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "책을 읽지 않을 때는 산책하는 걸 좋아해요 PlayerName는(은) 취미가 뭔가요?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "문과 과목은 좋아하지만… 이과는 너무 어렵단 말이죠…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "그러고보니 전에 도서실에서 무슨일이 있었던 거\n같기도하고…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "겨울이 지나 봄이 오는건 좋지만 꽃가루는 싫어요…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "뭔가 따듯한 거 마시고 싶어요…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "어라… 분명 여기에 있을 텐데…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "왜그래? 무슨 일 있어?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "아… PlayerName(이) 군요…. 그게.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "별건 아니고 그냥 물건 몇가지가 보이지 않아서요…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "물건을 잃어버린거야? 어떤 물건인데?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "안경 케이스,필통,작은 노트… 이 세가지에요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "하지만 좀 이상한게… 제가 늘 가장 신경쓰면서 챙기는\n물건 들 인데… 잃어버린게 이상하다고 해야 할지…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "물론 제가 그렇게 꼼꼼하다는 말은 아니고….!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "그냥 소중한 물건이라 잃어버린 적이 없었거든요.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "어디에 뒀는지 짐작 조차 가지 않아요…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "하긴 소중한 물건 3가지를 동시에 잃어버렸다는 건…\n좀 이상한 일이긴 하네…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "그럼 혹시 잃어버린 물건을 찾으면 잃어버린 당시의 기억도\n돌아와서 모습도 돌아오는 거 아닐까?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 2,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "…! 그럴 수 도 있겠네요..!\n해볼 가치는 있어요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "그럼.. 죄송하지만 같이 찾아 주실 수 있으실까요…?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "같이 찾아주는 거 쯤이야 쉽지\n찾을 수 있을지는 장담 못 하지만…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "감사해요 PlayerName..!\n전 항상 도서실에 있으니까 아마 물건도 모두 도서실에 있을 거예요"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "도서실 말이지? 그럼 그렇게 넓지도 않으니까 금방 찾겠네\n그럼 찾아 보자고!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "3개 모두 찾았어! 이거 맞지?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "뭘 했으면 이런 물건들이 도서실에 흩어져 있는거야?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "음.. 아..! 기억 났어요..\n분명 그날 학교에 늦게 까지 남아서 책을 읽다가…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "경비 아저씨께 어서 집에 가라고 혼나서\n급하게 나오느라 두고 나왔었어요.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "흠.. 그건 그렇다 치고..\n어때? 다시 돌아온 거 같아?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "그건 저도 잘…\n다른 사람들한테 물어봐야 하지 않을까요?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "어라? 세화야 이거 봐봐"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "여기에 선생님이 너한테 남기고 간 포스트잇이 있어"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "“또 늦게까지 도서실에 남아 있지말고 집에 일찍 들어가렴 놓고간\n물건도 챙겨가고” 라고 써 있어"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "으.. 경비 아저씨께서 도서실 담당 선생님께 말씀 드렸나 봐요…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 3,
+          "Baek": 0,
+          "background": "library",
+          "name": "%PlayerName%",
+          "talk": "지금 그게 중요한게 아니잖아\n이 쪽지 방금 까지 없었다고"
+        },
+        {
+          "Kang": 0,
+          "Yang": 7,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "아..! 그렇네요 정말 다시 돌아온 걸까요?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 1,
+          "Baek": 0,
+          "background": "library",
+          "name": "양세화",
+          "talk": "어서 채아와 가윤이에게도 알려주러 가요..!"
+        }
+      ]
+    },
+    {
+      "talkDatas": [
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 2,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "넌 뭐 짐작가는 거 없어?\n사라진 추억 말이야"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 7,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "너 혹시 예전일 아직도 신경쓰는거 아니지?\n네가 그런 구질구질한 짓은 안 할거라 믿을게"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "할일이 태산인데 이런일에 휘말리다니.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 1,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "하루라도 좋으니 아무 걱정 없이 놀아보고 싶어"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "아까 보니까 내가 사라져서 부회장이 내 일을 대신 하고 있더라\n의도치 않게 미안한 일이 되어버렸어"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 1,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "빨리 집에가고 싶어.. 그.. 해야할게 좀 있거든"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "",
+          "talk": "한순간에 모든 사람들이 날 잊는 다는거..\n생각보다 훨씬 이상한 느낌이야"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 7,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "너도 이런 귀찮은일에 휘말리게 됐다니 유감이네"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 1,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "이런거 물어보면 좀 그렇나? 넌 나 어디보고 고백한 거야?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 1,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "뜬금 없지만 넌 어렸을 때로 돌아갈 수 있으면 뭘 할거야?\n나였다면 분명.. 후회 없도록 어렸을 때를 즐길거 같은데"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "이상하네.. 이럴리가 없는데"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "talk": "왜그래? 무슨 일 있어?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "뭐야 PlayerName 너구나.. 깜짝놀랐잖아\n갑자기 사람 뒤에서 튀어 나오지마"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "(깜짝 놀란 가윤이가 등 뒤로 빠르게\n무언가를 숨기는 걸 보았다..)"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "너 등 뒤에 그건 뭐야?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "…아무것도 신경쓰지마"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "그게 네 추억과 관련된 거면 어떡할건데?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "………..확실히 그렇기는 한데…\n그게말이지…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "우물쭈물 하는게 평소에 너답지 않네\n뭐 그렇게 숨기는 거야?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 2,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "평소라면 그럴 시간 없다면서\n언제나 해결할 방법 부터 찾았으면서"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "아 알았어!! 보여주면 되잖아"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "강채아",
+          "talk": "자 이거야"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "..? 게임기?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "(가윤이가 등 뒤에 숨기고 있던건 최신 게임기 였다\n정말 이미지와 어울리지 않는데 이런걸 왜 가지고 있지?)"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "네가 게임기는 왜 가지고 있어?\n그것도 이런 최신형을?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "게임기를 게임 하려고 가지고 있지\n왜 가지고 있겠어?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "어차피 나랑 안 어울린다느니 뭐라느니\n그런 소리 할 거 잖아?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "그래서 별로 말하고 싶지 않았다고"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "게임 좀 할수도 있지 뭘\n딱히 신경 안써"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 6,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "그래서 이 게임기에 뭐가 이상한건데"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "별건 아니고.. 내가 클리어하지 않은\n부분이 클리어 돼 있어…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "그냥 하고 까먹은거 아니냐고 생각할 수도 있겠지만..\n며칠동안 못 깨서 끙끙거리던 스테이지라 기억 못 할리 없거든"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "우와.. 엄청 후반부분 스테이지네..\n나도 이게임 아직 여기까지 못 갔는데"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "아무튼 그럼 이 스테이지를 클리어 해 보면\n존재가 돌아올지도 모른다는 뜻 인거야?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "아마도..?\n그외 기억이 안나는 것들은 일단은 없어"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "일단 해봐서 나쁠건 없으니까..\n한번 해 보자고!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "클리어! 이제 이걸로 됐으려나?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "음..딱히 바뀐게 있는지 모르겠는데.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 3,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "{전화 효과음}어라?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "뭐야 이 부재중 전화들은?\n전부 학생회 애들이 한 거 잖아?"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "아무래도 다시 돌아온 거 같네"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "그..그건 그런데.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "오늘 중요한 회의가 있는 날이여서\n난리가 난거 같은데…"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "미안하지만 나 먼저 가봐야 할 거 같아"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "백가윤",
+          "talk": "채아랑 세화는 부탁할게..!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "어.. 야! 아무리 그래도 그렇게 가 버리냐-!"
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "…."
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "진짜 가버렸네.."
+        },
+        {
+          "Kang": 0,
+          "Yang": 0,
+          "Baek": 5,
+          "background": "classroom",
+          "name": "%PlayerName%",
+          "talk": "남은 애들이나 도와주러 가자\n다음에 대화할 기회가 생기겠지"
         }
       ]
     }
