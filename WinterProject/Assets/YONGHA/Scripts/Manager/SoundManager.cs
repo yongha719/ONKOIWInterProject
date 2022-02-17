@@ -1,13 +1,13 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class SoundManager : Singleton<SoundManager>
 {
-    //0-½ºÅä¸® 1-³ë¸»¿£µù 2-´«½Î¿ò 3-´ëÈ­ 4-¸ŞÀÎ,ÇØÇÇ 5-ºñµğ¿À°ÔÀÓ 6-Ã£±â°ÔÀÓ
+    //0-ìŠ¤í† ë¦¬ 1-ë…¸ë§ì—”ë”© 2-ëˆˆì‹¸ì›€ 3-ëŒ€í™” 4-ë©”ì¸,í•´í”¼ 5-ë¹„ë””ì˜¤ê²Œì„ 6-ì°¾ê¸°ê²Œì„
     public AudioSource[] BGM;
 
     private void Start()
     {
-        BGM[4].Play();
+        //BGM[4].Play();
     }
 }

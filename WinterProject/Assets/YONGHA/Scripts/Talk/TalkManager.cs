@@ -296,18 +296,18 @@ public class TalkManager : MonoBehaviour
 
         talkNum = talkprog.Talkprog[(int)Etalk - 1];
 
-        bool talkstart = false;
+        //bool talkstart = false;
 
         for (prog = talkNum; prog < talk.talkDatas.Count; prog++)
         {
-            if (!talkstart)
+            if (prog == 0)
             {
                 txtTalk.text = null;
                 TalkSet();
                 yield return StartCoroutine(ETextTyping(txtTalk, Talkstart));
 
                 yield return StartCoroutine(EWaitInput());
-                talkstart = true;
+                //talkstart = true;
             }
             //txtName.text = talk.talkDatas[prog].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
             string talk1 = talk.talkDatas[prog].talk;

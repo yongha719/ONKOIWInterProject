@@ -23,6 +23,8 @@ public class SceneMove : MonoBehaviour
     public void Skip()
     {
         SceneManager.LoadScene("Love");
+        SoundManager.Instance.BGM[0].Stop();
+        SoundManager.Instance.BGM[3].Play();
     }
     
 }

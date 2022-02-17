@@ -1269,6 +1269,98 @@
           "background": "backyard",
           "name": "강채아",
           "talk": "어라? 내 핸드폰 어디 갔지?"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "어라? 내 핸드폰 어디 갔지?"
+        }
+      ]
+    },
+    {
+      "talkDatas": [
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "내가 잊어버린 추억이라는게 뭘까?\n너는 짐작가는 거 있어? 나랑 제일 오랫동안 같이 지냈잖아"
+        },
+        {
+          "Kang": 7,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "정말 이 상태로 못 돌아가면 어쩌지...\n가족들 조차 날 기억하지 못 하는 걸..."
+        },
+        {
+          "Kang": 8,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "아- 너 그거 생각 나? 어렸을 때 같이 놀다가 네가 넘어져서 엄청 울었었잖아!"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "오랜만에 자주 가던 카페에 가고 싶어~\n지금 이 상태로는 무리 겠지만"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "맞아 그러고 보니까 내 머리에 하늘색 리본 말이야\n새로 산 건데 나랑 잘 어울려?"
+        },
+        {
+          "Kang": 1,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "어제 눈이 왕창 내리더니 가득 쌓였네~"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "그러고 보니 새 학기 시작이니까 또 다시 중간,기말 지옥이겠네…"
+        },
+        {
+          "Kang": 2,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "고양이나 강아지들은 사람눈에 안 보이는 걸 본다고 하잖아\n그럼 고양이나 강아지들 눈에는 내가 보일까?"
+        },
+        {
+          "Kang": 3,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "조금 더 따듯하게 입고 올 걸 그랬어.. 감기 걸리겠다…"
+        },
+        {
+          "Kang": 5,
+          "Yang": 0,
+          "Baek": 0,
+          "background": "backyard",
+          "name": "강채아",
+          "talk": "어라? 내 핸드폰 어디 갔지?"
         }
       ]
     }

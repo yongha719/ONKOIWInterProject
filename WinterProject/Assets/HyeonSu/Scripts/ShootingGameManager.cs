@@ -7,9 +7,19 @@ public class ShootingGameManager : MonoBehaviour
     public static ShootingGameManager Instance { get; private set; }
     [SerializeField] private GameObject[] HpImage;
     [SerializeField] private GameObject[] DeadHpImage;
+    [SerializeField] private GameObject Manual;
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+    }
+    private void Update()
+    {
+        Color color = Manual.GetComponent<Image>().color;
+        color.a -= Time.deltaTime * 0.3f;
+        Manual.GetComponent<Image>().color = color;
     }
     public void UpdateHpIcon(int playerHp)
     {
