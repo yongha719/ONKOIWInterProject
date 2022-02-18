@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 18723
+  controlID: 819
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 18729
+  controlID: 820
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 18781
+  controlID: 821
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1235ffff5e5fffff7262ffff0064ffffa465ffffd071ffffe476ffff6480fffff881ffff1c88ffffdc8bffff348fffffd68fffff369fffff24a1ffff74a2fffff4a5ffffb0a8ffffcca8ffff6ea9ffffe2aaffffc2baffffcebcffff72caffff88caffff8ecaffff16d6ffffa0d6ffff50e1ffff6ce1ffff24ecffffacf7ffffc2f7ffffdcf7fffffcf7ffff32fafffffeb10000dab2000082cf000016d1000072d30000d2da00004add000016df0000aae00000fee1000022e200005ef300000af5000004f80000100001004c010100be070100
+      m_SelectedIDs: 90750000
+      m_LastClickedID: 30096
+      m_ExpandedIDs: 66eaffff9ef8ffff66faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -484,9 +484,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -10}
+    m_Target: {x: 1141.8397, y: 451.50287, z: -8.167746}
     speed: 2
-    m_Value: {x: 0, y: -0.000000020426361, z: -9.999989}
+    m_Value: {x: 1141.8397, y: 451.50287, z: -8.167746}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -537,9 +537,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 959.3483
     speed: 2
-    m_Value: 12.124355
+    m_Value: 959.3483
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -602,22 +602,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/YONGHA/Scripts/Test
+    - Assets/YONGHA/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/YONGHA/Scripts/Test
+  - Assets/YONGHA/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ypc\Documents\GitHub\ONKOIWInterProject\WinterProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 123}
-    m_SelectedIDs: b0670000
-    m_LastClickedID: 26544
-    m_ExpandedIDs: 0000000076670000786700007a6700007c6700009e67000000ca9a3b
+    m_SelectedIDs: be480000
+    m_LastClickedID: 18622
+    m_ExpandedIDs: 00000000ba480000bc480000be480000c0480000de48000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000076670000786700007c6700009e67000000ca9a3b
+    m_ExpandedIDs: 00000000ba480000bc480000be480000c048000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

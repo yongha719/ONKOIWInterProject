@@ -11,6 +11,8 @@ public class GameManager : Singleton<GameManager>
     public bool Mini1Clear = false;
     public bool Mini2Clear = false;
     public bool Mini3Clear = false;
+    public bool ChaeahHappyBool = false, SehwaHappyBool = false, GaYoonHappyBool = false;
+    public bool ChaeahNormalBool = false, SehwaNormalBool = false, GayoonNormalBool = false;
     void Start()
     {
         Sound();

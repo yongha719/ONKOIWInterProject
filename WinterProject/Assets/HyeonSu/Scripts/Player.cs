@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
             if (playerHp <= 0)
             {
-                SceneManager.LoadScene("Dead");
+                SceneManager.LoadScene("MiniStory");
             }
         }
         if (collision.gameObject.tag == "ItemHp")

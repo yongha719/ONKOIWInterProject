@@ -2,25 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class Album_Test : MonoBehaviour
+public class Album_Test : Singleton<Album_Test>
 {
-    [SerializeField] private GameObject ChaeAhHappyAlbum, SeHwaHappyAlbum, GaYoonHappyAlbum;
-    [SerializeField] private GameObject ChaeAhNormal, SeHwaNormal, GaYoonNormal;
-    [SerializeField] private GameObject ChaeAhHappy1, ChaeAhHappy2, ChaeAhHappy3, SeHwaHappy1, SeHwaHappy2, SeHwaHappy3, GayoonHappy1, GayoonHappy2, GayoonHappy3;
-    [SerializeField] private GameObject ChaeAhBtn, SeHwaBtn, GaYoonBtn;
+
+    public GameObject ChaeAhHappyAlbum, SeHwaHappyAlbum, GaYoonHappyAlbum;
+    public GameObject ChaeAhNormal, SeHwaNormal, GaYoonNormal;
+    public GameObject ChaeAhHappy1, ChaeAhHappy2, ChaeAhHappy3, SeHwaHappy1, SeHwaHappy2, SeHwaHappy3, GayoonHappy1, GayoonHappy2, GayoonHappy3;
+    public GameObject ChaeAhBtn, SeHwaBtn, GaYoonBtn;
 
     int ChaeAhCheak, SeHwaCheak, GayoonCheak;
 
     public void NormalOn() //노말 엔딩 해금 됐을 시 (물론 캐릭터마다 따로 해줘야함)
     {
-        ChaeAhNormal.SetActive(true);SeHwaNormal.SetActive(true);GaYoonNormal.SetActive(true);
+        if (GameManager.Instance.ChaeahNormalBool == true)
+            ChaeAhNormal.SetActive(true);
+        if (GameManager.Instance.SehwaNormalBool == true)
+            SeHwaNormal.SetActive(true);
+        if (GameManager.Instance.GayoonNormalBool == true)
+            GaYoonNormal.SetActive(true);
     }
 
     public void HappyOn() //해피 엔딩 해금 됐을 시 (물론 캐릭터마다 따로 해줘야함)
     {
-        ChaeAhHappyAlbum.SetActive(false);SeHwaHappyAlbum.SetActive(false);GaYoonHappyAlbum.SetActive(false);
-        ChaeAhHappy1.SetActive(true);SeHwaHappy1.SetActive(true);GayoonHappy1.SetActive(true);
-        ChaeAhBtn.SetActive(true);SeHwaBtn.SetActive(true);GaYoonBtn.SetActive(true);
+        if (GameManager.Instance.ChaeahHappyBool == true)
+        {
+            ChaeAhHappyAlbum.SetActive(false);
+            ChaeAhHappy1.SetActive(true);
+            ChaeAhBtn.SetActive(true);
+
+        }
+        if (GameManager.Instance.SehwaHappyBool == true)
+        {
+            SeHwaHappyAlbum.SetActive(false);
+            SeHwaHappy1.SetActive(true);
+            SeHwaBtn.SetActive(true);
+
+        }
+        if (GameManager.Instance.GaYoonHappyBool == true)
+        {
+            GaYoonHappyAlbum.SetActive(false);
+            GayoonHappy1.SetActive(true);
+            GaYoonBtn.SetActive(true);
+
+        }
     }
 
     public void HappyClickChaeAh()
