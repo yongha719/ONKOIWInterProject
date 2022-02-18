@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
-    [SerializeField]private float playerMoveSpeed;
+    [SerializeField] private float playerMoveSpeed;
     private Animator WalkAni;
     private bool isThrow = true;
     //[SerializeField] private Sprite[] Snowsprites; //´«µ¢ÀÌ °­È­ »óÅÂº¯È­  
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
             isThrow = false;
             WalkAni.SetBool("bbb", isThrow);
         }
-        
+
     }
     void ReturnPlusAttack()
     {
@@ -83,14 +83,14 @@ public class Player : MonoBehaviour
             playerHp--;
             ShootingGameManager.Instance.UpdateHpIcon(playerHp);
             Destroy(collision.gameObject);
-            if(playerHp <= 0)
+            if (playerHp <= 0)
             {
                 SceneManager.LoadScene("Dead");
             }
         }
-        if(collision.gameObject.tag == "ItemHp")
+        if (collision.gameObject.tag == "ItemHp")
         {
-            if(playerHp < 3)
+            if (playerHp < 3)
             {
                 playerHp++;
                 ShootingGameManager.Instance.UpdateHpIcon(playerHp);
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
         //    Invoke("ReturnPlusAttack", 10f);
         //    Destroy(collision.gameObject);
         //}
-        if(collision.gameObject.tag == "ItemDelete")
+        if (collision.gameObject.tag == "ItemDelete")
         {
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Snow");
             for (int i = 0; i < objects.Length; i++)
