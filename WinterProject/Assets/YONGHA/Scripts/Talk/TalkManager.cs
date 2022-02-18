@@ -451,7 +451,7 @@ public class TalkManager : MonoBehaviour
                 for (int i = 0; i < kangending.kangendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
-                    txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
                     txtTalk.text = kangending.kangendings[i].talk;
                     yield return StartCoroutine(ETextTyping(txtTalk , txtTalk.text));
 

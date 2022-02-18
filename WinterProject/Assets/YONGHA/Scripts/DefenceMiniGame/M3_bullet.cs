@@ -16,13 +16,17 @@ public class M3_bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        print("Ãæµ¹");
         if (other.CompareTag("Player"))
         {
-            
+            other.GetComponent<M3_Player>().HP--;
+            print(other.name);
         }
         if (other.CompareTag("Enemy"))
         {
-
+            print(other.name);
+            
+            other.GetComponent<M3_TestEnemy>().HP--;
         }
         Destroy(gameObject);
     }

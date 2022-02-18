@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HyeonSu/Scene/Dead.unity
     guid: 9eca69aad970d5341bc514e1b92be2a7
+  - enabled: 1
+    path: Assets/YONGHA/Scenes/MiniStory.unity
+    guid: dc76c81c6ea27744d9be2d7fce7ee054
   - enabled: 0
     path: Assets/YONGHA/Scenes/Live2Dtest.unity
     guid: 78f7b79bcfac0ff448c63d498ded83d8

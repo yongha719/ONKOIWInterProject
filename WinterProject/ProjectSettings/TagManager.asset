@@ -14,6 +14,7 @@ TagManager:
   - ItemHp
   - ItemDelete
   - ItemStrong
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -21,10 +22,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player_bullet
+  - Enemy_bullet
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -50,4 +51,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: gun
+    uniqueID: 3512296679
     locked: 0
