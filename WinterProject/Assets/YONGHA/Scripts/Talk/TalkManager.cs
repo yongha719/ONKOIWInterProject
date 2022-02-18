@@ -79,8 +79,10 @@ public class TalkManager : MonoBehaviour
                     SceneManager.LoadScene("Shooting");
                     break;
                 case TalkChoice.Yang:
+                    SceneManager.LoadScene("MiniGame");
                     break;
                 case TalkChoice.Baek:
+                    SceneManager.LoadScene("MiniGame3");
                     break;
                 default:
                     break;

@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     [SerializeField]private float playerMoveSpeed;
     private Animator WalkAni;
     private bool isThrow = true;
-    [SerializeField] private AudioSource ThrowSnow, HitSnow;
     //[SerializeField] private Sprite[] Snowsprites; //눈덩이 강화 상태변화  
     public int playerHp;
     public float attack;
@@ -53,7 +52,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("뗐어~");
-            ThrowSnow.Play();
+            SoundManager.Instance.Effect[2].Play();
             if (plusAttack == 1) Debug.Log("1배속 공격이다 !");
             if (plusAttack == 2) Debug.Log("2배속 공격이다 !");
             Bullet.GetComponent<Bullet>().damage = attack;
@@ -80,7 +79,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Snow")
         {
-            HitSnow.Play();
+            SoundManager.Instance.Effect[3].Play();
             playerHp--;
             ShootingGameManager.Instance.UpdateHpIcon(playerHp);
             Destroy(collision.gameObject);
