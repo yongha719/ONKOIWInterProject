@@ -27,6 +27,8 @@ public class GameClearManager : MonoBehaviour
             {
                 isOne = false;
                 Invoke("GameClear", 1.8f);
+                GameManager.Instance.Mini2Clear = true;
+                
             }
         }
 
@@ -35,6 +37,6 @@ public class GameClearManager : MonoBehaviour
     void GameClear()
     {
         Clear.SetActive(true);
-       
+        SoundManager.Instance.Effect[1].Play();
     }
 }

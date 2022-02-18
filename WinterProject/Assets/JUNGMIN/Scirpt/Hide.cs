@@ -13,7 +13,9 @@ public class Hide : MonoBehaviour
 
     [SerializeField] GameObject Panel;
     [SerializeField] Text Hidetext;
-    [SerializeField] string[] Showtext; 
+    [SerializeField] string[] Showtext;
+
+    BackGround backGround;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class Hide : MonoBehaviour
         Showtext[0] = "안경케이스";
         Showtext[1] = "작은노트";
         Showtext[2] = "필통";
+        backGround = GameObject.Find("background").GetComponent<BackGround>();
     }
 
     // Update is called once per frame
@@ -37,12 +40,14 @@ public class Hide : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            backGround.isClickCoolTime = false;
             hide[index].SetActive(false);
             GameClearManager.Inst.FindHide++;
             Instantiate(Show, new Vector3(0, 1, 0), Quaternion.identity);
             Hidetext.text = Showtext[index].ToString();
             Panel.SetActive(true);
             Invoke("Delete", 1.14f);
+            backGround.Invoke("CoolTime", 1.6f);
         }
     }
 

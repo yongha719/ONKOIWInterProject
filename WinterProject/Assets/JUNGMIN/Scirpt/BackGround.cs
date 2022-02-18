@@ -8,7 +8,7 @@ public class BackGround : MonoBehaviour
     bool isOn = false;
     bool isGameClear = false;
     public bool isGameOver = false;
-    bool isClickCoolTime = true;
+    public bool isClickCoolTime = true;
     private int heartCount = 2;
     public Transform heartTransform;
     [SerializeField] List<GameObject> heart = new List<GameObject>();
@@ -29,6 +29,8 @@ public class BackGround : MonoBehaviour
         {
             isGameOver = true;
             SceneManager.LoadScene("GameOver");
+            SoundManager.Instance.Effect[0].Play();
+            SoundManager.Instance.BGM[6].Stop();
         }
 
         if(GameClearManager.Inst.FindHide == 3)
@@ -51,7 +53,7 @@ public class BackGround : MonoBehaviour
         }
     }
 
-    void CoolTime()
+    public void CoolTime()
     {
         isClickCoolTime = true;
     }
