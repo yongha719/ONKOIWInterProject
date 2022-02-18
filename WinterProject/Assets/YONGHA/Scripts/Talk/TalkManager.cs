@@ -443,11 +443,19 @@ public class TalkManager : MonoBehaviour
         {
             case TalkChoice.Kang:
                 if (!GameManager.Instance.Mini1Clear)
+                {
                     kangending = kangendings[0];
+                }
                 else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike < 80)
+                {
                     kangending = kangendings[1];
+                    GameManager.Instance.ChaeahNormalBool = true;
+                }
                 else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike >= 80)
+                {
+                    GameManager.Instance.ChaeahHappyBool = true;
                     kangending = kangendings[2];
+                }
                 for (int i = 0; i < kangending.kangendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
@@ -462,9 +470,15 @@ public class TalkManager : MonoBehaviour
                 if (!GameManager.Instance.Mini2Clear)
                     yangending = yangendings[0];
                 else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike < 80)
+                {
+                    GameManager.Instance.SehwaNormalBool= true;
                     yangending = yangendings[1];
+                }
                 else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike >= 80)
+                {
+                    GameManager.Instance.SehwaHappyBool = true;
                     yangending = yangendings[2];
+                }
                 for (int i = 0; i < yangending.yangendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(yangending.yangendings[i].background);
@@ -480,9 +494,15 @@ public class TalkManager : MonoBehaviour
                 if (!GameManager.Instance.Mini3Clear)
                     baekending = baekendings[0];
                 else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike < 80)
+                {
+                    GameManager.Instance.GayoonNormalBool = true;
                     baekending = baekendings[1];
+                }
                 else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike >= 80)
+                {
+                    GameManager.Instance.GaYoonHappyBool = true;
                     baekending = baekendings[2];
+                }
                 for (int i = 0; i < baekending.baekendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(baekending.baekendings[i].background);
@@ -497,9 +517,11 @@ public class TalkManager : MonoBehaviour
             default:
                 break;
         }
+        GameManager.Instance.AlbumSave();
         
         yield return null;
     }
+
     public void DeleteChilds()
     {
         var child = rtrnChoiceParent.GetComponentsInChildren<RectTransform>();

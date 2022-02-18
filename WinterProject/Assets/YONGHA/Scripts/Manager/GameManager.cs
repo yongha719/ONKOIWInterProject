@@ -7,14 +7,19 @@ using UnityEngine.UI;
 public class GameManager : Singleton<GameManager>
 {
     public string PlayerName;
-
+    ITalkLoad loader;
+    ITalkSave saver;
     public bool Mini1Clear = false;
     public bool Mini2Clear = false;
     public bool Mini3Clear = false;
     public bool ChaeahHappyBool = false, SehwaHappyBool = false, GaYoonHappyBool = false;
     public bool ChaeahNormalBool = false, SehwaNormalBool = false, GayoonNormalBool = false;
+    Album Albumlist;
     void Start()
     {
+        loader = new JsonLoader();
+        saver = new JsonLoader();
+        LoadAlbums();
         Sound();
         SceneManager.sceneLoaded += LoadedsceneEvent;
     }
@@ -25,7 +30,23 @@ public class GameManager : Singleton<GameManager>
     }
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.L))
+            AlbumSave();
+    }
+    public void AlbumSave()
+    {
+        Albumlist.album = new List<bool>() { ChaeahNormalBool, ChaeahHappyBool, SehwaNormalBool, SehwaHappyBool, GayoonNormalBool, GaYoonHappyBool };
+        saver.AlbumSave(Albumlist);
+    }
+    public void LoadAlbums()
+    {
+        var album = loader.LoadAlbum();
+        ChaeahNormalBool = album.album[0];
+        ChaeahHappyBool = album.album[1];
+        SehwaNormalBool = album.album[2];
+        SehwaHappyBool = album.album[3];
+        GayoonNormalBool = album.album[4];
+        GaYoonHappyBool = album.album[5];
     }
     void Sound()
     {
@@ -94,5 +115,9 @@ public class GameManager : Singleton<GameManager>
         }
 
 
+    }
+    private void OnApplicationQuit()
+    {
+        saver.AlbumSave(Albumlist);
     }
 }

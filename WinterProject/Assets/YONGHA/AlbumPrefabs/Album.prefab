@@ -1191,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4436147691974737451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1317,12 +1317,6 @@ MonoBehaviour:
   ChaeAhBtn: {fileID: 3566117968068184006}
   SeHwaBtn: {fileID: 7138019743212905611}
   GaYoonBtn: {fileID: 1729076238980781299}
-  ChaeahHappyBool: 0
-  SehwaHappyBool: 0
-  GaYoonHappyBool: 0
-  ChaeahNormalBool: 0
-  SehwaNormalBool: 0
-  GayoonNormalBool: 0
 --- !u!1 &4529561540330672429
 GameObject:
   m_ObjectHideFlags: 0

@@ -2592,6 +2592,12 @@ MonoBehaviour:
   Mini1Clear: 0
   Mini2Clear: 0
   Mini3Clear: 0
+  ChaeahHappyBool: 0
+  SehwaHappyBool: 0
+  GaYoonHappyBool: 0
+  ChaeahNormalBool: 0
+  SehwaNormalBool: 0
+  GayoonNormalBool: 0
 --- !u!4 &923290238
 Transform:
   m_ObjectHideFlags: 0
@@ -5157,6 +5163,10 @@ PrefabInstance:
     - target: {fileID: 4436147691974737450, guid: 05c0fb0a2e5b7c745869ed04e6bf0b8d, type: 3}
       propertyPath: m_Name
       value: Album
+      objectReference: {fileID: 0}
+    - target: {fileID: 4436147691974737450, guid: 05c0fb0a2e5b7c745869ed04e6bf0b8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4436147691974737451, guid: 05c0fb0a2e5b7c745869ed04e6bf0b8d, type: 3}
       propertyPath: m_Pivot.x

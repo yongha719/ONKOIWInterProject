@@ -94,7 +94,11 @@ public struct BaekEndings
 {
     public List<BaekEnding> baekendings;
 }
-
+[Serializable]
+public struct Album
+{
+    public List<bool> album;
+}
 
 public interface ITalkLoad
 {
@@ -106,6 +110,7 @@ public interface ITalkLoad
     public List<KangEndings> LoadKangEnding();
     public List<YangEndings> LoadYangEnding();
     public List<BaekEndings> LoadBaekEnding();
+    public Album LoadAlbum();
 }
 public interface ITalkSave
 {
@@ -114,5 +119,6 @@ public interface ITalkSave
     public void SaveData(SaveData saveData);
 
     public void SaveDatas(SaveDatas saveDatas);
+    public void AlbumSave(Album album); 
 }
 

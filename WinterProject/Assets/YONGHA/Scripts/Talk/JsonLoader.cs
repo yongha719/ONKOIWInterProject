@@ -71,7 +71,20 @@ public class JsonLoader : ITalkLoad, ITalkSave
 
         return JsonUtility.FromJson<SaveDatas>(txt.text);
     }
+    public Album LoadAlbum()
+    {
+        TextAsset txt = Resources.Load<TextAsset>("Album");
 
+        return JsonUtility.FromJson<Album>(txt.text);
+    }
+
+    public void AlbumSave(Album album)
+    {
+        string json = JsonUtility.ToJson(album);
+
+        File.WriteAllText(Application.dataPath + "/Resources/Album.json", json);
+
+    }
     public void SaveTalk(TalkProgress talkProgress)
     {
         string json = JsonUtility.ToJson(talkProgress);
