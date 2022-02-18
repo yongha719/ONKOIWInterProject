@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -29,7 +30,6 @@ public class SaveManager : MonoBehaviour
         saver = new JsonLoader();
 
         saveData = loader.LoadSaveDatas();
-        GiftSaveData = ItemLoad.Instance.giftlist;
         Save save;
         int temp = 0;
         foreach (var savebtn in SaveBtn)
@@ -39,8 +39,8 @@ public class SaveManager : MonoBehaviour
             save.date.text = save.savedata.Date;
             savebtn.onClick.AddListener(() =>
             {
-                if (!savebtn.GetComponent<Save>().savedata.IsSave)
-                {
+                if (!savebtn.GetComponent<Save>().savedata.IsSave&&SceneManager.GetActiveScene().name !="Title")
+                {                  
                     savebtn.GetComponent<Save>().date.text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss tt");
                     savebtn.GetComponent<Save>().savedata.IsSave = true;
                     savebtn.GetComponent<Save>().savedata.Savedata = TalkManager.Instance.talkprog.Talkprog;
@@ -71,6 +71,7 @@ public class SaveManager : MonoBehaviour
         {
 
         });
+        GiftSaveData = ItemLoad.Instance.giftlist;
     }
     void Update()
     {

@@ -19,8 +19,7 @@ public class UIManager : MonoBehaviour
 
     public Button[] Charchoice;
 
-    public Text ItemLimit;
-
+    public Button ExitBtn;
 
     public void IngameMenuButton()
     {
@@ -60,14 +59,17 @@ public class UIManager : MonoBehaviour
         Charchoice[0].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Kang;
+            BackgroundManager.Instance.Kangnum = 1;
         });
         Charchoice[1].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Yang;
+            BackgroundManager.Instance.Yangnum = 1;
         });
         Charchoice[2].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Baek;
+            BackgroundManager.Instance.Baeknum = 1;
         });
     }
 

@@ -8,15 +8,16 @@ public class BackgroundManager : MonoBehaviour
     public static BackgroundManager Instance { get; private set; } = null;
     [SerializeField] SpriteRenderer backgroundImage;
     [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
+    [SerializeField] List<Sprite> Illustration = new List<Sprite>();
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
     Animator KangAni;
     Animator YangAni;
     Animator BaekAni;
-    int Kangnum;
-    int Yangnum;
-    int Baeknum;
+    public int Kangnum;
+    public int Yangnum;
+    public int Baeknum;
 
     void Awake()
     {
@@ -34,6 +35,21 @@ public class BackgroundManager : MonoBehaviour
         KangAni.SetInteger("num", Kangnum);
         YangAni.SetInteger("num", Yangnum);
         BaekAni.SetInteger("num", Baeknum);
+    }
+    public void AnimationChange(int num, TalkChoice talkChoice)
+    {
+        switch (talkChoice)
+        {
+            case TalkChoice.Kang:
+                Kangnum = num;
+                break;
+            case TalkChoice.Yang:
+                Yangnum = num;
+                break;
+            case TalkChoice.Baek:
+                Baeknum = num;
+                break;
+        }
     }
     public void CharChange(int Kang, int Yang, int Baek)
     {
@@ -67,10 +83,10 @@ public class BackgroundManager : MonoBehaviour
         Kangnum = Kang;
         Yangnum = Yang;
         Baeknum = Baek;
-
     }
     public void BackGroundChange(string Bgimage)
     {
+        int Img = ((int)TalkManager.Instance.Etalk - 1) * 4;
         switch (Bgimage)
         {
             case "road":
@@ -87,6 +103,21 @@ public class BackgroundManager : MonoBehaviour
                 break;
             case "classroom":
                 backgroundImage.sprite = Backgrounds[4];
+                break;
+            case "":
+                backgroundImage.sprite = Backgrounds[5];
+                break;
+            case "normal":
+                backgroundImage.sprite = Illustration[Img];
+                break;
+            case "happy1":
+                backgroundImage.sprite = Illustration[Img + 1];
+                break;
+            case "happy2":
+                backgroundImage.sprite = Illustration[Img + 2];
+                break;
+            case "happy3":
+                backgroundImage.sprite = Illustration[Img + 3];
                 break;
             default:
                 break;

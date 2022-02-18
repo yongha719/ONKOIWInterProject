@@ -431,6 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23206579}
   - component: {fileID: 23206578}
+  - component: {fileID: 23206580}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -503,6 +504,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &23206580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23206577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0778968aec3e7b849940e0fc761d0a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 23206578}
+  Backgrounds:
+  - {fileID: 21300000, guid: 34548a29ed004834e9221bb0f15edceb, type: 3}
+  - {fileID: 21300000, guid: 011d0c6d3178ce046a1b84526afc5ef0, type: 3}
+  - {fileID: 21300000, guid: 103968cda8f5dcd45897fb3532d0aa6a, type: 3}
+  - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
+  - {fileID: 21300000, guid: 303dd03124928324fb66ed4ae5cb6833, type: 3}
+  - {fileID: 21300000, guid: 26761e3f91d193d48a05898524e1a845, type: 3}
+  Illustration:
+  - {fileID: 21300000, guid: 470c0105352f31e41bc23c5c1b7009ca, type: 3}
+  - {fileID: 21300000, guid: 03db1e5fbfde5144bbf4e09a7a37232e, type: 3}
+  - {fileID: 21300000, guid: d8b36013103015849b3ef2ed6b2eeb59, type: 3}
+  - {fileID: 21300000, guid: a34f642946de1b3488122df10b60c0df, type: 3}
+  - {fileID: 21300000, guid: 7ac7c7d0767ffdb4ea68c6eb3550c930, type: 3}
+  - {fileID: 21300000, guid: f227ffe519a925c45a5eff57c72aa38e, type: 3}
+  - {fileID: 21300000, guid: 58a79921e3da28f41a28718054652309, type: 3}
+  - {fileID: 21300000, guid: 56bf6c821e168754196949c362723ccd, type: 3}
+  - {fileID: 21300000, guid: 09d24fb244d6888418c689f7d3ea1261, type: 3}
+  - {fileID: 21300000, guid: a22c7b35d966916418b9f1afd8ea10ff, type: 3}
+  - {fileID: 21300000, guid: a3827d0cabbd27846b2033a461da288c, type: 3}
+  - {fileID: 21300000, guid: 0642f19825b655840a49fab8fe5a99f0, type: 3}
+  Kangs: {fileID: 1617327155}
+  Yangs: {fileID: 1867673650}
+  Baeks: {fileID: 1363349692}
+  Kangnum: 0
+  Yangnum: 0
+  Baeknum: 0
 --- !u!43 &28549628
 Mesh:
   m_ObjectHideFlags: 0
@@ -18499,7 +18539,6 @@ GameObject:
   - component: {fileID: 1441607979}
   - component: {fileID: 1441607983}
   - component: {fileID: 1441607984}
-  - component: {fileID: 1441607985}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18610,7 +18649,7 @@ MonoBehaviour:
   SettingObj: {fileID: 2080594161}
   LikeSlider: {fileID: 0}
   Charchoice: []
-  ItemLimit: {fileID: 0}
+  ExitBtn: {fileID: 0}
 --- !u!114 &1441607984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18623,27 +18662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feccf83138eac93419e556534ffaea86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1441607985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441607978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0778968aec3e7b849940e0fc761d0a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundImage: {fileID: 23206578}
-  Backgrounds:
-  - {fileID: 21300000, guid: 34548a29ed004834e9221bb0f15edceb, type: 3}
-  - {fileID: 21300000, guid: 011d0c6d3178ce046a1b84526afc5ef0, type: 3}
-  - {fileID: 21300000, guid: 103968cda8f5dcd45897fb3532d0aa6a, type: 3}
-  - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
-  Kangs: {fileID: 1617327155}
-  Yangs: {fileID: 1867673650}
-  Baeks: {fileID: 1363349692}
 --- !u!43 &1455191988
 Mesh:
   m_ObjectHideFlags: 0
@@ -20127,6 +20145,8 @@ MonoBehaviour:
   StartTalkBtn: {fileID: 0}
   Keepchoice: {fileID: 0}
   KeepTalkBtn: {fileID: 0}
+  MiniGame: {fileID: 0}
+  GoMiniGameBtn: {fileID: 0}
   Etalk: 1
   talkprog:
     Talkprog: 

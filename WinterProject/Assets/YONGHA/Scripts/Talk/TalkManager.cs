@@ -37,7 +37,7 @@ public class TalkManager : MonoBehaviour
     [SerializeField] GameObject MiniGame;
     [SerializeField] Button GoMiniGameBtn;
 
-    bool IsGame =false;
+    bool IsGame = false;
     bool keeptalk = false;
     bool Minigame = false;
     string Talkstart;
@@ -59,6 +59,8 @@ public class TalkManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "InGame")
             StartCoroutine(StoryEvent());
+        if (SceneManager.GetActiveScene().name == "MiniStory")
+            StartCoroutine(EndingEvent());
         StartTalkBtn.onClick.AddListener(() =>
         {
             StartCoroutine(ETalkEvent());
@@ -88,7 +90,7 @@ public class TalkManager : MonoBehaviour
 
     private void Update()
     {
-        
+
     }
     void TalkSet()
     {
@@ -96,17 +98,21 @@ public class TalkManager : MonoBehaviour
         {
             case TalkChoice.Kang:
                 Talkstart = "PlayerName(이) 왔구나! 무슨 일 이야?";
+                BackgroundManager.Instance.AnimationChange(1, Etalk);
                 break;
             case TalkChoice.Yang:
                 Talkstart = "오셨군요! 기다리고 있었어요.";
+                BackgroundManager.Instance.AnimationChange(1, Etalk);
                 break;
             case TalkChoice.Baek:
                 Talkstart = "왔어? 어서 돌아갈 방법을 생각해 보자";
+                BackgroundManager.Instance.AnimationChange(1, Etalk);
                 break;
             default:
                 break;
         }
     }
+
     public IEnumerator StoryEvent()
     {
         var talks = loader.LoadTalk();
@@ -132,6 +138,7 @@ public class TalkManager : MonoBehaviour
         SceneManager.LoadScene("Love");
         yield return null;
     }
+
     public void EGiftEvent(int check)
     {
         float kang = ItemLoad.Instance.chaeAhlike;
@@ -140,149 +147,181 @@ public class TalkManager : MonoBehaviour
         string itemtext = null;
         switch (check)
         {
-            case 0:
-                //switch (Etalk)
-                //{
-                //    case TalkChoice.Story:
-                //        break;
-                //    case TalkChoice.Kang:
-                //        break;
-                //    case TalkChoice.Yang:
-                //        break;
-                //    case TalkChoice.Baek:
-                //        break;
-                //    default:
-                //        break;
-                //}
+            case 0://곰인형
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 20;
                         itemtext = "귀여운 곰돌이다! 나한테 주는거야? 고마워~";
+                        BackgroundManager.Instance.AnimationChange(11, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 1:
+            case 1://꽃 한 송이
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang -= 20;
                         itemtext = "저.. 꽃가루 알르레기가 심해서…";
+                        BackgroundManager.Instance.AnimationChange(4, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 2:
+            case 2://롤리팝
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 3:
+            case 3://버려진 러브레터
                 switch ((int)Etalk)
                 {
                     case 1:
                         itemtext = "너 이런 내용이 진심으로 가윤이한테 통할 거라고 생각했어…?";
+                        BackgroundManager.Instance.AnimationChange(3, Etalk);
                         break;
                     case 2:
                         itemtext = "가윤이 한테 보낸…? 이걸 왜 저한테…";
+                        BackgroundManager.Instance.AnimationChange(3, Etalk);
                         break;
                     case 3:
+                        baek -= 20;
+                        itemtext = "너 이 상황에 제정신이야?";
+                        BackgroundManager.Instance.AnimationChange(4, Etalk);
                         break;
                 }
                 break;
-            case 4:
+            case 4://소설책
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang += 20;
                         itemtext = "읽어본적 없는 책 이네요.. 절 위해서..? 고마워요 잘 읽을게요";
+                        BackgroundManager.Instance.AnimationChange(6, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 5:
+            case 5://초콜릿
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 20;
+                        itemtext = "초콜릿? 뭐.. 단거 좋아한다고 어디 말하고 다닌 적 없는데\n어떻게 알았어? …아무튼 고마워";
+                        BackgroundManager.Instance.AnimationChange(6, Etalk);
                         break;
                 }
                 break;
-            case 6:
+            case 6://커피우유
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 7:
+            case 7://필기도구
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
-            case 8:
+            case 8://홍차
                 switch ((int)Etalk)
                 {
                     case 1:
                         kang -= 20;
                         itemtext = "내가 너한테 홍차 싫어한다고 말 안했던가?";
+                        BackgroundManager.Instance.AnimationChange(3, Etalk);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
+                        BackgroundManager.Instance.AnimationChange(7, Etalk);
                         break;
                     case 3:
+                        baek += 10;
+                        itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
+                        BackgroundManager.Instance.AnimationChange(8, Etalk);
                         break;
                 }
                 break;
@@ -292,6 +331,7 @@ public class TalkManager : MonoBehaviour
         ItemLoad.Instance.SetLikeValue(kang, yang, baek);
         StartCoroutine(ETextTyping(txtTalk, itemtext));
     }
+
     public IEnumerator ETalkEvent()
     {
         List<ChoiceData> TalkChoices = new List<ChoiceData>();
@@ -325,7 +365,6 @@ public class TalkManager : MonoBehaviour
             }
             SetGoMini(prog);
             BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
-            print("Change");
             string talk1 = talk.talkDatas[prog].talk;
             txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
@@ -377,34 +416,88 @@ public class TalkManager : MonoBehaviour
                 }
                 yield return StartCoroutine(EWaitClick());
             }
-            
-            talkprog.Talkprog[(int)Etalk - 1] = prog;
+
+            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
             saver.SaveTalk(talkprog);
 
-            if (choiceId == (int)Etalk * 10) MiniGame.SetActive(true);
-            if (IsGame)
-                break;
-                //StopCoroutine(ETalkEvent());
+            //if (choiceId == (int)Etalk * 10) MiniGame.SetActive(true);
+            if (IsGame) break;
+            //StopCoroutine(ETalkEvent());
             if (prog + 1 == talk.talkDatas.Count) continue;
-            if (choiceId >= (int)Etalk * 10)  yield return StartCoroutine(EWaitInput());
+            if (choiceId >= (int)Etalk * 10) yield return StartCoroutine(EWaitInput());
         }
         yield return null;
 
     }
+
     public IEnumerator EndingEvent()
     {
+        var kangendings = loader.LoadKangEnding();
+        var yangendings = loader.LoadYangEnding();
+        var baekendings = loader.LoadBaekEnding();
+        KangEndings kangending = default;
+        YangEndings yangending = default;
+        BaekEndings baekending = default;
 
         switch (Etalk)
         {
             case TalkChoice.Kang:
+                if (!GameManager.Instance.Mini1Clear)
+                    kangending = kangendings[0];
+                else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike < 80)
+                    kangending = kangendings[1];
+                else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike >= 80)
+                    kangending = kangendings[2];
+                for (int i = 0; i < kangending.kangendings.Count; i++)
+                {
+                    BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
+                    txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtTalk.text = kangending.kangendings[i].talk;
+                    yield return StartCoroutine(ETextTyping(txtTalk , txtTalk.text));
+
+                    yield return StartCoroutine(EWaitInput());
+                }
                 break;
             case TalkChoice.Yang:
+                if (!GameManager.Instance.Mini2Clear)
+                    yangending = yangendings[0];
+                else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike < 80)
+                    yangending = yangendings[1];
+                else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike >= 80)
+                    yangending = yangendings[2];
+                for (int i = 0; i < yangending.yangendings.Count; i++)
+                {
+                    BackgroundManager.Instance.BackGroundChange(yangending.yangendings[i].background);
+                    txtName.text = yangending.yangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtTalk.text = yangending.yangendings[i].talk;
+
+                    yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
+
+                    yield return StartCoroutine(EWaitInput());
+                }
                 break;
             case TalkChoice.Baek:
+                if (!GameManager.Instance.Mini3Clear)
+                    baekending = baekendings[0];
+                else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike < 80)
+                    baekending = baekendings[1];
+                else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike >= 80)
+                    baekending = baekendings[2];
+                for (int i = 0; i < baekending.baekendings.Count; i++)
+                {
+                    BackgroundManager.Instance.BackGroundChange(baekending.baekendings[i].background);
+                    txtName.text = baekending.baekendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtTalk.text = baekending.baekendings[i].talk;
+
+                    yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
+
+                    yield return StartCoroutine(EWaitInput());
+                }
                 break;
             default:
                 break;
         }
+        
         yield return null;
     }
     public void DeleteChilds()

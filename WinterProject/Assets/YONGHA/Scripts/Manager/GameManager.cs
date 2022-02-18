@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class GameManager : Singleton<GameManager>
 {
     public string PlayerName;
+
+    public bool Mini1Clear = false;
+    public bool Mini2Clear = false;
+    public bool Mini3Clear = false;
     void Start()
     {
         Sound();
@@ -16,7 +20,6 @@ public class GameManager : Singleton<GameManager>
     private void LoadedsceneEvent(Scene scene, LoadSceneMode mode)
     {
         Sound();
-        
     }
     void Update()
     {
@@ -24,11 +27,11 @@ public class GameManager : Singleton<GameManager>
     }
     void Sound()
     {
-        switch(SceneManager.GetActiveScene().buildIndex)
+        switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 0:
                 int case0 = 0;
-                foreach(var item in SoundManager.Instance.BGM)
+                foreach (var item in SoundManager.Instance.BGM)
                 {
                     if (SoundManager.Instance.BGM[4]!)
                         SoundManager.Instance.BGM[case0].Stop();
@@ -87,7 +90,7 @@ public class GameManager : Singleton<GameManager>
                 SoundManager.Instance.BGM[6].Play();
                 break;
         }
-        
-        
+
+
     }
 }
