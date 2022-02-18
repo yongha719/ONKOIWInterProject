@@ -12,30 +12,29 @@ public class M3_EnemySpawn : MonoBehaviour
     void Start()
     {
         Enemydir = Random.Range(0, 4);
+
         InvokeRepeating("Spawn", SpawnDelay, SpawnDelay);
-    }
-
-    void Update()
-    {
-
     }
 
     void Spawn()
     {
-        switch (Enemydir)
+        if (M3_GameManager.Instance.isplaying)
         {
-            case 0:
-                Instantiate(Enemy, new Vector2(-10, Random.Range(-4f, 4f)), Quaternion.identity);
-                break;
-            case 1:
-                Instantiate(Enemy, new Vector2(10, Random.Range(-4f, 4f)), Quaternion.identity);
-                break;
-            case 2:
-                Instantiate(Enemy, new Vector2(Random.Range(-8f, 8f), -6f), Quaternion.identity);
-                break;
-            case 3:
-                Instantiate(Enemy, new Vector2(Random.Range(-8f, 8f), 6f), Quaternion.identity);
-                break;
+            switch (Enemydir)
+            {
+                case 0:
+                    Instantiate(Enemy, new Vector2(-3, Random.Range(-3.7f, 0.4f)), Quaternion.identity);
+                    break;
+                case 1:
+                    Instantiate(Enemy, new Vector2(3, Random.Range(-3.7f, 0.4f)), Quaternion.identity);
+                    break;
+                case 2:
+                    Instantiate(Enemy, new Vector2(Random.Range(-3f, 3f), 0.4f), Quaternion.identity);
+                    break;
+                case 3:
+                    Instantiate(Enemy, new Vector2(Random.Range(-3f, 3f), -3.7f), Quaternion.identity);
+                    break;
+            }
         }
     }
 }

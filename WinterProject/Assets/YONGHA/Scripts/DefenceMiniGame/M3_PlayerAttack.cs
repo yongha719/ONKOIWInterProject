@@ -4,34 +4,48 @@ using UnityEngine;
 
 public class M3_PlayerAttack : MonoBehaviour
 {
-    public float AttackDelay;
-    float Attackcur;
+    public float AttackDelay = 0.5f;
+    float Attackcur = 0;
 
     public GameObject bullet;
+    public GameObject Player;
+    M3_Player player;
     public Transform gun;
-
+    public SpriteRenderer sprite;
     void Start()
     {
-        AttackDelay = M3_GameManager.Instance.PlayerAttackDelay;
+        player = Player.GetComponent<M3_Player>();
     }
 
     void Update()
     {
         Attack();
+        if (player.playerdir == PlayerDir.down)
+            sprite.sortingOrder = 3;
+        else
+            sprite.sortingOrder = 2;
     }
     void Attack()
     {
-        Vector2 len = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float z = Mathf.Atan2(len.y, len.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, z);
-        if (Attackcur <= 0)
+        if (M3_GameManager.Instance.isplaying)
         {
-            if (Input.GetMouseButton(0))
+            Vector2 len = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            float z = Mathf.Atan2(len.y, len.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, z);
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < Player.transform.localPosition.x)
+                sprite.flipY = true;
+            else
+                sprite.flipY = false;
+            if (Attackcur <= 0)
             {
-                Instantiate(bullet, gun.position, transform.rotation);
-                Attackcur = AttackDelay;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Instantiate(bullet, gun.position, transform.rotation);
+                    Attackcur = AttackDelay;
+                }
             }
+            else
+                Attackcur -= Time.deltaTime;
         }
-        Attackcur -= Time.deltaTime;
     }
 }
