@@ -26,5 +26,6 @@ public class SceneMove : MonoBehaviour
         SoundManager.Instance.BGM[0].Stop();
         SoundManager.Instance.BGM[3].Play();
     }
+
     
 }

@@ -89,6 +89,8 @@ public class Boss : MonoBehaviour
         if(bossHp <= 0)
         {
             Destroy(gameObject);
+            GameManager.Instance.Mini1Clear = true;
+            SceneManager.LoadScene("Love");
             //SceneManager.LoadScene("Dead"); 이거 클리어 씬으로 바꿔야함
         }
     }

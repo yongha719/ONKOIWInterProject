@@ -7,6 +7,7 @@ public class Thing : MonoBehaviour
 {
     Image image;
     public int Idx;
+    bool isOnetime = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,10 @@ public class Thing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Hide.hide[Idx].activeSelf == false)
+        if(Hide.hide[Idx].activeSelf == false && isOnetime == true)
         {
+            isOnetime = false;
+            SoundManager.Instance.Effect[10].Play();
             Color color = image.color;
             color.a = 0.4f;
             image.color = color;

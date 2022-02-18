@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
-    [SerializeField]private float playerMoveSpeed;
+    [SerializeField] private float playerMoveSpeed;
     private Animator WalkAni;
     private bool isThrow = true;
-    [SerializeField] private AudioSource ThrowSnow, HitSnow;
     //[SerializeField] private Sprite[] Snowsprites; //눈덩이 강화 상태변화  
     public int playerHp;
     public float attack;
@@ -53,7 +52,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("뗐어~");
-            ThrowSnow.Play();
+            SoundManager.Instance.Effect[2].Play();
             if (plusAttack == 1) Debug.Log("1배속 공격이다 !");
             if (plusAttack == 2) Debug.Log("2배속 공격이다 !");
             Bullet.GetComponent<Bullet>().damage = attack;
@@ -65,7 +64,7 @@ public class Player : MonoBehaviour
             isThrow = false;
             WalkAni.SetBool("bbb", isThrow);
         }
-        
+
     }
     void ReturnPlusAttack()
     {
@@ -80,18 +79,18 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Snow")
         {
-            HitSnow.Play();
+            SoundManager.Instance.Effect[3].Play();
             playerHp--;
             ShootingGameManager.Instance.UpdateHpIcon(playerHp);
             Destroy(collision.gameObject);
-            if(playerHp <= 0)
+            if (playerHp <= 0)
             {
-                SceneManager.LoadScene("Dead");
+                SceneManager.LoadScene("MiniStory");
             }
         }
-        if(collision.gameObject.tag == "ItemHp")
+        if (collision.gameObject.tag == "ItemHp")
         {
-            if(playerHp < 3)
+            if (playerHp < 3)
             {
                 playerHp++;
                 ShootingGameManager.Instance.UpdateHpIcon(playerHp);
@@ -104,7 +103,7 @@ public class Player : MonoBehaviour
         //    Invoke("ReturnPlusAttack", 10f);
         //    Destroy(collision.gameObject);
         //}
-        if(collision.gameObject.tag == "ItemDelete")
+        if (collision.gameObject.tag == "ItemDelete")
         {
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Snow");
             for (int i = 0; i < objects.Length; i++)
