@@ -37,7 +37,6 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        print("UI");
         IngameMenu.anchoredPosition = new Vector2(902.5f, 340);
         TalkSet();
         Save.SetActive(false);

@@ -15,11 +15,12 @@ public class SaveManager : MonoBehaviour
     [SerializeField] Button Savequit;
     [SerializeField] Button Saveok;
     public Button ExitBtn;
+    public Button ResetOk;
     public List<GameObject> Items;
 
-    List<bool> IsItem;
     Save Cursave;
     SaveData GiftSaveData;
+
     SaveDatas saveData;
 
     ITalkLoad loader;
@@ -28,6 +29,7 @@ public class SaveManager : MonoBehaviour
     {
         loader = new JsonLoader();
         saver = new JsonLoader();
+
 
         saveData = loader.LoadSaveDatas();
         Save save;
@@ -39,27 +41,17 @@ public class SaveManager : MonoBehaviour
             save.date.text = save.savedata.Date;
             savebtn.onClick.AddListener(() =>
             {
-                if (!savebtn.GetComponent<Save>().savedata.IsSave&&SceneManager.GetActiveScene().name !="Title")
-                {                  
-                    savebtn.GetComponent<Save>().date.text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss tt");
-                    savebtn.GetComponent<Save>().savedata.IsSave = true;
-                    savebtn.GetComponent<Save>().savedata.Savedata = TalkManager.Instance.talkprog.Talkprog;
-                    savebtn.GetComponent<Save>().savedata.SaveLike = ItemLoad.Instance.Likes;
-                    savebtn.GetComponent<Save>().savedata.kangGift = GiftSaveData.kangGift;
-                    savebtn.GetComponent<Save>().savedata.yangGift = GiftSaveData.yangGift;
-                    savebtn.GetComponent<Save>().savedata.baekGift = GiftSaveData.baekGift;
-                }
-                else
-                {
-                    Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
+                Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
+                if (savebtn.GetComponent<Save>().savedata.IsSave)
                     Savecheck.SetActive(true);
-                }
             });
         }
+
         Savequit.onClick.AddListener(() =>
         {
             Save();
         });
+
         Saveok.onClick.AddListener(() =>
         {
             TalkProgress talkProgress = loader.LoadTalkData();
@@ -67,10 +59,7 @@ public class SaveManager : MonoBehaviour
             saver.SaveData(Cursave.savedata);
             saver.SaveTalk(talkProgress);
         });
-        ExitBtn.onClick.AddListener(() =>
-        {
 
-        });
         GiftSaveData = ItemLoad.Instance.giftlist;
     }
     void Update()

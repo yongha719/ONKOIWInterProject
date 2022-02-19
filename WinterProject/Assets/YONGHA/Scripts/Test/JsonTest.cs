@@ -29,7 +29,7 @@ public class JsonTest : MonoBehaviour
             BaekEndings baekEndings = txt[1];
             print(baekEndings.baekendings[0].name);
         }
-            
+               
     }
     //IEnumerator EJsonTest()
     //{

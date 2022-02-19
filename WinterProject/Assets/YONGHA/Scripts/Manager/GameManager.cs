@@ -14,14 +14,20 @@ public class GameManager : Singleton<GameManager>
     public bool Mini3Clear = false;
     public bool ChaeahHappyBool = false, SehwaHappyBool = false, GaYoonHappyBool = false;
     public bool ChaeahNormalBool = false, SehwaNormalBool = false, GayoonNormalBool = false;
+    public float kanglike = 0, yanglike = 0, beaklike = 0;
     Album Albumlist;
+    TalkProgress talkprog;
     void Start()
     {
         loader = new JsonLoader();
         saver = new JsonLoader();
-        LoadAlbums();
+        talkprog = new TalkProgress();
+        talkprog.Talkprog = new List<int>() { 0, 0, 0 };
+        saver.SaveTalk(talkprog);
+        print("g");
         Sound();
         SceneManager.sceneLoaded += LoadedsceneEvent;
+        LoadAlbums();
     }
 
     private void LoadedsceneEvent(Scene scene, LoadSceneMode mode)
@@ -50,6 +56,8 @@ public class GameManager : Singleton<GameManager>
     }
     void Sound()
     {
+        //0-겜오버 1-겜클리어 2-눈던진 3-눈맞은 4-때리는 소리 5-문두드리는 소리 6-문자 소리 7-버튼 누르는 소리
+        //8-비디겜 뎀받는 소리 9-비디겜 총쏘는 소리 10-숨은그림 찾은 소리 11-전화 벨 소리
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 0:

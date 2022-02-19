@@ -1467,8 +1467,8 @@
           "talk": "그러고 보니 저번에 학교 뒷 마당에서 치즈고양이를 봤어요\n사람을 보고도 도망치지 않고 무지 귀여웠어서 기억이 나네요"
         },
         {
-          "Kang": 2,
-          "Yang": 0,
+          "Kang": 0,
+          "Yang": 2,
           "Baek": 0,
           "background": "library",
           "name": "양세화",
@@ -1476,7 +1476,7 @@
         },
         {
           "Kang": 0,
-          "Yang": 0,
+          "Yang": 1,
           "Baek": 0,
           "background": "library",
           "name": "양세화",

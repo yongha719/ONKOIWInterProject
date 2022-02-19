@@ -79,8 +79,10 @@ public class TalkManager : MonoBehaviour
                     SceneManager.LoadScene("Shooting");
                     break;
                 case TalkChoice.Yang:
+                    SceneManager.LoadScene("MiniGame");
                     break;
                 case TalkChoice.Baek:
+                    SceneManager.LoadScene("MiniGame3");
                     break;
                 default:
                     break;
@@ -369,6 +371,9 @@ public class TalkManager : MonoBehaviour
             txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
+            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
+            saver.SaveTalk(talkprog);
+
             choiceId = prog + ((int)Etalk - 1) * 10;
             if (choiceId < (int)Etalk * 10)
             {
@@ -406,7 +411,7 @@ public class TalkManager : MonoBehaviour
                         Likenum.RemoveAt(randtext);
 
                         talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
-                        BackgroundManager.Instance.CharChange(cg.Kang, background[randtext1].Yang, background[randtext1].Baek);
+                        BackgroundManager.Instance.CharChange(cg.Kang, cg.Yang, cg.Baek);
                         background.RemoveAt(randtext);
                         StartCoroutine(ETextTyping(txtTalk, talk1));
                         DeleteChilds();
@@ -416,10 +421,6 @@ public class TalkManager : MonoBehaviour
                 }
                 yield return StartCoroutine(EWaitClick());
             }
-
-            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
-            saver.SaveTalk(talkprog);
-
             //if (choiceId == (int)Etalk * 10) MiniGame.SetActive(true);
             if (IsGame) break;
             //StopCoroutine(ETalkEvent());
@@ -446,12 +447,12 @@ public class TalkManager : MonoBehaviour
                 {
                     kangending = kangendings[0];
                 }
-                else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike < 80)
+                else if (GameManager.Instance.Mini1Clear && GameManager.Instance.kanglike < 80)
                 {
                     kangending = kangendings[1];
                     GameManager.Instance.ChaeahNormalBool = true;
                 }
-                else if (GameManager.Instance.Mini1Clear && ItemLoad.Instance.ChaeAhlike >= 80)
+                else if (GameManager.Instance.Mini1Clear && GameManager.Instance.kanglike >= 80)
                 {
                     GameManager.Instance.ChaeahHappyBool = true;
                     kangending = kangendings[2];
@@ -469,12 +470,12 @@ public class TalkManager : MonoBehaviour
             case TalkChoice.Yang:
                 if (!GameManager.Instance.Mini2Clear)
                     yangending = yangendings[0];
-                else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike < 80)
+                else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike < 80)
                 {
                     GameManager.Instance.SehwaNormalBool= true;
                     yangending = yangendings[1];
                 }
-                else if (GameManager.Instance.Mini2Clear && ItemLoad.Instance.SeHwalike >= 80)
+                else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike >= 80)
                 {
                     GameManager.Instance.SehwaHappyBool = true;
                     yangending = yangendings[2];
@@ -493,12 +494,12 @@ public class TalkManager : MonoBehaviour
             case TalkChoice.Baek:
                 if (!GameManager.Instance.Mini3Clear)
                     baekending = baekendings[0];
-                else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike < 80)
+                else if (GameManager.Instance.Mini3Clear && GameManager.Instance.beaklike < 80)
                 {
                     GameManager.Instance.GayoonNormalBool = true;
                     baekending = baekendings[1];
                 }
-                else if (GameManager.Instance.Mini3Clear && ItemLoad.Instance.GaYoonlike >= 80)
+                else if (GameManager.Instance.Mini3Clear && GameManager.Instance.beaklike >= 80)
                 {
                     GameManager.Instance.GaYoonHappyBool = true;
                     baekending = baekendings[2];
@@ -548,6 +549,7 @@ public class TalkManager : MonoBehaviour
             yield return wait;
         }
     }
+
     IEnumerator EWaitClick()
     {
         var wait = new WaitForSeconds(0.001f);
@@ -585,6 +587,7 @@ public class TalkManager : MonoBehaviour
 
         yield return null;
     }
+
     void SetGoMini(int prog)
     {
         switch (Etalk)
@@ -613,9 +616,5 @@ public class TalkManager : MonoBehaviour
             default:
                 break;
         }
-    }
-    private void OnDestroy()
-    {
-        Instance = null;
-    }
+    }    
 }

@@ -20,7 +20,7 @@ public class ItemLoad : MonoBehaviour
         set
         {
             chaeAhlike = value;
-            if (chaeAhlike  < 0)
+            if (chaeAhlike < 0)
                 chaeAhlike = 0;
         }
     }
@@ -215,5 +215,12 @@ public class ItemLoad : MonoBehaviour
         ChaeAhlike = kang;
         SeHwalike = yang;
         GaYoonlike = baek;
+    }
+    private void OnDestroy()
+    {
+        GameManager.Instance.kanglike = ChaeAhlike;
+        GameManager.Instance.yanglike = SeHwalike;
+        GameManager.Instance.beaklike = GaYoonlike;
+
     }
 }
