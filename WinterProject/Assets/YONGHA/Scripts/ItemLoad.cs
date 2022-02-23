@@ -152,19 +152,16 @@ public class ItemLoad : MonoBehaviour
     {
         if (TalkChoice == TalkChoice.Kang && chaeAhItemCheck != 0)
         {
-            print("Tlqkf");
             chaeAhItemCheck--;
             ClickBtnGift();
         }
         else if (TalkChoice == TalkChoice.Yang && seHwaItemCheck != 0)
         {
-            print("Tlqkf");
             seHwaItemCheck--;
             ClickBtnGift();
         }
         else if (TalkChoice == TalkChoice.Baek && gaYoonItemCheck != 0)
         {
-            print("Tlqkf");
             gaYoonItemCheck--;
             ClickBtnGift();
         }
@@ -191,21 +188,20 @@ public class ItemLoad : MonoBehaviour
                     break;
             }
         }
-        //EventSystem.current.currentSelectedGameObject.SetActive(false);
     }
 
-    public void SetLikeValue(float temp, int Char)
+    public void SetLikeValue(float temp, TalkChoice Char)
     {
         switch (Char)
         {
-            case 1:
+            case TalkChoice.Kang:
                 ChaeAhlike += temp;
                 print(ChaeAhlike);
                 break;
-            case 2:
+            case TalkChoice.Yang:
                 SeHwalike += temp;
                 break;
-            case 3:
+            case TalkChoice.Baek:
                 GaYoonlike += temp;
                 break;
         }
@@ -221,6 +217,7 @@ public class ItemLoad : MonoBehaviour
         GameManager.Instance.kanglike = ChaeAhlike;
         GameManager.Instance.yanglike = SeHwalike;
         GameManager.Instance.beaklike = GaYoonlike;
+        print($"{nameof(ItemLoad)}: Ondestroy");
 
     }
 }

@@ -127,5 +127,6 @@ public class GameManager : Singleton<GameManager>
     private void OnApplicationQuit()
     {
         saver.AlbumSave(Albumlist);
+        print("GameManager : OnApplicationQuit");
     }
 }

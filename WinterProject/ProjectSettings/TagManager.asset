@@ -15,6 +15,7 @@ TagManager:
   - ItemDelete
   - ItemStrong
   - Enemy
+  - GameManager
   layers:
   - Default
   - TransparentFX

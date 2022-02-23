@@ -34,15 +34,7 @@ public class M3_Player : MonoBehaviour
     {
         if (M3_GameManager.Instance.isplaying)
         {
-            Move();
-            if (Input.GetKeyDown(KeyCode.W))
-                playerdir = PlayerDir.up;
-            else if (Input.GetKeyDown(KeyCode.S))
-                playerdir = PlayerDir.down;
-            else if (Input.GetKeyDown(KeyCode.A))
-                playerdir = PlayerDir.left;
-            else if (Input.GetKeyDown(KeyCode.D))
-                playerdir = PlayerDir.right;
+            Move();          
             anim.SetInteger("dir", (int)playerdir);
         }
     }
@@ -53,6 +45,15 @@ public class M3_Player : MonoBehaviour
         float y = Input.GetAxis("Vertical");
 
         transform.Translate(new Vector2(x, y) * Speed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.W))
+            playerdir = PlayerDir.up;
+        else if (Input.GetKeyDown(KeyCode.S))
+            playerdir = PlayerDir.down;
+        else if (Input.GetKeyDown(KeyCode.A))
+            playerdir = PlayerDir.left;
+        else if (Input.GetKeyDown(KeyCode.D))
+            playerdir = PlayerDir.right;
     }
 
 }

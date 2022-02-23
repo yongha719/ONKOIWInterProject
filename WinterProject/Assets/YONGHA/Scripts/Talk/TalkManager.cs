@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 //                                      |
 // 쓰는쪽 ( TalkManager ) ---> ITalkLoad | <--- JsonLoader 서비스 주는 애
@@ -33,6 +34,8 @@ public class TalkManager : MonoBehaviour
     [SerializeField] Button StartTalkBtn;
     [SerializeField] GameObject Keepchoice;
     [SerializeField] Button KeepTalkBtn;
+    [SerializeField] Button BackTalkBtn;
+    [SerializeField] GameObject GiftWarning;
 
     [SerializeField] GameObject MiniGame;
     [SerializeField] Button GoMiniGameBtn;
@@ -56,7 +59,7 @@ public class TalkManager : MonoBehaviour
     {
         loader = new JsonLoader();
         saver = new JsonLoader();
-
+        talkprog = loader.LoadTalkData();
         if (SceneManager.GetActiveScene().name == "InGame")
             StartCoroutine(StoryEvent());
         if (SceneManager.GetActiveScene().name == "MiniStory")
@@ -67,8 +70,12 @@ public class TalkManager : MonoBehaviour
         });
         KeepTalkBtn.onClick.AddListener(() =>
         {
-            keeptalk = true;
-            Keepchoice.SetActive(false);
+            StartCoroutine(KeepTalk());
+        });
+        BackTalkBtn.onClick.AddListener(() =>
+        {
+            talkprog.Talkprog[(int)Etalk - 1] = prog;
+            saver.SaveTalk(talkprog);
         });
         GoMiniGameBtn.onClick.AddListener(() =>
         {
@@ -348,9 +355,8 @@ public class TalkManager : MonoBehaviour
         TalkDatas talk = talks[(int)Etalk];
         ChoiceDatas choice = default;
 
-        var talkprogs = loader.LoadTalkData();
 
-        talkprog = talkprogs;
+
 
         talkNum = talkprog.Talkprog[(int)Etalk - 1];
 
@@ -371,11 +377,11 @@ public class TalkManager : MonoBehaviour
             txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
-            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
+            talkprog.Talkprog[(int)Etalk - 1] = prog;
             saver.SaveTalk(talkprog);
 
             choiceId = prog + ((int)Etalk - 1) * 10;
-            if (choiceId < (int)Etalk * 10)
+            if (choiceId  < (int)Etalk * 10)
             {
                 choice = choices[choiceId++];
 
@@ -407,7 +413,7 @@ public class TalkManager : MonoBehaviour
                     obj.onClick.AddListener(() =>
                     {
                         BtnMgr cg = obj.GetComponent<BtnMgr>();
-                        ItemLoad.Instance.SetLikeValue(cg.like, (int)Etalk);
+                        ItemLoad.Instance.SetLikeValue(cg.like, Etalk);
                         Likenum.RemoveAt(randtext);
 
                         talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
@@ -421,9 +427,9 @@ public class TalkManager : MonoBehaviour
                 }
                 yield return StartCoroutine(EWaitClick());
             }
-            //if (choiceId == (int)Etalk * 10) MiniGame.SetActive(true);
+
             if (IsGame) break;
-            //StopCoroutine(ETalkEvent());
+
             if (prog + 1 == talk.talkDatas.Count) continue;
             if (choiceId >= (int)Etalk * 10) yield return StartCoroutine(EWaitInput());
         }
@@ -462,7 +468,7 @@ public class TalkManager : MonoBehaviour
                     BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
                     txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
                     txtTalk.text = kangending.kangendings[i].talk;
-                    yield return StartCoroutine(ETextTyping(txtTalk , txtTalk.text));
+                    yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
 
                     yield return StartCoroutine(EWaitInput());
                 }
@@ -472,7 +478,7 @@ public class TalkManager : MonoBehaviour
                     yangending = yangendings[0];
                 else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike < 80)
                 {
-                    GameManager.Instance.SehwaNormalBool= true;
+                    GameManager.Instance.SehwaNormalBool = true;
                     yangending = yangendings[1];
                 }
                 else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike >= 80)
@@ -519,7 +525,7 @@ public class TalkManager : MonoBehaviour
                 break;
         }
         GameManager.Instance.AlbumSave();
-        
+
         yield return null;
     }
 
@@ -593,21 +599,21 @@ public class TalkManager : MonoBehaviour
         switch (Etalk)
         {
             case TalkChoice.Kang:
-                if (prog == 22)
+                if (prog == 22 && ItemLoad.Instance.chaeAhItemCheck == 0)
                 {
                     MiniGame.SetActive(true);
                     IsGame = true;
                 }
                 break;
             case TalkChoice.Yang:
-                if (prog == 26)
+                if (prog == 26 && ItemLoad.Instance.seHwaItemCheck == 0)
                 {
                     MiniGame.SetActive(true);
                     IsGame = true;
                 }
                 break;
             case TalkChoice.Baek:
-                if (prog == 35)
+                if (prog == 35 && ItemLoad.Instance.gaYoonItemCheck == 0)
                 {
                     MiniGame.SetActive(true);
                     IsGame = true;
@@ -616,5 +622,49 @@ public class TalkManager : MonoBehaviour
             default:
                 break;
         }
-    }    
+    }
+
+    IEnumerator KeepTalk()
+    {
+        if (prog == 9)
+        {
+            switch (Etalk)
+            {
+                case TalkChoice.Kang:
+                    if (ItemLoad.Instance.chaeAhItemCheck != 0)
+                    {
+                        GiftWarning.SetActive(true);
+                        yield return new WaitForSeconds(1f);
+                        GiftWarning.SetActive(false);
+
+                        yield break;
+                    }
+                    break;
+                case TalkChoice.Yang:
+                    if (ItemLoad.Instance.seHwaItemCheck != 0)
+                    {
+                        GiftWarning.SetActive(true);
+                        yield return new WaitForSeconds(1f);
+                        GiftWarning.SetActive(false);
+
+                        yield break;
+                    }
+                    break;
+                case TalkChoice.Baek:
+                    if (ItemLoad.Instance.gaYoonItemCheck != 0)
+                    {
+                        GiftWarning.SetActive(true);
+                        yield return new WaitForSeconds(1f);
+                        GiftWarning.SetActive(false);
+
+                        yield break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        keeptalk = true;
+        Keepchoice.SetActive(false);
+    }
 }

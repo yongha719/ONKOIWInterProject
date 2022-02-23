@@ -2598,6 +2598,9 @@ MonoBehaviour:
   ChaeahNormalBool: 0
   SehwaNormalBool: 0
   GayoonNormalBool: 0
+  kanglike: 0
+  yanglike: 0
+  beaklike: 0
 --- !u!4 &923290238
 Transform:
   m_ObjectHideFlags: 0
