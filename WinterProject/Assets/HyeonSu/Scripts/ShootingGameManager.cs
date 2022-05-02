@@ -20,9 +20,11 @@ public class ShootingGameManager : MonoBehaviour
         Color color = Manual.GetComponent<Image>().color;
         color.a -= Time.deltaTime * 0.3f;
         Manual.GetComponent<Image>().color = color;
+
     }
     public void UpdateHpIcon(int playerHp)
     {
+        print("¿¿ «œ∆Æ πŸ≤„~~");
         for(int index = 0; index < 3; index++)
         {
             HpImage[index].SetActive(false);

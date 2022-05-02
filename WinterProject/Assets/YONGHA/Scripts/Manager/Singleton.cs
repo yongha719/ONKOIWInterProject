@@ -30,8 +30,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     }
     protected virtual void Awake()
     {
-        gameObject.tag = "GameManager";
-        var obj = FindObjectsOfType<GameManager>();
+        var obj = FindObjectsOfType<T>();
         if (obj.Length != 1)
         {
             Destroy(gameObject);

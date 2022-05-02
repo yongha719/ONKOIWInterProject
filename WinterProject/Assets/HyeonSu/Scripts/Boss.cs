@@ -35,7 +35,7 @@ public class Boss : MonoBehaviour
         MinShotDelay += Time.deltaTime;
         MinMoveDelay += Time.deltaTime;
         BossShot();
-        HpBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0,1.5f, 0));
+        HpBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1.5f, 0));
         if (MaxMoveDelay <= MinMoveDelay)
         {
             anibool = true;
@@ -44,7 +44,7 @@ public class Boss : MonoBehaviour
             MinMoveDelay = 0;
             Invoke("ReturnAni", 0.6f);
         }
-        
+
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -52,10 +52,10 @@ public class Boss : MonoBehaviour
         {
             Hit();
             int a = Random.Range(1, 11);
-            if(a == 1)
+            if (a == 1)
             {
                 float X = Random.Range(-8.5f, 8.5f);
-                Vector3 spawnPosition = new Vector3 (X, 5, 0);
+                Vector3 spawnPosition = new Vector3(X, 5, 0);
                 GameObject item = Instantiate(Items, spawnPosition, gameObject.transform.rotation);
             }
         }
@@ -74,9 +74,9 @@ public class Boss : MonoBehaviour
         {
             anibool = true;
             Ani.SetBool("ccc", anibool);
-            GameObject Snow = Instantiate(ShotSnow, gameObject.transform.position += new Vector3(0,1,0), gameObject.transform.rotation);
-        Rigidbody2D rigid = Snow.GetComponent<Rigidbody2D>();
-        rigid.AddForce(Vector2.down * attackSpeed, ForceMode2D.Impulse);
+            GameObject Snow = Instantiate(ShotSnow, gameObject.transform.position += new Vector3(0, 1, 0), gameObject.transform.rotation);
+            Rigidbody2D rigid = Snow.GetComponent<Rigidbody2D>();
+            rigid.AddForce(Vector2.down * attackSpeed, ForceMode2D.Impulse);
             MinShotDelay = 0;
             Invoke("ReturnAni", 0.6f);
 
@@ -86,7 +86,7 @@ public class Boss : MonoBehaviour
     {
         spriteRenderer.sprite = HitSprite[1];
         Invoke("ReturnSprite", 0.1f);
-        if(bossHp <= 0)
+        if (bossHp <= 0)
         {
             Destroy(gameObject);
             GameManager.Instance.Mini1Clear = true;
