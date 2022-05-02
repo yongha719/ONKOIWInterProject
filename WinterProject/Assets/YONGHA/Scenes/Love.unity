@@ -14017,6 +14017,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 553460261}
+    - target: {fileID: 1958079114414210696, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
+      propertyPath: Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1963317673314916036, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
       propertyPath: Value
       value: 0
@@ -14155,7 +14159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4729254953753148267, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
       propertyPath: Value
-      value: 0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4999864117772286240, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
       propertyPath: m_Mesh
@@ -14186,6 +14190,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1172612144}
     - target: {fileID: 5798417953268969783, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
+      propertyPath: Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851241646483081188, guid: db7eff4e14a6dee4da3d2184dc85ddaa, type: 3}
       propertyPath: Value
       value: 0
       objectReference: {fileID: 0}
@@ -15424,12 +15432,12 @@ MonoBehaviour:
   Choicebtn: {fileID: 4162835709676092010, guid: 71f997f51e9842a4eaed73c299898b06, type: 3}
   talkId: 0
   choiceId: 0
-  StartTalkBtn: {fileID: 1564240452}
   Keepchoice: {fileID: 1365238266}
+  GiftWarning: {fileID: 726545239}
+  StartTalkBtn: {fileID: 1564240452}
   KeepTalkBtn: {fileID: 19196102}
   BackTalkBtn: {fileID: 1614793424}
-  GiftWarning: {fileID: 726545239}
-  MiniGame: {fileID: 1502843248}
+  GoMiniGame: {fileID: 0}
   GoMiniGameBtn: {fileID: 1502843250}
   Etalk: 1
   talkprog:

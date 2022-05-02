@@ -11,4 +11,9 @@ public class SoundManager : Singleton<SoundManager>
     public AudioSource[] Effect;
 
     public float MusicVolume = 1, BtnVolume = 1;
+
+    void Init()
+    {
+        
+    }
 }

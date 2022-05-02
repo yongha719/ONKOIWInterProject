@@ -5,37 +5,37 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/Title.unity
     guid: a352ad6515b45b54fa67c8ec5bc3ef3f
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/InGame.unity
     guid: 4e3f4f7adb888fb4bb2ade8b137fb6b4
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/MiniGame3.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/HyeonSu/Scene/Dead.unity
     guid: 9eca69aad970d5341bc514e1b92be2a7
-  - enabled: 0
+  - enabled: 1
     path: Assets/HyeonSu/Scene/Shooting.unity
     guid: 118a13ec5ab3c054e8cbbb57202e3c72
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/Live2Dtest.unity
     guid: 78f7b79bcfac0ff448c63d498ded83d8
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/Love.unity
     guid: 48527d1791e0eec4ab4af28600d70bb7
   - enabled: 0
     path: Assets/YONGHA/Scenes/Love(clone).unity
     guid: 618c6f87d27e1b84fb8bf1f0a5900c87
-  - enabled: 0
+  - enabled: 1
     path: Assets/JUNGMIN/Scene/MiniGame.unity
     guid: df7e87962c55a914eb9bcfb38957c4be
-  - enabled: 0
+  - enabled: 1
     path: Assets/JUNGMIN/Scene/GameOver.unity
     guid: 3e94ac2eae370b34987cd147262f3c0e
-  - enabled: 0
+  - enabled: 1
     path: Assets/YONGHA/Scenes/MiniStory.unity
     guid: dc76c81c6ea27744d9be2d7fce7ee054
   - enabled: 1

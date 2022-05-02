@@ -22,7 +22,7 @@ public class BackgroundManager : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
+        System.W
     }
     void Start()
     {
