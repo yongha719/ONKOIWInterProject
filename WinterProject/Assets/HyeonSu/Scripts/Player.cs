@@ -79,6 +79,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Snow")
         {
+            print("응 맞았어~~");
             SoundManager.Instance.Effect[3].Play();
             playerHp--;
             ShootingGameManager.Instance.UpdateHpIcon(playerHp);

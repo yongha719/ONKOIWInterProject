@@ -11,6 +11,7 @@ public class TitleManager : MonoBehaviour
     public GameObject Soundfield;
     public GameObject Albumfield;
     public GameObject Continuefield;
+
     public Text PlayerName;
     void Awake()
     {

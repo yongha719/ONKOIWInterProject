@@ -12,6 +12,7 @@ public class BackgroundManager : MonoBehaviour
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
+    [SerializeField] Button Back;
     Animator KangAni;
     Animator YangAni;
     Animator BaekAni;
@@ -28,6 +29,10 @@ public class BackgroundManager : MonoBehaviour
         KangAni = Kangs.GetComponent<Animator>();
         YangAni = Yangs.GetComponent<Animator>();
         BaekAni = Baeks.GetComponent<Animator>();
+        Back.onClick.AddListener(() =>
+        {
+            AnimationChange(1,TalkManager.Instance.Etalk);
+        });
 
     }
     void Update()
@@ -56,9 +61,11 @@ public class BackgroundManager : MonoBehaviour
         switch (Kang)
         {
             case 0:
+                Kangnum = 1;
                 Kangs.SetActive(false);
                 break;
             default:
+                Kangnum = Kang;
                 Kangs.SetActive(true);
                 break;
         }
@@ -68,6 +75,7 @@ public class BackgroundManager : MonoBehaviour
                 Yangs.SetActive(false);
                 break;
             default:
+                Yangnum = Yang;
                 Yangs.SetActive(true);
                 break;
         }
@@ -77,12 +85,10 @@ public class BackgroundManager : MonoBehaviour
                 Baeks.SetActive(false);
                 break;
             default:
+                Baeknum = Baek;
                 Baeks.SetActive(true);
                 break;
         }
-        Kangnum = Kang;
-        Yangnum = Yang;
-        Baeknum = Baek;
     }
     public void BackGroundChange(string Bgimage)
     {
@@ -123,4 +129,5 @@ public class BackgroundManager : MonoBehaviour
                 break;
         }
     }
+
 }

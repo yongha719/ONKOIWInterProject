@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-            SliderValue();
+        SliderValue();
     }
 
     void TalkSet()

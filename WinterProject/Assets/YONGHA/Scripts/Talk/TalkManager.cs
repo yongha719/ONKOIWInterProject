@@ -8,13 +8,6 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-//                                      |
-// 쓰는쪽 ( TalkManager ) ---> ITalkLoad | <--- JsonLoader 서비스 주는 애
-//                                      |
-
-//
-// 쓰는쪽 ( TalkManager ) ---> JsonLoader
-//
 public enum TalkChoice
 {
     Story, Kang, Yang, Baek
@@ -23,21 +16,25 @@ public enum TalkChoice
 public class TalkManager : MonoBehaviour
 {
     public static TalkManager Instance { get; private set; } = null;
+    private void Awake() => Instance = this;
+
     public ITalkLoad loader;
     public ITalkSave saver;
+
     [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private TextMeshProUGUI txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
     [SerializeField] private Button Choicebtn;
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
-    [SerializeField] Button StartTalkBtn;
+
     [SerializeField] GameObject Keepchoice;
+    [SerializeField] GameObject GiftWarning;
+    [SerializeField] Button StartTalkBtn;
     [SerializeField] Button KeepTalkBtn;
     [SerializeField] Button BackTalkBtn;
-    [SerializeField] GameObject GiftWarning;
 
-    [SerializeField] GameObject MiniGame;
+    [SerializeField] GameObject GoMiniGame;
     [SerializeField] Button GoMiniGameBtn;
 
     bool IsGame = false;
@@ -50,33 +47,46 @@ public class TalkManager : MonoBehaviour
 
     public TalkChoice Etalk;
     public TalkProgress talkprog;
-    private void Awake()
-    {
-        Instance = this;
-    }
 
+    GameManager Gm;
     private void Start()
     {
+        Gm = GameManager.Instance;
         loader = new JsonLoader();
         saver = new JsonLoader();
+
         talkprog = loader.LoadTalkData();
-        if (SceneManager.GetActiveScene().name == "InGame")
+
+        if (SceneManager.GetActiveScene().name.Equals("InGame"))
             StartCoroutine(StoryEvent());
         if (SceneManager.GetActiveScene().name == "MiniStory")
             StartCoroutine(EndingEvent());
+
+        ButtonSetting();
+    }
+
+    void ButtonSetting()
+    {
         StartTalkBtn.onClick.AddListener(() =>
         {
             StartCoroutine(ETalkEvent());
+            StartCoroutine(KeepTalk());
+
         });
+
         KeepTalkBtn.onClick.AddListener(() =>
         {
             StartCoroutine(KeepTalk());
+            keeptalk = true;
+            Keepchoice.SetActive(false);
         });
+
         BackTalkBtn.onClick.AddListener(() =>
         {
-            talkprog.Talkprog[(int)Etalk - 1] = prog;
+            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
             saver.SaveTalk(talkprog);
         });
+
         GoMiniGameBtn.onClick.AddListener(() =>
         {
             Minigame = true;
@@ -126,15 +136,15 @@ public class TalkManager : MonoBehaviour
     {
         var talks = loader.LoadTalk();
 
-        TalkDatas talk = default;
+        TalkDatas talk = talks[(int)TalkChoice.Story];
 
-        talk = talks[(int)TalkChoice.Story];
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
             BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
             BackgroundManager.Instance.CharChange(talk.talkDatas[i].Kang, talk.talkDatas[i].Yang, talk.talkDatas[i].Baek);
-            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
-            string talk1 = talk.talkDatas[i].talk.Replace("PlayerName", GameManager.Instance.PlayerName);
+
+            txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", Gm.PlayerName);
+            string talk1 = talk.talkDatas[i].talk;
             txtTalk.text = talk1;
 
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
@@ -343,8 +353,8 @@ public class TalkManager : MonoBehaviour
 
     public IEnumerator ETalkEvent()
     {
-        List<ChoiceData> TalkChoices = new List<ChoiceData>();
-        List<ChoiceData> background = new List<ChoiceData>();
+        var TalkChoices = new List<ChoiceData>();
+        var background = new List<ChoiceData>();
         List<int> Likenum = new List<int>();
 
         List<Button> Choicetexts = new List<Button>();
@@ -354,9 +364,6 @@ public class TalkManager : MonoBehaviour
 
         TalkDatas talk = talks[(int)Etalk];
         ChoiceDatas choice = default;
-
-
-
 
         talkNum = talkprog.Talkprog[(int)Etalk - 1];
 
@@ -371,17 +378,19 @@ public class TalkManager : MonoBehaviour
                 yield return StartCoroutine(EWaitInput());
                 //talkstart = true;
             }
+
             SetGoMini(prog);
             BackgroundManager.Instance.CharChange(talk.talkDatas[prog].Kang, talk.talkDatas[prog].Yang, talk.talkDatas[prog].Baek);
             string talk1 = talk.talkDatas[prog].talk;
             txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
 
-            talkprog.Talkprog[(int)Etalk - 1] = prog;
+            print(talkprog.Talkprog[(int)Etalk - 1]);
+            talkprog.Talkprog[(int)Etalk - 1] = prog + 1;
             saver.SaveTalk(talkprog);
 
             choiceId = prog + ((int)Etalk - 1) * 10;
-            if (choiceId  < (int)Etalk * 10)
+            if (choiceId < (int)Etalk * 10)
             {
                 choice = choices[choiceId++];
 
@@ -395,28 +404,24 @@ public class TalkManager : MonoBehaviour
                 for (int j = 0; j < choice.choiceDatas.Count; j++)
                 {
                     int rand = Random.Range(0, Choicetexts.Count);
-                    var obj = Instantiate(Choicetexts[rand], rtrnChoiceParent);
                     Choicetexts.RemoveAt(rand);
 
-                    BtnMgr btnmgr = obj.GetComponent<BtnMgr>();
+                    var choicebtn = Instantiate(Choicetexts[rand], rtrnChoiceParent);
+                    BtnMgr btnmgr = choicebtn.GetComponent<BtnMgr>();
                     int randtext = Random.Range(0, TalkChoices.Count);
-                    int randtext1 = Random.Range(0, background.Count);
-                    btnmgr.BtnChoiceText = TalkChoices[randtext].reply;
-                    btnmgr.Kang = TalkChoices[randtext].Kang;
-                    btnmgr.Yang = TalkChoices[randtext].Yang;
-                    btnmgr.Baek = TalkChoices[randtext].Baek;
-                    btnmgr.like = TalkChoices[randtext].like;
-                    TextMeshProUGUI choicetext = obj.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
+                    SetBtn(TalkChoices, btnmgr, randtext);
+
+                    TextMeshProUGUI choicetext = choicebtn.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
                     choicetext.text = TalkChoices[randtext].choice;
                     TalkChoices.RemoveAt(randtext);
 
-                    obj.onClick.AddListener(() =>
+                    choicebtn.onClick.AddListener(() =>
                     {
-                        BtnMgr cg = obj.GetComponent<BtnMgr>();
+                        BtnMgr cg = choicebtn.GetComponent<BtnMgr>();
                         ItemLoad.Instance.SetLikeValue(cg.like, Etalk);
                         Likenum.RemoveAt(randtext);
 
-                        talk1 = obj.GetComponent<BtnMgr>().BtnChoiceText;
+                        talk1 = choicebtn.GetComponent<BtnMgr>().BtnChoiceText;
                         BackgroundManager.Instance.CharChange(cg.Kang, cg.Yang, cg.Baek);
                         background.RemoveAt(randtext);
                         StartCoroutine(ETextTyping(txtTalk, talk1));
@@ -436,12 +441,21 @@ public class TalkManager : MonoBehaviour
         yield return null;
 
     }
+    void SetBtn(List<ChoiceData> TalkChoices, BtnMgr btnmgr, int randtext)
+    {
+        btnmgr.BtnChoiceText = TalkChoices[randtext].reply;
 
+        btnmgr.Kang = TalkChoices[randtext].Kang;
+        btnmgr.Yang = TalkChoices[randtext].Yang;
+        btnmgr.Baek = TalkChoices[randtext].Baek;
+        btnmgr.like = TalkChoices[randtext].like;
+    }
     public IEnumerator EndingEvent()
     {
         var kangendings = loader.LoadKangEnding();
         var yangendings = loader.LoadYangEnding();
         var baekendings = loader.LoadBaekEnding();
+
         KangEndings kangending = default;
         YangEndings yangending = default;
         BaekEndings baekending = default;
@@ -449,24 +463,25 @@ public class TalkManager : MonoBehaviour
         switch (Etalk)
         {
             case TalkChoice.Kang:
-                if (!GameManager.Instance.Mini1Clear)
+                if (!Gm.Mini1Clear)
                 {
                     kangending = kangendings[0];
                 }
-                else if (GameManager.Instance.Mini1Clear && GameManager.Instance.kanglike < 80)
+                else if (Gm.Mini1Clear && Gm.kanglike < 80)
                 {
                     kangending = kangendings[1];
-                    GameManager.Instance.ChaeahNormalBool = true;
+                    Gm.ChaeahNormalBool = true;
                 }
-                else if (GameManager.Instance.Mini1Clear && GameManager.Instance.kanglike >= 80)
+                else if (Gm.Mini1Clear && Gm.kanglike >= 80)
                 {
-                    GameManager.Instance.ChaeahHappyBool = true;
                     kangending = kangendings[2];
+                    Gm.ChaeahHappyBool = true;
                 }
+
                 for (int i = 0; i < kangending.kangendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
-                    txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName);
+                    txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", Gm.PlayerName);
                     txtTalk.text = kangending.kangendings[i].talk;
                     yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
 
@@ -474,22 +489,23 @@ public class TalkManager : MonoBehaviour
                 }
                 break;
             case TalkChoice.Yang:
-                if (!GameManager.Instance.Mini2Clear)
+                if (!Gm.Mini2Clear)
                     yangending = yangendings[0];
-                else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike < 80)
+                else if (Gm.Mini2Clear && Gm.yanglike < 80)
                 {
-                    GameManager.Instance.SehwaNormalBool = true;
+                    Gm.SehwaNormalBool = true;
                     yangending = yangendings[1];
                 }
-                else if (GameManager.Instance.Mini2Clear && GameManager.Instance.yanglike >= 80)
+                else if (Gm.Mini2Clear && Gm.yanglike >= 80)
                 {
-                    GameManager.Instance.SehwaHappyBool = true;
+                    Gm.SehwaHappyBool = true;
                     yangending = yangendings[2];
                 }
+
                 for (int i = 0; i < yangending.yangendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(yangending.yangendings[i].background);
-                    txtName.text = yangending.yangendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtName.text = yangending.yangendings[i].name.Replace("%PlayerName%", Gm.PlayerName); ;
                     txtTalk.text = yangending.yangendings[i].talk;
 
                     yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
@@ -498,22 +514,23 @@ public class TalkManager : MonoBehaviour
                 }
                 break;
             case TalkChoice.Baek:
-                if (!GameManager.Instance.Mini3Clear)
+                if (!Gm.Mini3Clear)
                     baekending = baekendings[0];
-                else if (GameManager.Instance.Mini3Clear && GameManager.Instance.beaklike < 80)
+                else if (Gm.Mini3Clear && Gm.beaklike < 80)
                 {
-                    GameManager.Instance.GayoonNormalBool = true;
+                    Gm.GayoonNormalBool = true;
                     baekending = baekendings[1];
                 }
-                else if (GameManager.Instance.Mini3Clear && GameManager.Instance.beaklike >= 80)
+                else if (Gm.Mini3Clear && Gm.beaklike >= 80)
                 {
-                    GameManager.Instance.GaYoonHappyBool = true;
+                    Gm.GaYoonHappyBool = true;
                     baekending = baekendings[2];
                 }
+
                 for (int i = 0; i < baekending.baekendings.Count; i++)
                 {
                     BackgroundManager.Instance.BackGroundChange(baekending.baekendings[i].background);
-                    txtName.text = baekending.baekendings[i].name.Replace("%PlayerName%", GameManager.Instance.PlayerName); ;
+                    txtName.text = baekending.baekendings[i].name.Replace("%PlayerName%", Gm.PlayerName);
                     txtTalk.text = baekending.baekendings[i].talk;
 
                     yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
@@ -524,11 +541,16 @@ public class TalkManager : MonoBehaviour
             default:
                 break;
         }
-        GameManager.Instance.AlbumSave();
+        Gm.AlbumSave();
 
         yield return null;
     }
 
+    public IEnumerator EBeginMiniGame()
+    {
+
+        yield return null;
+    }
     public void DeleteChilds()
     {
         var child = rtrnChoiceParent.GetComponentsInChildren<RectTransform>();
@@ -565,7 +587,6 @@ public class TalkManager : MonoBehaviour
             {
                 yield return new WaitForSeconds(0.1f);
                 keeptalk = false;
-
                 yield break;
             }
             else if (Minigame)
@@ -582,13 +603,14 @@ public class TalkManager : MonoBehaviour
     IEnumerator ETextTyping(TextMeshProUGUI text, string newString)
     {
         var wait = new WaitForSeconds(0.05f);
-        newString = newString.Replace("PlayerName", GameManager.Instance.PlayerName);
+        newString = newString.Replace("PlayerName", Gm.PlayerName);
         for (int i = 0; i <= newString.Length; i++)
         {
-            text.text = newString.Substring(0, i);
+            text.text = newString.Substring(0, i);//StringBuilder
             if (Input.GetKey(KeyCode.X))
                 wait = new WaitForSeconds(0);
             yield return wait;
+            saver.SaveTalk(talkprog);
         }
 
         yield return null;
@@ -601,21 +623,21 @@ public class TalkManager : MonoBehaviour
             case TalkChoice.Kang:
                 if (prog == 22 && ItemLoad.Instance.chaeAhItemCheck == 0)
                 {
-                    MiniGame.SetActive(true);
+                    GoMiniGame.SetActive(true);
                     IsGame = true;
                 }
                 break;
             case TalkChoice.Yang:
                 if (prog == 26 && ItemLoad.Instance.seHwaItemCheck == 0)
                 {
-                    MiniGame.SetActive(true);
+                    GoMiniGame.SetActive(true);
                     IsGame = true;
                 }
                 break;
             case TalkChoice.Baek:
                 if (prog == 35 && ItemLoad.Instance.gaYoonItemCheck == 0)
                 {
-                    MiniGame.SetActive(true);
+                    GoMiniGame.SetActive(true);
                     IsGame = true;
                 }
                 break;
@@ -664,7 +686,6 @@ public class TalkManager : MonoBehaviour
                     break;
             }
         }
-        keeptalk = true;
-        Keepchoice.SetActive(false);
+
     }
 }
