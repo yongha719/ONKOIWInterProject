@@ -12,8 +12,8 @@ public class GameManager : Singleton<GameManager>
     public bool Mini1Clear = false;
     public bool Mini2Clear = false;
     public bool Mini3Clear = false;
-    public bool ChaeahHappyBool = false, SehwaHappyBool = false, GaYoonHappyBool = false;
-    public bool ChaeahNormalBool = false, SehwaNormalBool = false, GayoonNormalBool = false;
+    public bool ChaeahHappyBool = true, SehwaHappyBool = true, GaYoonHappyBool = true;
+    public bool ChaeahNormalBool = true, SehwaNormalBool = true, GayoonNormalBool = true;
     public float kanglike = 0, yanglike = 0, beaklike = 0;
     Album Albumlist;
     TalkProgress talkprog;
