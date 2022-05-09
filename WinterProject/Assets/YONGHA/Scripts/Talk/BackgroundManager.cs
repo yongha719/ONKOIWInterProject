@@ -22,16 +22,17 @@ public class BackgroundManager : MonoBehaviour
 
     void Awake()
     {
-        System.W
+
     }
     void Start()
     {
         KangAni = Kangs.GetComponent<Animator>();
         YangAni = Yangs.GetComponent<Animator>();
         BaekAni = Baeks.GetComponent<Animator>();
+
         Back.onClick.AddListener(() =>
         {
-            AnimationChange(1,TalkManager.Instance.Etalk);
+            AnimationChange(1, TalkManager.Instance.Etalk);
         });
 
     }

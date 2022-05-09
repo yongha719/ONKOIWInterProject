@@ -70,13 +70,13 @@ public class TalkManager : MonoBehaviour
         StartTalkBtn.onClick.AddListener(() =>
         {
             StartCoroutine(ETalkEvent());
-            StartCoroutine(KeepTalk());
+            StartCoroutine(IKeepTalk());
 
         });
 
         KeepTalkBtn.onClick.AddListener(() =>
         {
-            StartCoroutine(KeepTalk());
+            StartCoroutine(IKeepTalk());
             keeptalk = true;
             Keepchoice.SetActive(false);
         });
@@ -355,7 +355,7 @@ public class TalkManager : MonoBehaviour
     {
         var TalkChoices = new List<ChoiceData>();
         var background = new List<ChoiceData>();
-        List<int> Likenum = new List<int>();
+        List<int> Likenums = new List<int>();
 
         List<Button> Choicetexts = new List<Button>();
 
@@ -399,7 +399,7 @@ public class TalkManager : MonoBehaviour
                     Choicetexts.Add(Choicebtn);
                     TalkChoices.Add(choice.choiceDatas[j]);
                     background.Add(choice.choiceDatas[j]);
-                    Likenum.Add(choice.choiceDatas[j].like);
+                    Likenums.Add(choice.choiceDatas[j].like);
                 }
                 for (int j = 0; j < choice.choiceDatas.Count; j++)
                 {
@@ -419,7 +419,7 @@ public class TalkManager : MonoBehaviour
                     {
                         BtnMgr cg = choicebtn.GetComponent<BtnMgr>();
                         ItemLoad.Instance.SetLikeValue(cg.like, Etalk);
-                        Likenum.RemoveAt(randtext);
+                        Likenums.RemoveAt(randtext);
 
                         talk1 = choicebtn.GetComponent<BtnMgr>().BtnChoiceText;
                         BackgroundManager.Instance.CharChange(cg.Kang, cg.Yang, cg.Baek);
@@ -646,7 +646,7 @@ public class TalkManager : MonoBehaviour
         }
     }
 
-    IEnumerator KeepTalk()
+    IEnumerator IKeepTalk()
     {
         if (prog == 9)
         {
