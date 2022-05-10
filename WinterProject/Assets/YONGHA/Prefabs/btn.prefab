@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4162835709465883131}
   - component: {fileID: 1468432499502943101}
   m_Layer: 5
-  m_Name: Text
+  m_Name: choiceBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,3 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BtnChoiceText: 
+  Kang: 0
+  Yang: 0
+  Baek: 0
+  like: 0

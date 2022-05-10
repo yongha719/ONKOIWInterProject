@@ -25,6 +25,7 @@ public class SaveManager : MonoBehaviour
 
     ITalkLoad loader;
     ITalkSave saver;
+
     void Start()
     {
         loader = new JsonLoader();
@@ -42,6 +43,8 @@ public class SaveManager : MonoBehaviour
             savebtn.onClick.AddListener(() =>
             {
                 Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
+                print(EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>());
+                print(EventSystem.current.currentSelectedGameObject.GetComponent<Save>());
                 if (savebtn.GetComponent<Save>().savedata.IsSave)
                     Savecheck.SetActive(true);
             });

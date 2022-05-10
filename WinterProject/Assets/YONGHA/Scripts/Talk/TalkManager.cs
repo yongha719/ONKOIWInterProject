@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using Random = UnityEngine.Random;
 
 public enum TalkChoice
 {
@@ -140,14 +142,13 @@ public class TalkManager : MonoBehaviour
 
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
-            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
             BackgroundManager.Instance.CharChange(talk.talkDatas[i].Kang, talk.talkDatas[i].Yang, talk.talkDatas[i].Baek);
+            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
 
             txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", Gm.PlayerName);
-            string talk1 = talk.talkDatas[i].talk;
-            txtTalk.text = talk1;
+            txtTalk.text = talk.talkDatas[i].talk;
 
-            yield return StartCoroutine(ETextTyping(txtTalk, talk1));
+            yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
 
             if (i + 1 == talk.talkDatas.Count) continue;
             yield return StartCoroutine(EWaitInput());
@@ -409,9 +410,10 @@ public class TalkManager : MonoBehaviour
                     var choicebtn = Instantiate(Choicetexts[rand], rtrnChoiceParent);
                     BtnMgr btnmgr = choicebtn.GetComponent<BtnMgr>();
                     int randtext = Random.Range(0, TalkChoices.Count);
+
                     SetBtn(TalkChoices, btnmgr, randtext);
 
-                    TextMeshProUGUI choicetext = choicebtn.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>();
+                    TextMeshProUGUI choicetext = choicebtn.transform.Find("choiceBtn").GetComponent<TextMeshProUGUI>();
                     choicetext.text = TalkChoices[randtext].choice;
                     TalkChoices.RemoveAt(randtext);
 
@@ -610,9 +612,9 @@ public class TalkManager : MonoBehaviour
             if (Input.GetKey(KeyCode.X))
                 wait = new WaitForSeconds(0);
             yield return wait;
-            saver.SaveTalk(talkprog);
         }
 
+        saver.SaveTalk(talkprog);
         yield return null;
     }
 
