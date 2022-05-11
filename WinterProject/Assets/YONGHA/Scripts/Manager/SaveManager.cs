@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class SaveManager : MonoBehaviour
 {
 
-    [SerializeField] List<Button> SaveBtn = new List<Button>();
+    [SerializeField] List<Button> SaveBtn;
     [SerializeField] GameObject Savepopup;
     [SerializeField] GameObject Savecheck;
     [SerializeField] Button Savequit;
@@ -19,9 +19,9 @@ public class SaveManager : MonoBehaviour
     public List<GameObject> Items;
 
     Save Cursave;
-    SaveData GiftSaveData;
 
-    SaveDatas saveData;
+    SaveData GiftSaveData;
+    SaveDatas saveDatas;
 
     ITalkLoad loader;
     ITalkSave saver;
@@ -32,13 +32,13 @@ public class SaveManager : MonoBehaviour
         saver = new JsonLoader();
 
 
-        saveData = loader.LoadSaveDatas();
+        saveDatas = loader.LoadSaveDatas();
         Save save;
         int temp = 0;
         foreach (var savebtn in SaveBtn)
         {
             save = savebtn.GetComponent<Save>();
-            save.savedata = saveData.savedatas[temp++];
+            save.savedata = saveDatas.savedatas[temp++];
             save.date.text = save.savedata.Date;
             savebtn.onClick.AddListener(() =>
             {
@@ -74,9 +74,9 @@ public class SaveManager : MonoBehaviour
         int temp = 0;
         foreach (var savebtn in SaveBtn)
         {
-            saveData.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
+            saveDatas.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
         }
-        saver.SaveDatas(saveData);
+        saver.SaveDatas(saveDatas);
         Savepopup.SetActive(false);
     }
 }

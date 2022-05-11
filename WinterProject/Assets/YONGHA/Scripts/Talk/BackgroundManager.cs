@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class BackgroundManager : MonoBehaviour
 {
     public static BackgroundManager Instance { get; private set; } = null;
+
     [SerializeField] SpriteRenderer backgroundImage;
     [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
     [SerializeField] List<Sprite> Illustration = new List<Sprite>();
+
     [SerializeField] GameObject Kangs;
     [SerializeField] GameObject Yangs;
     [SerializeField] GameObject Baeks;
     [SerializeField] Button Back;
+
     Animator KangAni;
     Animator YangAni;
     Animator BaekAni;
@@ -32,7 +35,7 @@ public class BackgroundManager : MonoBehaviour
 
         Back.onClick.AddListener(() =>
         {
-            AnimationChange(1, TalkManager.Instance.Etalk);
+            SetCharAni(1);
         });
 
     }
@@ -42,9 +45,9 @@ public class BackgroundManager : MonoBehaviour
         YangAni.SetInteger("num", Yangnum);
         BaekAni.SetInteger("num", Baeknum);
     }
-    public void AnimationChange(int num, TalkChoice talkChoice)
+    public void SetCharAni(int num)
     {
-        switch (talkChoice)
+        switch (TalkManager.Instance.Etalk)
         {
             case TalkChoice.Kang:
                 Kangnum = num;
