@@ -119,6 +119,6 @@ public interface ITalkSave
     public void SaveData(SaveData saveData);
 
     public void SaveDatas(SaveDatas saveDatas);
-    public void AlbumSave(Album album); 
+    public void AlbumSave(Album album);
 }
 

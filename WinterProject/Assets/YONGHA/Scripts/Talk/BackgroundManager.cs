@@ -5,133 +5,136 @@ using UnityEngine.UI;
 
 public class BackgroundManager : MonoBehaviour
 {
-    public static BackgroundManager Instance { get; private set; } = null;
+    public static BackgroundManager Instance = null;
 
     [SerializeField] SpriteRenderer backgroundImage;
     [SerializeField] List<Sprite> Backgrounds = new List<Sprite>();
-    [SerializeField] List<Sprite> Illustration = new List<Sprite>();
+    [SerializeField] List<Sprite> Illusts = new List<Sprite>();
 
-    [SerializeField] GameObject Kangs;
-    [SerializeField] GameObject Yangs;
-    [SerializeField] GameObject Baeks;
-    [SerializeField] Button Back;
+    public GameObject KangObj;
+    public GameObject YangObj;
+    public GameObject BaekObj;
+    [SerializeField] Button BackBtn;
 
-    Animator KangAni;
-    Animator YangAni;
-    Animator BaekAni;
-    public int Kangnum;
-    public int Yangnum;
-    public int Baeknum;
+    Animator kangAni;
+    Animator yangAni;
+    Animator baekAni;
 
+    const int DEFAULT_EXPRESSION = 1;
+    const string ANIMATOR_PRAMETER_NAME = "num";
     void Awake()
     {
-
+        Instance = this;
+        DontDestroyOnLoad(this);
     }
     void Start()
     {
-        KangAni = Kangs.GetComponent<Animator>();
-        YangAni = Yangs.GetComponent<Animator>();
-        BaekAni = Baeks.GetComponent<Animator>();
+        kangAni = KangObj.GetComponent<Animator>();
+        yangAni = YangObj.GetComponent<Animator>();
+        baekAni = BaekObj.GetComponent<Animator>();
 
-        Back.onClick.AddListener(() =>
+        BackBtn.onClick.AddListener(() =>
         {
-            SetCharAni(1);
+            SetCharAni(DEFAULT_EXPRESSION);
         });
 
-    }
-    void Update()
-    {
-        KangAni.SetInteger("num", Kangnum);
-        YangAni.SetInteger("num", Yangnum);
-        BaekAni.SetInteger("num", Baeknum);
     }
     public void SetCharAni(int num)
     {
         switch (TalkManager.Instance.Etalk)
         {
             case TalkChoice.Kang:
-                Kangnum = num;
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
                 break;
             case TalkChoice.Yang:
-                Yangnum = num;
+                yangAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
                 break;
             case TalkChoice.Baek:
-                Baeknum = num;
+                baekAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
                 break;
         }
     }
-    public void CharChange(int Kang, int Yang, int Baek)
+    public void ChangeChar(int Kang, int Yang, int Baek)
     {
         switch (Kang)
         {
             case 0:
-                Kangnum = 1;
-                Kangs.SetActive(false);
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, DEFAULT_EXPRESSION);
+                KangObj.SetActive(false);
                 break;
             default:
-                Kangnum = Kang;
-                Kangs.SetActive(true);
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, Kang);
+                KangObj.SetActive(true);
                 break;
         }
+
         switch (Yang)
         {
             case 0:
-                Yangs.SetActive(false);
+                YangObj.SetActive(false);
                 break;
             default:
-                Yangnum = Yang;
-                Yangs.SetActive(true);
+                yangAni.SetInteger(ANIMATOR_PRAMETER_NAME, Yang);
+                YangObj.SetActive(true);
                 break;
         }
+
         switch (Baek)
         {
             case 0:
-                Baeks.SetActive(false);
+                BaekObj.SetActive(false);
                 break;
             default:
-                Baeknum = Baek;
-                Baeks.SetActive(true);
+                baekAni.SetInteger(ANIMATOR_PRAMETER_NAME, Baek);
+                BaekObj.SetActive(true);
                 break;
         }
     }
-    public void BackGroundChange(string Bgimage)
+    public void ChangeBackGround(string bgimgname)
     {
+        //캐릭터마다 일러스트가 4개씩있는데 일러스트 리스트의 인덱스를 구하기 위한 식임
         int Img = ((int)TalkManager.Instance.Etalk - 1) * 4;
-        switch (Bgimage)
+
+        Sprite sprite = default;
+
+        //background image setting
+        switch (bgimgname)
         {
             case "road":
-                backgroundImage.sprite = Backgrounds[0];
+                sprite = Backgrounds[0];
                 break;
             case "school":
-                backgroundImage.sprite = Backgrounds[1];
+                sprite = Backgrounds[1];
                 break;
             case "library":
-                backgroundImage.sprite = Backgrounds[2];
+                sprite = Backgrounds[2];
                 break;
             case "backyard":
-                backgroundImage.sprite = Backgrounds[3];
+                sprite = Backgrounds[3];
                 break;
             case "classroom":
-                backgroundImage.sprite = Backgrounds[4];
+                sprite = Backgrounds[4];
                 break;
             case "":
-                backgroundImage.sprite = Backgrounds[5];
+                sprite = Backgrounds[5];
                 break;
             case "normal":
-                backgroundImage.sprite = Illustration[Img];
+                sprite = Illusts[Img];
                 break;
             case "happy1":
-                backgroundImage.sprite = Illustration[Img + 1];
+                sprite = Illusts[Img + 1];
                 break;
             case "happy2":
-                backgroundImage.sprite = Illustration[Img + 2];
+                sprite = Illusts[Img + 2];
                 break;
             case "happy3":
-                backgroundImage.sprite = Illustration[Img + 3];
+                sprite = Illusts[Img + 3];
                 break;
             default:
                 break;
         }
+
+        backgroundImage.sprite = sprite;
     }
 
 }

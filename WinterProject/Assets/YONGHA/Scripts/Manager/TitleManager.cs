@@ -6,39 +6,35 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class TitleManager : MonoBehaviour
-{ 
-    public GameObject Namefield;
-    public GameObject Soundfield;
-    public GameObject Albumfield;
-    public GameObject Continuefield;
+{
+    public GameObject NameField;
+    public GameObject SoundField;
+    public GameObject AlbumField;
+    public GameObject ContinueField;
 
     public Text PlayerName;
-    void Awake()
-    {
 
-    }
     void Start()
     {
-        Namefield.SetActive(false);
-        Soundfield.SetActive(false);
-        Albumfield.SetActive(false);
-        Continuefield.SetActive(false);
+        NameField.SetActive(false);
+        SoundField.SetActive(false);
+        AlbumField.SetActive(false);
     }
     void Update()
     {
-        GetIngameScene();
+        if (SceneManager.GetActiveScene().name.Equals("Title"))
+        {
+            getIngameScene();
+        }
         GameManager.Instance.PlayerName = PlayerName.text;
     }
-   
-    void GetIngameScene()
+
+    void getIngameScene()
     {
-        if (SceneManager.GetActiveScene().name == "Title")
+        if (NameField.activeSelf)
         {
-            if (GameObject.Find("Canvas").transform.Find("NameField").gameObject.activeSelf)
-            {
-                if (Input.GetKeyDown(KeyCode.Return))
-                    SceneManager.LoadScene("Ingame");
-            }
+            if (Input.anyKeyDown)
+                SceneManager.LoadScene("Ingame");
         }
     }
 }

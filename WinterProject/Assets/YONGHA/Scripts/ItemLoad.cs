@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using TMPro;
 public class ItemLoad : MonoBehaviour
 {
     public static ItemLoad Instance { get; private set; }
@@ -13,10 +11,7 @@ public class ItemLoad : MonoBehaviour
     public float chaeAhlike = 0, seHwalike = 0, gaYoonlike = 0;
     public float ChaeAhlike
     {
-        get
-        {
-            return chaeAhlike;
-        }
+        get => chaeAhlike;
         set
         {
             chaeAhlike = value;
@@ -26,10 +21,7 @@ public class ItemLoad : MonoBehaviour
     }
     public float SeHwalike
     {
-        get
-        {
-            return seHwalike;
-        }
+        get => seHwalike;
         set
         {
             seHwalike = value;
@@ -39,10 +31,7 @@ public class ItemLoad : MonoBehaviour
     }
     public float GaYoonlike
     {
-        get
-        {
-            return gaYoonlike;
-        }
+        get => gaYoonlike;
         set
         {
             gaYoonlike = value;
@@ -81,28 +70,33 @@ public class ItemLoad : MonoBehaviour
         gift = default;
         loader = new JsonLoader();
         giftlist = loader.LoadSaveData();
-        Names = new string[9];
-        Names[0] = "������";
-        Names[1] = "�� �� ����";
-        Names[2] = "�Ѹ���";
-        Names[3] = "������ ���극��";
-        Names[4] = "�Ҽ�å";
-        Names[5] = "���ݸ�";
-        Names[6] = "Ŀ�ǿ���";
-        Names[7] = "�ʱ⵵��";
-        Names[8] = "ȫ��";
 
-        Explans = new string[9];
-        Explans[0] = "��ȫ ���� �ϴû� ������ ����Ʈ�� �Ϳ��� �� ����. �������� ��Ҵ١�";
-        Explans[1] = "�Ͼ� ������ �Ƹ��ٿ� �� �� �� ����. ��Ⱑ ����";
-        Explans[2] = "�� �Ա� ���� ������ �Ŵ��� �Ѹ���. �߰��� ���� ������ �Ϳ���";
-        Explans[3] = "���� ������ ���ϰ� ������ ���극�͡� ��ģ�� �ƴ϶�� �������� ����";
-        Explans[4] = "���� ������ �̾߱�� ���� �� �Ҽ�å. ���⸸ �ص� �Ӹ��� ������";
-        Explans[5] = "��ũ ���ݸ��� ���� �ε巴�� ������ ������ ���� ���ݸ�";
-        Explans[6] = "�ǰ��� �� ���ø� ���� Ŀ�ǿ���. ������ ����ġ�� �޴�";
-        Explans[7] = "�л��� �ʼ�ǰ ���찳�� ���� ��Ʈ. �Ʊ��ڱ��ϰ� �Ϳ��� ����� ���̴�";
-        Explans[8] = "��׷����� ���� ���ϰ� ������ ȫ��. ������ ȣ��ȣ�� ��������?";
-        
+        Names = new string[9]
+        {
+              "곰인형",
+              "꽃 한 송이",
+              "롤리팝",
+              "버려진 러브레터",
+              "소설책",
+              "초콜릿",
+              "커피우유",
+              "필기도구",
+              "홍차"
+        };
+
+        Explans = new string[9]
+        {
+            "분홍 색깔에 하늘색 리본이 포인트인 귀여운 곰 인형. 누군가를 닮았다…",
+            "하얀 꽃잎이 아름다운 들 꽃 한 송이. 향기가 좋다",
+            "다 먹기 힘들 정도로 거대한 롤리팝. 중간에 묶인 리본이 귀엽다",
+            "전해 주지도 못하고 버려진 러브레터… 미친게 아니라면 선물하지 말자",
+            "감성 가득한 이야기로 가득 찬 소설책. 보기만 해도 머리가 아프다",
+            "밀크 초콜릿의 맛이 부드럽게 퍼지는 달콤한 고급 초콜릿",
+            "피곤할 때 마시면 좋은 커피우유. 하지만 지나치게 달다",
+            "학생의 필수품 지우개와 연필 세트. 아기자기하고 귀여운 색상들 뿐이  다",
+            "얼그레이의 향이 진하게 퍼지는 홍차. 하지만 호불호가 갈릴지도?"
+        };
+
         foreach (var item in ItemBtn)
         {
             item.onClick.AddListener(() =>
@@ -111,12 +105,12 @@ public class ItemLoad : MonoBehaviour
                 int check = ClickBtnItem.GetComponent<Itembtn>().check;
 
                 ExplanItem.SetActive(true);
-                print(ClickBtnItem.name);
                 EItemimg.sprite = Itemimgs[check];
                 ExplainText.text = Explans[check];
                 ItemNameText.text = Names[check];
             });
         }
+
         Gift.onClick.AddListener(() =>
         {
             int temp = 0;
@@ -136,17 +130,14 @@ public class ItemLoad : MonoBehaviour
                         break;
                 }
                 item.gameObject.SetActive(gift[temp++]);
-
             }
-
         });
-
     }
     private void Update()
     {
         TalkChoice = TalkManager.Instance.Etalk;
         Likes = new List<float>() { ChaeAhlike, SeHwalike, GaYoonlike };
-        GiftLimit.text = $"���� ���� ���� Ƚ�� : {((TalkChoice == TalkChoice.Kang) ? chaeAhItemCheck : (TalkChoice == TalkChoice.Yang) ? seHwaItemCheck : gaYoonItemCheck)}";
+        GiftLimit.text = $"남은 선물 가능 횟수 : {((TalkChoice == TalkChoice.Kang) ? chaeAhItemCheck : (TalkChoice == TalkChoice.Yang) ? seHwaItemCheck : gaYoonItemCheck)}";
     }
 
     public void ItemLimit()
@@ -167,9 +158,10 @@ public class ItemLoad : MonoBehaviour
             ClickBtnGift();
         }
     }
+
     public void ClickBtnGift()
     {
-        TalkManager.Instance.EGiftEvent(ClickBtnItem.GetComponent<Itembtn>().check);
+        TalkManager.Instance.SetGiftEvent(ClickBtnItem.GetComponent<Itembtn>().check);
         ClickBtnItem.SetActive(false);
         int temp = 0;
         foreach (var item in ItemBtn)
@@ -217,6 +209,5 @@ public class ItemLoad : MonoBehaviour
         GameManager.Instance.kanglike = ChaeAhlike;
         GameManager.Instance.yanglike = SeHwalike;
         GameManager.Instance.beaklike = GaYoonlike;
-
     }
 }

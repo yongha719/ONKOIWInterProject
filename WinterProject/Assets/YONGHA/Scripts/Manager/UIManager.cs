@@ -9,7 +9,7 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     public RectTransform IngameMenu;
-    bool OnMenu = false;
+    bool isOnMenu = false;
 
     public GameObject Save;
 
@@ -23,21 +23,22 @@ public class UIManager : MonoBehaviour
 
     public void IngameMenuButton()
     {
-        if (!OnMenu)
+        if (isOnMenu == true)
         {
             IngameMenu.DOAnchorPosX(702.5f, 1);
-            OnMenu = true;
+            isOnMenu = true;
         }
         else
         {
             IngameMenu.DOAnchorPosX(902.5f, 1);
-            OnMenu = false;
+            isOnMenu = false;
         }
     }
 
     void Start()
     {
-        IngameMenu.anchoredPosition = new Vector2(902.5f, 340);
+        //IngameMenu.anchoredPosition = new Vector2(902.5f, 340);
+        IngameMenu.DOAnchorPos(new Vector2(902.5f, 340), 0.5f);
         TalkSet();
         Save.SetActive(false);
         SettingObj.SetActive(false);
@@ -58,17 +59,19 @@ public class UIManager : MonoBehaviour
         Charchoice[0].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Kang;
-            BackgroundManager.Instance.Kangnum = 1;
+            BackgroundManager.Instance.KangObj.SetActive(true);
         });
+
         Charchoice[1].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Yang;
-            BackgroundManager.Instance.Yangnum = 1;
+            BackgroundManager.Instance.YangObj.SetActive(true);
         });
+
         Charchoice[2].onClick.AddListener(() =>
         {
             TalkManager.Instance.Etalk = TalkChoice.Baek;
-            BackgroundManager.Instance.Baeknum = 1;
+            BackgroundManager.Instance.BaekObj.SetActive(true);
         });
     }
 

@@ -3999,10 +3999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968ff13e864262e4fb03e2b222fe026e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Namefield: {fileID: 2090031602}
-  Soundfield: {fileID: 17201701}
-  Albumfield: {fileID: 1139054694}
-  Continuefield: {fileID: 0}
+  NameField: {fileID: 2090031602}
+  SoundField: {fileID: 17201701}
+  AlbumField: {fileID: 1139054694}
+  ContinueField: {fileID: 1963141035}
   PlayerName: {fileID: 1213880033}
 --- !u!114 &1789431310
 MonoBehaviour:

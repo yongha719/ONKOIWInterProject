@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 49931475}
   - component: {fileID: 49931477}
   m_Layer: 0
-  m_Name: BackGround
+  m_Name: BackGroundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e483a2123f5a5a04e81839ff7f1e0da6, type: 3}
   - {fileID: 21300000, guid: 303dd03124928324fb66ed4ae5cb6833, type: 3}
   Illustration: []
-  Kangs: {fileID: 1062656016}
+  KangObj: {fileID: 1062656016}
   Yangs: {fileID: 2137927021}
   Baeks: {fileID: 95007766}
   Back: {fileID: 0}
@@ -15429,7 +15429,7 @@ MonoBehaviour:
   txtName: {fileID: 0}
   txtTalk: {fileID: 1504422849}
   rtrnChoiceParent: {fileID: 140659929}
-  Choicebtn: {fileID: 4162835709676092010, guid: 71f997f51e9842a4eaed73c299898b06, type: 3}
+  choiceBtn: {fileID: 0}
   talkId: 0
   choiceId: 0
   Keepchoice: {fileID: 1365238266}

@@ -9,18 +9,16 @@ using UnityEngine.UI;
 public class SaveManager : MonoBehaviour
 {
 
-    [SerializeField] List<Button> SaveBtn;
+    [SerializeField] List<Button> SaveBtns;
     [SerializeField] GameObject Savepopup;
     [SerializeField] GameObject Savecheck;
     [SerializeField] Button Savequit;
     [SerializeField] Button Saveok;
     public Button ExitBtn;
     public Button ResetOk;
-    public List<GameObject> Items;
 
     Save Cursave;
 
-    SaveData GiftSaveData;
     SaveDatas saveDatas;
 
     ITalkLoad loader;
@@ -35,15 +33,15 @@ public class SaveManager : MonoBehaviour
         saveDatas = loader.LoadSaveDatas();
         Save save;
         int temp = 0;
-        foreach (var savebtn in SaveBtn)
+        foreach (var savebtn in SaveBtns)
         {
             save = savebtn.GetComponent<Save>();
             save.savedata = saveDatas.savedatas[temp++];
             save.date.text = save.savedata.Date;
             savebtn.onClick.AddListener(() =>
             {
-                Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
-                print(EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>());
+                //Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().GetComponent<Save>();
+                Cursave = EventSystem.current.currentSelectedGameObject.GetComponent<Save>();
                 print(EventSystem.current.currentSelectedGameObject.GetComponent<Save>());
                 if (savebtn.GetComponent<Save>().savedata.IsSave)
                     Savecheck.SetActive(true);
@@ -62,17 +60,12 @@ public class SaveManager : MonoBehaviour
             saver.SaveData(Cursave.savedata);
             saver.SaveTalk(talkProgress);
         });
-
-        GiftSaveData = ItemLoad.Instance.giftlist;
     }
-    void Update()
-    {
 
-    }
     void Save()
     {
         int temp = 0;
-        foreach (var savebtn in SaveBtn)
+        foreach (var savebtn in SaveBtns)
         {
             saveDatas.savedatas[temp++] = savebtn.GetComponent<Save>().savedata;
         }

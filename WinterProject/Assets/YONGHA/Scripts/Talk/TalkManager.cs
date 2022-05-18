@@ -31,7 +31,7 @@ public class TalkManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private TextMeshProUGUI txtTalk;
     [SerializeField] private RectTransform rtrnChoiceParent;
-    [SerializeField] private Button ChoiceBtn;
+    [SerializeField] private Button choiceBtn;
     [SerializeField] private int talkId;
     [SerializeField] private int choiceId;
 
@@ -43,6 +43,17 @@ public class TalkManager : MonoBehaviour
 
     [SerializeField] GameObject GoMiniGame;
     [SerializeField] Button GoMiniGameBtn;
+
+    public GameObject KangObj;
+    public GameObject YangObj;
+    public GameObject BaekObj;
+
+    Animator kangAni;
+    Animator yangAni;
+    Animator baekAni;
+
+    const int DEFAULT_EXPRESSION = 1;
+    const string ANIMATOR_PRAMETER_NAME = "num";
 
     bool IsGame = false;
     bool keeptalk = false;
@@ -66,18 +77,74 @@ public class TalkManager : MonoBehaviour
         loader = new JsonLoader();
         saver = new JsonLoader();
 
+        kangAni = KangObj.GetComponent<Animator>();
+        yangAni = YangObj.GetComponent<Animator>();
+        baekAni = BaekObj.GetComponent<Animator>();
+
         talkprog = loader.LoadTalkData();
 
         if (SceneManager.GetActiveScene().name.Equals("InGame"))
-            StartCoroutine(StoryEvent());
+            StartCoroutine(EStoryEvent());
         if (SceneManager.GetActiveScene().name.Equals("MiniStory"))
             StartCoroutine(EndingEvent());
 
-        ButtonSetting();
+        SetButtonEvents();
+    }
+    private void SetCharAni(int num)
+    {
+        switch (TalkManager.Instance.Etalk)
+        {
+            case TalkChoice.Kang:
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
+                break;
+            case TalkChoice.Yang:
+                yangAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
+                break;
+            case TalkChoice.Baek:
+                baekAni.SetInteger(ANIMATOR_PRAMETER_NAME, num);
+                break;
+        }
+    }
+    private void ChangeChar(int Kang, int Yang, int Baek)
+    {
+        switch (Kang)
+        {
+            case 0:
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, DEFAULT_EXPRESSION);
+                KangObj.SetActive(false);
+                break;
+            default:
+                kangAni.SetInteger(ANIMATOR_PRAMETER_NAME, Kang);
+                KangObj.SetActive(true);
+                break;
+        }
+
+        switch (Yang)
+        {
+            case 0:
+                YangObj.SetActive(false);
+                break;
+            default:
+                yangAni.SetInteger(ANIMATOR_PRAMETER_NAME, Yang);
+                YangObj.SetActive(true);
+                break;
+        }
+
+        switch (Baek)
+        {
+            case 0:
+                BaekObj.SetActive(false);
+                break;
+            default:
+                baekAni.SetInteger(ANIMATOR_PRAMETER_NAME, Baek);
+                BaekObj.SetActive(true);
+                break;
+        }
     }
 
-    void ButtonSetting()
+    private void SetButtonEvents()
     {
+
         StartTalkBtn.onClick.AddListener(() =>
         {
             StartCoroutine(ETalkEvent());
@@ -122,21 +189,21 @@ public class TalkManager : MonoBehaviour
     {
 
     }
-    void TalkSet()
+    void setFirstTalk()
     {
         switch (Etalk)
         {
             case TalkChoice.Kang:
                 Talkstart = "PlayerName(이) 왔구나! 무슨 일 이야?";
-                BackgroundManager.Instance.SetCharAni(1);
+                SetCharAni(1);
                 break;
             case TalkChoice.Yang:
                 Talkstart = "오셨군요! 기다리고 있었어요.";
-                BackgroundManager.Instance.SetCharAni(1);
+                SetCharAni(1);
                 break;
             case TalkChoice.Baek:
                 Talkstart = "왔어? 어서 돌아갈 방법을 생각해 보자";
-                BackgroundManager.Instance.SetCharAni(1);
+                SetCharAni(1);
                 break;
             default:
                 Debug.Assert(false);
@@ -144,7 +211,7 @@ public class TalkManager : MonoBehaviour
         }
     }
 
-    public IEnumerator StoryEvent()
+    public IEnumerator EStoryEvent()
     {
         var talks = loader.LoadTalk();
 
@@ -152,8 +219,8 @@ public class TalkManager : MonoBehaviour
 
         for (int i = 0; i < talk.talkDatas.Count; i++)
         {
-            BackgroundManager.Instance.CharChange(talk.talkDatas[i].Kang, talk.talkDatas[i].Yang, talk.talkDatas[i].Baek);
-            BackgroundManager.Instance.BackGroundChange(talk.talkDatas[i].background);
+            BackgroundManager.Instance.ChangeChar(talk.talkDatas[i].Kang, talk.talkDatas[i].Yang, talk.talkDatas[i].Baek);
+            BackgroundManager.Instance.ChangeBackGround(talk.talkDatas[i].background);
 
             txtName.text = talk.talkDatas[i].name.Replace("%PlayerName%", Gm.PlayerName);
             txtTalk.text = talk.talkDatas[i].talk;
@@ -169,11 +236,12 @@ public class TalkManager : MonoBehaviour
         yield return null;
     }
 
-    public void EGiftEvent(int check)
+    public void SetGiftEvent(int check)
     {
         float kang = ItemLoadInst.chaeAhlike;
         float yang = ItemLoadInst.seHwalike;
         float baek = ItemLoadInst.gaYoonlike;
+
         string itemtext = null;
         switch (check)
         {
@@ -183,17 +251,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 20;
                         itemtext = "귀여운 곰돌이다! 나한테 주는거야? 고마워~";
-                        BackgroundManager.Instance.SetCharAni(11);
+                        SetCharAni(11);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -204,17 +272,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang -= 20;
                         itemtext = "저.. 꽃가루 알르레기가 심해서…";
-                        BackgroundManager.Instance.SetCharAni(4);
+                        SetCharAni(4);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -225,17 +293,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -245,16 +313,16 @@ public class TalkManager : MonoBehaviour
                 {
                     case 1:
                         itemtext = "너 이런 내용이 진심으로 가윤이한테 통할 거라고 생각했어…?";
-                        BackgroundManager.Instance.SetCharAni(3);
+                        SetCharAni(3);
                         break;
                     case 2:
                         itemtext = "가윤이 한테 보낸…? 이걸 왜 저한테…";
-                        BackgroundManager.Instance.SetCharAni(3);
+                        SetCharAni(3);
                         break;
                     case 3:
                         baek -= 20;
                         itemtext = "너 이 상황에 제정신이야?";
-                        BackgroundManager.Instance.SetCharAni(4);
+                        SetCharAni(4);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -265,17 +333,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang += 20;
                         itemtext = "읽어본적 없는 책 이네요.. 절 위해서..? 고마워요 잘 읽을게요";
-                        BackgroundManager.Instance.SetCharAni(6);
+                        SetCharAni(6);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -286,17 +354,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 20;
                         itemtext = "초콜릿? 뭐.. 단거 좋아한다고 어디 말하고 다닌 적 없는데\n어떻게 알았어? …아무튼 고마워";
-                        BackgroundManager.Instance.SetCharAni(6);
+                        SetCharAni(6);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -307,17 +375,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -328,17 +396,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang += 10;
                         itemtext = "선물? 고마워-! 잘 받을게!";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -349,17 +417,17 @@ public class TalkManager : MonoBehaviour
                     case 1:
                         kang -= 20;
                         itemtext = "내가 너한테 홍차 싫어한다고 말 안했던가?";
-                        BackgroundManager.Instance.SetCharAni(3);
+                        SetCharAni(3);
                         break;
                     case 2:
                         yang += 10;
                         itemtext = "저에게 주시는 건가요..? 감사해요";
-                        BackgroundManager.Instance.SetCharAni(7);
+                        SetCharAni(7);
                         break;
                     case 3:
                         baek += 10;
                         itemtext = "나한테 선물? 아무튼 잘 받을게 고마워";
-                        BackgroundManager.Instance.SetCharAni(8);
+                        SetCharAni(8);
                         break;
                     default: Debug.Assert(false); break;
                 }
@@ -369,6 +437,7 @@ public class TalkManager : MonoBehaviour
                 break;
         }
         ItemLoadInst.SetLikeValue(kang, yang, baek);
+
         StartCoroutine(ETextTyping(txtTalk, itemtext));
     }
 
@@ -393,7 +462,7 @@ public class TalkManager : MonoBehaviour
             if (talkProg == 0)
             {
                 txtTalk.text = null;
-                TalkSet();
+                setFirstTalk();
                 yield return StartCoroutine(ETextTyping(txtTalk, Talkstart));
 
                 yield return StartCoroutine(EWaitInput());
@@ -401,7 +470,7 @@ public class TalkManager : MonoBehaviour
             }
 
             SetGoMini(talkProg);
-            BackgroundManager.Instance.CharChange(talk.talkDatas[talkProg].Kang, talk.talkDatas[talkProg].Yang, talk.talkDatas[talkProg].Baek);
+            ChangeChar(talk.talkDatas[talkProg].Kang, talk.talkDatas[talkProg].Yang, talk.talkDatas[talkProg].Baek);
             string talk1 = talk.talkDatas[talkProg].talk;
             txtTalk.text = talk1;
             yield return StartCoroutine(ETextTyping(txtTalk, talk1));
@@ -416,7 +485,7 @@ public class TalkManager : MonoBehaviour
 
                 for (int i = 0; i < choice.choiceDatas.Count; i++)
                 {
-                    Choicetexts.Add(ChoiceBtn);
+                    Choicetexts.Add(choiceBtn);
                     TalkChoices.Add(choice.choiceDatas[i]);
                     Likenums.Add(choice.choiceDatas[i].like);
                     background.Add(choice.choiceDatas[i]);
@@ -431,7 +500,7 @@ public class TalkManager : MonoBehaviour
                     Choicetexts.RemoveAt(rand);
 
                     int randtext = Random.Range(0, TalkChoices.Count);
-                    SetBtn(TalkChoices, CBtninfo, randtext);
+                    setButtons(TalkChoices, CBtninfo, randtext);
 
                     TextMeshProUGUI choicetext = choicebtn.transform.Find("choiceBtn").GetComponent<TextMeshProUGUI>();
                     choicetext.text = TalkChoices[randtext].choice;
@@ -444,7 +513,7 @@ public class TalkManager : MonoBehaviour
                         Likenums.RemoveAt(randtext);
 
                         string choice = choicebtn.GetComponent<ChioceBtnInfo>().BtnChoiceText;
-                        BackgroundManager.Instance.CharChange(info.chioce_Kang, info.chioce_Yang, info.chioce_Baek);
+                        ChangeChar(info.chioce_Kang, info.chioce_Yang, info.chioce_Baek);
                         background.RemoveAt(randtext);
                         StartCoroutine(ETextTyping(txtTalk, choice));
                         DeleteChilds();
@@ -463,7 +532,7 @@ public class TalkManager : MonoBehaviour
         yield return null;
 
     }
-    void SetBtn(List<ChoiceData> TalkChoices, ChioceBtnInfo btnmgr, int randtext)
+    private void setButtons(List<ChoiceData> TalkChoices, ChioceBtnInfo btnmgr, int randtext)
     {
         btnmgr.BtnChoiceText = TalkChoices[randtext].reply;
 
@@ -502,7 +571,7 @@ public class TalkManager : MonoBehaviour
 
                 for (int i = 0; i < kangending.kangendings.Count; i++)
                 {
-                    BackgroundManager.Instance.BackGroundChange(kangending.kangendings[i].background);
+                    BackgroundManager.Instance.ChangeBackGround(kangending.kangendings[i].background);
                     txtName.text = kangending.kangendings[i].name.Replace("%PlayerName%", Gm.PlayerName);
                     txtTalk.text = kangending.kangendings[i].talk;
                     yield return StartCoroutine(ETextTyping(txtTalk, txtTalk.text));
@@ -526,7 +595,7 @@ public class TalkManager : MonoBehaviour
 
                 for (int i = 0; i < yangending.yangendings.Count; i++)
                 {
-                    BackgroundManager.Instance.BackGroundChange(yangending.yangendings[i].background);
+                    BackgroundManager.Instance.ChangeBackGround(yangending.yangendings[i].background);
                     txtName.text = yangending.yangendings[i].name.Replace("%PlayerName%", Gm.PlayerName); ;
                     txtTalk.text = yangending.yangendings[i].talk;
 
@@ -551,7 +620,7 @@ public class TalkManager : MonoBehaviour
 
                 for (int i = 0; i < baekending.baekendings.Count; i++)
                 {
-                    BackgroundManager.Instance.BackGroundChange(baekending.baekendings[i].background);
+                    BackgroundManager.Instance.ChangeBackGround(baekending.baekendings[i].background);
                     txtName.text = baekending.baekendings[i].name.Replace("%PlayerName%", Gm.PlayerName);
                     txtTalk.text = baekending.baekendings[i].talk;
 
